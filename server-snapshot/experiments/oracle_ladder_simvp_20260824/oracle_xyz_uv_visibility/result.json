@@ -1,0 +1,106 @@
+{
+  "mode": "oracle_xyz_uv_visibility",
+  "num_test_clips": 199,
+  "metrics": {
+    "MAE": 0.17646864699308995,
+    "MSE": 0.04400460183202372,
+    "RMSE": 0.209772738533928,
+    "PSNR": 13.56501904292209,
+    "SSIM": 0.5485090017318726,
+    "LPIPS": 0.39223324353970473,
+    "temporal_delta_MAE": 0.04683556634202674,
+    "temporal_delta_MSE": 0.008070746040864031,
+    "per_horizon": {
+      "t+1": {
+        "MAE": 0.17838014909370462,
+        "MSE": 0.044423160333517106,
+        "PSNR": 13.523905482957655,
+        "SSIM": 0.6422929567607802,
+        "LPIPS": 0.3382685624774377
+      },
+      "t+2": {
+        "MAE": 0.17814563111194615,
+        "MSE": 0.04448333558964994,
+        "PSNR": 13.5180265456753,
+        "SSIM": 0.6142801358621923,
+        "LPIPS": 0.349322527122857
+      },
+      "t+3": {
+        "MAE": 0.17400849148805816,
+        "MSE": 0.04245016720283221,
+        "PSNR": 13.721205948163917,
+        "SSIM": 0.5767008743843242,
+        "LPIPS": 0.3765486081940445
+      },
+      "t+4": {
+        "MAE": 0.18047336601282485,
+        "MSE": 0.04565052089704141,
+        "PSNR": 13.40554262567359,
+        "SSIM": 0.5558465510307244,
+        "LPIPS": 0.370769602794144
+      },
+      "t+5": {
+        "MAE": 0.162644666667959,
+        "MSE": 0.03782089411981491,
+        "PSNR": 14.222682082590456,
+        "SSIM": 0.539000496118512,
+        "LPIPS": 0.4131791993002197
+      },
+      "t+6": {
+        "MAE": 0.17235608997955992,
+        "MSE": 0.042103239534800274,
+        "PSNR": 13.756844871106374,
+        "SSIM": 0.5125439873143057,
+        "LPIPS": 0.424535817387116
+      },
+      "t+7": {
+        "MAE": 0.18615360458192715,
+        "MSE": 0.04911248500254536,
+        "PSNR": 13.088080908004029,
+        "SSIM": 0.47979303644080856,
+        "LPIPS": 0.4190059799944336
+      },
+      "t+8": {
+        "MAE": 0.17958717504937446,
+        "MSE": 0.045993010591484695,
+        "PSNR": 13.373081616267498,
+        "SSIM": 0.46761507316300616,
+        "LPIPS": 0.44623564520672937
+      }
+    },
+    "dynamic_MAE": 0.17458891556538642,
+    "dynamic_MSE": 0.04876602419487357,
+    "dynamic_PSNR": 13.118826502032206,
+    "motion_mask_IoU": 0.1382998346493065,
+    "motion_mask_F1": 0.2429936831044426,
+    "motion_mask_precision": 0.1428503960649219,
+    "motion_mask_recall": 0.8127860832747543,
+    "geometry_mask_fraction": 0.013232733730851966
+  },
+  "protocol": {
+    "training": false,
+    "backbone": "simvp",
+    "backbone_checkpoint": "outputs/simvp_dynamic_ablation/no_geometry/best.pt",
+    "corrector_checkpoint": "/autodl-fs/data/d4rt_training/backbone_v7_parallel_20260821/simvp/reliable_geometry_motion_comp/best.pt",
+    "trajectory_checkpoint": "/autodl-fs/data/d4rt_training/pointodyssey50_uv_velocity_residual_60/best.pt",
+    "split": {
+      "legacy_subsets": [
+        "adt_mini",
+        "ds_mini",
+        "po_mini",
+        "pstudio_mini"
+      ],
+      "pointodyssey_usable": {
+        "train": 248,
+        "val": 90,
+        "test": 160
+      },
+      "totals": {
+        "train": 356,
+        "val": 130,
+        "test": 199
+      }
+    },
+    "oracle_uv_without_visibility": "teacher XYZ+UV with teacher future_valid/future_confidence"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "config": {
+    "d4rt_root": "/root/autodl-tmp/Open-d4rt",
+    "cache_root": "data/d4rt_forecasting_cache",
+    "po_cache": "/root/autodl-fs/d4rt_datasets/d4rt_forecasting_cache_po_full",
+    "po_split_manifest": "/root/autodl-fs/d4rt_datasets/worldtrack_pointodyssey_full_v2/po50/split_manifest.json",
+    "sample_manifest": "/root/autodl-fs/d4rt_training/tau_v2_direction_rank_pb002_20261009/split_paths.json",
+    "backbone_checkpoint": "/root/autodl-fs/d4rt_training/tau128_full_fair_fast_20261009/best.pt",
+    "trajectory_checkpoint": "/root/autodl-fs/d4rt_training/pointodyssey_full_uv_velocity_residual_60/best.pt",
+    "geometry_checkpoint": "/root/autodl-fs/d4rt_training/tau128_budget_sweep_matched_20261009/geometry_b2000_best.pt",
+    "output_dir": "/root/autodl-fs/d4rt_training/tau128_local_residual_diffusion_eval_00005_20261010",
+    "legacy_subsets": "adt_mini,ds_mini,po_mini,pstudio_mini",
+    "image_size": 128,
+    "epochs": 6,
+    "batch_size": 2,
+    "lr": 0.0001,
+    "num_workers": 4,
+    "max_train": 0,
+    "max_val": 0,
+    "max_test": 0,
+    "val_samples": 48,
+    "steps": 100,
+    "sample_steps": 8,
+    "residual_scale": 0.2,
+    "local_cap": 0.08,
+    "diffusion_budget": 0.0005,
+    "visible_gate": 0.8,
+    "mask_min_mean": 5e-05,
+    "seed": 42,
+    "split_seed": 42,
+    "device": "cuda",
+    "eval_only": true,
+    "weights_dir": "/root/autodl-fs/d4rt_training/tau128_local_residual_diffusion_20261010"
+  },
+  "split": {
+    "legacy_subsets": [
+      "adt_mini",
+      "ds_mini",
+      "po_mini",
+      "pstudio_mini"
+    ],
+    "pointodyssey_usable": {
+      "train": 754,
+      "val": 240,
+      "test": 308
+    },
+    "totals": {
+      "train": 862,
+      "val": 280,
+      "test": 347
+    },
+    "used": {
+      "train": 862,
+      "val": 280,
+      "test": 347
+    },
+    "split_seed": 42
+  },
+  "counts": {
+    "train": 862,
+    "val": 280,
+    "test": 347
+  },
+  "trainable_params_each": 403203
+}

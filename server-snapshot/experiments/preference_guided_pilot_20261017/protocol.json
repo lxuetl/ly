@@ -1,0 +1,30 @@
+{
+  "method": "pixel-space TTPO-inspired pair-guidance; no diffusion prior, not full TTPO",
+  "selection": "first manifest clip per original validation video, no outcome filtering",
+  "clips": 40,
+  "modes": [
+    "select",
+    "guided",
+    "no_preference",
+    "swapped"
+  ],
+  "rounds": 3,
+  "steps_per_round": 5,
+  "budget": 0.002,
+  "pixel_cap": 0.03,
+  "constraints": "baseline lowpass, agreement-weighted historical highpass, correction temporal increments",
+  "preference": "frozen v1 predicted gain top/bottom INCLUDING keep and undo; no ground truth",
+  "limitations": [
+    "known imperfect scorer; forced guidance bypasses failed calibration explicitly",
+    "cached history propagation; no flow regeneration; temporal constraint is not true motion consistency",
+    "same budget ceiling, not matched realized budget; report realized changes",
+    "closed-loop arms diverge after first round; first round shares exact candidates/pair",
+    "three-round candidate selection has same outer candidate count, but no inner-gradient compute",
+    "reused validation, not fresh benchmark; no parameter sweep"
+  ],
+  "training": false,
+  "test_used": false,
+  "TUM_used": false,
+  "checkpoint_sha256": "4560b34b868ac82d2ba2a036d58543ea504d6f8b8ca28c96deaeb7f0c35d094e",
+  "script_sha256": "12592843298a125e054c33671b6114f98d7787379917885fcf46795990fcc9dd"
+}

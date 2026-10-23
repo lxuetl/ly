@@ -1,0 +1,228 @@
+{
+  "test": {
+    "baseline": {
+      "MAE": 0.04589824789824585,
+      "MSE": 0.005918519264216431,
+      "PSNR": 22.277869344625127,
+      "dynamic_MSE": 0.02755237069194642
+    },
+    "d4rt": {
+      "MAE": 0.03849584855035775,
+      "MSE": 0.005288726585503254,
+      "PSNR": 22.766488843851572,
+      "dynamic_MSE": 0.026813822937459826
+    },
+    "sparse_affine": {
+      "MAE": 0.037652882592131696,
+      "MSE": 0.005250871968908339,
+      "PSNR": 22.79768570910143,
+      "dynamic_MSE": 0.02688484481936764
+    },
+    "raft_small": {
+      "MAE": 0.03786241739160485,
+      "MSE": 0.005261846478485192,
+      "PSNR": 22.788618271966044,
+      "dynamic_MSE": 0.026859295339515057
+    },
+    "selected": {
+      "MAE": 0.03849816009298795,
+      "MSE": 0.005289114135343375,
+      "PSNR": 22.766170611120444,
+      "dynamic_MSE": 0.026814870474823328
+    },
+    "oracle": {
+      "MAE": 0.03459460298634238,
+      "MSE": 0.00475047739099763,
+      "PSNR": 23.232627445102736,
+      "dynamic_MSE": 0.024908495237481874
+    },
+    "action_choice_fraction": {
+      "baseline": 0.0010026296367868781,
+      "d4rt": 0.9988088607788086,
+      "sparse_affine": 0.00018850962806027383,
+      "raft_small": 0.0
+    },
+    "oracle_action_fraction": {
+      "baseline": 0.19677734375,
+      "d4rt": 0.33041858673095703,
+      "sparse_affine": 0.2839202880859375,
+      "raft_small": 0.18888378143310547
+    },
+    "calibration": {
+      "action_accuracy": 0.3303677241007487,
+      "motion_help_brier": 0.23237508814781904,
+      "coverage": 0.9989973704020182,
+      "accepted_help_rate": 0.7789916800686316,
+      "stage1_accuracy": 0.7786175409952799,
+      "motion_stage_accuracy": 0.4215688705444336,
+      "specialist_override_rate": 0.9988088607788086,
+      "specialist_override_help_rate": 0.40548144625954136,
+      "mean_predicted_motion_regret": -0.0006297407013467667,
+      "help_ece": 0.27856282549659755,
+      "help_auroc": 0.5989657448835854,
+      "harm_aurc": 0.18123882709390227,
+      "risk_coverage_curve": [
+        {
+          "threshold": 0.95,
+          "coverage": 0.0,
+          "harmful_rate": 0.0,
+          "mean_regret": 0.0
+        },
+        {
+          "threshold": 0.9,
+          "coverage": 0.0,
+          "harmful_rate": 0.0,
+          "mean_regret": 0.0
+        },
+        {
+          "threshold": 0.85,
+          "coverage": 0.0,
+          "harmful_rate": 0.0,
+          "mean_regret": 0.0
+        },
+        {
+          "threshold": 0.8,
+          "coverage": 0.0,
+          "harmful_rate": 0.0,
+          "mean_regret": 0.0
+        },
+        {
+          "threshold": 0.75,
+          "coverage": 0.0,
+          "harmful_rate": 0.0,
+          "mean_regret": 0.0
+        },
+        {
+          "threshold": 0.7,
+          "coverage": 0.0,
+          "harmful_rate": 0.0,
+          "mean_regret": 0.0
+        },
+        {
+          "threshold": 0.65,
+          "coverage": 0.0009609858194986979,
+          "harmful_rate": 0.007277538868673503,
+          "mean_regret": -0.0024988260479867157
+        },
+        {
+          "threshold": 0.6,
+          "coverage": 0.03556696573893229,
+          "harmful_rate": 0.06678345429194522,
+          "mean_regret": -0.0007106802096951446
+        },
+        {
+          "threshold": 0.55,
+          "coverage": 0.2471501032511393,
+          "harmful_rate": 0.12778420177319424,
+          "mean_regret": -0.0006928062071966216
+        },
+        {
+          "threshold": 0.5,
+          "coverage": 0.6901521682739258,
+          "harmful_rate": 0.18877068084242002,
+          "mean_regret": -0.0006556760494207741
+        },
+        {
+          "threshold": 0.45,
+          "coverage": 0.9969120025634766,
+          "harmful_rate": 0.22028600637624704,
+          "mean_regret": -0.0006317433033909799
+        },
+        {
+          "threshold": 0.4,
+          "coverage": 0.9999488194783529,
+          "harmful_rate": 0.22119319028969975,
+          "mean_regret": -0.0006297645496422294
+        },
+        {
+          "threshold": 0.35,
+          "coverage": 1.0,
+          "harmful_rate": 0.22119363149007162,
+          "mean_regret": -0.0006297407041613883
+        },
+        {
+          "threshold": 0.3,
+          "coverage": 1.0,
+          "harmful_rate": 0.22119363149007162,
+          "mean_regret": -0.0006297407041613883
+        },
+        {
+          "threshold": 0.25,
+          "coverage": 1.0,
+          "harmful_rate": 0.22119363149007162,
+          "mean_regret": -0.0006297407041613883
+        },
+        {
+          "threshold": 0.2,
+          "coverage": 1.0,
+          "harmful_rate": 0.22119363149007162,
+          "mean_regret": -0.0006297407041613883
+        },
+        {
+          "threshold": 0.15,
+          "coverage": 1.0,
+          "harmful_rate": 0.22119363149007162,
+          "mean_regret": -0.0006297407041613883
+        },
+        {
+          "threshold": 0.1,
+          "coverage": 1.0,
+          "harmful_rate": 0.22119363149007162,
+          "mean_regret": -0.0006297407041613883
+        },
+        {
+          "threshold": 0.05,
+          "coverage": 1.0,
+          "harmful_rate": 0.22119363149007162,
+          "mean_regret": -0.0006297407041613883
+        },
+        {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "harmful_rate": 0.22119363149007162,
+          "mean_regret": -0.0006297407041613883
+        }
+      ]
+    }
+  },
+  "meta": {
+    "best_epoch": 2,
+    "trainable_params": 10034,
+    "actions": [
+      "baseline",
+      "d4rt",
+      "sparse_affine",
+      "raft_small"
+    ],
+    "historical_replay_only_at_inference": true,
+    "hard_action_selection": true,
+    "baseline_action_is_abstention": true,
+    "hierarchical_affine_default": true,
+    "mse_aligned_regret": true,
+    "selected_motion_gate_target": true,
+    "used": {
+      "train": 192,
+      "val": 48,
+      "test": 96
+    },
+    "elapsed_seconds": 1823.4974632263184,
+    "split": {
+      "legacy_subsets": [
+        "adt_mini",
+        "ds_mini",
+        "po_mini",
+        "pstudio_mini"
+      ],
+      "pointodyssey_usable": {
+        "train": 248,
+        "val": 90,
+        "test": 160
+      },
+      "totals": {
+        "train": 356,
+        "val": 130,
+        "test": 199
+      }
+    }
+  }
+}

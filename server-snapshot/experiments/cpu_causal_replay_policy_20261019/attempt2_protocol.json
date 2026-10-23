@@ -1,0 +1,54 @@
+{
+  "CPU_only": true,
+  "training": false,
+  "weight_updates": false,
+  "cases": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "selection": "manifest first6, order-only; previous4 plus2 additional; reused validation exploratory",
+  "information_barrier": "ALL6 generation decision files must exist before evaluate may decode frames16:24",
+  "calibration": "prefix0:8 -> observed8:12; choose smallest passing alpha, then LPIPS and MSE",
+  "validation": "prefix0:12 -> observed12:16; only accept/reject fixed calibration choice, never reselect",
+  "final": "prefix0:16 ->16:20 corrected; horizons5..8 remain TAU unchanged",
+  "baseline": "TAU recomputed separately from each prefix, left-pad frame0 to16 if necessary",
+  "low_memory_runtime": "independent process per8/12/16 stage; LPIPS loaded only after TAU freed; framewise spatial encoder; model state byte-hash not clone; reclaim unused CPU arenas",
+  "distribution_shift": "short prefixes use padding, final16 does not. Replay safety does NOT guarantee final safety.",
+  "geometry": "RGB frame0 corners64 + independent adjacent LK per prefix; hold/robust-CV endpoints",
+  "D4RT_status": "strict prefix XYZ cache absent; original learned D4RT trajectory route is NOT calibrated or enabled by this fallback",
+  "reliability": "observed-prefix inner4-step motion error<=2px; loop<=2px, adjacent cycle<=1px; transfer only point/horizon support eligible in earlier stages",
+  "alphas": [
+    0.125,
+    0.25,
+    0.5
+  ],
+  "motions": [
+    "hold",
+    "cv"
+  ],
+  "accept_margin": {
+    "MSE": "improve>max(1e-8,1e-4*baseline)",
+    "LPIPS": "improve>1e-5"
+  },
+  "step": 0.002,
+  "feature_cap": 0.05,
+  "image_budget_ceiling_first4": 0.002,
+  "pixel_cap": 0.03,
+  "controls": [
+    "keep",
+    "fixed gated CV alpha=.25",
+    "ungated CV alpha=.25",
+    "calibration-only without validation",
+    "full calibrated policy"
+  ],
+  "labels": "only historical RGB holdouts in generation; no UV/visibility GT, no future RGB, no old full-context latent/track cache",
+  "hashes": {
+    "run_replay_policy_cpu.py": "5fcd8782500f296fe4b937675e4d6a52ff08103c2eed9f4773c8953d2bfc31a0",
+    "replay_policy_cpu.py": "ea4edcf5d44f66c96b9277275a086c4faab3a8a6134fde97766dc6b65ceb6ffc",
+    "first_query_cpu.py": "0e973a7d9906bb28c8f8c2eda315f9978afa66cc2400d85811141d850351fc46"
+  }
+}

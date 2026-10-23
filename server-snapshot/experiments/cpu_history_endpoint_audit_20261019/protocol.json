@@ -1,0 +1,196 @@
+{
+  "CPU_only": true,
+  "formal_training": false,
+  "parameter_fitting": false,
+  "optimizer": false,
+  "cache_audit_videos": 40,
+  "frozen_model_cases": 6,
+  "case_selection": {
+    "formal_training": false,
+    "parameter_fitting": false,
+    "selection": "purposive failure/control audit; selected from old outcomes, not unbiased validation",
+    "cpu_model_clip_limit": 6,
+    "cases": [
+      {
+        "path": "data/d4rt_forecasting_cache/po_mini/dancingroom1_3rd2_11.npz",
+        "group": [
+          "po_mini",
+          "dancingroom1_3rd2"
+        ],
+        "reason": "three largest existing matched LPIPS harms",
+        "existing_metrics": {
+          "path": "data/d4rt_forecasting_cache/po_mini/dancingroom1_3rd2_11.npz",
+          "group": [
+            "po_mini",
+            "dancingroom1_3rd2"
+          ],
+          "UV_ADE": 7.1611809730529785,
+          "anchor_error": 4.121086120605469,
+          "pred_delta": {
+            "mse": -3.430759534239769e-06,
+            "lpips": 0.0017810165882110596,
+            "temporal": -4.83635812997818e-06
+          },
+          "oracle_vs_pred_mse": -1.543993130326271e-05,
+          "reanchor_vs_pred_mse": -4.931353032588959e-06,
+          "reanchor_UV_delta": 0.02895069122314453,
+          "feature_objective_decreased": true,
+          "pred_cost_delta": 4.9516102299094195e-05
+        }
+      },
+      {
+        "path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_decoration_skeleton_seq131_5.npz",
+        "group": [
+          "adt_mini",
+          "Apartment_release_decoration_skeleton_seq131"
+        ],
+        "reason": "three largest existing matched LPIPS harms",
+        "existing_metrics": {
+          "path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_decoration_skeleton_seq131_5.npz",
+          "group": [
+            "adt_mini",
+            "Apartment_release_decoration_skeleton_seq131"
+          ],
+          "UV_ADE": 2.238502025604248,
+          "anchor_error": 1.0772953033447266,
+          "pred_delta": {
+            "mse": -1.6433652490377426e-05,
+            "lpips": 0.0016472339630126953,
+            "temporal": -2.030283212661743e-06
+          },
+          "oracle_vs_pred_mse": -2.798158675432205e-06,
+          "reanchor_vs_pred_mse": 4.444736987352371e-06,
+          "reanchor_UV_delta": -0.8575425148010254,
+          "feature_objective_decreased": true,
+          "pred_cost_delta": 3.2780338078737255e-05
+        }
+      },
+      {
+        "path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_decoration_seq133_3.npz",
+        "group": [
+          "adt_mini",
+          "Apartment_release_decoration_seq133"
+        ],
+        "reason": "three largest existing matched LPIPS harms",
+        "existing_metrics": {
+          "path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_decoration_seq133_3.npz",
+          "group": [
+            "adt_mini",
+            "Apartment_release_decoration_seq133"
+          ],
+          "UV_ADE": 10.555609703063965,
+          "anchor_error": 4.8294196128845215,
+          "pred_delta": {
+            "mse": -3.9060600101947784e-05,
+            "lpips": 0.0015173256397247314,
+            "temporal": 7.02589750289917e-06
+          },
+          "oracle_vs_pred_mse": -3.249477595090866e-05,
+          "reanchor_vs_pred_mse": -2.178829163312912e-05,
+          "reanchor_UV_delta": -4.2595133781433105,
+          "feature_objective_decreased": true,
+          "pred_cost_delta": 7.161758840084072e-06
+        }
+      },
+      {
+        "path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_clean_seq138_5.npz",
+        "group": [
+          "adt_mini",
+          "Apartment_release_clean_seq138"
+        ],
+        "reason": "largest remaining existing Oracle endpoint MSE advantage",
+        "existing_metrics": {
+          "path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_clean_seq138_5.npz",
+          "group": [
+            "adt_mini",
+            "Apartment_release_clean_seq138"
+          ],
+          "UV_ADE": 13.995218276977539,
+          "anchor_error": 1.29225754737854,
+          "pred_delta": {
+            "mse": 3.187917172908783e-05,
+            "lpips": 0.0010210275650024414,
+            "temporal": -3.4049153327941895e-06
+          },
+          "oracle_vs_pred_mse": -0.00013613514602184296,
+          "reanchor_vs_pred_mse": -1.1278316378593445e-05,
+          "reanchor_UV_delta": -0.4871816635131836,
+          "feature_objective_decreased": true,
+          "pred_cost_delta": 6.216950714588165e-05
+        }
+      },
+      {
+        "path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_decoration_skeleton_seq139_0.npz",
+        "group": [
+          "adt_mini",
+          "Apartment_release_decoration_skeleton_seq139"
+        ],
+        "reason": "best remaining existing composite control",
+        "existing_metrics": {
+          "path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_decoration_skeleton_seq139_0.npz",
+          "group": [
+            "adt_mini",
+            "Apartment_release_decoration_skeleton_seq139"
+          ],
+          "UV_ADE": 3.9679319858551025,
+          "anchor_error": 3.0894079208374023,
+          "pred_delta": {
+            "mse": -8.099060505628586e-05,
+            "lpips": 0.0001868903636932373,
+            "temporal": -2.6609748601913452e-05
+          },
+          "oracle_vs_pred_mse": -2.9591843485832214e-05,
+          "reanchor_vs_pred_mse": -2.535805106163025e-05,
+          "reanchor_UV_delta": -2.1145838499069214,
+          "feature_objective_decreased": true,
+          "pred_cost_delta": -7.804486900568008e-05
+        }
+      },
+      {
+        "path": "/root/autodl-fs/d4rt_datasets/d4rt_forecasting_cache_po_full/po50/footlab-3rd-af863ab1_clip_000.npz",
+        "group": [
+          "PointOdyssey",
+          "footlab-3rd-af863ab1"
+        ],
+        "reason": "lowest remaining existing UV error control",
+        "existing_metrics": {
+          "path": "/root/autodl-fs/d4rt_datasets/d4rt_forecasting_cache_po_full/po50/footlab-3rd-af863ab1_clip_000.npz",
+          "group": [
+            "PointOdyssey",
+            "footlab-3rd-af863ab1"
+          ],
+          "UV_ADE": 0.9879097938537598,
+          "anchor_error": 1.6281111240386963,
+          "pred_delta": {
+            "mse": -5.942885763943195e-06,
+            "lpips": 3.915280103683472e-05,
+            "temporal": 3.3294782042503357e-06
+          },
+          "oracle_vs_pred_mse": -1.189298927783966e-06,
+          "reanchor_vs_pred_mse": 1.5319092199206352e-06,
+          "reanchor_UV_delta": 0.4067225456237793,
+          "feature_objective_decreased": true,
+          "pred_cost_delta": -4.4353539124131204e-06
+        }
+      }
+    ],
+    "historical_point_selection": "new deterministic CPU history-only top128, explicit indices saved; no attempt to guess old CUDA topk ties",
+    "hashes": {
+      "C:\\Users\\lenovo\\Documents\\ChatGPT\\D4RT+视频预测\\experiments_20261018\\uv_audit\\evaluation_uv_per_video.json": "d5cc7d01500fbd93e2bf8ab44e09fa505b9d8916ce05272a29c17d8cca358735",
+      "C:\\Users\\lenovo\\Documents\\ChatGPT\\D4RT+视频预测\\experiments_20261018\\uv_audit\\evaluation_matched_per_video.json": "c9e18b2d3af2a28eef510735f595f23adacfde29c8dd4ed27dc5b4361eb10948",
+      "C:\\Users\\lenovo\\Documents\\ChatGPT\\D4RT+视频预测\\experiments_20261018\\uv_audit\\evaluation_rgb_per_video.json": "75860caa62b5919cf6e9638ffe318903f64368f0175b9faa50e33e2770ba8387"
+    }
+  },
+  "point_selection": "stable CPU history-only score top128, actual source query IDs saved, not old GPU top-k replay",
+  "factorial": "D/G historical UV x P/G future UV; identical intersection historical visibility, confidence, time weights, future writes",
+  "labels": "all GT coordinate/visibility/appearance replacements label-only diagnostics, not deployment",
+  "step": 0.002,
+  "feature_cap": 0.05,
+  "image_budget": 0.002,
+  "image_cap": 0.03,
+  "budget_matching": "minimum actual RGB L1 across six methods per clip, scale down only; also raw-budget effects saved",
+  "hashes": {
+    "/root/autodl-tmp/Open-d4rt/experiments_20261018/run_cpu_history_endpoint.py": "94daeb2753cabbfdc4f990a5b2c4035a65d2b69bf60d9e20531ce6dde8e5f427",
+    "/root/autodl-tmp/Open-d4rt/experiments_20261018/cpu_history_endpoint_selection.json": "45bbfd1dbe5594c761c251ee21493747a08bd70dc6a52eea518518e3acffb0c4"
+  }
+}

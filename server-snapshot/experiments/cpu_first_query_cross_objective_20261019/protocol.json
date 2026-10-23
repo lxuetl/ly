@@ -1,0 +1,50 @@
+{
+  "CPU_only": true,
+  "training": false,
+  "parameter_fitting": false,
+  "threshold_search": false,
+  "cases": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "selection": "same manifest first4, no outcome selection; reused validation exploratory",
+  "factorial": "D=original D4RT sampling; L=first-query local<=2px; F=first-query full forward; P=predicted future UV; G=raw GT future UV",
+  "main_arms": [
+    "D_P",
+    "L_P",
+    "F_P",
+    "D_G",
+    "L_G",
+    "F_G"
+  ],
+  "all_arms": [
+    "D_P",
+    "L_P",
+    "F_P",
+    "D_G",
+    "L_G",
+    "F_G",
+    "H_G",
+    "T_G",
+    "RGB_GT"
+  ],
+  "controls": {
+    "H_G": "GT historical sampling, historical time/confidence pooling, Oracle endpoint",
+    "T_G": "actual future encoder features at Oracle endpoints; label-only target",
+    "RGB_GT": "full future RGB MSE descent through same frozen decoder; feasibility/direction reference, NOT fair deployable competitor"
+  },
+  "mask": "identical first-query mask intersect GT historical visibility/bounds and bounds of all4 historical coordinates; future GT visibility/bounds and predicted bounds intersect for ALL feature arms",
+  "labels": "whole experiment is label-dependent diagnostic, including common masks. No claim of deployable P branch with GT masks.",
+  "weights": "same historical confidence/recency weights and same future reliability; at least3 shared history observations",
+  "budgets": "one latent step .002 normalized per horizon, element cap .05; image mean L1 ceiling .002, cap .03; match minimum positive actual RGB L1 across ALL9 arms by scaling down only",
+  "MSE_bias_test": "feature objective before/after; actual latent-step cosine with true RGB descent; exact pixel deltaMSE=linear+quadratic after image budget matching",
+  "no_line_search": true,
+  "no_oracle_based_hyperparameter_selection": true,
+  "hashes": {
+    "run_cross_objective_cpu.py": "9e5d371424a256a1aaa3a8972101f294c69951d4aecf64dba55dfdbd234369d0",
+    "cross_objective_cpu.py": "d7106632d277d02aa11deb062215d9be61c0ae4e94913a2ac0a189e183042824",
+    "run_alignment_v2.py": "3fa02134ffec20d0f1d0bc97b938d80becb841ffd24ff317f562b901d338c5ed"
+  }
+}

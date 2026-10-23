@@ -1,0 +1,964 @@
+{
+  "inputs": {
+    "model_config": "/root/autodl-tmp/Open-d4rt/checkpoints/OpenD4RT_32CLIP_9Dataset_NoAUG/model.yaml",
+    "ckpt_path": "/root/autodl-tmp/Open-d4rt/checkpoints/OpenD4RT_32CLIP_9Dataset_NoAUG/opend4rt.ckpt",
+    "data_root": "/root/autodl-tmp/Open-d4rt/data/worldtrack_release",
+    "subsets": [
+      "adt_mini",
+      "ds_mini"
+    ],
+    "num_frames": 32,
+    "query_chunk_size": 4096,
+    "query_budget": 4,
+    "query_selector": "fps",
+    "query_seed": 41
+  },
+  "subsets": {
+    "adt_mini": {
+      "num_sequences": 5,
+      "avg_pts_global": 0.572265625,
+      "avg_pts_pertraj": 0.699609375,
+      "avg_pts_sim3": 0.64921875,
+      "avg_pts_sim3_closed": 0.7234375,
+      "epe_global": 0.3706426996301255,
+      "epe_pertraj": 0.2710191959279726,
+      "epe_sim3": 0.5141702095862704,
+      "epe_sim3_closed": 0.212140191048739,
+      "avg_pts_global_dyn": 0.66796875,
+      "epe_global_dyn": 0.23842376136470747,
+      "avg_pts_sim3_closed_dyn": 0.9921875,
+      "epe_sim3_closed_dyn": 0.044296571971605,
+      "dyn_fraction": 0.1,
+      "camera_rot_deg": 0.5650453185010201,
+      "camera_ate": 0.0321783099403247,
+      "camera_rpe_rot_deg": 0.2073297693393783,
+      "camera_rpe_trans": 0.006263861161257015,
+      "inference_seconds": 0.5781680773943663,
+      "milliseconds_per_query": 144.54201934859157,
+      "peak_memory_mb": 4939.29541015625,
+      "total_queries": 20,
+      "total_dynamic_queries": 2,
+      "fractions_global": {
+        "1": 0.1703125,
+        "2": 0.453125,
+        "4": 0.71875,
+        "8": 0.946875
+      },
+      "fractions_pertraj": {
+        "1": 0.25,
+        "2": 0.6546875,
+        "4": 0.94375,
+        "8": 0.95
+      },
+      "fractions_sim3": {
+        "1": 0.55,
+        "2": 0.65,
+        "4": 0.65,
+        "8": 0.746875
+      },
+      "fractions_sim3_closed": {
+        "1": 0.1046875,
+        "2": 0.803125,
+        "4": 0.9859375,
+        "8": 1.0
+      },
+      "fractions_global_dyn": {
+        "1": 0.0,
+        "2": 0.734375,
+        "4": 0.9375,
+        "8": 1.0
+      },
+      "fractions_sim3_closed_dyn": {
+        "1": 0.96875,
+        "2": 1.0,
+        "4": 1.0,
+        "8": 1.0
+      },
+      "sequences": [
+        {
+          "avg_pts_global": 0.525390625,
+          "avg_pts_pertraj": 0.7890625,
+          "avg_pts_sim3": 0.6875,
+          "avg_pts_sim3_closed": 0.69140625,
+          "epe_global": 0.3362322666745033,
+          "epe_pertraj": 0.19027943833256106,
+          "epe_sim3": 0.34649483240157775,
+          "epe_sim3_closed": 0.2118726129650392,
+          "avg_pts_global_dyn": NaN,
+          "epe_global_dyn": NaN,
+          "avg_pts_sim3_closed_dyn": NaN,
+          "epe_sim3_closed_dyn": NaN,
+          "fractions_global": {
+            "1": 0.1015625,
+            "2": 0.25,
+            "4": 0.75,
+            "8": 1.0
+          },
+          "fractions_pertraj": {
+            "1": 0.5,
+            "2": 0.65625,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_sim3": {
+            "1": 0.5,
+            "2": 0.75,
+            "4": 0.75,
+            "8": 0.75
+          },
+          "fractions_sim3_closed": {
+            "1": 0.0,
+            "2": 0.765625,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_global_dyn": {},
+          "fractions_sim3_closed_dyn": {},
+          "dyn_fraction": 0.0,
+          "dyn_count": 0,
+          "num_queries": 4,
+          "camera_pose_valid_frames": 32,
+          "camera_rot_deg": 0.7612331504936438,
+          "camera_ate": 0.022529109380852168,
+          "camera_rpe_rot_deg": 0.25989748457627276,
+          "camera_rpe_trans": 0.003526954374106927,
+          "video_name": "Apartment_release_clean_seq131_0",
+          "sequence_path": "/root/autodl-tmp/Open-d4rt/data/worldtrack_release/adt_mini/Apartment_release_clean_seq131_0.npz",
+          "clip_frames": 32,
+          "model_image_size": [
+            256,
+            256
+          ],
+          "original_image_size": [
+            512,
+            512
+          ],
+          "query_budget": 4,
+          "query_selector": "fps",
+          "query_seed": 41,
+          "inference_seconds": 0.8474854193627834,
+          "milliseconds_per_query": 211.87135484069586,
+          "peak_memory_mb": 4939.29541015625,
+          "stitch_mode": "anchor_clip",
+          "stitch_num_chunks": 0,
+          "stitch_success_chunks": 0,
+          "stitch_failed_chunks": 0,
+          "stitch_diagnostics": {
+            "mode": "anchor_clip",
+            "clip_frames": 32,
+            "dense_grid_size": 0,
+            "keep_ratio": 0.85,
+            "chunks": []
+          }
+        },
+        {
+          "avg_pts_global": 0.435546875,
+          "avg_pts_pertraj": 0.4375,
+          "avg_pts_sim3": 0.5,
+          "avg_pts_sim3_closed": 0.6875,
+          "epe_global": 0.586936318485465,
+          "epe_pertraj": 0.5433326956244418,
+          "epe_sim3": 0.8556551193472136,
+          "epe_sim3_closed": 0.3020704752563572,
+          "avg_pts_global_dyn": NaN,
+          "epe_global_dyn": NaN,
+          "avg_pts_sim3_closed_dyn": NaN,
+          "epe_sim3_closed_dyn": NaN,
+          "fractions_global": {
+            "1": 0.0,
+            "2": 0.25,
+            "4": 0.7421875,
+            "8": 0.75
+          },
+          "fractions_pertraj": {
+            "1": 0.0,
+            "2": 0.25,
+            "4": 0.75,
+            "8": 0.75
+          },
+          "fractions_sim3": {
+            "1": 0.5,
+            "2": 0.5,
+            "4": 0.5,
+            "8": 0.5
+          },
+          "fractions_sim3_closed": {
+            "1": 0.0,
+            "2": 0.75,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_global_dyn": {},
+          "fractions_sim3_closed_dyn": {},
+          "dyn_fraction": 0.0,
+          "dyn_count": 0,
+          "num_queries": 4,
+          "camera_pose_valid_frames": 32,
+          "camera_rot_deg": 0.47844502259571897,
+          "camera_ate": 0.027876905895410718,
+          "camera_rpe_rot_deg": 0.18984304737075988,
+          "camera_rpe_trans": 0.008167214431927946,
+          "video_name": "Apartment_release_clean_seq133_0",
+          "sequence_path": "/root/autodl-tmp/Open-d4rt/data/worldtrack_release/adt_mini/Apartment_release_clean_seq133_0.npz",
+          "clip_frames": 32,
+          "model_image_size": [
+            256,
+            256
+          ],
+          "original_image_size": [
+            512,
+            512
+          ],
+          "query_budget": 4,
+          "query_selector": "fps",
+          "query_seed": 41,
+          "inference_seconds": 0.5096283741295338,
+          "milliseconds_per_query": 127.40709353238344,
+          "peak_memory_mb": 4939.29541015625,
+          "stitch_mode": "anchor_clip",
+          "stitch_num_chunks": 0,
+          "stitch_success_chunks": 0,
+          "stitch_failed_chunks": 0,
+          "stitch_diagnostics": {
+            "mode": "anchor_clip",
+            "clip_frames": 32,
+            "dense_grid_size": 0,
+            "keep_ratio": 0.85,
+            "chunks": []
+          }
+        },
+        {
+          "avg_pts_global": 0.55859375,
+          "avg_pts_pertraj": 0.708984375,
+          "avg_pts_sim3": 0.8046875,
+          "avg_pts_sim3_closed": 0.61328125,
+          "epe_global": 0.3830901984521112,
+          "epe_pertraj": 0.26352525309318287,
+          "epe_sim3": 0.22967185603798546,
+          "epe_sim3_closed": 0.26512995830683134,
+          "avg_pts_global_dyn": 0.5859375,
+          "epe_global_dyn": 0.33336365714551014,
+          "avg_pts_sim3_closed_dyn": 0.9921875,
+          "epe_sim3_closed_dyn": 0.050373452550732944,
+          "fractions_global": {
+            "1": 0.25,
+            "2": 0.5,
+            "4": 0.5,
+            "8": 0.984375
+          },
+          "fractions_pertraj": {
+            "1": 0.25,
+            "2": 0.6171875,
+            "4": 0.96875,
+            "8": 1.0
+          },
+          "fractions_sim3": {
+            "1": 0.734375,
+            "2": 0.75,
+            "4": 0.75,
+            "8": 0.984375
+          },
+          "fractions_sim3_closed": {
+            "1": 0.0234375,
+            "2": 0.5,
+            "4": 0.9296875,
+            "8": 1.0
+          },
+          "fractions_global_dyn": {
+            "1": 0.0,
+            "2": 0.46875,
+            "4": 0.875,
+            "8": 1.0
+          },
+          "fractions_sim3_closed_dyn": {
+            "1": 0.96875,
+            "2": 1.0,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "dyn_fraction": 0.25,
+          "dyn_count": 1,
+          "num_queries": 4,
+          "camera_pose_valid_frames": 32,
+          "camera_rot_deg": 0.5591486956481926,
+          "camera_ate": 0.050558722289988596,
+          "camera_rpe_rot_deg": 0.2263739674165548,
+          "camera_rpe_trans": 0.010555933708541734,
+          "video_name": "Apartment_release_clean_seq133_8",
+          "sequence_path": "/root/autodl-tmp/Open-d4rt/data/worldtrack_release/adt_mini/Apartment_release_clean_seq133_8.npz",
+          "clip_frames": 32,
+          "model_image_size": [
+            256,
+            256
+          ],
+          "original_image_size": [
+            512,
+            512
+          ],
+          "query_budget": 4,
+          "query_selector": "fps",
+          "query_seed": 41,
+          "inference_seconds": 0.5135475806891918,
+          "milliseconds_per_query": 128.38689517229795,
+          "peak_memory_mb": 4939.29541015625,
+          "stitch_mode": "anchor_clip",
+          "stitch_num_chunks": 0,
+          "stitch_success_chunks": 0,
+          "stitch_failed_chunks": 0,
+          "stitch_diagnostics": {
+            "mode": "anchor_clip",
+            "clip_frames": 32,
+            "dense_grid_size": 0,
+            "keep_ratio": 0.85,
+            "chunks": []
+          }
+        },
+        {
+          "avg_pts_global": 0.625,
+          "avg_pts_pertraj": 0.75,
+          "avg_pts_sim3": 0.75390625,
+          "avg_pts_sim3_closed": 0.875,
+          "epe_global": 0.3270563663197754,
+          "epe_pertraj": 0.2376470435164374,
+          "epe_sim3": 0.18686059606693828,
+          "epe_sim3_closed": 0.09909821886744308,
+          "avg_pts_global_dyn": NaN,
+          "epe_global_dyn": NaN,
+          "avg_pts_sim3_closed_dyn": NaN,
+          "epe_sim3_closed_dyn": NaN,
+          "fractions_global": {
+            "1": 0.25,
+            "2": 0.5,
+            "4": 0.75,
+            "8": 1.0
+          },
+          "fractions_pertraj": {
+            "1": 0.25,
+            "2": 0.75,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_sim3": {
+            "1": 0.515625,
+            "2": 0.75,
+            "4": 0.75,
+            "8": 1.0
+          },
+          "fractions_sim3_closed": {
+            "1": 0.5,
+            "2": 1.0,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_global_dyn": {},
+          "fractions_sim3_closed_dyn": {},
+          "dyn_fraction": 0.0,
+          "dyn_count": 0,
+          "num_queries": 4,
+          "camera_pose_valid_frames": 32,
+          "camera_rot_deg": 0.28229700505644584,
+          "camera_ate": 0.005769676970540437,
+          "camera_rpe_rot_deg": 0.10299151349573907,
+          "camera_rpe_trans": 0.0017448001345855826,
+          "video_name": "Apartment_release_clean_seq134_7",
+          "sequence_path": "/root/autodl-tmp/Open-d4rt/data/worldtrack_release/adt_mini/Apartment_release_clean_seq134_7.npz",
+          "clip_frames": 32,
+          "model_image_size": [
+            256,
+            256
+          ],
+          "original_image_size": [
+            512,
+            512
+          ],
+          "query_budget": 4,
+          "query_selector": "fps",
+          "query_seed": 41,
+          "inference_seconds": 0.5088255014270544,
+          "milliseconds_per_query": 127.2063753567636,
+          "peak_memory_mb": 4939.29541015625,
+          "stitch_mode": "anchor_clip",
+          "stitch_num_chunks": 0,
+          "stitch_success_chunks": 0,
+          "stitch_failed_chunks": 0,
+          "stitch_diagnostics": {
+            "mode": "anchor_clip",
+            "clip_frames": 32,
+            "dense_grid_size": 0,
+            "keep_ratio": 0.85,
+            "chunks": []
+          }
+        },
+        {
+          "avg_pts_global": 0.716796875,
+          "avg_pts_pertraj": 0.8125,
+          "avg_pts_sim3": 0.5,
+          "avg_pts_sim3_closed": 0.75,
+          "epe_global": 0.2198983482187728,
+          "epe_pertraj": 0.12031154907323988,
+          "epe_sim3": 0.9521686440776368,
+          "epe_sim3_closed": 0.18252968984802403,
+          "avg_pts_global_dyn": 0.75,
+          "epe_global_dyn": 0.1434838655839048,
+          "avg_pts_sim3_closed_dyn": 0.9921875,
+          "epe_sim3_closed_dyn": 0.03821969139247705,
+          "fractions_global": {
+            "1": 0.25,
+            "2": 0.765625,
+            "4": 0.8515625,
+            "8": 1.0
+          },
+          "fractions_pertraj": {
+            "1": 0.25,
+            "2": 1.0,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_sim3": {
+            "1": 0.5,
+            "2": 0.5,
+            "4": 0.5,
+            "8": 0.5
+          },
+          "fractions_sim3_closed": {
+            "1": 0.0,
+            "2": 1.0,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_global_dyn": {
+            "1": 0.0,
+            "2": 1.0,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_sim3_closed_dyn": {
+            "1": 0.96875,
+            "2": 1.0,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "dyn_fraction": 0.25,
+          "dyn_count": 1,
+          "num_queries": 4,
+          "camera_pose_valid_frames": 32,
+          "camera_rot_deg": 0.7441027187110995,
+          "camera_ate": 0.05415713516483157,
+          "camera_rpe_rot_deg": 0.2575428338375649,
+          "camera_rpe_trans": 0.007324403157122882,
+          "video_name": "Apartment_release_clean_seq135_7",
+          "sequence_path": "/root/autodl-tmp/Open-d4rt/data/worldtrack_release/adt_mini/Apartment_release_clean_seq135_7.npz",
+          "clip_frames": 32,
+          "model_image_size": [
+            256,
+            256
+          ],
+          "original_image_size": [
+            512,
+            512
+          ],
+          "query_budget": 4,
+          "query_selector": "fps",
+          "query_seed": 41,
+          "inference_seconds": 0.5113535113632679,
+          "milliseconds_per_query": 127.83837784081697,
+          "peak_memory_mb": 4939.29541015625,
+          "stitch_mode": "anchor_clip",
+          "stitch_num_chunks": 0,
+          "stitch_success_chunks": 0,
+          "stitch_failed_chunks": 0,
+          "stitch_diagnostics": {
+            "mode": "anchor_clip",
+            "clip_frames": 32,
+            "dense_grid_size": 0,
+            "keep_ratio": 0.85,
+            "chunks": []
+          }
+        }
+      ]
+    },
+    "ds_mini": {
+      "num_sequences": 5,
+      "avg_pts_global": 0.626953125,
+      "avg_pts_pertraj": 0.787109375,
+      "avg_pts_sim3": 0.7125,
+      "avg_pts_sim3_closed": 0.744921875,
+      "epe_global": 0.4989522506150964,
+      "epe_pertraj": 0.18240125700010876,
+      "epe_sim3": 0.9096941054105026,
+      "epe_sim3_closed": 0.2427457236024789,
+      "avg_pts_global_dyn": 0.7220052083333333,
+      "epe_global_dyn": 0.3855234300083497,
+      "avg_pts_sim3_closed_dyn": 0.8522135416666666,
+      "epe_sim3_closed_dyn": 0.1354460223576869,
+      "dyn_fraction": 0.3,
+      "camera_rot_deg": 0.28908187859025025,
+      "camera_ate": 0.013123490604371586,
+      "camera_rpe_rot_deg": 0.0807641090486462,
+      "camera_rpe_trans": 0.004712656141240451,
+      "inference_seconds": 0.5119758486747742,
+      "milliseconds_per_query": 127.99396216869354,
+      "peak_memory_mb": 4939.29541015625,
+      "total_queries": 20,
+      "total_dynamic_queries": 6,
+      "fractions_global": {
+        "1": 0.25,
+        "2": 0.55,
+        "4": 0.85,
+        "8": 0.8578125
+      },
+      "fractions_pertraj": {
+        "1": 0.415625,
+        "2": 0.8125,
+        "4": 0.9203125,
+        "8": 1.0
+      },
+      "fractions_sim3": {
+        "1": 0.65,
+        "2": 0.7,
+        "4": 0.75,
+        "8": 0.75
+      },
+      "fractions_sim3_closed": {
+        "1": 0.396875,
+        "2": 0.759375,
+        "4": 0.8515625,
+        "8": 0.971875
+      },
+      "fractions_global_dyn": {
+        "1": 0.5,
+        "2": 0.7708333333333334,
+        "4": 0.7838541666666666,
+        "8": 0.8333333333333334
+      },
+      "fractions_sim3_closed_dyn": {
+        "1": 0.7630208333333334,
+        "2": 0.7942708333333334,
+        "4": 0.8515625,
+        "8": 1.0
+      },
+      "sequences": [
+        {
+          "avg_pts_global": 0.75,
+          "avg_pts_pertraj": 0.75,
+          "avg_pts_sim3": 0.9375,
+          "avg_pts_sim3_closed": 1.0,
+          "epe_global": 0.2155065819501995,
+          "epe_pertraj": 0.20031523960299916,
+          "epe_sim3": 0.04618732881640941,
+          "epe_sim3_closed": 0.055235239697479475,
+          "avg_pts_global_dyn": 1.0,
+          "epe_global_dyn": 0.0339322112705598,
+          "avg_pts_sim3_closed_dyn": 1.0,
+          "epe_sim3_closed_dyn": 0.015824820809703412,
+          "fractions_global": {
+            "1": 0.25,
+            "2": 0.75,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_pertraj": {
+            "1": 0.25,
+            "2": 0.75,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_sim3": {
+            "1": 0.75,
+            "2": 1.0,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_sim3_closed": {
+            "1": 1.0,
+            "2": 1.0,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_global_dyn": {
+            "1": 1.0,
+            "2": 1.0,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_sim3_closed_dyn": {
+            "1": 1.0,
+            "2": 1.0,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "dyn_fraction": 0.25,
+          "dyn_count": 1,
+          "num_queries": 4,
+          "camera_pose_valid_frames": 32,
+          "camera_rot_deg": 0.2943471229255884,
+          "camera_ate": 0.016583634576980914,
+          "camera_rpe_rot_deg": 0.11308068091262723,
+          "camera_rpe_trans": 0.006207347555108151,
+          "video_name": "01f258-3_obj_source_left_6",
+          "sequence_path": "/root/autodl-tmp/Open-d4rt/data/worldtrack_release/ds_mini/01f258-3_obj_source_left_6.npz",
+          "clip_frames": 32,
+          "model_image_size": [
+            256,
+            256
+          ],
+          "original_image_size": [
+            720,
+            1280
+          ],
+          "query_budget": 4,
+          "query_selector": "fps",
+          "query_seed": 41,
+          "inference_seconds": 0.5106660723686218,
+          "milliseconds_per_query": 127.66651809215546,
+          "peak_memory_mb": 4939.29541015625,
+          "stitch_mode": "anchor_clip",
+          "stitch_num_chunks": 0,
+          "stitch_success_chunks": 0,
+          "stitch_failed_chunks": 0,
+          "stitch_diagnostics": {
+            "mode": "anchor_clip",
+            "clip_frames": 32,
+            "dense_grid_size": 0,
+            "keep_ratio": 0.85,
+            "chunks": []
+          }
+        },
+        {
+          "avg_pts_global": 0.625,
+          "avg_pts_pertraj": 0.83203125,
+          "avg_pts_sim3": 0.75,
+          "avg_pts_sim3_closed": 0.6875,
+          "epe_global": 0.41539714477924483,
+          "epe_pertraj": 0.1065227900511629,
+          "epe_sim3": 0.3259935461019451,
+          "epe_sim3_closed": 0.25290321042295116,
+          "avg_pts_global_dyn": 0.75,
+          "epe_global_dyn": 0.17634856953686207,
+          "avg_pts_sim3_closed_dyn": 1.0,
+          "epe_sim3_closed_dyn": 0.029900456202509414,
+          "fractions_global": {
+            "1": 0.25,
+            "2": 0.75,
+            "4": 0.75,
+            "8": 0.75
+          },
+          "fractions_pertraj": {
+            "1": 0.328125,
+            "2": 1.0,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_sim3": {
+            "1": 0.75,
+            "2": 0.75,
+            "4": 0.75,
+            "8": 0.75
+          },
+          "fractions_sim3_closed": {
+            "1": 0.0,
+            "2": 0.75,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_global_dyn": {
+            "1": 0.0,
+            "2": 1.0,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_sim3_closed_dyn": {
+            "1": 1.0,
+            "2": 1.0,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "dyn_fraction": 0.25,
+          "dyn_count": 1,
+          "num_queries": 4,
+          "camera_pose_valid_frames": 32,
+          "camera_rot_deg": 0.17963461692906424,
+          "camera_ate": 0.012153953908316962,
+          "camera_rpe_rot_deg": 0.062014427044814684,
+          "camera_rpe_trans": 0.004534915227907945,
+          "video_name": "029beb-3_obj_source_left_1",
+          "sequence_path": "/root/autodl-tmp/Open-d4rt/data/worldtrack_release/ds_mini/029beb-3_obj_source_left_1.npz",
+          "clip_frames": 32,
+          "model_image_size": [
+            256,
+            256
+          ],
+          "original_image_size": [
+            720,
+            1280
+          ],
+          "query_budget": 4,
+          "query_selector": "fps",
+          "query_seed": 41,
+          "inference_seconds": 0.5128832068294287,
+          "milliseconds_per_query": 128.22080170735717,
+          "peak_memory_mb": 4939.29541015625,
+          "stitch_mode": "anchor_clip",
+          "stitch_num_chunks": 0,
+          "stitch_success_chunks": 0,
+          "stitch_failed_chunks": 0,
+          "stitch_diagnostics": {
+            "mode": "anchor_clip",
+            "clip_frames": 32,
+            "dense_grid_size": 0,
+            "keep_ratio": 0.85,
+            "chunks": []
+          }
+        },
+        {
+          "avg_pts_global": 0.625,
+          "avg_pts_pertraj": 0.75,
+          "avg_pts_sim3": 0.5,
+          "avg_pts_sim3_closed": 0.80859375,
+          "epe_global": 0.2770504425986472,
+          "epe_pertraj": 0.22125914780243566,
+          "epe_sim3": 2.080477960034837,
+          "epe_sim3_closed": 0.1360612700492183,
+          "avg_pts_global_dyn": NaN,
+          "epe_global_dyn": NaN,
+          "avg_pts_sim3_closed_dyn": NaN,
+          "epe_sim3_closed_dyn": NaN,
+          "fractions_global": {
+            "1": 0.0,
+            "2": 0.5,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_pertraj": {
+            "1": 0.25,
+            "2": 0.75,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_sim3": {
+            "1": 0.5,
+            "2": 0.5,
+            "4": 0.5,
+            "8": 0.5
+          },
+          "fractions_sim3_closed": {
+            "1": 0.234375,
+            "2": 1.0,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_global_dyn": {},
+          "fractions_sim3_closed_dyn": {},
+          "dyn_fraction": 0.0,
+          "dyn_count": 0,
+          "num_queries": 4,
+          "camera_pose_valid_frames": 32,
+          "camera_rot_deg": 0.2995576883208,
+          "camera_ate": 0.00932152924614512,
+          "camera_rpe_rot_deg": 0.12225468666712472,
+          "camera_rpe_trans": 0.00504166117473996,
+          "video_name": "029beb-3_obj_source_left_6",
+          "sequence_path": "/root/autodl-tmp/Open-d4rt/data/worldtrack_release/ds_mini/029beb-3_obj_source_left_6.npz",
+          "clip_frames": 32,
+          "model_image_size": [
+            256,
+            256
+          ],
+          "original_image_size": [
+            720,
+            1280
+          ],
+          "query_budget": 4,
+          "query_selector": "fps",
+          "query_seed": 41,
+          "inference_seconds": 0.5122667588293552,
+          "milliseconds_per_query": 128.0666897073388,
+          "peak_memory_mb": 4939.29541015625,
+          "stitch_mode": "anchor_clip",
+          "stitch_num_chunks": 0,
+          "stitch_success_chunks": 0,
+          "stitch_failed_chunks": 0,
+          "stitch_diagnostics": {
+            "mode": "anchor_clip",
+            "clip_frames": 32,
+            "dense_grid_size": 0,
+            "keep_ratio": 0.85,
+            "chunks": []
+          }
+        },
+        {
+          "avg_pts_global": 0.259765625,
+          "avg_pts_pertraj": 0.603515625,
+          "avg_pts_sim3": 0.5,
+          "avg_pts_sim3_closed": 0.291015625,
+          "epe_global": 1.455104970883275,
+          "epe_pertraj": 0.3497004405894496,
+          "epe_sim3": 1.9854359864596014,
+          "epe_sim3_closed": 0.697344369229081,
+          "avg_pts_global_dyn": 0.13802083333333331,
+          "epe_global_dyn": 1.3149580205741114,
+          "avg_pts_sim3_closed_dyn": 0.4088541666666667,
+          "epe_sim3_closed_dyn": 0.4876711608410793,
+          "fractions_global": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": 0.5,
+            "8": 0.5390625
+          },
+          "fractions_pertraj": {
+            "1": 0.25,
+            "2": 0.5625,
+            "4": 0.6015625,
+            "8": 1.0
+          },
+          "fractions_sim3": {
+            "1": 0.5,
+            "2": 0.5,
+            "4": 0.5,
+            "8": 0.5
+          },
+          "fractions_sim3_closed": {
+            "1": 0.0,
+            "2": 0.046875,
+            "4": 0.2578125,
+            "8": 0.859375
+          },
+          "fractions_global_dyn": {
+            "1": 0.0,
+            "2": 0.08333333333333333,
+            "4": 0.13541666666666666,
+            "8": 0.3333333333333333
+          },
+          "fractions_sim3_closed_dyn": {
+            "1": 0.052083333333333336,
+            "2": 0.17708333333333334,
+            "4": 0.40625,
+            "8": 1.0
+          },
+          "dyn_fraction": 0.75,
+          "dyn_count": 3,
+          "num_queries": 4,
+          "camera_pose_valid_frames": 32,
+          "camera_rot_deg": 0.39387782778898794,
+          "camera_ate": 0.013672878419367205,
+          "camera_rpe_rot_deg": 0.07052829579491438,
+          "camera_rpe_trans": 0.0031626965397290514,
+          "video_name": "26b966-3_obj_source_left_3",
+          "sequence_path": "/root/autodl-tmp/Open-d4rt/data/worldtrack_release/ds_mini/26b966-3_obj_source_left_3.npz",
+          "clip_frames": 32,
+          "model_image_size": [
+            256,
+            256
+          ],
+          "original_image_size": [
+            720,
+            1280
+          ],
+          "query_budget": 4,
+          "query_selector": "fps",
+          "query_seed": 41,
+          "inference_seconds": 0.5111782606691122,
+          "milliseconds_per_query": 127.79456516727805,
+          "peak_memory_mb": 4939.29541015625,
+          "stitch_mode": "anchor_clip",
+          "stitch_num_chunks": 0,
+          "stitch_success_chunks": 0,
+          "stitch_failed_chunks": 0,
+          "stitch_diagnostics": {
+            "mode": "anchor_clip",
+            "clip_frames": 32,
+            "dense_grid_size": 0,
+            "keep_ratio": 0.85,
+            "chunks": []
+          }
+        },
+        {
+          "avg_pts_global": 0.875,
+          "avg_pts_pertraj": 1.0,
+          "avg_pts_sim3": 0.875,
+          "avg_pts_sim3_closed": 0.9375,
+          "epe_global": 0.13170211286411537,
+          "epe_pertraj": 0.03420866695449651,
+          "epe_sim3": 0.11037570563971966,
+          "epe_sim3_closed": 0.07218452861366456,
+          "avg_pts_global_dyn": 1.0,
+          "epe_global_dyn": 0.01685491865186564,
+          "avg_pts_sim3_closed_dyn": 1.0,
+          "epe_sim3_closed_dyn": 0.008387651577455486,
+          "fractions_global": {
+            "1": 0.75,
+            "2": 0.75,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_pertraj": {
+            "1": 1.0,
+            "2": 1.0,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_sim3": {
+            "1": 0.75,
+            "2": 0.75,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_sim3_closed": {
+            "1": 0.75,
+            "2": 1.0,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_global_dyn": {
+            "1": 1.0,
+            "2": 1.0,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "fractions_sim3_closed_dyn": {
+            "1": 1.0,
+            "2": 1.0,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "dyn_fraction": 0.25,
+          "dyn_count": 1,
+          "num_queries": 4,
+          "camera_pose_valid_frames": 32,
+          "camera_rot_deg": 0.2779921369868106,
+          "camera_ate": 0.01388545687104772,
+          "camera_rpe_rot_deg": 0.03594245482374994,
+          "camera_rpe_trans": 0.004616660208717149,
+          "video_name": "3592f1-3_obj_source_left_2",
+          "sequence_path": "/root/autodl-tmp/Open-d4rt/data/worldtrack_release/ds_mini/3592f1-3_obj_source_left_2.npz",
+          "clip_frames": 32,
+          "model_image_size": [
+            256,
+            256
+          ],
+          "original_image_size": [
+            720,
+            1280
+          ],
+          "query_budget": 4,
+          "query_selector": "fps",
+          "query_seed": 41,
+          "inference_seconds": 0.5128849446773529,
+          "milliseconds_per_query": 128.22123616933823,
+          "peak_memory_mb": 4939.29541015625,
+          "stitch_mode": "anchor_clip",
+          "stitch_num_chunks": 0,
+          "stitch_success_chunks": 0,
+          "stitch_failed_chunks": 0,
+          "stitch_diagnostics": {
+            "mode": "anchor_clip",
+            "clip_frames": 32,
+            "dense_grid_size": 0,
+            "keep_ratio": 0.85,
+            "chunks": []
+          }
+        }
+      ]
+    }
+  }
+}

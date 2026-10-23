@@ -1,0 +1,75 @@
+{
+  "test": {
+    "baseline": {
+      "MAE": 0.04589824789824585,
+      "MSE": 0.005918519264216431,
+      "PSNR": 22.277869344625127,
+      "dynamic_MSE": 0.02755237069194642
+    },
+    "d4rt": {
+      "MAE": 0.03854075728708671,
+      "MSE": 0.005307374990985004,
+      "PSNR": 22.751202263404416,
+      "dynamic_MSE": 0.026940000783305593
+    },
+    "sparse_affine": {
+      "MAE": 0.03771421913471487,
+      "MSE": 0.0052649590862630345,
+      "PSNR": 22.78604999346346,
+      "dynamic_MSE": 0.026961004638205235
+    },
+    "raft_small": {
+      "MAE": 0.037942710953454174,
+      "MSE": 0.005279526846910206,
+      "PSNR": 22.77404997349457,
+      "dynamic_MSE": 0.02696995751498835
+    },
+    "selected": {
+      "MAE": 0.03886126566471325,
+      "MSE": 0.005294137061961616,
+      "PSNR": 22.762048192713415,
+      "dynamic_MSE": 0.026886705854189723
+    },
+    "mean_source_weight": {
+      "baseline": 0.30780380964279175,
+      "d4rt": 0.28452569246292114,
+      "sparse_affine": 0.23323456943035126,
+      "raft_small": 0.17443600296974182
+    }
+  },
+  "meta": {
+    "best_epoch": 16,
+    "trainable_params": 10034,
+    "sources": [
+      "baseline",
+      "d4rt",
+      "sparse_affine",
+      "raft_small"
+    ],
+    "historical_replay_only_at_inference": true,
+    "used": {
+      "train": 192,
+      "val": 48,
+      "test": 96
+    },
+    "elapsed_seconds": 1579.667153120041,
+    "split": {
+      "legacy_subsets": [
+        "adt_mini",
+        "ds_mini",
+        "po_mini",
+        "pstudio_mini"
+      ],
+      "pointodyssey_usable": {
+        "train": 248,
+        "val": 90,
+        "test": 160
+      },
+      "totals": {
+        "train": 356,
+        "val": 130,
+        "test": 199
+      }
+    }
+  }
+}

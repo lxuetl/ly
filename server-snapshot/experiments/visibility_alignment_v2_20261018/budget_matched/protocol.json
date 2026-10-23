@@ -1,0 +1,17 @@
+{
+  "formal_training": false,
+  "weights_updated": false,
+  "step": 0.002,
+  "source_sha256": "996896ff70b23d7d2b39c75af41d6bdd034fa6dec4664558a4a5b1e5d9c08d78",
+  "scope": "post-hoc descriptive actual-budget attribution on reused validation40; no threshold/model selection",
+  "actual_budget": "per-video minimum actual RGB L1 among all 6 arms, scale down only; oracle-dependent, diagnostic not deployment",
+  "comparisons": "same future visibility for UV-only comparison; unknown-vs-oracle visibility explicitly separated",
+  "arms": [
+    "oracle_gtvis",
+    "pred_gtvis",
+    "fixed_gtvis",
+    "shuffle_gtvis",
+    "oracle_unknown",
+    "pred_unknown"
+  ]
+}

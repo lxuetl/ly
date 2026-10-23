@@ -1,0 +1,43 @@
+{
+  "counts": {
+    "train": 2,
+    "val": 2,
+    "test": 2
+  },
+  "epochs": 2,
+  "batch_size": 2,
+  "params_each": 77257,
+  "region_size": 16,
+  "candidates": [
+    "tau",
+    "geometry",
+    "trajectory_half",
+    "trajectory_onehalf",
+    "flow_zero",
+    "feature_transport",
+    "rgb_transport",
+    "rgb_local"
+  ],
+  "backbones_frozen": true,
+  "ablation": "zeros 5 explicit geometry/confidence channels; retains same geometry-derived candidates and replay",
+  "input_channels": 57,
+  "feature_label_separation": true,
+  "replay_prefixes": [
+    8,
+    12
+  ],
+  "padding": "repeat first frame to 16",
+  "loss_weights": {
+    "MSE": 1,
+    "LPIPS": 0.03,
+    "temporal": 0.1,
+    "preference": 0.001,
+    "gate_risk": 0.0002,
+    "weight_temporal": 0.001,
+    "weight_spatial": 0.0001
+  },
+  "selection": "full validation composite MSE+.03 LPIPS+.1 temporal, then gain {0,.5,1}; test once",
+  "lpips": "spatial AlexNet maps for teacher/training; scalar AlexNet for final calibration and test",
+  "cache": "lossless float32 frozen candidates and observed-only features; future targets and teacher losses stored separately",
+  "split_audit": "no exact-path or parsed original-video overlaps"
+}

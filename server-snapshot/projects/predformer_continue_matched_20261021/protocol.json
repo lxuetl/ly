@@ -1,0 +1,23 @@
+{
+  "base": "/root/autodl-tmp/predformer_native128_20261021/best.pt",
+  "epochs": 15,
+  "additional_steps": 12930,
+  "batch": 1,
+  "lr": 0.0001,
+  "seed": 42,
+  "optimizer": "fresh AdamW, same as residual arm, not restoration of original optimizer",
+  "weight_decay": 0.01,
+  "clip_grad": 1.0,
+  "loss": "MSE",
+  "selection": "validation MSE, epoch0 eligible",
+  "counts": {
+    "train": 862,
+    "val": 280,
+    "test": 347
+  },
+  "test_used": false,
+  "budget": "matched sample exposures and optimizer steps, NOT matched FLOPs or trainable parameter count",
+  "lpips": "Alex v0.1, clamp[0,1], normalize[-1,1], report only",
+  "trainable": 12731328,
+  "code_sha256": "8247068fa6a4a5642e069681ee9823c156da8167842f5bfbb2087b5d03e83b99"
+}

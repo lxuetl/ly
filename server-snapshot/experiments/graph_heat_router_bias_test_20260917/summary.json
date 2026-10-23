@@ -1,0 +1,118 @@
+{
+  "experiment": "parameter-free graph heat proxy replacing destination Gaussian soft splat",
+  "checkpoint": "/autodl-fs/data/d4rt_training/capsr_stable_router_20260828/best.pt",
+  "processed": 199,
+  "total": 199,
+  "configurations": [
+    {
+      "name": "gaussian",
+      "steps": 0,
+      "tau": 0.0,
+      "projection_scale": 1.0,
+      "knn": 4,
+      "object_bias": 0.0
+    },
+    {
+      "name": "heat_b0",
+      "steps": 1,
+      "tau": 0.25,
+      "projection_scale": 1.0,
+      "knn": 4,
+      "object_bias": 0.0
+    },
+    {
+      "name": "heat_bp005",
+      "steps": 1,
+      "tau": 0.25,
+      "projection_scale": 1.0,
+      "knn": 4,
+      "object_bias": 0.05
+    },
+    {
+      "name": "heat_bp020",
+      "steps": 1,
+      "tau": 0.25,
+      "projection_scale": 1.0,
+      "knn": 4,
+      "object_bias": 0.2
+    }
+  ],
+  "metrics": {
+    "gaussian": {
+      "MAE": 0.0475576593598329,
+      "MSE": 0.008228442023845211,
+      "PSNR": 20.84682386476515,
+      "dynamic_MAE": 0.1382496055400184,
+      "dynamic_MSE": 0.03347310883775811,
+      "dynamic_PSNR": 14.753039503735215,
+      "temporal_delta_MAE": 0.01920333546328934,
+      "dynamic_object_candidate_MSE": 0.027442150172906608,
+      "object_support_fraction": 0.0786016268384217,
+      "object_route_fraction": 0.027554220758640585,
+      "output_MAE_from_gaussian": 0.0,
+      "object_MAE_from_gaussian": 0.0,
+      "capsr_seconds_per_sample": 0.042479735587948195,
+      "MSE_delta_percent": 0.0,
+      "dynamic_MSE_delta_percent": 0.0,
+      "object_MSE_delta_percent": 0.0,
+      "selection_score": 0.010571104852409861
+    },
+    "heat_b0": {
+      "MAE": 0.04755921434717162,
+      "MSE": 0.008227612680507515,
+      "PSNR": 20.84726161153002,
+      "dynamic_MAE": 0.1382365767437958,
+      "dynamic_MSE": 0.03346864918872883,
+      "dynamic_PSNR": 14.753618156290692,
+      "temporal_delta_MAE": 0.019201239703575672,
+      "dynamic_object_candidate_MSE": 0.027097090395580933,
+      "object_support_fraction": 0.07842459042448943,
+      "object_route_fraction": 0.02728777539321975,
+      "output_MAE_from_gaussian": 0.00023107295326392382,
+      "object_MAE_from_gaussian": 0.005868043675059312,
+      "capsr_seconds_per_sample": 0.05180203417156959,
+      "MSE_delta_percent": -0.010078983789307827,
+      "dynamic_MSE_delta_percent": -0.013323079881510935,
+      "object_MSE_delta_percent": -1.257407947815803,
+      "selection_score": 0.010570040433124258
+    },
+    "heat_bp005": {
+      "MAE": 0.047591794862519556,
+      "MSE": 0.008229191313026601,
+      "PSNR": 20.84642841038797,
+      "dynamic_MAE": 0.138209850631114,
+      "dynamic_MSE": 0.03345482166812314,
+      "dynamic_PSNR": 14.75541280797448,
+      "temporal_delta_MAE": 0.01920454011265956,
+      "dynamic_object_candidate_MSE": 0.027097090395580933,
+      "object_support_fraction": 0.07842459042448943,
+      "object_route_fraction": 0.028509794355337344,
+      "output_MAE_from_gaussian": 0.00027163470091254934,
+      "object_MAE_from_gaussian": 0.005868043675059312,
+      "capsr_seconds_per_sample": 0.05152387977589446,
+      "MSE_delta_percent": 0.009106088117527555,
+      "dynamic_MSE_delta_percent": -0.054632420680134075,
+      "object_MSE_delta_percent": -1.257407947815803,
+      "selection_score": 0.01057151682497072
+    },
+    "heat_bp020": {
+      "MAE": 0.0477006629958025,
+      "MSE": 0.008235098639857242,
+      "PSNR": 20.84331194491903,
+      "dynamic_MAE": 0.13812516866493893,
+      "dynamic_MSE": 0.03341081855014054,
+      "dynamic_PSNR": 14.761128842105826,
+      "temporal_delta_MAE": 0.019216105532231843,
+      "dynamic_object_candidate_MSE": 0.027097090395580933,
+      "object_support_fraction": 0.07842459042448943,
+      "object_route_fraction": 0.03246448743835691,
+      "output_MAE_from_gaussian": 0.0005025860943534713,
+      "object_MAE_from_gaussian": 0.005868043675059312,
+      "capsr_seconds_per_sample": 0.05156918711979036,
+      "MSE_delta_percent": 0.08089764736434191,
+      "dynamic_MSE_delta_percent": -0.18609053589699887,
+      "object_MSE_delta_percent": -1.257407947815803,
+      "selection_score": 0.010577155603118222
+    }
+  }
+}

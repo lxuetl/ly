@@ -1,0 +1,1208 @@
+{
+  "meta": {
+    "num_sequences": 199,
+    "spatial_margin": 0.002,
+    "temporal_margin": 0.0,
+    "robust_temporal_margin": 0.0005,
+    "motion_magnitude_units": "normalized UV displacement",
+    "primary_definition": "proposal advantage over frozen backbone; applied_selected uses final corrected prediction"
+  },
+  "groups": {
+    "applied_selected/all": {
+      "count": 108655,
+      "A_spatial_pos_temporal_pos": {
+        "count": 21550,
+        "fraction": 0.19833417698219133
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 24090,
+        "fraction": 0.22171091988403663
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 22945,
+        "fraction": 0.21117297869403157
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 40070,
+        "fraction": 0.36878192443974045
+      },
+      "spatial_positive_fraction": 0.420045096866228,
+      "temporal_positive_fraction": 0.4095071556762229,
+      "mean_spatial_advantage": 0.0017496202323402494,
+      "mean_temporal_advantage": -0.007792467862936084,
+      "temporal_robust_positive_fraction": 0.31749114168699094,
+      "temporal_robust_negative_fraction": 0.5025447517371497,
+      "temporal_neutral_fraction": 0.17996410657585937
+    },
+    "applied_selected/domain/adt_mini": {
+      "count": 10717,
+      "A_spatial_pos_temporal_pos": {
+        "count": 2470,
+        "fraction": 0.23047494634692545
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 2894,
+        "fraction": 0.2700382569748997
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 2069,
+        "fraction": 0.19305775870112904
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 3284,
+        "fraction": 0.3064290379770458
+      },
+      "spatial_positive_fraction": 0.5005132033218251,
+      "temporal_positive_fraction": 0.4235327050480545,
+      "mean_spatial_advantage": 0.006605013341526382,
+      "mean_temporal_advantage": -0.01245285807410494,
+      "temporal_robust_positive_fraction": 0.32938322291686106,
+      "temporal_robust_negative_fraction": 0.48595689092096667,
+      "temporal_neutral_fraction": 0.18465988616217224
+    },
+    "applied_selected/domain/ds_mini": {
+      "count": 686,
+      "A_spatial_pos_temporal_pos": {
+        "count": 127,
+        "fraction": 0.18513119533527697
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 57,
+        "fraction": 0.08309037900874636
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 212,
+        "fraction": 0.30903790087463556
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 290,
+        "fraction": 0.4227405247813411
+      },
+      "spatial_positive_fraction": 0.26822157434402333,
+      "temporal_positive_fraction": 0.49416909620991256,
+      "mean_spatial_advantage": -0.008575427117852532,
+      "mean_temporal_advantage": -0.002238319219434878,
+      "temporal_robust_positive_fraction": 0.32798833819241985,
+      "temporal_robust_negative_fraction": 0.37026239067055394,
+      "temporal_neutral_fraction": 0.30174927113702626
+    },
+    "applied_selected/domain/po_mini": {
+      "count": 6937,
+      "A_spatial_pos_temporal_pos": {
+        "count": 779,
+        "fraction": 0.11229638172120514
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 524,
+        "fraction": 0.07553697563788381
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 2297,
+        "fraction": 0.33112296381721207
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 3337,
+        "fraction": 0.48104367882369903
+      },
+      "spatial_positive_fraction": 0.18783335735908893,
+      "temporal_positive_fraction": 0.44341934553841716,
+      "mean_spatial_advantage": -0.003532010181198138,
+      "mean_temporal_advantage": -0.000979407223394492,
+      "temporal_robust_positive_fraction": 0.2338186535966556,
+      "temporal_robust_negative_fraction": 0.3322762000864927,
+      "temporal_neutral_fraction": 0.4339051463168517
+    },
+    "applied_selected/domain/pointodyssey50": {
+      "count": 88536,
+      "A_spatial_pos_temporal_pos": {
+        "count": 17735,
+        "fraction": 0.20031399656636847
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 20300,
+        "fraction": 0.2292852624920936
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 17979,
+        "fraction": 0.20306993765248035
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 32522,
+        "fraction": 0.36733080328905754
+      },
+      "spatial_positive_fraction": 0.4295992590584621,
+      "temporal_positive_fraction": 0.4033839342188488,
+      "mean_spatial_advantage": 0.0017010655895403923,
+      "mean_temporal_advantage": -0.007871103008403565,
+      "temporal_robust_positive_fraction": 0.3218577753682118,
+      "temporal_robust_negative_fraction": 0.5204210716544683,
+      "temporal_neutral_fraction": 0.15772115297731995
+    },
+    "applied_selected/domain/pstudio_mini": {
+      "count": 1779,
+      "A_spatial_pos_temporal_pos": {
+        "count": 439,
+        "fraction": 0.24676784710511523
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 315,
+        "fraction": 0.17706576728499157
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 388,
+        "fraction": 0.2181000562113547
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 637,
+        "fraction": 0.3580663293985385
+      },
+      "spatial_positive_fraction": 0.4238336143901068,
+      "temporal_positive_fraction": 0.46486790331646993,
+      "mean_spatial_advantage": -0.0005071315581440725,
+      "mean_temporal_advantage": -0.0045124816311970396,
+      "temporal_robust_positive_fraction": 0.35075885328836426,
+      "temporal_robust_negative_fraction": 0.42776840921866216,
+      "temporal_neutral_fraction": 0.22147273749297358
+    },
+    "selected/all": {
+      "count": 108655,
+      "A_spatial_pos_temporal_pos": {
+        "count": 19238,
+        "fraction": 0.1770558188762597
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 25457,
+        "fraction": 0.2342920252174313
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 19253,
+        "fraction": 0.17719387050756982
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 44707,
+        "fraction": 0.41145828539873913
+      },
+      "spatial_positive_fraction": 0.411347844093691,
+      "temporal_positive_fraction": 0.35424968938382956,
+      "mean_spatial_advantage": -0.021387498941364897,
+      "mean_temporal_advantage": -0.019529335518664544,
+      "temporal_robust_positive_fraction": 0.3300906539045603,
+      "temporal_robust_negative_fraction": 0.621692512999862,
+      "temporal_neutral_fraction": 0.04821683309557775
+    },
+    "selected/domain/adt_mini": {
+      "count": 10717,
+      "A_spatial_pos_temporal_pos": {
+        "count": 2379,
+        "fraction": 0.22198376411309134
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 3137,
+        "fraction": 0.29271251283008304
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 1453,
+        "fraction": 0.13557898665671364
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 3748,
+        "fraction": 0.349724736400112
+      },
+      "spatial_positive_fraction": 0.5146962769431744,
+      "temporal_positive_fraction": 0.357562750769805,
+      "mean_spatial_advantage": 0.007782652672406975,
+      "mean_temporal_advantage": -0.020860616869586967,
+      "temporal_robust_positive_fraction": 0.33330223010170756,
+      "temporal_robust_negative_fraction": 0.6168703928338154,
+      "temporal_neutral_fraction": 0.049827377064477
+    },
+    "selected/domain/ds_mini": {
+      "count": 686,
+      "A_spatial_pos_temporal_pos": {
+        "count": 144,
+        "fraction": 0.2099125364431487
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 94,
+        "fraction": 0.13702623906705538
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 120,
+        "fraction": 0.1749271137026239
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 328,
+        "fraction": 0.478134110787172
+      },
+      "spatial_positive_fraction": 0.3469387755102041,
+      "temporal_positive_fraction": 0.3848396501457726,
+      "mean_spatial_advantage": -0.03876702387548397,
+      "mean_temporal_advantage": -0.0094848698542695,
+      "temporal_robust_positive_fraction": 0.3498542274052478,
+      "temporal_robust_negative_fraction": 0.5860058309037901,
+      "temporal_neutral_fraction": 0.0641399416909621
+    },
+    "selected/domain/po_mini": {
+      "count": 6937,
+      "A_spatial_pos_temporal_pos": {
+        "count": 765,
+        "fraction": 0.11027821824996396
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 898,
+        "fraction": 0.12945077122675508
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 2132,
+        "fraction": 0.30733746576329823
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 3142,
+        "fraction": 0.4529335447599827
+      },
+      "spatial_positive_fraction": 0.23972898947671906,
+      "temporal_positive_fraction": 0.4176156840132622,
+      "mean_spatial_advantage": -0.04295053890360799,
+      "mean_temporal_advantage": -0.004341199381887285,
+      "temporal_robust_positive_fraction": 0.3647109701600115,
+      "temporal_robust_negative_fraction": 0.5352457834798905,
+      "temporal_neutral_fraction": 0.10004324636009802
+    },
+    "selected/domain/pointodyssey50": {
+      "count": 88536,
+      "A_spatial_pos_temporal_pos": {
+        "count": 15650,
+        "fraction": 0.17676425408873225
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 20950,
+        "fraction": 0.23662690882804735
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 15185,
+        "fraction": 0.17151215324839614
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 36751,
+        "fraction": 0.41509668383482423
+      },
+      "spatial_positive_fraction": 0.41339116291677963,
+      "temporal_positive_fraction": 0.3482764073371284,
+      "mean_spatial_advantage": -0.02254729893816253,
+      "mean_temporal_advantage": -0.020845494947847362,
+      "temporal_robust_positive_fraction": 0.32656772386373906,
+      "temporal_robust_negative_fraction": 0.6299923195084486,
+      "temporal_neutral_fraction": 0.043439956627812415
+    },
+    "selected/domain/pstudio_mini": {
+      "count": 1779,
+      "A_spatial_pos_temporal_pos": {
+        "count": 300,
+        "fraction": 0.16863406408094436
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 378,
+        "fraction": 0.21247892074198987
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 363,
+        "fraction": 0.20404721753794267
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 738,
+        "fraction": 0.4148397976391231
+      },
+      "spatial_positive_fraction": 0.3811129848229342,
+      "temporal_positive_fraction": 0.37268128161888703,
+      "mean_spatial_advantage": -0.04860914031597521,
+      "mean_temporal_advantage": -0.009105372824248066,
+      "temporal_robust_positive_fraction": 0.34345137717819,
+      "temporal_robust_negative_fraction": 0.5885328836424958,
+      "temporal_neutral_fraction": 0.06801573917931422
+    },
+    "selected/horizon/t+1": {
+      "count": 3888,
+      "A_spatial_pos_temporal_pos": {
+        "count": 1559,
+        "fraction": 0.400977366255144
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 0,
+        "fraction": 0.0
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 35,
+        "fraction": 0.009002057613168725
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 2294,
+        "fraction": 0.5900205761316872
+      },
+      "spatial_positive_fraction": 0.400977366255144,
+      "temporal_positive_fraction": 0.40997942386831276,
+      "mean_spatial_advantage": -0.02944019981293456,
+      "mean_temporal_advantage": -0.027440198942915432,
+      "temporal_robust_positive_fraction": 0.408179012345679,
+      "temporal_robust_negative_fraction": 0.5877057613168725,
+      "temporal_neutral_fraction": 0.00411522633744856
+    },
+    "selected/horizon/t+2": {
+      "count": 2915,
+      "A_spatial_pos_temporal_pos": {
+        "count": 597,
+        "fraction": 0.20480274442538593
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 683,
+        "fraction": 0.23430531732418525
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 551,
+        "fraction": 0.18902229845626073
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 1084,
+        "fraction": 0.3718696397941681
+      },
+      "spatial_positive_fraction": 0.4391080617495712,
+      "temporal_positive_fraction": 0.39382504288164666,
+      "mean_spatial_advantage": -0.016502669287484464,
+      "mean_temporal_advantage": -0.020278790151208356,
+      "temporal_robust_positive_fraction": 0.3849056603773585,
+      "temporal_robust_negative_fraction": 0.5934819897084048,
+      "temporal_neutral_fraction": 0.021612349914236707
+    },
+    "selected/horizon/t+3": {
+      "count": 9978,
+      "A_spatial_pos_temporal_pos": {
+        "count": 1539,
+        "fraction": 0.15423932651834035
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 2540,
+        "fraction": 0.2545600320705552
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 1386,
+        "fraction": 0.13890559230306676
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 4513,
+        "fraction": 0.4522950491080377
+      },
+      "spatial_positive_fraction": 0.40879935858889555,
+      "temporal_positive_fraction": 0.2931449188214071,
+      "mean_spatial_advantage": -0.02123107487943149,
+      "mean_temporal_advantage": -0.050039799165542166,
+      "temporal_robust_positive_fraction": 0.28302264982962516,
+      "temporal_robust_negative_fraction": 0.6947284024854681,
+      "temporal_neutral_fraction": 0.022248947684906796
+    },
+    "selected/horizon/t+4": {
+      "count": 13192,
+      "A_spatial_pos_temporal_pos": {
+        "count": 2302,
+        "fraction": 0.17449969678593086
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 3032,
+        "fraction": 0.22983626440266827
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 2516,
+        "fraction": 0.19072164948453607
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 5342,
+        "fraction": 0.40494238932686477
+      },
+      "spatial_positive_fraction": 0.40433596118859916,
+      "temporal_positive_fraction": 0.36522134627046693,
+      "mean_spatial_advantage": -0.022374970008747757,
+      "mean_temporal_advantage": -0.015746304627678488,
+      "temporal_robust_positive_fraction": 0.343465736810188,
+      "temporal_robust_negative_fraction": 0.6154487568223166,
+      "temporal_neutral_fraction": 0.04108550636749545
+    },
+    "selected/horizon/t+5": {
+      "count": 16060,
+      "A_spatial_pos_temporal_pos": {
+        "count": 2778,
+        "fraction": 0.1729763387297634
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 3834,
+        "fraction": 0.23872976338729762
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 2967,
+        "fraction": 0.18474470734744708
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 6481,
+        "fraction": 0.40354919053549193
+      },
+      "spatial_positive_fraction": 0.41170610211706105,
+      "temporal_positive_fraction": 0.35772104607721045,
+      "mean_spatial_advantage": -0.021122575526915554,
+      "mean_temporal_advantage": -0.01660333588594109,
+      "temporal_robust_positive_fraction": 0.33412204234122045,
+      "temporal_robust_negative_fraction": 0.6191780821917808,
+      "temporal_neutral_fraction": 0.046699875466998754
+    },
+    "selected/horizon/t+6": {
+      "count": 18492,
+      "A_spatial_pos_temporal_pos": {
+        "count": 3147,
+        "fraction": 0.1701817001946788
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 4453,
+        "fraction": 0.24080683538827602
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 3567,
+        "fraction": 0.1928942245295263
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 7325,
+        "fraction": 0.3961172398875189
+      },
+      "spatial_positive_fraction": 0.4109885355829548,
+      "temporal_positive_fraction": 0.3630759247242051,
+      "mean_spatial_advantage": -0.021687836505826414,
+      "mean_temporal_advantage": -0.01663163752407035,
+      "temporal_robust_positive_fraction": 0.33571274064460305,
+      "temporal_robust_negative_fraction": 0.6104802076573653,
+      "temporal_neutral_fraction": 0.05380705169803158
+    },
+    "selected/horizon/t+7": {
+      "count": 20894,
+      "A_spatial_pos_temporal_pos": {
+        "count": 3604,
+        "fraction": 0.17248970996458313
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 4976,
+        "fraction": 0.23815449411314252
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 4100,
+        "fraction": 0.19622858236814397
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 8214,
+        "fraction": 0.3931272135541304
+      },
+      "spatial_positive_fraction": 0.41064420407772567,
+      "temporal_positive_fraction": 0.36871829233272707,
+      "mean_spatial_advantage": -0.02058866358879817,
+      "mean_temporal_advantage": -0.014061454888447482,
+      "temporal_robust_positive_fraction": 0.3375610223030535,
+      "temporal_robust_negative_fraction": 0.6006987651957499,
+      "temporal_neutral_fraction": 0.06174021250119652
+    },
+    "selected/horizon/t+8": {
+      "count": 23236,
+      "A_spatial_pos_temporal_pos": {
+        "count": 3712,
+        "fraction": 0.1597521087966948
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 5939,
+        "fraction": 0.2555947667412636
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 4131,
+        "fraction": 0.17778447237045963
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 9454,
+        "fraction": 0.406868652091582
+      },
+      "spatial_positive_fraction": 0.41534687553795835,
+      "temporal_positive_fraction": 0.3375365811671544,
+      "mean_spatial_advantage": -0.02082183007612622,
+      "mean_temporal_advantage": -0.016402803765252178,
+      "temporal_robust_positive_fraction": 0.30878808745050784,
+      "temporal_robust_negative_fraction": 0.6326390084351868,
+      "temporal_neutral_fraction": 0.05857290411430539
+    },
+    "selected/motion/motion_0.01_0.03": {
+      "count": 5234,
+      "A_spatial_pos_temporal_pos": {
+        "count": 857,
+        "fraction": 0.16373710355368742
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 1168,
+        "fraction": 0.22315628582346198
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 1022,
+        "fraction": 0.19526175009552924
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 2187,
+        "fraction": 0.41784486052732134
+      },
+      "spatial_positive_fraction": 0.3868933893771494,
+      "temporal_positive_fraction": 0.3589988536492167,
+      "mean_spatial_advantage": -0.027102150807330114,
+      "mean_temporal_advantage": -0.024404841338933426,
+      "temporal_robust_positive_fraction": 0.3354986625907528,
+      "temporal_robust_negative_fraction": 0.6201757737867788,
+      "temporal_neutral_fraction": 0.04432556362246848
+    },
+    "selected/motion/motion_0.03_0.06": {
+      "count": 53659,
+      "A_spatial_pos_temporal_pos": {
+        "count": 10078,
+        "fraction": 0.18781565068301684
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 11386,
+        "fraction": 0.2121918037980581
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 10604,
+        "fraction": 0.1976182932965579
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 21591,
+        "fraction": 0.40237425222236717
+      },
+      "spatial_positive_fraction": 0.40000745448107494,
+      "temporal_positive_fraction": 0.3854339439795747,
+      "mean_spatial_advantage": -0.02455161680393159,
+      "mean_temporal_advantage": -0.012372073700284649,
+      "temporal_robust_positive_fraction": 0.3580573622318716,
+      "temporal_robust_negative_fraction": 0.5865931157867273,
+      "temporal_neutral_fraction": 0.05534952198140107
+    },
+    "selected/motion/motion_0.06_plus": {
+      "count": 49493,
+      "A_spatial_pos_temporal_pos": {
+        "count": 8256,
+        "fraction": 0.16681146828844484
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 12822,
+        "fraction": 0.25906693875901643
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 7606,
+        "fraction": 0.15367829794112298
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 20809,
+        "fraction": 0.42044329501141575
+      },
+      "spatial_positive_fraction": 0.42587840704746127,
+      "temporal_positive_fraction": 0.3204897662295678,
+      "mean_spatial_advantage": -0.017455573844222732,
+      "mean_temporal_advantage": -0.026661702810539197,
+      "temporal_robust_positive_fraction": 0.2996383326935122,
+      "temporal_robust_negative_fraction": 0.6592245368031843,
+      "temporal_neutral_fraction": 0.0411371305033035
+    },
+    "selected/motion/motion_0_0.01": {
+      "count": 269,
+      "A_spatial_pos_temporal_pos": {
+        "count": 47,
+        "fraction": 0.17472118959107807
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 81,
+        "fraction": 0.30111524163568776
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 21,
+        "fraction": 0.07806691449814127
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 120,
+        "fraction": 0.44609665427509293
+      },
+      "spatial_positive_fraction": 0.4758364312267658,
+      "temporal_positive_fraction": 0.2527881040892193,
+      "mean_spatial_advantage": -0.002461298344636052,
+      "mean_temporal_advantage": -0.04009011263533263,
+      "temporal_robust_positive_fraction": 0.24907063197026022,
+      "temporal_robust_negative_fraction": 0.7472118959107806,
+      "temporal_neutral_fraction": 0.0037174721189591076
+    },
+    "selected/visibility/new_support": {
+      "count": 23278,
+      "A_spatial_pos_temporal_pos": {
+        "count": 3363,
+        "fraction": 0.14447117449952745
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 5322,
+        "fraction": 0.22862788899389982
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 3854,
+        "fraction": 0.16556405189449266
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 10739,
+        "fraction": 0.46133688461208006
+      },
+      "spatial_positive_fraction": 0.37309906349342725,
+      "temporal_positive_fraction": 0.3100352263940201,
+      "mean_spatial_advantage": -0.02684989996207714,
+      "mean_temporal_advantage": -0.03183389851878341,
+      "temporal_robust_positive_fraction": 0.284646447289286,
+      "temporal_robust_negative_fraction": 0.6657358879628834,
+      "temporal_neutral_fraction": 0.04961766474783057
+    },
+    "selected/visibility/persistent": {
+      "count": 81489,
+      "A_spatial_pos_temporal_pos": {
+        "count": 14316,
+        "fraction": 0.17568015314950483
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 20135,
+        "fraction": 0.24708856410067617
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 15364,
+        "fraction": 0.18854078464578042
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 31674,
+        "fraction": 0.3886904981040386
+      },
+      "spatial_positive_fraction": 0.422768717250181,
+      "temporal_positive_fraction": 0.36422093779528525,
+      "mean_spatial_advantage": -0.019442908705501635,
+      "mean_temporal_advantage": -0.01563699346009067,
+      "temporal_robust_positive_fraction": 0.3393464148535385,
+      "temporal_robust_negative_fraction": 0.6107327369338192,
+      "temporal_neutral_fraction": 0.0499208482126422
+    },
+    "support/all": {
+      "count": 362195,
+      "A_spatial_pos_temporal_pos": {
+        "count": 61594,
+        "fraction": 0.17005756567594804
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 79641,
+        "fraction": 0.21988431645936582
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 64079,
+        "fraction": 0.17691851074697332
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 156881,
+        "fraction": 0.4331396071177128
+      },
+      "spatial_positive_fraction": 0.38994188213531383,
+      "temporal_positive_fraction": 0.34697607642292133,
+      "mean_spatial_advantage": -0.029060229591073992,
+      "mean_temporal_advantage": -0.020056069443978752,
+      "temporal_robust_positive_fraction": 0.32340313919297614,
+      "temporal_robust_negative_fraction": 0.6298237137453582,
+      "temporal_neutral_fraction": 0.04677314706166568
+    },
+    "support/domain/adt_mini": {
+      "count": 35722,
+      "A_spatial_pos_temporal_pos": {
+        "count": 8395,
+        "fraction": 0.235009238004591
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 9981,
+        "fraction": 0.27940764794804324
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 4713,
+        "fraction": 0.13193550193158277
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 12633,
+        "fraction": 0.353647612115783
+      },
+      "spatial_positive_fraction": 0.5144168859526342,
+      "temporal_positive_fraction": 0.36694473993617377,
+      "mean_spatial_advantage": 0.006272025594491854,
+      "mean_temporal_advantage": -0.018526783462574817,
+      "temporal_robust_positive_fraction": 0.3459492749566094,
+      "temporal_robust_negative_fraction": 0.6108280611387941,
+      "temporal_neutral_fraction": 0.04322266390459661
+    },
+    "support/domain/ds_mini": {
+      "count": 2291,
+      "A_spatial_pos_temporal_pos": {
+        "count": 370,
+        "fraction": 0.1615015277171541
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 250,
+        "fraction": 0.10912265386294194
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 528,
+        "fraction": 0.2304670449585334
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 1143,
+        "fraction": 0.4989087734613706
+      },
+      "spatial_positive_fraction": 0.27062418158009605,
+      "temporal_positive_fraction": 0.39196857267568747,
+      "mean_spatial_advantage": -0.06500831700370385,
+      "mean_temporal_advantage": -0.008917747529663409,
+      "temporal_robust_positive_fraction": 0.34613705805325184,
+      "temporal_robust_negative_fraction": 0.5761676123963335,
+      "temporal_neutral_fraction": 0.07769532955041467
+    },
+    "support/domain/po_mini": {
+      "count": 23119,
+      "A_spatial_pos_temporal_pos": {
+        "count": 2721,
+        "fraction": 0.11769540205026169
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 3438,
+        "fraction": 0.14870885418919502
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 6541,
+        "fraction": 0.2829274622604784
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 10419,
+        "fraction": 0.4506682815000649
+      },
+      "spatial_positive_fraction": 0.26640425623945674,
+      "temporal_positive_fraction": 0.40062286431074007,
+      "mean_spatial_advantage": -0.03701786962139797,
+      "mean_temporal_advantage": -0.0046773854359669215,
+      "temporal_robust_positive_fraction": 0.35356200527704484,
+      "temporal_robust_negative_fraction": 0.5537004195683204,
+      "temporal_neutral_fraction": 0.09273757515463471
+    },
+    "support/domain/pointodyssey50": {
+      "count": 295129,
+      "A_spatial_pos_temporal_pos": {
+        "count": 49067,
+        "fraction": 0.1662561117341908
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 64735,
+        "fraction": 0.21934476110446618
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 51152,
+        "fraction": 0.17332081903167768
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 130175,
+        "fraction": 0.4410783081296653
+      },
+      "spatial_positive_fraction": 0.385600872838657,
+      "temporal_positive_fraction": 0.3395769307658685,
+      "mean_spatial_advantage": -0.03209076334314842,
+      "mean_temporal_advantage": -0.021711701820561476,
+      "temporal_robust_positive_fraction": 0.3178474497592578,
+      "temporal_robust_negative_fraction": 0.6392391123881421,
+      "temporal_neutral_fraction": 0.04291343785260005
+    },
+    "support/domain/pstudio_mini": {
+      "count": 5934,
+      "A_spatial_pos_temporal_pos": {
+        "count": 1041,
+        "fraction": 0.17542972699696663
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 1237,
+        "fraction": 0.20845972362655882
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 1145,
+        "fraction": 0.19295584765756657
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 2511,
+        "fraction": 0.423154701718908
+      },
+      "spatial_positive_fraction": 0.3838894506235254,
+      "temporal_positive_fraction": 0.3683855746545332,
+      "mean_spatial_advantage": -0.04614999634190203,
+      "mean_temporal_advantage": -0.011134889337162317,
+      "temporal_robust_positive_fraction": 0.33771486349848334,
+      "temporal_robust_negative_fraction": 0.5931917762049208,
+      "temporal_neutral_fraction": 0.0690933602965959
+    },
+    "support/horizon/t+1": {
+      "count": 12955,
+      "A_spatial_pos_temporal_pos": {
+        "count": 4598,
+        "fraction": 0.3549208799691239
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 0,
+        "fraction": 0.0
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 109,
+        "fraction": 0.008413739868776533
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 8248,
+        "fraction": 0.6366653801620996
+      },
+      "spatial_positive_fraction": 0.3549208799691239,
+      "temporal_positive_fraction": 0.36333461983790044,
+      "mean_spatial_advantage": -0.0501979353330312,
+      "mean_temporal_advantage": -0.048197935808655584,
+      "temporal_robust_positive_fraction": 0.36125048243921265,
+      "temporal_robust_negative_fraction": 0.6343496719413354,
+      "temporal_neutral_fraction": 0.004399845619451949
+    },
+    "support/horizon/t+2": {
+      "count": 9724,
+      "A_spatial_pos_temporal_pos": {
+        "count": 1904,
+        "fraction": 0.1958041958041958
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 2142,
+        "fraction": 0.2202797202797203
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 1932,
+        "fraction": 0.19868366927190456
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 3746,
+        "fraction": 0.38523241464417934
+      },
+      "spatial_positive_fraction": 0.4160839160839161,
+      "temporal_positive_fraction": 0.3944878650761004,
+      "mean_spatial_advantage": -0.026615191387807154,
+      "mean_temporal_advantage": -0.02020320325891795,
+      "temporal_robust_positive_fraction": 0.38379267791032495,
+      "temporal_robust_negative_fraction": 0.5949197860962567,
+      "temporal_neutral_fraction": 0.021287535993418347
+    },
+    "support/horizon/t+3": {
+      "count": 33263,
+      "A_spatial_pos_temporal_pos": {
+        "count": 4961,
+        "fraction": 0.14914469530709798
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 7841,
+        "fraction": 0.2357273847818898
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 4864,
+        "fraction": 0.14622854222409284
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 15597,
+        "fraction": 0.4688993776869194
+      },
+      "spatial_positive_fraction": 0.38487208008898777,
+      "temporal_positive_fraction": 0.2953732375311908,
+      "mean_spatial_advantage": -0.03125119510516952,
+      "mean_temporal_advantage": -0.04805843102353533,
+      "temporal_robust_positive_fraction": 0.28415957670685144,
+      "temporal_robust_negative_fraction": 0.6931124673060157,
+      "temporal_neutral_fraction": 0.02272795598713285
+    },
+    "support/horizon/t+4": {
+      "count": 43973,
+      "A_spatial_pos_temporal_pos": {
+        "count": 7338,
+        "fraction": 0.1668751279194051
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 9567,
+        "fraction": 0.21756532417619903
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 8445,
+        "fraction": 0.19204966684101607
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 18623,
+        "fraction": 0.4235098810633798
+      },
+      "spatial_positive_fraction": 0.3844404520956041,
+      "temporal_positive_fraction": 0.35892479476042116,
+      "mean_spatial_advantage": -0.030240526983646883,
+      "mean_temporal_advantage": -0.01676756521843364,
+      "temporal_robust_positive_fraction": 0.33925363291110455,
+      "temporal_robust_negative_fraction": 0.6226548109066927,
+      "temporal_neutral_fraction": 0.03809155618220272
+    },
+    "support/horizon/t+5": {
+      "count": 53523,
+      "A_spatial_pos_temporal_pos": {
+        "count": 8838,
+        "fraction": 0.16512527324701531
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 12018,
+        "fraction": 0.22453898324084973
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 9946,
+        "fraction": 0.18582665396184816
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 22721,
+        "fraction": 0.42450908955028677
+      },
+      "spatial_positive_fraction": 0.389664256487865,
+      "temporal_positive_fraction": 0.3509519272088635,
+      "mean_spatial_advantage": -0.028476229491013975,
+      "mean_temporal_advantage": -0.01689762861772214,
+      "temporal_robust_positive_fraction": 0.32856902639986546,
+      "temporal_robust_negative_fraction": 0.6269827924443697,
+      "temporal_neutral_fraction": 0.044448181155764814
+    },
+    "support/horizon/t+6": {
+      "count": 61638,
+      "A_spatial_pos_temporal_pos": {
+        "count": 10170,
+        "fraction": 0.16499561958532075
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 13967,
+        "fraction": 0.22659722898212142
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 11766,
+        "fraction": 0.19088873746714688
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 25735,
+        "fraction": 0.41751841396541095
+      },
+      "spatial_positive_fraction": 0.39159284856744214,
+      "temporal_positive_fraction": 0.3558843570524676,
+      "mean_spatial_advantage": -0.027896527596928414,
+      "mean_temporal_advantage": -0.01616815280531024,
+      "temporal_robust_positive_fraction": 0.33039683312242446,
+      "temporal_robust_negative_fraction": 0.618465881436776,
+      "temporal_neutral_fraction": 0.051137285440799506
+    },
+    "support/horizon/t+7": {
+      "count": 69667,
+      "A_spatial_pos_temporal_pos": {
+        "count": 11654,
+        "fraction": 0.16728149626078345
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 15701,
+        "fraction": 0.22537212740608897
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 13384,
+        "fraction": 0.19211391333055822
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 28928,
+        "fraction": 0.4152324630025694
+      },
+      "spatial_positive_fraction": 0.3926536236668724,
+      "temporal_positive_fraction": 0.35939540959134164,
+      "mean_spatial_advantage": -0.02720565641456127,
+      "mean_temporal_advantage": -0.013800340247801664,
+      "temporal_robust_positive_fraction": 0.3287639772058507,
+      "temporal_robust_negative_fraction": 0.6103607159774355,
+      "temporal_neutral_fraction": 0.0608753068167138
+    },
+    "support/horizon/t+8": {
+      "count": 77452,
+      "A_spatial_pos_temporal_pos": {
+        "count": 12131,
+        "fraction": 0.156626039353406
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 18405,
+        "fraction": 0.23763104890771058
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 13633,
+        "fraction": 0.17601869545008522
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 33283,
+        "fraction": 0.4297242162887982
+      },
+      "spatial_positive_fraction": 0.39425708826111655,
+      "temporal_positive_fraction": 0.3326447348034912,
+      "mean_spatial_advantage": -0.02721838609606977,
+      "mean_temporal_advantage": -0.0160750844949945,
+      "temporal_robust_positive_fraction": 0.3033879047668233,
+      "temporal_robust_negative_fraction": 0.6388472860610442,
+      "temporal_neutral_fraction": 0.05776480917213242
+    },
+    "support/motion/motion_0.01_0.03": {
+      "count": 17750,
+      "A_spatial_pos_temporal_pos": {
+        "count": 2992,
+        "fraction": 0.16856338028169013
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 4168,
+        "fraction": 0.2348169014084507
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 3059,
+        "fraction": 0.17233802816901408
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 7531,
+        "fraction": 0.42428169014084505
+      },
+      "spatial_positive_fraction": 0.40338028169014084,
+      "temporal_positive_fraction": 0.3409014084507042,
+      "mean_spatial_advantage": -0.02348537035496302,
+      "mean_temporal_advantage": -0.025843192168629504,
+      "temporal_robust_positive_fraction": 0.32090140845070425,
+      "temporal_robust_negative_fraction": 0.6406197183098592,
+      "temporal_neutral_fraction": 0.03847887323943662
+    },
+    "support/motion/motion_0.03_0.06": {
+      "count": 180630,
+      "A_spatial_pos_temporal_pos": {
+        "count": 32846,
+        "fraction": 0.1818413331118862
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 37016,
+        "fraction": 0.20492719924707967
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 35130,
+        "fraction": 0.19448596578641422
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 75638,
+        "fraction": 0.41874550185461995
+      },
+      "spatial_positive_fraction": 0.38676853235896586,
+      "temporal_positive_fraction": 0.3763272988983004,
+      "mean_spatial_advantage": -0.029564765305001826,
+      "mean_temporal_advantage": -0.01299381684587177,
+      "temporal_robust_positive_fraction": 0.34938825222831205,
+      "temporal_robust_negative_fraction": 0.5969606377678126,
+      "temporal_neutral_fraction": 0.053651110003875326
+    },
+    "support/motion/motion_0.06_plus": {
+      "count": 163072,
+      "A_spatial_pos_temporal_pos": {
+        "count": 25647,
+        "fraction": 0.15727408751962324
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 38213,
+        "fraction": 0.23433207417582416
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 25827,
+        "fraction": 0.15837789442700156
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 73385,
+        "fraction": 0.450015943877551
+      },
+      "spatial_positive_fraction": 0.39160616169544743,
+      "temporal_positive_fraction": 0.3156519819466248,
+      "mean_spatial_advantage": -0.029224168221496215,
+      "mean_temporal_advantage": -0.027125389976006508,
+      "temporal_robust_positive_fraction": 0.29533580259026687,
+      "temporal_robust_negative_fraction": 0.6644427001569859,
+      "temporal_neutral_fraction": 0.040221497252747256
+    },
+    "support/motion/motion_0_0.01": {
+      "count": 743,
+      "A_spatial_pos_temporal_pos": {
+        "count": 109,
+        "fraction": 0.14670255720053835
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 244,
+        "fraction": 0.3283983849259758
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 63,
+        "fraction": 0.0847913862718708
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 327,
+        "fraction": 0.44010767160161507
+      },
+      "spatial_positive_fraction": 0.47510094212651416,
+      "temporal_positive_fraction": 0.23149394347240915,
+      "mean_spatial_advantage": -0.003603514726367725,
+      "mean_temporal_advantage": -0.04714229900996585,
+      "temporal_robust_positive_fraction": 0.22611036339165544,
+      "temporal_robust_negative_fraction": 0.7631224764468372,
+      "temporal_neutral_fraction": 0.010767160161507403
+    },
+    "support/visibility/new_support": {
+      "count": 76701,
+      "A_spatial_pos_temporal_pos": {
+        "count": 11249,
+        "fraction": 0.14666040859962712
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 16567,
+        "fraction": 0.21599457634189906
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 12272,
+        "fraction": 0.15999791397765348
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 36613,
+        "fraction": 0.47734710108082035
+      },
+      "spatial_positive_fraction": 0.3626549849415262,
+      "temporal_positive_fraction": 0.3066583225772806,
+      "mean_spatial_advantage": -0.03188140443936192,
+      "mean_temporal_advantage": -0.031248815262878416,
+      "temporal_robust_positive_fraction": 0.2827994419890223,
+      "temporal_robust_negative_fraction": 0.6691698934824839,
+      "temporal_neutral_fraction": 0.04803066452849376
+    },
+    "support/visibility/persistent": {
+      "count": 272539,
+      "A_spatial_pos_temporal_pos": {
+        "count": 45747,
+        "fraction": 0.16785487581593828
+      },
+      "B_spatial_pos_temporal_neg": {
+        "count": 63074,
+        "fraction": 0.23143109793460753
+      },
+      "C_spatial_neg_temporal_pos": {
+        "count": 51698,
+        "fraction": 0.18969028285860004
+      },
+      "D_spatial_neg_temporal_neg": {
+        "count": 112020,
+        "fraction": 0.4110237433908542
+      },
+      "spatial_positive_fraction": 0.3992859737505458,
+      "temporal_positive_fraction": 0.35754515867453834,
+      "mean_spatial_advantage": -0.027261493146441176,
+      "mean_temporal_advantage": -0.015568371513863857,
+      "temporal_robust_positive_fraction": 0.3330312358965139,
+      "temporal_robust_negative_fraction": 0.6185353288887095,
+      "temporal_neutral_fraction": 0.0484334352147766
+    }
+  }
+}

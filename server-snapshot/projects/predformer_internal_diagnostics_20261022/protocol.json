@@ -1,0 +1,21 @@
+{
+  "checkpoint_hashes": {
+    "plain": "d5f119726fd7d2f4ae0c6048879788f8353f92b61abef7b28ac471af3140b6ae",
+    "rgb": "c0a438e7027a66303d6a16fde7cbaafb35f1eca1057d27d0d1a2490c2f78b6b7",
+    "null": "cdc67ec10fe55ce8b7fdec2b4be28b464bf9fd4aa98ae0b6ffbe0e8396c37ad8",
+    "omega": "4f5159ec2cc1cbdac06a3f726ac6be52872dc02ee49d691fc3e3df22f9bf5960"
+  },
+  "training": false,
+  "test_used": false,
+  "val_clips": 280,
+  "val_sequences": 40,
+  "bootstrap": "5000 paired original-source cluster resamples, seed42; macro sequence and clip-weighted cluster CI; unadjusted descriptive validation CIs after checkpoint selection",
+  "mask": "mean RGB abs(GT_future-last_observed)>0.05; fixed before evaluation; change proxy NOT object-motion truth",
+  "regional_lpips": "mean spatial LPIPS map within mask; receptive fields cross boundaries; not standard cropped-image LPIPS",
+  "spatial_shuffle": "three fixed permutations, identical across timestamps, content shuffled with positional coordinates held fixed",
+  "camera_only": "remove spatial K/V after projection; one camera K/V per frame",
+  "spatial_only": "remove camera K/V after projection; sixteen spatial K/V per frame",
+  "paired_permutation": "permute content+coordinate K/V together; invariance sanity check",
+  "grouping_caveat": "PO original metadata; legacy filename grouping may not establish physical scene independence",
+  "code_hash": "4fee0fe2950bb95f078aa95de9c3c1f116f19e82c2a7d8b1a1cfdc16e8cb11e0"
+}

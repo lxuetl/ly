@@ -1,0 +1,96 @@
+{
+  "cases": [
+    {
+      "index": 0,
+      "path": "/root/autodl-fs/d4rt_datasets/d4rt_forecasting_cache_po_full/po50/ani2-s-8d9fe78d_clip_001.npz",
+      "group": [
+        "PointOdyssey",
+        "ani2-s-8d9fe78d"
+      ]
+    },
+    {
+      "index": 1,
+      "path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_meal_seq133_1.npz",
+      "group": [
+        "adt_mini",
+        "Apartment_release_meal_seq133"
+      ]
+    },
+    {
+      "index": 2,
+      "path": "data/d4rt_forecasting_cache/ds_mini/cc2896-3_obj_source_left_3.npz",
+      "group": [
+        "ds_mini",
+        "cc2896-3_obj_source_left"
+      ]
+    },
+    {
+      "index": 3,
+      "path": "data/d4rt_forecasting_cache/po_mini/dancingroom1_3rd_7.npz",
+      "group": [
+        "po_mini",
+        "dancingroom1_3rd"
+      ]
+    },
+    {
+      "index": 4,
+      "path": "data/d4rt_forecasting_cache/pstudio_mini/football_16.npz",
+      "group": [
+        "pstudio_mini",
+        "football"
+      ]
+    },
+    {
+      "index": 5,
+      "path": "/root/autodl-fs/d4rt_datasets/d4rt_forecasting_cache_po_full/po50/ani11-new-9b3d43c8_clip_007.npz",
+      "group": [
+        "PointOdyssey",
+        "ani11-new-9b3d43c8"
+      ]
+    },
+    {
+      "index": 6,
+      "path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_clean_seq149_6.npz",
+      "group": [
+        "adt_mini",
+        "Apartment_release_clean_seq149"
+      ]
+    },
+    {
+      "index": 7,
+      "path": "data/d4rt_forecasting_cache/ds_mini/ba3451-3_obj_source_left_5.npz",
+      "group": [
+        "ds_mini",
+        "ba3451-3_obj_source_left"
+      ]
+    }
+  ],
+  "source_sha256": "3a157bed6236ec65464d3291ca0ca68b83cb40f38ccf96466527efbe91f0a92a",
+  "checkpoint_sha256": {
+    "tau": "67d123d4372bc837a9a815ae698b3ac50dcafeb52c0d7ad94a9872f280fd5a33",
+    "trajectory": "add669687b8f66231e1c0504ca78b953eac88fa8ce7cc7968379fd312e39c9c1"
+  },
+  "split_sha256": "f9c9646f8ce860f595baf1a6bf2eab302be29413a0929c192b22cd97b2cf9dca",
+  "selection": "SHA256 fixed seed; round-robin domains; one clip per original video; no metric reads",
+  "independence": "disjoint from canonical and TAU train/val; same trajectory combined split; previously full-test evaluated, NOT fresh unseen data",
+  "no_training": true,
+  "no_threshold_tuning": true,
+  "CPU_only": true,
+  "arms": [
+    "D_P",
+    "H_P",
+    "D_G",
+    "H_G",
+    "T_G",
+    "RGB_GT"
+  ],
+  "labels": "GT history/future UV, visibility, future features and RGB are explicit counterfactuals; NOT deployable performance",
+  "support": "same D4RT historical validity intersect GT validity and finite in-bounds D/H UV; same GT future visibility intersect P/G bounds; >=3 observations",
+  "budgets": "fixed latent .002, latent element cap .05; RGB cap .03, mean L1 ceiling .002; scale down to minimum positive actual L1 across six arms",
+  "attribution": "two-factor Shapley history/endpoint, signed target and fusion gaps; algebraic effects, NOT independent percentages of total TAU error",
+  "prefix": "full16 observed context recomputed fresh, no short-prefix replay",
+  "resource": {
+    "cpu_max": "50000 100000",
+    "memory_max": "2147483648"
+  }
+}

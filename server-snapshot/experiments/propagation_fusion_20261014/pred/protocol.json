@@ -1,0 +1,22 @@
+{
+  "mode": "pred",
+  "epochs": 30,
+  "batch_size": 2,
+  "lr": 0.0003,
+  "seed": 42,
+  "parameters": 12995,
+  "counts": {
+    "train": 862,
+    "val": 280,
+    "test": 347
+  },
+  "tau_frozen": true,
+  "loss": "MSE + .03 Alex LPIPS + .1 temporal MAE",
+  "pixel_cap": 0.08,
+  "mean_budget_max": 0.002,
+  "test_used": false,
+  "wrong": "negative predicted dense flow, same predicted support",
+  "gate": "identical predicted support in all arms; zero is NOT geometry-free",
+  "gt": "future dataset projected trajectories and visibility, diagnostic upper bound only",
+  "selection": "best full validation composite including identity epoch 0"
+}

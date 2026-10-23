@@ -1,0 +1,21 @@
+{
+  "arm": "query",
+  "architecture": "frozen native forecast + future-query residual; zero last projection; no output clipping or extra gate",
+  "trainable": 907200,
+  "base_checkpoint": "/root/autodl-tmp/predformer_native128_20261021/best.pt",
+  "counts": {
+    "train": 862,
+    "val": 280,
+    "test": 347
+  },
+  "test_used": false,
+  "geometry_used": false,
+  "epochs": 15,
+  "batch": 1,
+  "seed": 42,
+  "lr": 0.0001,
+  "loss": "MSE only",
+  "selection": "validation MSE, epoch0 eligible",
+  "lpips": "AlexNet v0.1, clamp prediction[0,1], normalize[-1,1], report only",
+  "code_sha256": "34f6509acd9434b52ad11e103e995d2e02a360a3bfd6c97d226bba0bf682ddef"
+}

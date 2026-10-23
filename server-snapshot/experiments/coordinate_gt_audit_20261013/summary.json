@@ -1,0 +1,66 @@
+{
+  "clips": 40,
+  "synthetic": {
+    "translation": {
+      "mean_feature_pixel_error": 8.050279575400054e-05,
+      "max_feature_pixel_error": 0.0002150753716705367
+    },
+    "affine_scale": {
+      "mean_feature_pixel_error": 0.3668406903743744,
+      "max_feature_pixel_error": 1.0265041589736938
+    }
+  },
+  "gt_scope": "dataset XYZ projection using original query_ids, last observed frame15 to frames16:24; NOT D4RT teacher; original predicted support/permission and reliability retained; not dense GT upper bound",
+  "oracle": {
+    "zero_history": 6.178813055157661e-06,
+    "pred_full": 6.220844807103276e-06,
+    "gt_full": 6.247672718018293e-06,
+    "pred_motion": 3.2209325581789015e-06,
+    "gt_motion": 3.171584103256464e-06,
+    "tau_return": 3.1569041311740874e-06
+  },
+  "uniform": {
+    "zero_history": 6.517884118956601e-09,
+    "pred_full": 1.2878247486826562e-08,
+    "gt_full": 2.122999168079574e-08,
+    "pred_motion": -9.819644549349836e-08,
+    "gt_motion": -9.768691711126051e-08,
+    "tau_return": -1.0403151110696499e-07
+  },
+  "diagnostics": {
+    "stale_anchor_fraction": 0.13474116511642933,
+    "pred_uv_error_px": 6.048720845580101,
+    "anchor_error_px": 3.74469822794199,
+    "gt_dense_backmap_error_px": 1.6457691321308319
+  },
+  "paired_ci": {
+    "gt_full-pred_full": {
+      "gain": 2.6827910915017127e-08,
+      "ci95": [
+        -4.4297194108366965e-08,
+        1.1112977517768732e-07
+      ]
+    },
+    "gt_full-zero_history": {
+      "gain": 6.885966286063194e-08,
+      "ci95": [
+        -3.075576387345791e-08,
+        1.6788661014288656e-07
+      ]
+    },
+    "gt_motion-pred_motion": {
+      "gain": -4.9348454922437665e-08,
+      "ci95": [
+        -2.2717475076206028e-07,
+        6.747504812665283e-08
+      ]
+    },
+    "gt_motion-tau_return": {
+      "gain": 1.467997208237648e-08,
+      "ci95": [
+        -1.758820144459605e-07,
+        1.4911696780472994e-07
+      ]
+    }
+  }
+}

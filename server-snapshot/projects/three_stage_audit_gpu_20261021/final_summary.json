@@ -1,0 +1,156 @@
+{
+  "videos": 8,
+  "scope": "fixed previously evaluated held-out test subset; descriptive diagnostic, not fresh confirmation",
+  "raw_metrics": {
+    "tau": {
+      "mse": 0.005945097669609822,
+      "lpips": 0.13821963453665376,
+      "temporal": 0.015643814171198756,
+      "budget": 0.0
+    },
+    "D_P": {
+      "mse": 0.005931930099905003,
+      "lpips": 0.13838861137628555,
+      "temporal": 0.01565255131572485,
+      "budget": 0.0006080503553675953
+    },
+    "H_P": {
+      "mse": 0.005941489536780864,
+      "lpips": 0.13846293836832047,
+      "temporal": 0.015654653660021722,
+      "budget": 0.0005891244545637164
+    },
+    "D_G": {
+      "mse": 0.005907948863750789,
+      "lpips": 0.13848699815571308,
+      "temporal": 0.015641376143321395,
+      "budget": 0.0005973022125544958
+    },
+    "H_G": {
+      "mse": 0.00589502377260942,
+      "lpips": 0.13818491902202368,
+      "temporal": 0.015619187848642468,
+      "budget": 0.0005860846686118748
+    },
+    "T_G": {
+      "mse": 0.005882735269551631,
+      "lpips": 0.13792300457134843,
+      "temporal": 0.015601384278852493,
+      "budget": 0.0005715148690796923
+    },
+    "RGB_GT": {
+      "mse": 0.005753580371674616,
+      "lpips": 0.13661577692255378,
+      "temporal": 0.01538592466386035,
+      "budget": 0.0010503751400392503
+    }
+  },
+  "matched_metrics": {
+    "tau": {
+      "mse": 0.005945097669609822,
+      "lpips": 0.13821963453665376,
+      "temporal": 0.015643814171198756,
+      "budget": 0.0
+    },
+    "D_P": {
+      "mse": 0.0059303932066541165,
+      "lpips": 0.13837663875892758,
+      "temporal": 0.01565028796903789,
+      "budget": 0.0005558335979003459
+    },
+    "H_P": {
+      "mse": 0.005940610957622994,
+      "lpips": 0.13844392634928226,
+      "temporal": 0.015653394861146808,
+      "budget": 0.0005558336124522611
+    },
+    "D_G": {
+      "mse": 0.005909383369726129,
+      "lpips": 0.1384381391108036,
+      "temporal": 0.015640019555576146,
+      "budget": 0.0005558336233661976
+    },
+    "H_G": {
+      "mse": 0.00589737461268669,
+      "lpips": 0.1381585570052266,
+      "temporal": 0.015619189303833991,
+      "budget": 0.0005558336197282188
+    },
+    "T_G": {
+      "mse": 0.005884581260033883,
+      "lpips": 0.13789929309859872,
+      "temporal": 0.015601960883941501,
+      "budget": 0.000555833634280134
+    },
+    "RGB_GT": {
+      "mse": 0.0058408450277056545,
+      "lpips": 0.13742724480107427,
+      "temporal": 0.015509840042795986,
+      "budget": 0.0005558336197282188
+    }
+  },
+  "raw_attribution": {
+    "mse": {
+      "history_shapley": 1.6828271327540278e-06,
+      "endpoint_shapley": 3.5223500162828714e-05,
+      "appearance_target_gap": 1.2288503057789057e-05,
+      "fusion_objective_gap": 0.00012915489787701517,
+      "third_stage_total": 0.00014144340093480423,
+      "total_recoverable_vs_RGB_GT": 0.00017834972823038697,
+      "identity_residual": 0.0,
+      "interaction": -2.2484528017230332e-05
+    },
+    "lpips": {
+      "history_shapley": 0.00011387607082724571,
+      "endpoint_shapley": 8.981628343462944e-05,
+      "appearance_target_gap": 0.0002619144506752491,
+      "fusion_objective_gap": 0.001307227648794651,
+      "third_stage_total": 0.0015691420994699001,
+      "total_recoverable_vs_RGB_GT": 0.0017728344537317753,
+      "identity_residual": 0.0,
+      "interaction": -0.00037640612572431564
+    },
+    "temporal": {
+      "history_shapley": 1.0042975191026926e-05,
+      "endpoint_shapley": 2.3320491891354322e-05,
+      "appearance_target_gap": 1.780356978997588e-05,
+      "fusion_objective_gap": 0.00021545961499214172,
+      "third_stage_total": 0.0002332631847821176,
+      "total_recoverable_vs_RGB_GT": 0.00026662665186449885,
+      "identity_residual": 0.0,
+      "interaction": -2.4290638975799084e-05
+    }
+  },
+  "matched_attribution": {
+    "mse": {
+      "history_shapley": 8.955030352808535e-07,
+      "endpoint_shapley": 3.2123090932145715e-05,
+      "appearance_target_gap": 1.2793352652806789e-05,
+      "fusion_objective_gap": 4.373623232822865e-05,
+      "third_stage_total": 5.652958498103544e-05,
+      "total_recoverable_vs_RGB_GT": 8.954817894846201e-05,
+      "identity_residual": 0.0,
+      "interaction": -2.222650800831616e-05
+    },
+    "lpips": {
+      "history_shapley": 0.00010614725761115551,
+      "endpoint_shapley": 0.0001119344960898161,
+      "appearance_target_gap": 0.00025926390662789345,
+      "fusion_objective_gap": 0.0004720482975244522,
+      "third_stage_total": 0.0007313122041523457,
+      "total_recoverable_vs_RGB_GT": 0.0009493939578533173,
+      "identity_residual": 0.0,
+      "interaction": -0.00034686969593167305
+    },
+    "temporal": {
+      "history_shapley": 8.861679816618562e-06,
+      "endpoint_shapley": 2.2236985387280583e-05,
+      "appearance_target_gap": 1.722841989248991e-05,
+      "fusion_objective_gap": 9.212084114551544e-05,
+      "third_stage_total": 0.00010934926103800535,
+      "total_recoverable_vs_RGB_GT": 0.0001404479262419045,
+      "identity_residual": 0.0,
+      "interaction": -2.3937143851071596e-05
+    }
+  }
+}

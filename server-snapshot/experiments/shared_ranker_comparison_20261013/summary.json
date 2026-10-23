@@ -1,0 +1,324 @@
+{
+  "regression": {
+    "epoch": 10,
+    "ranking": {
+      "train": {
+        "within_clip_spearman": 0.25414976881772683,
+        "pooled_spearman": 0.264039849856058
+      },
+      "tune": {
+        "within_clip_spearman": 0.13752122630998934,
+        "pooled_spearman": 0.13659302354358002
+      },
+      "risk": {
+        "within_clip_spearman": 0.13152214806427487,
+        "pooled_spearman": 0.12938525929414246
+      },
+      "held": {
+        "within_clip_spearman": 0.10128821527385398,
+        "pooled_spearman": 0.10714084325236027
+      }
+    },
+    "decisions": {
+      "tune": {
+        "positive": {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "mean_clip_gain": -2.0237186820142799e-07,
+          "mean_video_gain": -1.3348471838980913e-07,
+          "video_gain_ci95": [
+            -4.5415123167913407e-07,
+            1.5799596440047025e-07
+          ],
+          "harm_when_active": 0.4722222222222222
+        },
+        "0.25": {
+          "threshold": 1.4792428016662598,
+          "coverage": 0.25,
+          "mean_clip_gain": -1.782577277885543e-07,
+          "mean_video_gain": -1.1160736903548241e-07,
+          "video_gain_ci95": [
+            -4.795069980900735e-07,
+            1.6369158402085303e-07
+          ],
+          "harm_when_active": 0.5555555555555556
+        },
+        "0.5": {
+          "threshold": 0.6708945035934448,
+          "coverage": 0.5,
+          "mean_clip_gain": -1.4275105463133917e-07,
+          "mean_video_gain": -7.96513631939888e-08,
+          "video_gain_ci95": [
+            -4.094094038009644e-07,
+            2.2009015083312988e-07
+          ],
+          "harm_when_active": 0.5277777777777778
+        },
+        "0.75": {
+          "threshold": 0.28738443553447723,
+          "coverage": 0.75,
+          "mean_clip_gain": -2.2945136556194888e-07,
+          "mean_video_gain": -1.5768164303153755e-07,
+          "video_gain_ci95": [
+            -4.7973298933357e-07,
+            1.4160468708723783e-07
+          ],
+          "harm_when_active": 0.5555555555555556
+        }
+      },
+      "risk": {
+        "positive": {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "mean_clip_gain": 6.927358400490549e-08,
+          "mean_video_gain": 4.49037664414694e-07,
+          "video_gain_ci95": [
+            -6.78024201382262e-07,
+            2.1376083410965903e-06
+          ],
+          "harm_when_active": 0.5277777777777778
+        },
+        "0.25": {
+          "threshold": 1.4792428016662598,
+          "coverage": 0.2777777777777778,
+          "mean_clip_gain": 8.948457737763722e-08,
+          "mean_video_gain": 7.190500452582326e-07,
+          "video_gain_ci95": [
+            -2.3119006073102358e-07,
+            2.307868469090733e-06
+          ],
+          "harm_when_active": 0.5333333333333333
+        },
+        "0.5": {
+          "threshold": 0.6708945035934448,
+          "coverage": 0.5740740740740741,
+          "mean_clip_gain": 9.415628112576626e-08,
+          "mean_video_gain": 5.734393544982941e-07,
+          "video_gain_ci95": [
+            -5.316506767052315e-07,
+            2.2242088484095537e-06
+          ],
+          "harm_when_active": 0.5483870967741935
+        },
+        "0.75": {
+          "threshold": 0.28738443553447723,
+          "coverage": 0.7777777777777778,
+          "mean_clip_gain": 1.2885451454807212e-07,
+          "mean_video_gain": 5.990701971486922e-07,
+          "video_gain_ci95": [
+            -4.981754491815254e-07,
+            2.250669136369001e-06
+          ],
+          "harm_when_active": 0.5476190476190477
+        }
+      },
+      "held": {
+        "positive": {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "mean_clip_gain": 1.916044857352972e-07,
+          "mean_video_gain": 1.613928444302556e-07,
+          "video_gain_ci95": [
+            -6.098464159136214e-07,
+            8.905018016362604e-07
+          ],
+          "harm_when_active": 0.54
+        },
+        "0.25": {
+          "threshold": 1.4792428016662598,
+          "coverage": 0.35,
+          "mean_clip_gain": 1.0564923286437988e-07,
+          "mean_video_gain": 1.5802956609563394e-07,
+          "video_gain_ci95": [
+            -5.807882487054236e-07,
+            8.278348700101061e-07
+          ],
+          "harm_when_active": 0.4857142857142857
+        },
+        "0.5": {
+          "threshold": 0.6708945035934448,
+          "coverage": 0.6,
+          "mean_clip_gain": 2.0900857634842395e-07,
+          "mean_video_gain": 2.1889539890583944e-07,
+          "video_gain_ci95": [
+            -5.251530670978934e-07,
+            8.84417445790445e-07
+          ],
+          "harm_when_active": 0.45
+        },
+        "0.75": {
+          "threshold": 0.28738443553447723,
+          "coverage": 0.85,
+          "mean_clip_gain": 7.094000466167927e-08,
+          "mean_video_gain": 8.747678789818151e-08,
+          "video_gain_ci95": [
+            -6.580345110375095e-07,
+            7.880235534685183e-07
+          ],
+          "harm_when_active": 0.5294117647058824
+        }
+      }
+    }
+  },
+  "shared_rank": {
+    "epoch": 30,
+    "ranking": {
+      "train": {
+        "within_clip_spearman": 0.43864140712071803,
+        "pooled_spearman": 0.4536843510466054
+      },
+      "tune": {
+        "within_clip_spearman": 0.11851887352489138,
+        "pooled_spearman": 0.1186716430386971
+      },
+      "risk": {
+        "within_clip_spearman": 0.07901848234585475,
+        "pooled_spearman": 0.07890996104432446
+      },
+      "held": {
+        "within_clip_spearman": 0.08420117806904863,
+        "pooled_spearman": 0.08674989273072255
+      }
+    },
+    "decisions": {
+      "tune": {
+        "positive": {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "mean_clip_gain": -3.281747974041436e-07,
+          "mean_video_gain": -1.639477023854852e-07,
+          "video_gain_ci95": [
+            -6.72420451650396e-07,
+            3.9352161809802054e-07
+          ],
+          "harm_when_active": 0.5277777777777778
+        },
+        "0.25": {
+          "threshold": 3.610697865486145,
+          "coverage": 0.25,
+          "mean_clip_gain": -1.635020857469903e-07,
+          "mean_video_gain": -2.2960011847317208e-08,
+          "video_gain_ci95": [
+            -4.047921538585797e-07,
+            4.0903687477111815e-07
+          ],
+          "harm_when_active": 0.6111111111111112
+        },
+        "0.5": {
+          "threshold": 2.3803848028182983,
+          "coverage": 0.5,
+          "mean_clip_gain": -1.770612421549029e-07,
+          "mean_video_gain": -3.516325261443854e-08,
+          "video_gain_ci95": [
+            -4.605914046987891e-07,
+            4.1724415495991706e-07
+          ],
+          "harm_when_active": 0.4722222222222222
+        },
+        "0.75": {
+          "threshold": 1.6406508684158325,
+          "coverage": 0.75,
+          "mean_clip_gain": -3.3657610312932066e-07,
+          "mean_video_gain": -1.7150887753814458e-07,
+          "video_gain_ci95": [
+            -6.706314348848536e-07,
+            3.8480211514979603e-07
+          ],
+          "harm_when_active": 0.5185185185185185
+        }
+      },
+      "risk": {
+        "positive": {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "mean_clip_gain": 1.016025500441039e-07,
+          "mean_video_gain": 1.0186729403877897e-06,
+          "video_gain_ci95": [
+            -3.9727777350760465e-07,
+            2.930815488590658e-06
+          ],
+          "harm_when_active": 0.46296296296296297
+        },
+        "0.25": {
+          "threshold": 3.610697865486145,
+          "coverage": 0.21296296296296297,
+          "mean_clip_gain": 1.7489677433062484e-07,
+          "mean_video_gain": 1.23384379548952e-06,
+          "video_gain_ci95": [
+            -8.824856195133177e-08,
+            3.0432045605266457e-06
+          ],
+          "harm_when_active": 0.5652173913043478
+        },
+        "0.5": {
+          "threshold": 2.3803848028182983,
+          "coverage": 0.4537037037037037,
+          "mean_clip_gain": 1.5934454967026358e-07,
+          "mean_video_gain": 1.1938843748620932e-06,
+          "video_gain_ci95": [
+            -1.6133963765155166e-07,
+            3.036333042213556e-06
+          ],
+          "harm_when_active": 0.4897959183673469
+        },
+        "0.75": {
+          "threshold": 1.6406508684158325,
+          "coverage": 0.75,
+          "mean_clip_gain": 6.871737746728792e-08,
+          "mean_video_gain": 9.960045212037153e-07,
+          "video_gain_ci95": [
+            -4.2647429966434304e-07,
+            2.9158416821571465e-06
+          ],
+          "harm_when_active": 0.5185185185185185
+        }
+      },
+      "held": {
+        "positive": {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "mean_clip_gain": -5.254335701465606e-07,
+          "mean_video_gain": 2.5848170149732835e-09,
+          "video_gain_ci95": [
+            -5.906420053427361e-07,
+            6.852654041722416e-07
+          ],
+          "harm_when_active": 0.57
+        },
+        "0.25": {
+          "threshold": 3.610697865486145,
+          "coverage": 0.18,
+          "mean_clip_gain": 3.343215212225914e-08,
+          "mean_video_gain": 2.487603606740859e-07,
+          "video_gain_ci95": [
+            -5.314029708229514e-08,
+            7.356622154475188e-07
+          ],
+          "harm_when_active": 0.3888888888888889
+        },
+        "0.5": {
+          "threshold": 2.3803848028182983,
+          "coverage": 0.51,
+          "mean_clip_gain": -3.0735740438103674e-07,
+          "mean_video_gain": 1.6868593361736703e-07,
+          "video_gain_ci95": [
+            -3.124575166359798e-07,
+            7.785510024405074e-07
+          ],
+          "harm_when_active": 0.5686274509803921
+        },
+        "0.75": {
+          "threshold": 1.6406508684158325,
+          "coverage": 0.74,
+          "mean_clip_gain": -3.993907012045383e-07,
+          "mean_video_gain": 7.798675638200205e-08,
+          "video_gain_ci95": [
+            -4.4202854703392157e-07,
+            7.14877099777698e-07
+          ],
+          "harm_when_active": 0.5945945945945946
+        }
+      }
+    }
+  }
+}

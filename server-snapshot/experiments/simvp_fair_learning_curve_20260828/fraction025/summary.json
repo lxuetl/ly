@@ -1,0 +1,163 @@
+{
+  "metrics": {
+    "MAE": 0.05575605671559546,
+    "MSE": 0.00782588266606101,
+    "RMSE": 0.08846401904763886,
+    "PSNR": 21.064666677903404,
+    "SSIM": 0.7033790946006775,
+    "LPIPS": 0.24276999140804137,
+    "temporal_delta_MAE": 0.02294843848576298,
+    "temporal_delta_MSE": 0.002619259972616693,
+    "per_horizon": {
+      "t+1": {
+        "MAE": 0.045867762255359136,
+        "MSE": 0.0049347611104404955,
+        "PSNR": 23.067338664854574,
+        "SSIM": 0.7872590344754895,
+        "LPIPS": 0.2006024658193241
+      },
+      "t+2": {
+        "MAE": 0.049706604100851155,
+        "MSE": 0.005997513989111412,
+        "PSNR": 22.22028730373586,
+        "SSIM": 0.7578086202318345,
+        "LPIPS": 0.21090625473602334
+      },
+      "t+3": {
+        "MAE": 0.054172024505222266,
+        "MSE": 0.007233688305171091,
+        "PSNR": 21.406402086322696,
+        "SSIM": 0.7232658839480361,
+        "LPIPS": 0.2339138773892393
+      },
+      "t+4": {
+        "MAE": 0.05517976336692845,
+        "MSE": 0.007693745950907718,
+        "PSNR": 21.138621582866097,
+        "SSIM": 0.7089885791117821,
+        "LPIPS": 0.2289054195710163
+      },
+      "t+5": {
+        "MAE": 0.05901274910599143,
+        "MSE": 0.008630941425398666,
+        "PSNR": 20.639418307556078,
+        "SSIM": 0.6753071153433479,
+        "LPIPS": 0.27197116452395614
+      },
+      "t+6": {
+        "MAE": 0.06039100391181869,
+        "MSE": 0.009212999920543264,
+        "PSNR": 20.355989325828045,
+        "SSIM": 0.6670904895992734,
+        "LPIPS": 0.27709945991410684
+      },
+      "t+7": {
+        "MAE": 0.05993036591951771,
+        "MSE": 0.009224850773129619,
+        "PSNR": 20.350406505272268,
+        "SSIM": 0.6619824228536844,
+        "LPIPS": 0.24926101109340562
+      },
+      "t+8": {
+        "MAE": 0.06178818128915688,
+        "MSE": 0.009678559825120734,
+        "PSNR": 20.141892611353175,
+        "SSIM": 0.6453275738480553,
+        "LPIPS": 0.269500270111477
+      }
+    },
+    "dynamic_MAE": 0.1409455451050813,
+    "dynamic_MSE": 0.0331242133471767,
+    "dynamic_PSNR": 14.798544268071968,
+    "motion_mask_IoU": 0.20611313054322053,
+    "motion_mask_F1": 0.34178075890839427,
+    "motion_mask_precision": 0.2536305298921378,
+    "motion_mask_recall": 0.5238450409507773,
+    "dynamic_pixel_fraction": 0.150093730370603,
+    "motion_threshold": 0.05
+  },
+  "meta": {
+    "best_epoch": 30,
+    "train_fraction": 0.25,
+    "train_clips": 92,
+    "val_clips": 130,
+    "test_clips": 199,
+    "split": {
+      "legacy_subsets": [
+        "adt_mini",
+        "ds_mini",
+        "po_mini",
+        "pstudio_mini"
+      ],
+      "pointodyssey_usable": {
+        "train": 248,
+        "val": 90,
+        "test": 160
+      },
+      "totals": {
+        "train": 356,
+        "val": 130,
+        "test": 199
+      }
+    },
+    "fraction_selection": {
+      "fraction": 0.25,
+      "domains": {
+        "adt_mini": {
+          "total_groups": 27,
+          "selected_groups": [
+            "Apartment_release_clean_seq145",
+            "Apartment_release_clean_seq146",
+            "Apartment_release_decoration_seq134",
+            "Apartment_release_decoration_seq137",
+            "Apartment_release_decoration_skeleton_seq132",
+            "Apartment_release_decoration_skeleton_seq135",
+            "Apartment_release_meal_seq140"
+          ],
+          "total_clips": 29,
+          "selected_clips": 9
+        },
+        "ds_mini": {
+          "total_groups": 12,
+          "selected_groups": [
+            "5894d0",
+            "87f245",
+            "e09bca"
+          ],
+          "total_clips": 25,
+          "selected_clips": 7
+        },
+        "po50": {
+          "total_groups": 25,
+          "selected_groups": [
+            "ani-new-2-75b7e10f",
+            "ani17-new-c4d2a0e9",
+            "ani6-new-308c849f",
+            "ani8-new-f-d43de2b1",
+            "animal8-ad40e226",
+            "cab-e1-ego2-9f90d5d9"
+          ],
+          "total_clips": 248,
+          "selected_clips": 59
+        },
+        "po_mini": {
+          "total_groups": 5,
+          "selected_groups": [
+            "seminar_g110_0315_ego1"
+          ],
+          "total_clips": 23,
+          "selected_clips": 7
+        },
+        "pstudio_mini": {
+          "total_groups": 4,
+          "selected_groups": [
+            "basketball"
+          ],
+          "total_clips": 31,
+          "selected_clips": 10
+        }
+      }
+    },
+    "trainable_params": 1513173
+  }
+}

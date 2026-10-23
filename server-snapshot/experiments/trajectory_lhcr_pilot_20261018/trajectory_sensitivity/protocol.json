@@ -1,0 +1,17 @@
+{
+  "scales": [
+    0.0,
+    1.0,
+    4.0,
+    16.0
+  ],
+  "training": false,
+  "post_hoc": true,
+  "selection": "dev composite only; original evaluation already reused",
+  "feature_cap": "amplifies the original capped residual; intentionally relaxes original latent cap to diagnose its limitation",
+  "pixel_mean_budget_max": 0.002,
+  "pixel_cap": 0.03,
+  "frozen_checkpoints": true,
+  "dynamic_slice": "target adjacent-frame RGB change >.05, proxy only; no object/3D semantics",
+  "script_sha256": "b7d60aefe9035103a1e963e43f061241caf7969ad8c4afae3bec652e996614db"
+}

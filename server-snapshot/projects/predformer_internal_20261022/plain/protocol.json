@@ -1,0 +1,21 @@
+{
+  "arm": "plain",
+  "trainable": 4260544,
+  "base": "/root/autodl-tmp/predformer_native128_20261021/best.pt",
+  "unfrozen": [
+    "TSST3",
+    "native prediction head"
+  ],
+  "injection": "before TSST3, same-frame cross-attention; no future query/residual image branch",
+  "adapter": "same 2048->256 learned projection in omega/rgb/null; RGB features repeated eight times, null zeros",
+  "epochs": 15,
+  "lr": 0.0001,
+  "batch": 1,
+  "loss": "MSE",
+  "selection": "val MSE including epoch0",
+  "train": 862,
+  "val": 280,
+  "test_used": false,
+  "lpips": "Alex v0.1, clamp[0,1], normalize[-1,1]",
+  "source_hash": "af8dd6daf7681a6b36defb72c6e13ee65c819fe2b3d221ae17566b44e28a6c0e"
+}

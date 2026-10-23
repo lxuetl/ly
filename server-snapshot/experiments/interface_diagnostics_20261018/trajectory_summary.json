@@ -1,0 +1,32 @@
+{
+  "videos": 12,
+  "split": "existing development, no test/evaluation used for trajectory diagnostics",
+  "mse_video_equal": {
+    "tau": 0.011241582067062458,
+    "future_encoder_only": 0.017091125637913745,
+    "future_skip_only": 0.08999384753406048,
+    "future_both_autoencode": 0.12877587570498386,
+    "original": 0.011240067891776562,
+    "future_visible": 0.011240061993400255,
+    "gt_history": 0.01124019711278379,
+    "gt_history_visible": 0.011240051050360004,
+    "uniform_same_weights": 0.01124006740671272,
+    "pred_uv_same_weights": 0.011241163883823901,
+    "replace_history_d4rt": 0.0123074174237748,
+    "replace_history_d4rt_pixel_bounded": 0.011237613468741378,
+    "replace_history_gt": 0.012305073362464706,
+    "replace_history_gt_pixel_bounded": 0.011237546103075147,
+    "replace_future_encoder_oracle": 0.012299511504049102,
+    "replace_future_encoder_oracle_pixel_bounded": 0.011237573150234917
+  },
+  "interfaces_video_equal": {
+    "future_out_of_bounds_fraction": 0.14835611979166666,
+    "future_gt_invisible_fraction": 0.2648111979166667,
+    "future_visible_inside_fraction": 0.733154296875,
+    "past_d4rt_valid_gt_invalid_fraction": 0.05188222361418108,
+    "future_teacher_gt_visibility_disagreement": 0.09513346354166667,
+    "invalid_future_old_weight_fraction": 0.26686076462889713,
+    "all_tracks_dead_fraction": 0.0
+  },
+  "frozen_backbone_bitwise_verified": true
+}

@@ -1,0 +1,64 @@
+{
+  "old_calibration": {
+    "margins": [
+      0.01880059763789177,
+      0.008427934721112251,
+      0.0029187703039497137,
+      0.007137306034564972,
+      0.004602398723363876
+    ],
+    "videos": 12,
+    "guarantee": false
+  },
+  "old_decisions": {
+    "per_step": {
+      "0": {
+        "states": 280,
+        "accepted": 0,
+        "safe_accepted": 0,
+        "unsafe_accepted": 0,
+        "safe_available": 272,
+        "undo_available_safe": 0,
+        "undo_selected": 0
+      },
+      "1": {
+        "states": 280,
+        "accepted": 0,
+        "safe_accepted": 0,
+        "unsafe_accepted": 0,
+        "safe_available": 243,
+        "undo_available_safe": 21,
+        "undo_selected": 0
+      },
+      "2": {
+        "states": 280,
+        "accepted": 0,
+        "safe_accepted": 0,
+        "unsafe_accepted": 0,
+        "safe_available": 227,
+        "undo_available_safe": 23,
+        "undo_selected": 0
+      }
+    },
+    "warning": "forced-state diagnostic; unsafe means fails composite safe-improvement criteria, not necessarily worsens every metric"
+  },
+  "availability": {
+    "0": {
+      "states": 280,
+      "available_at_1pct": 272,
+      "available_at_zero": 181
+    },
+    "1": {
+      "states": 280,
+      "available_at_1pct": 243,
+      "available_at_zero": 154
+    },
+    "2": {
+      "states": 280,
+      "available_at_1pct": 227,
+      "available_at_zero": 134
+    }
+  },
+  "correction": "new fit uses identical .01 relative safety tolerance for labeling and decisions, separate metric units, rank on actual gain head",
+  "remaining_unknown": "calibration remains empirical and may abstain; no safety guarantee under domain shift"
+}

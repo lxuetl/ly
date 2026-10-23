@@ -1,0 +1,11 @@
+{
+  "candidates": "TAU + all8 SDXL edits + all12 correct-flow history candidates; no GT-positive filtering; stress controls excluded from fit",
+  "primary": "same monotonic seven-feature pairwise NNLS ranker recalibrated on merged replay pool",
+  "split": "leave-original-video-out; fit and scale on other6 videos replay only",
+  "fixed_control": "history_align_texture_correct_a0.25",
+  "secondary": "old SDXL-only-calibrated ranker applied unchanged to merged pool",
+  "threshold": "relative-to-TAU score>0, same as prior; never tune on heldout",
+  "label": "LPIPS benefit supervision; safety assessed separately as LPIPS gain>0.0001,MSE/temporal<=1.01TAU",
+  "caveat": "same7 validation videos used in earlier development; exploratory, not fresh test evidence",
+  "family_identity_input": false
+}

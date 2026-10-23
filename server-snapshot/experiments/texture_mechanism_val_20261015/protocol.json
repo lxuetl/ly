@@ -1,0 +1,12 @@
+{
+  "split": "validation only",
+  "clips": 280,
+  "test_access": false,
+  "frozen": "TAU cached outputs; no training; no D4RT/SDXL",
+  "grid": "linear/cubic x last1/last4; zero4 and zero1; motion blend thresholds 0.25,0.5,1,2,4",
+  "controls": "all variants share ORIGINAL linear-last4 confidence gate; four-frame weights also fixed from linear warps; same .25 alpha,.03 pixel cap,.001 meanabs cap; realized budgets reported",
+  "bicubic": "bicubic grid_sample clamped to [0,1], so intervention includes overshoot clipping",
+  "selection": "minimum video-equal LPIPS subject to retaining >=80% original MSE improvement vs TAU; temporal <= original*1.01 and <=TAU; original fallback",
+  "limits": "last1 vs last4 changes temporal source and averaging jointly, not pure blur isolation; zero-motion retains flow-derived gate; repeated validation reuse exploratory",
+  "script_sha256": "e52b4fd22d45a70f5715468b454902f41ba6d81e0f3baef33a2bd4b1da8bc1c5"
+}

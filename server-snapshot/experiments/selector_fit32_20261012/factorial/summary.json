@@ -1,0 +1,81 @@
+{
+  "in_sample_only": true,
+  "retrained": false,
+  "clips": 32,
+  "metrics": {
+    "baseline": {
+      "MSE": 0.004181839523880626,
+      "MAE": 0.03412774531170726,
+      "PSNR": 25.738220227607545,
+      "LPIPS": 0.15780368843115866,
+      "temporal_MAE": 0.015860637577134185,
+      "dynamic_MSE": 0.008090994693770039,
+      "pixel_delta": 0.0014126639953246922
+    },
+    "oracle_same_renderer": {
+      "MSE": 0.004119226703551249,
+      "MAE": 0.03398424253100529,
+      "PSNR": 25.810038679088915,
+      "LPIPS": 0.1567735365824774,
+      "temporal_MAE": 0.015805132483365014,
+      "dynamic_MSE": 0.007935641945719166,
+      "pixel_delta": 0.0010995271941283136
+    },
+    "original_soft": {
+      "MSE": 0.004159085668106854,
+      "MAE": 0.03409150606603362,
+      "PSNR": 25.760349267806667,
+      "LPIPS": 0.1573578806128353,
+      "temporal_MAE": 0.01577824994456023,
+      "dynamic_MSE": 0.00806313111981446,
+      "pixel_delta": 0.0009033839687617728
+    },
+    "original_hard": {
+      "MSE": 0.004151519121478486,
+      "MAE": 0.03413187971455045,
+      "PSNR": 25.76310351509047,
+      "LPIPS": 0.15673730324488133,
+      "temporal_MAE": 0.01582089503062889,
+      "dynamic_MSE": 0.008068580434795606,
+      "pixel_delta": 0.0010546784401412879
+    },
+    "utility_soft": {
+      "MSE": 0.004139691313866933,
+      "MAE": 0.03401861764723435,
+      "PSNR": 25.788059647183886,
+      "LPIPS": 0.1570567898452282,
+      "temporal_MAE": 0.015786128788022324,
+      "dynamic_MSE": 0.008005032928108616,
+      "pixel_delta": 0.0010359663119743345
+    },
+    "utility_hard": {
+      "MSE": 0.004135970742936479,
+      "MAE": 0.03403008132590912,
+      "PSNR": 25.791606233884075,
+      "LPIPS": 0.15686879900749773,
+      "temporal_MAE": 0.01581123922369443,
+      "dynamic_MSE": 0.008000694314466306,
+      "pixel_delta": 0.0010520109749450057
+    }
+  },
+  "routing": {
+    "original_soft": {
+      "accuracy": 0.2942192305345088,
+      "entropy": 1.955396980047226
+    },
+    "original_hard": {
+      "accuracy": 0.2942192305345088,
+      "entropy": 0.0
+    },
+    "utility_soft": {
+      "accuracy": 0.3742320160381496,
+      "entropy": 1.0693899299949408
+    },
+    "utility_hard": {
+      "accuracy": 0.3742320160381496,
+      "entropy": 0.0
+    }
+  },
+  "protocol": "Same saved epoch80 checkpoints. Original hard=argmax of final gated weights. Utility soft=softmax(scores/1), same gain>0.1 fallback as utility hard. Same renderer/budget. This is inference crossover, not fully isolated training-objective factorial.",
+  "seconds": 1.3361694812774658
+}

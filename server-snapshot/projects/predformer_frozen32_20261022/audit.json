@@ -1,0 +1,33 @@
+{
+  "checkpoint": "previous pre_omega epoch2",
+  "clips": 32,
+  "precision": "float32",
+  "attention_uniform_reference": "64 allowed keys; entropy/log64=1 means uniform within allowed set; gaussian locality bias itself affects entropy",
+  "future_change": "evaluation only RGB threshold .05, not object motion truth",
+  "summary": {
+    "raw": {
+      "spatial_rms": 0.5780523028224707,
+      "total_rms": 2.343503713607788,
+      "spatial_energy_fraction": 0.061985170701518655,
+      "off_diagonal_cosine": 0.9369172714650631
+    },
+    "projected": {
+      "spatial_rms": 0.058948135701939464,
+      "total_rms": 0.2466439721174538,
+      "spatial_energy_fraction": 0.06382743455469608,
+      "off_diagonal_cosine": 0.933435769751668
+    },
+    "with_position": {
+      "spatial_rms": 0.13091245153918862,
+      "total_rms": 0.4227701146155596,
+      "spatial_energy_fraction": 0.09661620995029807,
+      "off_diagonal_cosine": 0.9002243392169476
+    },
+    "attention_entropy_over_log64": 0.9769227299839258,
+    "attention_peak": 0.026692682411521673,
+    "historical_support_fraction": 0.7071533203125,
+    "gate_mean": 0.12801077507901937,
+    "delta_to_query_rms": 0.006822085939347744,
+    "future_change_coverage_eval_only": 0.9831736236810684
+  }
+}

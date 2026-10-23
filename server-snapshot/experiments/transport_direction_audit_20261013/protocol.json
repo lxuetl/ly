@@ -1,0 +1,15 @@
+{
+  "clips": 280,
+  "test_used": false,
+  "frozen": true,
+  "variants": [
+    "correct",
+    "zero",
+    "reverse",
+    "shuffle"
+  ],
+  "shuffle": "same spatial permutation applied to all times, per clip seeded; preserves global vector values, changes assignment",
+  "matched": "same source/hidden/support/permission, feature budget .006 cap .12, pixel budget reference cap .08, same sampled two-frame regions; normalization policy equal, realized magnitudes logged",
+  "zero_note": "zero flow still propagates identity-warp source features; not no-op",
+  "reference": "geometry output; unchanged elsewhere; Oracle selects one sampled region or abstains; no future input to candidates"
+}

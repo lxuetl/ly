@@ -1,0 +1,3125 @@
+{
+  "aggregate": {
+    "correct": {
+      "num_sequences": 5,
+      "MAE": 0.04574588909745216,
+      "MSE": 0.006192285660654306,
+      "RMSE": 0.07869107738908082,
+      "PSNR": 22.081490171209893,
+      "SSIM": 0.7163765072822571,
+      "LPIPS": 0.09105077236890793,
+      "temporal_delta_MAE": 0.020991088449954988,
+      "dynamic_MAE": 0.09572374259042346,
+      "dynamic_MSE": 0.017072219748434894,
+      "dynamic_pixel_values": 140865.0,
+      "dynamic_PSNR": 17.677100077767708
+    },
+    "base_only": {
+      "num_sequences": 5,
+      "MAE": 0.06262729912996293,
+      "MSE": 0.00787703599780798,
+      "RMSE": 0.08875266755319515,
+      "PSNR": 21.036371698139583,
+      "SSIM": 0.6255964517593384,
+      "LPIPS": 0.3977323114871979,
+      "temporal_delta_MAE": 0.0283680971711874,
+      "dynamic_MAE": 0.09839498575209421,
+      "dynamic_MSE": 0.016049005747205324,
+      "dynamic_pixel_values": 140865.0,
+      "dynamic_PSNR": 17.945518674259162
+    },
+    "camera_only": {
+      "num_sequences": 5,
+      "MAE": 0.046069502085447314,
+      "MSE": 0.006235750578343868,
+      "RMSE": 0.07896676882299204,
+      "PSNR": 22.051112643323417,
+      "SSIM": 0.7137977123260498,
+      "LPIPS": 0.09314718171954155,
+      "temporal_delta_MAE": 0.021226926892995834,
+      "dynamic_MAE": 0.09578734238011571,
+      "dynamic_MSE": 0.017083469862476372,
+      "dynamic_pixel_values": 140865.0,
+      "dynamic_PSNR": 17.674239141460262
+    },
+    "object_only": {
+      "num_sequences": 5,
+      "MAE": 0.062499406188726424,
+      "MSE": 0.007833384163677692,
+      "RMSE": 0.08850640747244061,
+      "PSNR": 21.060505743288054,
+      "SSIM": 0.6257908821105957,
+      "LPIPS": 0.3995512843132019,
+      "temporal_delta_MAE": 0.028272124007344246,
+      "dynamic_MAE": 0.09820626790000621,
+      "dynamic_MSE": 0.015970438446509624,
+      "dynamic_pixel_values": 140865.0,
+      "dynamic_PSNR": 17.966831607377898
+    },
+    "time_reverse": {
+      "num_sequences": 5,
+      "MAE": 0.045606207102537155,
+      "MSE": 0.00617627240717411,
+      "RMSE": 0.07858926394345547,
+      "PSNR": 22.092735575033494,
+      "SSIM": 0.71715327501297,
+      "LPIPS": 0.09006388634443283,
+      "temporal_delta_MAE": 0.021062003821134566,
+      "dynamic_MAE": 0.09558396378514003,
+      "dynamic_MSE": 0.01704686934992058,
+      "dynamic_pixel_values": 140865.0,
+      "dynamic_PSNR": 17.683553673397412
+    },
+    "cross_video": {
+      "num_sequences": 5,
+      "MAE": 0.05693840980529785,
+      "MSE": 0.009127000160515309,
+      "RMSE": 0.09553533461769687,
+      "PSNR": 20.39671941831979,
+      "SSIM": 0.6066122055053711,
+      "LPIPS": 0.08923629224300385,
+      "temporal_delta_MAE": 0.022936035320162772,
+      "dynamic_MAE": 0.11986944538265804,
+      "dynamic_MSE": 0.024348999495721745,
+      "dynamic_pixel_values": 140865.0,
+      "dynamic_PSNR": 16.135188793123515
+    },
+    "uv_noise_0.005": {
+      "num_sequences": 5,
+      "MAE": 0.045533813536167145,
+      "MSE": 0.006226217001676559,
+      "RMSE": 0.07890638124813835,
+      "PSNR": 22.05775746970503,
+      "SSIM": 0.717516052722931,
+      "LPIPS": 0.08753303587436675,
+      "temporal_delta_MAE": 0.021019603312015533,
+      "dynamic_MAE": 0.09588428977045842,
+      "dynamic_MSE": 0.017219679888684423,
+      "dynamic_pixel_values": 140865.0,
+      "dynamic_PSNR": 17.63974926277843
+    },
+    "uv_noise_0.01": {
+      "num_sequences": 5,
+      "MAE": 0.04523271694779396,
+      "MSE": 0.0062375557608902454,
+      "RMSE": 0.0789781980098954,
+      "PSNR": 22.049855589575404,
+      "SSIM": 0.7190759897232055,
+      "LPIPS": 0.08149123266339302,
+      "temporal_delta_MAE": 0.0210513174533844,
+      "dynamic_MAE": 0.09594868507746779,
+      "dynamic_MSE": 0.017298181979491112,
+      "dynamic_pixel_values": 140865.0,
+      "dynamic_PSNR": 17.619995383604707
+    },
+    "uv_noise_0.02": {
+      "num_sequences": 5,
+      "MAE": 0.04511076211929321,
+      "MSE": 0.006299614626914263,
+      "RMSE": 0.07937011167255759,
+      "PSNR": 22.00686017296215,
+      "SSIM": 0.7195079922676086,
+      "LPIPS": 0.0764001227915287,
+      "temporal_delta_MAE": 0.021133438870310783,
+      "dynamic_MAE": 0.0962695939901457,
+      "dynamic_MSE": 0.01751095361485842,
+      "dynamic_pixel_values": 140865.0,
+      "dynamic_PSNR": 17.56690202380646
+    },
+    "uv_noise_0.05": {
+      "num_sequences": 5,
+      "MAE": 0.044697704911232,
+      "MSE": 0.006348587200045585,
+      "RMSE": 0.07967802206408983,
+      "PSNR": 21.97322910848266,
+      "SSIM": 0.7213710665702819,
+      "LPIPS": 0.06557954624295234,
+      "temporal_delta_MAE": 0.02107432559132576,
+      "dynamic_MAE": 0.09644075846666134,
+      "dynamic_MSE": 0.017699872079428886,
+      "dynamic_pixel_values": 140865.0,
+      "dynamic_PSNR": 17.520298723612957
+    },
+    "xyz_noise_rel_0.01": {
+      "num_sequences": 5,
+      "MAE": 0.04574325531721115,
+      "MSE": 0.006192152760922909,
+      "RMSE": 0.07869023294490181,
+      "PSNR": 22.081583381120637,
+      "SSIM": 0.7164167642593384,
+      "LPIPS": 0.09097107350826264,
+      "temporal_delta_MAE": 0.020997073501348495,
+      "dynamic_MAE": 0.09572439772233167,
+      "dynamic_MSE": 0.0170742432047916,
+      "dynamic_pixel_values": 140865.0,
+      "dynamic_PSNR": 17.676585367982206
+    },
+    "xyz_noise_rel_0.05": {
+      "num_sequences": 5,
+      "MAE": 0.04571033492684364,
+      "MSE": 0.00618743421509862,
+      "RMSE": 0.07866024545536722,
+      "PSNR": 22.084894054598358,
+      "SSIM": 0.7166900157928466,
+      "LPIPS": 0.09056948646903037,
+      "temporal_delta_MAE": 0.021051566675305368,
+      "dynamic_MAE": 0.09569503117457318,
+      "dynamic_MSE": 0.01707226827672439,
+      "dynamic_pixel_values": 140865.0,
+      "dynamic_PSNR": 17.677087732836178
+    },
+    "xyz_noise_rel_0.1": {
+      "num_sequences": 5,
+      "MAE": 0.045705453306436536,
+      "MSE": 0.006184003222733736,
+      "RMSE": 0.0786384334961839,
+      "PSNR": 22.08730292761285,
+      "SSIM": 0.7165652394294739,
+      "LPIPS": 0.09038563892245292,
+      "temporal_delta_MAE": 0.02109495922923088,
+      "dynamic_MAE": 0.095664007732359,
+      "dynamic_MSE": 0.01705631438490809,
+      "dynamic_pixel_values": 140865.0,
+      "dynamic_PSNR": 17.68114807589471
+    },
+    "xyz_noise_rel_0.2": {
+      "num_sequences": 5,
+      "MAE": 0.04572568386793137,
+      "MSE": 0.006199267879128456,
+      "RMSE": 0.0787354296306844,
+      "PSNR": 22.076595967644618,
+      "SSIM": 0.7165081024169921,
+      "LPIPS": 0.09101521968841553,
+      "temporal_delta_MAE": 0.02117050774395466,
+      "dynamic_MAE": 0.09573478277628403,
+      "dynamic_MSE": 0.0171138100090429,
+      "dynamic_pixel_values": 140865.0,
+      "dynamic_PSNR": 17.66653293690788
+    },
+    "dropout_0.25": {
+      "num_sequences": 5,
+      "MAE": 0.04665679782629013,
+      "MSE": 0.0064741079695522785,
+      "RMSE": 0.08046184169873492,
+      "PSNR": 21.888200620867103,
+      "SSIM": 0.7039818048477173,
+      "LPIPS": 0.0870200052857399,
+      "temporal_delta_MAE": 0.021110542491078375,
+      "dynamic_MAE": 0.09828166353035264,
+      "dynamic_MSE": 0.01777883410576505,
+      "dynamic_pixel_values": 140865.0,
+      "dynamic_PSNR": 17.50096722445372
+    },
+    "dropout_0.5": {
+      "num_sequences": 5,
+      "MAE": 0.04607003405690193,
+      "MSE": 0.006399296503514051,
+      "RMSE": 0.0799956030261292,
+      "PSNR": 21.93867766865324,
+      "SSIM": 0.7098878145217895,
+      "LPIPS": 0.07988570481538773,
+      "temporal_delta_MAE": 0.02101034075021744,
+      "dynamic_MAE": 0.09672580150709456,
+      "dynamic_MSE": 0.017458077927212556,
+      "dynamic_pixel_values": 140865.0,
+      "dynamic_PSNR": 17.580035722888105
+    },
+    "dropout_0.75": {
+      "num_sequences": 5,
+      "MAE": 0.04704579934477806,
+      "MSE": 0.006652463041245937,
+      "RMSE": 0.08156263262821975,
+      "PSNR": 21.77017529557864,
+      "SSIM": 0.6986885786056518,
+      "LPIPS": 0.07547035664319993,
+      "temporal_delta_MAE": 0.02126943729817867,
+      "dynamic_MAE": 0.09790452939483282,
+      "dynamic_MSE": 0.017797733924726798,
+      "dynamic_pixel_values": 140865.0,
+      "dynamic_PSNR": 17.496352901987777
+    },
+    "dropout_0.9": {
+      "num_sequences": 5,
+      "MAE": 0.0527118518948555,
+      "MSE": 0.008233227580785752,
+      "RMSE": 0.09073713451936727,
+      "PSNR": 20.84429879764793,
+      "SSIM": 0.6516347289085388,
+      "LPIPS": 0.08080121874809265,
+      "temporal_delta_MAE": 0.02282005548477173,
+      "dynamic_MAE": 0.10715333157799578,
+      "dynamic_MSE": 0.020904039917707114,
+      "dynamic_pixel_values": 140865.0,
+      "dynamic_PSNR": 16.797697739646487
+    }
+  },
+  "per_domain": {
+    "adt_mini": {
+      "correct": {
+        "num_sequences": 5,
+        "MAE": 0.04574588909745216,
+        "MSE": 0.006192285660654306,
+        "RMSE": 0.07869107738908082,
+        "PSNR": 22.081490171209893,
+        "SSIM": 0.7163765072822571,
+        "LPIPS": 0.09105077236890793,
+        "temporal_delta_MAE": 0.020991088449954988,
+        "dynamic_MAE": 0.09572374259042346,
+        "dynamic_MSE": 0.017072219748434894,
+        "dynamic_pixel_values": 140865.0,
+        "dynamic_PSNR": 17.677100077767708
+      },
+      "base_only": {
+        "num_sequences": 5,
+        "MAE": 0.06262729912996293,
+        "MSE": 0.00787703599780798,
+        "RMSE": 0.08875266755319515,
+        "PSNR": 21.036371698139583,
+        "SSIM": 0.6255964517593384,
+        "LPIPS": 0.3977323114871979,
+        "temporal_delta_MAE": 0.0283680971711874,
+        "dynamic_MAE": 0.09839498575209421,
+        "dynamic_MSE": 0.016049005747205324,
+        "dynamic_pixel_values": 140865.0,
+        "dynamic_PSNR": 17.945518674259162
+      },
+      "camera_only": {
+        "num_sequences": 5,
+        "MAE": 0.046069502085447314,
+        "MSE": 0.006235750578343868,
+        "RMSE": 0.07896676882299204,
+        "PSNR": 22.051112643323417,
+        "SSIM": 0.7137977123260498,
+        "LPIPS": 0.09314718171954155,
+        "temporal_delta_MAE": 0.021226926892995834,
+        "dynamic_MAE": 0.09578734238011571,
+        "dynamic_MSE": 0.017083469862476372,
+        "dynamic_pixel_values": 140865.0,
+        "dynamic_PSNR": 17.674239141460262
+      },
+      "object_only": {
+        "num_sequences": 5,
+        "MAE": 0.062499406188726424,
+        "MSE": 0.007833384163677692,
+        "RMSE": 0.08850640747244061,
+        "PSNR": 21.060505743288054,
+        "SSIM": 0.6257908821105957,
+        "LPIPS": 0.3995512843132019,
+        "temporal_delta_MAE": 0.028272124007344246,
+        "dynamic_MAE": 0.09820626790000621,
+        "dynamic_MSE": 0.015970438446509624,
+        "dynamic_pixel_values": 140865.0,
+        "dynamic_PSNR": 17.966831607377898
+      },
+      "time_reverse": {
+        "num_sequences": 5,
+        "MAE": 0.045606207102537155,
+        "MSE": 0.00617627240717411,
+        "RMSE": 0.07858926394345547,
+        "PSNR": 22.092735575033494,
+        "SSIM": 0.71715327501297,
+        "LPIPS": 0.09006388634443283,
+        "temporal_delta_MAE": 0.021062003821134566,
+        "dynamic_MAE": 0.09558396378514003,
+        "dynamic_MSE": 0.01704686934992058,
+        "dynamic_pixel_values": 140865.0,
+        "dynamic_PSNR": 17.683553673397412
+      },
+      "cross_video": {
+        "num_sequences": 5,
+        "MAE": 0.05693840980529785,
+        "MSE": 0.009127000160515309,
+        "RMSE": 0.09553533461769687,
+        "PSNR": 20.39671941831979,
+        "SSIM": 0.6066122055053711,
+        "LPIPS": 0.08923629224300385,
+        "temporal_delta_MAE": 0.022936035320162772,
+        "dynamic_MAE": 0.11986944538265804,
+        "dynamic_MSE": 0.024348999495721745,
+        "dynamic_pixel_values": 140865.0,
+        "dynamic_PSNR": 16.135188793123515
+      },
+      "uv_noise_0.005": {
+        "num_sequences": 5,
+        "MAE": 0.045533813536167145,
+        "MSE": 0.006226217001676559,
+        "RMSE": 0.07890638124813835,
+        "PSNR": 22.05775746970503,
+        "SSIM": 0.717516052722931,
+        "LPIPS": 0.08753303587436675,
+        "temporal_delta_MAE": 0.021019603312015533,
+        "dynamic_MAE": 0.09588428977045842,
+        "dynamic_MSE": 0.017219679888684423,
+        "dynamic_pixel_values": 140865.0,
+        "dynamic_PSNR": 17.63974926277843
+      },
+      "uv_noise_0.01": {
+        "num_sequences": 5,
+        "MAE": 0.04523271694779396,
+        "MSE": 0.0062375557608902454,
+        "RMSE": 0.0789781980098954,
+        "PSNR": 22.049855589575404,
+        "SSIM": 0.7190759897232055,
+        "LPIPS": 0.08149123266339302,
+        "temporal_delta_MAE": 0.0210513174533844,
+        "dynamic_MAE": 0.09594868507746779,
+        "dynamic_MSE": 0.017298181979491112,
+        "dynamic_pixel_values": 140865.0,
+        "dynamic_PSNR": 17.619995383604707
+      },
+      "uv_noise_0.02": {
+        "num_sequences": 5,
+        "MAE": 0.04511076211929321,
+        "MSE": 0.006299614626914263,
+        "RMSE": 0.07937011167255759,
+        "PSNR": 22.00686017296215,
+        "SSIM": 0.7195079922676086,
+        "LPIPS": 0.0764001227915287,
+        "temporal_delta_MAE": 0.021133438870310783,
+        "dynamic_MAE": 0.0962695939901457,
+        "dynamic_MSE": 0.01751095361485842,
+        "dynamic_pixel_values": 140865.0,
+        "dynamic_PSNR": 17.56690202380646
+      },
+      "uv_noise_0.05": {
+        "num_sequences": 5,
+        "MAE": 0.044697704911232,
+        "MSE": 0.006348587200045585,
+        "RMSE": 0.07967802206408983,
+        "PSNR": 21.97322910848266,
+        "SSIM": 0.7213710665702819,
+        "LPIPS": 0.06557954624295234,
+        "temporal_delta_MAE": 0.02107432559132576,
+        "dynamic_MAE": 0.09644075846666134,
+        "dynamic_MSE": 0.017699872079428886,
+        "dynamic_pixel_values": 140865.0,
+        "dynamic_PSNR": 17.520298723612957
+      },
+      "xyz_noise_rel_0.01": {
+        "num_sequences": 5,
+        "MAE": 0.04574325531721115,
+        "MSE": 0.006192152760922909,
+        "RMSE": 0.07869023294490181,
+        "PSNR": 22.081583381120637,
+        "SSIM": 0.7164167642593384,
+        "LPIPS": 0.09097107350826264,
+        "temporal_delta_MAE": 0.020997073501348495,
+        "dynamic_MAE": 0.09572439772233167,
+        "dynamic_MSE": 0.0170742432047916,
+        "dynamic_pixel_values": 140865.0,
+        "dynamic_PSNR": 17.676585367982206
+      },
+      "xyz_noise_rel_0.05": {
+        "num_sequences": 5,
+        "MAE": 0.04571033492684364,
+        "MSE": 0.00618743421509862,
+        "RMSE": 0.07866024545536722,
+        "PSNR": 22.084894054598358,
+        "SSIM": 0.7166900157928466,
+        "LPIPS": 0.09056948646903037,
+        "temporal_delta_MAE": 0.021051566675305368,
+        "dynamic_MAE": 0.09569503117457318,
+        "dynamic_MSE": 0.01707226827672439,
+        "dynamic_pixel_values": 140865.0,
+        "dynamic_PSNR": 17.677087732836178
+      },
+      "xyz_noise_rel_0.1": {
+        "num_sequences": 5,
+        "MAE": 0.045705453306436536,
+        "MSE": 0.006184003222733736,
+        "RMSE": 0.0786384334961839,
+        "PSNR": 22.08730292761285,
+        "SSIM": 0.7165652394294739,
+        "LPIPS": 0.09038563892245292,
+        "temporal_delta_MAE": 0.02109495922923088,
+        "dynamic_MAE": 0.095664007732359,
+        "dynamic_MSE": 0.01705631438490809,
+        "dynamic_pixel_values": 140865.0,
+        "dynamic_PSNR": 17.68114807589471
+      },
+      "xyz_noise_rel_0.2": {
+        "num_sequences": 5,
+        "MAE": 0.04572568386793137,
+        "MSE": 0.006199267879128456,
+        "RMSE": 0.0787354296306844,
+        "PSNR": 22.076595967644618,
+        "SSIM": 0.7165081024169921,
+        "LPIPS": 0.09101521968841553,
+        "temporal_delta_MAE": 0.02117050774395466,
+        "dynamic_MAE": 0.09573478277628403,
+        "dynamic_MSE": 0.0171138100090429,
+        "dynamic_pixel_values": 140865.0,
+        "dynamic_PSNR": 17.66653293690788
+      },
+      "dropout_0.25": {
+        "num_sequences": 5,
+        "MAE": 0.04665679782629013,
+        "MSE": 0.0064741079695522785,
+        "RMSE": 0.08046184169873492,
+        "PSNR": 21.888200620867103,
+        "SSIM": 0.7039818048477173,
+        "LPIPS": 0.0870200052857399,
+        "temporal_delta_MAE": 0.021110542491078375,
+        "dynamic_MAE": 0.09828166353035264,
+        "dynamic_MSE": 0.01777883410576505,
+        "dynamic_pixel_values": 140865.0,
+        "dynamic_PSNR": 17.50096722445372
+      },
+      "dropout_0.5": {
+        "num_sequences": 5,
+        "MAE": 0.04607003405690193,
+        "MSE": 0.006399296503514051,
+        "RMSE": 0.0799956030261292,
+        "PSNR": 21.93867766865324,
+        "SSIM": 0.7098878145217895,
+        "LPIPS": 0.07988570481538773,
+        "temporal_delta_MAE": 0.02101034075021744,
+        "dynamic_MAE": 0.09672580150709456,
+        "dynamic_MSE": 0.017458077927212556,
+        "dynamic_pixel_values": 140865.0,
+        "dynamic_PSNR": 17.580035722888105
+      },
+      "dropout_0.75": {
+        "num_sequences": 5,
+        "MAE": 0.04704579934477806,
+        "MSE": 0.006652463041245937,
+        "RMSE": 0.08156263262821975,
+        "PSNR": 21.77017529557864,
+        "SSIM": 0.6986885786056518,
+        "LPIPS": 0.07547035664319993,
+        "temporal_delta_MAE": 0.02126943729817867,
+        "dynamic_MAE": 0.09790452939483282,
+        "dynamic_MSE": 0.017797733924726798,
+        "dynamic_pixel_values": 140865.0,
+        "dynamic_PSNR": 17.496352901987777
+      },
+      "dropout_0.9": {
+        "num_sequences": 5,
+        "MAE": 0.0527118518948555,
+        "MSE": 0.008233227580785752,
+        "RMSE": 0.09073713451936727,
+        "PSNR": 20.84429879764793,
+        "SSIM": 0.6516347289085388,
+        "LPIPS": 0.08080121874809265,
+        "temporal_delta_MAE": 0.02282005548477173,
+        "dynamic_MAE": 0.10715333157799578,
+        "dynamic_MSE": 0.020904039917707114,
+        "dynamic_pixel_values": 140865.0,
+        "dynamic_PSNR": 16.797697739646487
+      }
+    }
+  },
+  "per_source_sequence": {
+    "correct": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.047754643484950066,
+        "MSE": 0.007023378973826766,
+        "RMSE": 0.08380560228186876,
+        "PSNR": 21.53453896897507,
+        "SSIM": 0.7342163920402527,
+        "LPIPS": 0.11693182587623596,
+        "temporal_delta_MAE": 0.020012729801237583,
+        "dynamic_MAE": 0.11058404175772801,
+        "dynamic_MSE": 0.022278269638114086,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.521185440100737,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "correct",
+        "num_clips": 2
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.04575611278414726,
+        "MSE": 0.005521017126739025,
+        "RMSE": 0.07430354720159076,
+        "PSNR": 22.57980905633505,
+        "SSIM": 0.7012519836425781,
+        "LPIPS": 0.06514289975166321,
+        "temporal_delta_MAE": 0.02584279328584671,
+        "dynamic_MAE": 0.08150728655029282,
+        "dynamic_MSE": 0.012306322992848798,
+        "dynamic_pixel_values": 34662.0,
+        "dynamic_PSNR": 19.098716905667704,
+        "source_sequence": "Apartment_release_clean_seq140",
+        "domain": "adt_mini",
+        "condition": "correct",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.039752859622240067,
+        "MSE": 0.004242689348757267,
+        "RMSE": 0.06513592978347102,
+        "PSNR": 23.723587662677055,
+        "SSIM": 0.7366487979888916,
+        "LPIPS": 0.10350200533866882,
+        "temporal_delta_MAE": 0.020668169483542442,
+        "dynamic_MAE": 0.08403090766992874,
+        "dynamic_MSE": 0.011828269866711781,
+        "dynamic_pixel_values": 27015.0,
+        "dynamic_PSNR": 19.270787754304344,
+        "source_sequence": "Apartment_release_clean_seq141",
+        "domain": "adt_mini",
+        "condition": "correct",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.04771118611097336,
+        "MSE": 0.007150963880121708,
+        "RMSE": 0.08456337197700732,
+        "PSNR": 21.456354155968658,
+        "SSIM": 0.6755489706993103,
+        "LPIPS": 0.05274530500173569,
+        "temporal_delta_MAE": 0.018419019877910614,
+        "dynamic_MAE": 0.09800184884617685,
+        "dynamic_MSE": 0.018675731380421966,
+        "dynamic_pixel_values": 29256.0,
+        "dynamic_PSNR": 17.28722381305777,
+        "source_sequence": "Apartment_release_clean_seq142",
+        "domain": "adt_mini",
+        "condition": "correct",
+        "num_clips": 1
+      }
+    ],
+    "base_only": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.06660556606948376,
+        "MSE": 0.008723686682060361,
+        "RMSE": 0.09340067816702596,
+        "PSNR": 20.592999408347183,
+        "SSIM": 0.6390210688114166,
+        "LPIPS": 0.4045969843864441,
+        "temporal_delta_MAE": 0.027846108190715313,
+        "dynamic_MAE": 0.10958767693594539,
+        "dynamic_MSE": 0.019822709617501676,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 17.0283698095582,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "base_only",
+        "num_clips": 2
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.07982057332992554,
+        "MSE": 0.011109909974038601,
+        "RMSE": 0.10540355769156277,
+        "PSNR": 19.542894602253497,
+        "SSIM": 0.5159706473350525,
+        "LPIPS": 0.4519493877887726,
+        "temporal_delta_MAE": 0.035378530621528625,
+        "dynamic_MAE": 0.10318120826887153,
+        "dynamic_MSE": 0.0164990219583721,
+        "dynamic_pixel_values": 34662.0,
+        "dynamic_PSNR": 17.825417994631472,
+        "source_sequence": "Apartment_release_clean_seq140",
+        "domain": "adt_mini",
+        "condition": "base_only",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.04814884066581726,
+        "MSE": 0.005051836371421814,
+        "RMSE": 0.07107627150759818,
+        "PSNR": 22.965507246526208,
+        "SSIM": 0.6414411067962646,
+        "LPIPS": 0.3586829900741577,
+        "temporal_delta_MAE": 0.02724359557032585,
+        "dynamic_MAE": 0.09060761237969646,
+        "dynamic_MSE": 0.013050961181143577,
+        "dynamic_pixel_values": 27015.0,
+        "dynamic_PSNR": 18.843575020962234,
+        "source_sequence": "Apartment_release_clean_seq141",
+        "domain": "adt_mini",
+        "condition": "base_only",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.051955949515104294,
+        "MSE": 0.005776060279458761,
+        "RMSE": 0.07600039657435191,
+        "PSNR": 22.383682830804347,
+        "SSIM": 0.6925283670425415,
+        "LPIPS": 0.3688352108001709,
+        "temporal_delta_MAE": 0.0235261432826519,
+        "dynamic_MAE": 0.08081234938986874,
+        "dynamic_MSE": 0.01184354807660982,
+        "dynamic_pixel_values": 29256.0,
+        "dynamic_PSNR": 19.265181726757746,
+        "source_sequence": "Apartment_release_clean_seq142",
+        "domain": "adt_mini",
+        "condition": "base_only",
+        "num_clips": 1
+      }
+    ],
+    "camera_only": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.048076020553708076,
+        "MSE": 0.007069016341120005,
+        "RMSE": 0.08407744252247451,
+        "PSNR": 21.506410143989577,
+        "SSIM": 0.7308580279350281,
+        "LPIPS": 0.11983384937047958,
+        "temporal_delta_MAE": 0.020307905040681362,
+        "dynamic_MAE": 0.110770164024636,
+        "dynamic_MSE": 0.022285807966412444,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.51971616054197,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "camera_only",
+        "num_clips": 2
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.04654349386692047,
+        "MSE": 0.005636317189782858,
+        "RMSE": 0.0750754100207442,
+        "PSNR": 22.490045744881215,
+        "SSIM": 0.6963760256767273,
+        "LPIPS": 0.06775230169296265,
+        "temporal_delta_MAE": 0.026175271719694138,
+        "dynamic_MAE": 0.08151665436032254,
+        "dynamic_MSE": 0.01233339543557471,
+        "dynamic_pixel_values": 34662.0,
+        "dynamic_PSNR": 19.089173438478426,
+        "source_sequence": "Apartment_release_clean_seq140",
+        "domain": "adt_mini",
+        "condition": "camera_only",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.039749905467033386,
+        "MSE": 0.004263380076736212,
+        "RMSE": 0.0652945639141285,
+        "PSNR": 23.702459486403875,
+        "SSIM": 0.7356018424034119,
+        "LPIPS": 0.10463768243789673,
+        "temporal_delta_MAE": 0.020814213901758194,
+        "dynamic_MAE": 0.08419139974319823,
+        "dynamic_MSE": 0.011904519190727374,
+        "dynamic_pixel_values": 27015.0,
+        "dynamic_PSNR": 19.24288140538878,
+        "source_sequence": "Apartment_release_clean_seq141",
+        "domain": "adt_mini",
+        "condition": "camera_only",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.04790206998586655,
+        "MSE": 0.007141022942960262,
+        "RMSE": 0.08450457350321497,
+        "PSNR": 21.46239571604543,
+        "SSIM": 0.6752946376800537,
+        "LPIPS": 0.053678225725889206,
+        "temporal_delta_MAE": 0.018529338762164116,
+        "dynamic_MAE": 0.09783111897719698,
+        "dynamic_MSE": 0.018614550187087693,
+        "dynamic_pixel_values": 29256.0,
+        "dynamic_PSNR": 17.301474538654638,
+        "source_sequence": "Apartment_release_clean_seq142",
+        "domain": "adt_mini",
+        "condition": "camera_only",
+        "num_clips": 1
+      }
+    ],
+    "object_only": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.06633459031581879,
+        "MSE": 0.00864224717952311,
+        "RMSE": 0.09296368742430085,
+        "PSNR": 20.633733164594386,
+        "SSIM": 0.639558881521225,
+        "LPIPS": 0.4081588387489319,
+        "temporal_delta_MAE": 0.02769345883280039,
+        "dynamic_MAE": 0.1092587432580184,
+        "dynamic_MSE": 0.019681374824057594,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 17.059445676095994,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "object_only",
+        "num_clips": 2
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.07972856611013412,
+        "MSE": 0.011073702946305275,
+        "RMSE": 0.10523166323072763,
+        "PSNR": 19.557071306805756,
+        "SSIM": 0.5160913467407227,
+        "LPIPS": 0.45208656787872314,
+        "temporal_delta_MAE": 0.03529944643378258,
+        "dynamic_MAE": 0.10304499467626652,
+        "dynamic_MSE": 0.016446597439536633,
+        "dynamic_pixel_values": 34662.0,
+        "dynamic_PSNR": 17.83923937597391,
+        "source_sequence": "Apartment_release_clean_seq140",
+        "domain": "adt_mini",
+        "condition": "object_only",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.048195090144872665,
+        "MSE": 0.005045629106462002,
+        "RMSE": 0.07103259186079304,
+        "PSNR": 22.970846767151937,
+        "SSIM": 0.640855610370636,
+        "LPIPS": 0.36094576120376587,
+        "temporal_delta_MAE": 0.027170509099960327,
+        "dynamic_MAE": 0.09052297877047473,
+        "dynamic_MSE": 0.01300440252919385,
+        "dynamic_pixel_values": 27015.0,
+        "dynamic_PSNR": 18.85909596119767,
+        "source_sequence": "Apartment_release_clean_seq141",
+        "domain": "adt_mini",
+        "condition": "object_only",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.05190419405698776,
+        "MSE": 0.0057630944065749645,
+        "RMSE": 0.07591504730009041,
+        "PSNR": 22.393442660825787,
+        "SSIM": 0.6928896903991699,
+        "LPIPS": 0.36840641498565674,
+        "temporal_delta_MAE": 0.023503746837377548,
+        "dynamic_MAE": 0.0807046240915325,
+        "dynamic_MSE": 0.0118115774294963,
+        "dynamic_pixel_values": 29256.0,
+        "dynamic_PSNR": 19.276920987303875,
+        "source_sequence": "Apartment_release_clean_seq142",
+        "domain": "adt_mini",
+        "condition": "object_only",
+        "num_clips": 1
+      }
+    ],
+    "time_reverse": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.04729335568845272,
+        "MSE": 0.007005588850006461,
+        "RMSE": 0.08369939575651943,
+        "PSNR": 21.54555354516624,
+        "SSIM": 0.7363441586494446,
+        "LPIPS": 0.11352887004613876,
+        "temporal_delta_MAE": 0.020013118162751198,
+        "dynamic_MAE": 0.11028893826854522,
+        "dynamic_MSE": 0.022305167791868818,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.51594505405613,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "time_reverse",
+        "num_clips": 2
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.04599737375974655,
+        "MSE": 0.005557619035243988,
+        "RMSE": 0.07454944020744883,
+        "PSNR": 22.5511122664139,
+        "SSIM": 0.699133574962616,
+        "LPIPS": 0.0653633177280426,
+        "temporal_delta_MAE": 0.02607370726764202,
+        "dynamic_MAE": 0.0817628305470508,
+        "dynamic_MSE": 0.01236904682011731,
+        "dynamic_pixel_values": 34662.0,
+        "dynamic_PSNR": 19.076637665562608,
+        "source_sequence": "Apartment_release_clean_seq140",
+        "domain": "adt_mini",
+        "condition": "time_reverse",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.039652347564697266,
+        "MSE": 0.004231645725667477,
+        "RMSE": 0.06505110087975051,
+        "PSNR": 23.73490698682721,
+        "SSIM": 0.7375280857086182,
+        "LPIPS": 0.10365355014801025,
+        "temporal_delta_MAE": 0.020557550713419914,
+        "dynamic_MAE": 0.08405781148783084,
+        "dynamic_MSE": 0.01182357276917916,
+        "dynamic_pixel_values": 27015.0,
+        "dynamic_PSNR": 19.272512713832953,
+        "source_sequence": "Apartment_release_clean_seq141",
+        "domain": "adt_mini",
+        "condition": "time_reverse",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.04779460281133652,
+        "MSE": 0.007080919574946165,
+        "RMSE": 0.08414820006955684,
+        "PSNR": 21.499103383001295,
+        "SSIM": 0.6764163970947266,
+        "LPIPS": 0.05424482375383377,
+        "temporal_delta_MAE": 0.018652524799108505,
+        "dynamic_MAE": 0.09750488047590665,
+        "dynamic_MSE": 0.018437786900283276,
+        "dynamic_pixel_values": 29256.0,
+        "dynamic_PSNR": 17.342912088070925,
+        "source_sequence": "Apartment_release_clean_seq142",
+        "domain": "adt_mini",
+        "condition": "time_reverse",
+        "num_clips": 1
+      }
+    ],
+    "cross_video": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.059667930006980896,
+        "MSE": 0.010561998933553696,
+        "RMSE": 0.10277158621697777,
+        "PSNR": 19.762538806982878,
+        "SSIM": 0.6237618923187256,
+        "LPIPS": 0.08445471152663231,
+        "temporal_delta_MAE": 0.023044896312057972,
+        "dynamic_MAE": 0.13100065111989806,
+        "dynamic_MSE": 0.030060079706447643,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 15.220098721847563,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "cross_video",
+        "num_clips": 2
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.05664103850722313,
+        "MSE": 0.008086874149739742,
+        "RMSE": 0.08992704904387636,
+        "PSNR": 20.92219315452369,
+        "SSIM": 0.5957410931587219,
+        "LPIPS": 0.09615809470415115,
+        "temporal_delta_MAE": 0.02660870924592018,
+        "dynamic_MAE": 0.10768193385858432,
+        "dynamic_MSE": 0.019020031702359573,
+        "dynamic_pixel_values": 34662.0,
+        "dynamic_PSNR": 17.20788763521194,
+        "source_sequence": "Apartment_release_clean_seq140",
+        "domain": "adt_mini",
+        "condition": "cross_video",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.05064409226179123,
+        "MSE": 0.007023947313427925,
+        "RMSE": 0.08380899303432732,
+        "PSNR": 21.534187547291378,
+        "SSIM": 0.5943213701248169,
+        "LPIPS": 0.09499362111091614,
+        "temporal_delta_MAE": 0.02302752248942852,
+        "dynamic_MAE": 0.1138744082425273,
+        "dynamic_MSE": 0.020070600606723117,
+        "dynamic_pixel_values": 27015.0,
+        "dynamic_PSNR": 16.974396311855177,
+        "source_sequence": "Apartment_release_clean_seq141",
+        "domain": "adt_mini",
+        "condition": "cross_video",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.05807105824351311,
+        "MSE": 0.009400181472301483,
+        "RMSE": 0.09695453301574652,
+        "PSNR": 20.26863762181322,
+        "SSIM": 0.5954747796058655,
+        "LPIPS": 0.08612032234668732,
+        "temporal_delta_MAE": 0.01895415224134922,
+        "dynamic_MAE": 0.1208468889127444,
+        "dynamic_MSE": 0.02486608900070712,
+        "dynamic_pixel_values": 29256.0,
+        "dynamic_PSNR": 16.043925162571544,
+        "source_sequence": "Apartment_release_clean_seq142",
+        "domain": "adt_mini",
+        "condition": "cross_video",
+        "num_clips": 1
+      }
+    ],
+    "uv_noise_0.005": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.047303395345807076,
+        "MSE": 0.007076934911310673,
+        "RMSE": 0.08412452027388134,
+        "PSNR": 21.501547987127584,
+        "SSIM": 0.7358832359313965,
+        "LPIPS": 0.11020665988326073,
+        "temporal_delta_MAE": 0.019990557804703712,
+        "dynamic_MAE": 0.11102547707069114,
+        "dynamic_MSE": 0.022597038124192653,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.459484816763716,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "uv_noise_0.005",
+        "num_clips": 2
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.04558872804045677,
+        "MSE": 0.0055264621041715145,
+        "RMSE": 0.07434017826297913,
+        "PSNR": 22.575528036574667,
+        "SSIM": 0.7026324272155762,
+        "LPIPS": 0.06450828909873962,
+        "temporal_delta_MAE": 0.025898128747940063,
+        "dynamic_MAE": 0.08141370001505611,
+        "dynamic_MSE": 0.01233211616602836,
+        "dynamic_pixel_values": 34662.0,
+        "dynamic_PSNR": 19.089623929604915,
+        "source_sequence": "Apartment_release_clean_seq140",
+        "domain": "adt_mini",
+        "condition": "uv_noise_0.005",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.0395701639354229,
+        "MSE": 0.004244730342179537,
+        "RMSE": 0.06515159508545848,
+        "PSNR": 23.72149894259426,
+        "SSIM": 0.7385445833206177,
+        "LPIPS": 0.09944857656955719,
+        "temporal_delta_MAE": 0.02061285637319088,
+        "dynamic_MAE": 0.08390705250555247,
+        "dynamic_MSE": 0.011846455022094207,
+        "dynamic_pixel_values": 27015.0,
+        "dynamic_PSNR": 19.264115901325695,
+        "source_sequence": "Apartment_release_clean_seq141",
+        "domain": "adt_mini",
+        "condition": "uv_noise_0.005",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.047903385013341904,
+        "MSE": 0.0072060227394104,
+        "RMSE": 0.0848882956561763,
+        "PSNR": 21.423043717464957,
+        "SSIM": 0.6746367812156677,
+        "LPIPS": 0.05329499393701553,
+        "temporal_delta_MAE": 0.0186059158295393,
+        "dynamic_MAE": 0.09824670713913386,
+        "dynamic_MSE": 0.018794336441536566,
+        "dynamic_pixel_values": 29256.0,
+        "dynamic_PSNR": 17.259730030103608,
+        "source_sequence": "Apartment_release_clean_seq142",
+        "domain": "adt_mini",
+        "condition": "uv_noise_0.005",
+        "num_clips": 1
+      }
+    ],
+    "uv_noise_0.01": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.04673991538584232,
+        "MSE": 0.007101534632965922,
+        "RMSE": 0.08427060361102158,
+        "PSNR": 21.48647790631542,
+        "SSIM": 0.7381016612052917,
+        "LPIPS": 0.098917406052351,
+        "temporal_delta_MAE": 0.020050695165991783,
+        "dynamic_MAE": 0.11130307139584836,
+        "dynamic_MSE": 0.02279312022553798,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.421962187433905,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "uv_noise_0.01",
+        "num_clips": 2
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.0453263595700264,
+        "MSE": 0.005523155443370342,
+        "RMSE": 0.07431793487019363,
+        "PSNR": 22.57812733845306,
+        "SSIM": 0.7048546671867371,
+        "LPIPS": 0.06177682429552078,
+        "temporal_delta_MAE": 0.025961345061659813,
+        "dynamic_MAE": 0.0813238465168989,
+        "dynamic_MSE": 0.012351703165063236,
+        "dynamic_pixel_values": 34662.0,
+        "dynamic_PSNR": 19.082731538059495,
+        "source_sequence": "Apartment_release_clean_seq140",
+        "domain": "adt_mini",
+        "condition": "uv_noise_0.01",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.03946250304579735,
+        "MSE": 0.004259130917489529,
+        "RMSE": 0.06526201741817003,
+        "PSNR": 23.7067901034432,
+        "SSIM": 0.7398576736450195,
+        "LPIPS": 0.09547027945518494,
+        "temporal_delta_MAE": 0.020582957193255424,
+        "dynamic_MAE": 0.0838626255089765,
+        "dynamic_MSE": 0.011891803815588561,
+        "dynamic_pixel_values": 27015.0,
+        "dynamic_PSNR": 19.247522641584997,
+        "source_sequence": "Apartment_release_clean_seq141",
+        "domain": "adt_mini",
+        "condition": "uv_noise_0.01",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.04789489135146141,
+        "MSE": 0.0072024231776595116,
+        "RMSE": 0.08486709125249617,
+        "PSNR": 21.42521365285868,
+        "SSIM": 0.6744642853736877,
+        "LPIPS": 0.05237424746155739,
+        "temporal_delta_MAE": 0.018610894680023193,
+        "dynamic_MAE": 0.09823046781536265,
+        "dynamic_MSE": 0.018772576915979843,
+        "dynamic_pixel_values": 29256.0,
+        "dynamic_PSNR": 17.264761075824616,
+        "source_sequence": "Apartment_release_clean_seq142",
+        "domain": "adt_mini",
+        "condition": "uv_noise_0.01",
+        "num_clips": 1
+      }
+    ],
+    "uv_noise_0.02": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.04648788832128048,
+        "MSE": 0.007201522123068571,
+        "RMSE": 0.08486178246459693,
+        "PSNR": 21.42575700820901,
+        "SSIM": 0.7391242980957031,
+        "LPIPS": 0.09080410748720169,
+        "temporal_delta_MAE": 0.02018955908715725,
+        "dynamic_MAE": 0.11193992873276407,
+        "dynamic_MSE": 0.02322036631928798,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.341309332111187,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "uv_noise_0.02",
+        "num_clips": 2
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.045188166201114655,
+        "MSE": 0.005546861793845892,
+        "RMSE": 0.07447725688991165,
+        "PSNR": 22.55952654910392,
+        "SSIM": 0.7056412100791931,
+        "LPIPS": 0.05729370191693306,
+        "temporal_delta_MAE": 0.02600347064435482,
+        "dynamic_MAE": 0.08141677800978016,
+        "dynamic_MSE": 0.012431613930263149,
+        "dynamic_pixel_values": 34662.0,
+        "dynamic_PSNR": 19.054724855573035,
+        "source_sequence": "Apartment_release_clean_seq140",
+        "domain": "adt_mini",
+        "condition": "uv_noise_0.02",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.039308417588472366,
+        "MSE": 0.0042577264830470085,
+        "RMSE": 0.06525125656297362,
+        "PSNR": 23.7082224114071,
+        "SSIM": 0.7410290241241455,
+        "LPIPS": 0.09009066969156265,
+        "temporal_delta_MAE": 0.020572006702423096,
+        "dynamic_MAE": 0.08372730210646863,
+        "dynamic_MSE": 0.011893886895879604,
+        "dynamic_pixel_values": 27015.0,
+        "dynamic_PSNR": 19.246761957113772,
+        "source_sequence": "Apartment_release_clean_seq141",
+        "domain": "adt_mini",
+        "condition": "uv_noise_0.02",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.048081450164318085,
+        "MSE": 0.007290440611541271,
+        "RMSE": 0.08538407703747386,
+        "PSNR": 21.372462234819615,
+        "SSIM": 0.6726211309432983,
+        "LPIPS": 0.053008027374744415,
+        "temporal_delta_MAE": 0.018712598830461502,
+        "dynamic_MAE": 0.09870352782869327,
+        "dynamic_MSE": 0.018971260369133682,
+        "dynamic_pixel_values": 29256.0,
+        "dynamic_PSNR": 17.219038154910415,
+        "source_sequence": "Apartment_release_clean_seq142",
+        "domain": "adt_mini",
+        "condition": "uv_noise_0.02",
+        "num_clips": 1
+      }
+    ],
+    "uv_noise_0.05": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.04560869187116623,
+        "MSE": 0.007265714695677161,
+        "RMSE": 0.0852391617490292,
+        "PSNR": 21.387216596698035,
+        "SSIM": 0.7423125803470612,
+        "LPIPS": 0.07466704770922661,
+        "temporal_delta_MAE": 0.019955139607191086,
+        "dynamic_MAE": 0.11223928116457131,
+        "dynamic_MSE": 0.023560003029901917,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.278246580330855,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "uv_noise_0.05",
+        "num_clips": 2
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.044928066432476044,
+        "MSE": 0.005535779055207968,
+        "RMSE": 0.07440281617793756,
+        "PSNR": 22.568212518278244,
+        "SSIM": 0.7070881128311157,
+        "LPIPS": 0.049655236303806305,
+        "temporal_delta_MAE": 0.026261460036039352,
+        "dynamic_MAE": 0.08164394388126767,
+        "dynamic_MSE": 0.012488699462848364,
+        "dynamic_pixel_values": 34662.0,
+        "dynamic_PSNR": 19.034827854462492,
+        "source_sequence": "Apartment_release_clean_seq140",
+        "domain": "adt_mini",
+        "condition": "uv_noise_0.05",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.038920290768146515,
+        "MSE": 0.0042557381093502045,
+        "RMSE": 0.06523601849707111,
+        "PSNR": 23.710251056104717,
+        "SSIM": 0.7450444102287292,
+        "LPIPS": 0.07703784108161926,
+        "temporal_delta_MAE": 0.020282631739974022,
+        "dynamic_MAE": 0.0830950940160559,
+        "dynamic_MSE": 0.01187609260046502,
+        "dynamic_pixel_values": 27015.0,
+        "dynamic_PSNR": 19.25326424774697,
+        "source_sequence": "Apartment_release_clean_seq141",
+        "domain": "adt_mini",
+        "condition": "uv_noise_0.05",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.048422783613204956,
+        "MSE": 0.0074199894443154335,
+        "RMSE": 0.08613936059848269,
+        "PSNR": 21.295967125483074,
+        "SSIM": 0.6700976490974426,
+        "LPIPS": 0.05187055841088295,
+        "temporal_delta_MAE": 0.018917256966233253,
+        "dynamic_MAE": 0.09933139549632981,
+        "dynamic_MSE": 0.019250015955594578,
+        "dynamic_pixel_values": 29256.0,
+        "dynamic_PSNR": 17.155689061854126,
+        "source_sequence": "Apartment_release_clean_seq142",
+        "domain": "adt_mini",
+        "condition": "uv_noise_0.05",
+        "num_clips": 1
+      }
+    ],
+    "xyz_noise_rel_0.01": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.047752754762768745,
+        "MSE": 0.007024351274594665,
+        "RMSE": 0.08381140301053708,
+        "PSNR": 21.533937783087453,
+        "SSIM": 0.7342850565910339,
+        "LPIPS": 0.11688802763819695,
+        "temporal_delta_MAE": 0.02002727147191763,
+        "dynamic_MAE": 0.11060017698288423,
+        "dynamic_MSE": 0.02228914624670802,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.519065662189377,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "xyz_noise_rel_0.01",
+        "num_clips": 2
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.045748114585876465,
+        "MSE": 0.005518898367881775,
+        "RMSE": 0.0742892883791585,
+        "PSNR": 22.58147603520266,
+        "SSIM": 0.7013229131698608,
+        "LPIPS": 0.0650014653801918,
+        "temporal_delta_MAE": 0.02583928219974041,
+        "dynamic_MAE": 0.08150010925824751,
+        "dynamic_MSE": 0.012302642781765695,
+        "dynamic_pixel_values": 34662.0,
+        "dynamic_PSNR": 19.100015859384154,
+        "source_sequence": "Apartment_release_clean_seq140",
+        "domain": "adt_mini",
+        "condition": "xyz_noise_rel_0.01",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.03974998742341995,
+        "MSE": 0.004241762682795525,
+        "RMSE": 0.06512881607088773,
+        "PSNR": 23.724536329518134,
+        "SSIM": 0.7366795539855957,
+        "LPIPS": 0.10335760563611984,
+        "temporal_delta_MAE": 0.02066948264837265,
+        "dynamic_MAE": 0.08401864415602443,
+        "dynamic_MSE": 0.011825276286033222,
+        "dynamic_pixel_values": 27015.0,
+        "dynamic_PSNR": 19.271887036051254,
+        "source_sequence": "Apartment_release_clean_seq141",
+        "domain": "adt_mini",
+        "condition": "xyz_noise_rel_0.01",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.04771266505122185,
+        "MSE": 0.007151400204747915,
+        "RMSE": 0.08456595180536855,
+        "PSNR": 21.45608917407278,
+        "SSIM": 0.6755112409591675,
+        "LPIPS": 0.052720241248607635,
+        "temporal_delta_MAE": 0.01842205971479416,
+        "dynamic_MAE": 0.09799729248914753,
+        "dynamic_MSE": 0.018674035264000334,
+        "dynamic_pixel_values": 29256.0,
+        "dynamic_PSNR": 17.287618254078033,
+        "source_sequence": "Apartment_release_clean_seq142",
+        "domain": "adt_mini",
+        "condition": "xyz_noise_rel_0.01",
+        "num_clips": 1
+      }
+    ],
+    "xyz_noise_rel_0.05": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.04773961938917637,
+        "MSE": 0.00703052943572402,
+        "RMSE": 0.08384825243094826,
+        "PSNR": 21.530119690974246,
+        "SSIM": 0.7344666719436646,
+        "LPIPS": 0.11657176911830902,
+        "temporal_delta_MAE": 0.02016035933047533,
+        "dynamic_MAE": 0.11066051294604412,
+        "dynamic_MSE": 0.02233253044452956,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.51062065292491,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "xyz_noise_rel_0.05",
+        "num_clips": 2
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.04570566862821579,
+        "MSE": 0.005506615620106459,
+        "RMSE": 0.07420657396825742,
+        "PSNR": 22.591152376448946,
+        "SSIM": 0.7016286849975586,
+        "LPIPS": 0.0639575719833374,
+        "temporal_delta_MAE": 0.025834335014224052,
+        "dynamic_MAE": 0.0814545450754789,
+        "dynamic_MSE": 0.012286081831891733,
+        "dynamic_pixel_values": 34662.0,
+        "dynamic_PSNR": 19.105865963727418,
+        "source_sequence": "Apartment_release_clean_seq140",
+        "domain": "adt_mini",
+        "condition": "xyz_noise_rel_0.05",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.03971388190984726,
+        "MSE": 0.004234609194099903,
+        "RMSE": 0.06507387489691929,
+        "PSNR": 23.73186663887583,
+        "SSIM": 0.7370688915252686,
+        "LPIPS": 0.10279086232185364,
+        "temporal_delta_MAE": 0.020673498511314392,
+        "dynamic_MAE": 0.08397557274315195,
+        "dynamic_MSE": 0.011811029101309458,
+        "dynamic_pixel_values": 27015.0,
+        "dynamic_PSNR": 19.277122604263926,
+        "source_sequence": "Apartment_release_clean_seq141",
+        "domain": "adt_mini",
+        "condition": "xyz_noise_rel_0.05",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.04765288531780243,
+        "MSE": 0.0071348873898386955,
+        "RMSE": 0.08446826261880078,
+        "PSNR": 21.46612876979271,
+        "SSIM": 0.6758191585540771,
+        "LPIPS": 0.05295545980334282,
+        "temporal_delta_MAE": 0.018429281190037727,
+        "dynamic_MAE": 0.09784667401291615,
+        "dynamic_MSE": 0.018623258169798502,
+        "dynamic_pixel_values": 29256.0,
+        "dynamic_PSNR": 17.29944336170002,
+        "source_sequence": "Apartment_release_clean_seq142",
+        "domain": "adt_mini",
+        "condition": "xyz_noise_rel_0.05",
+        "num_clips": 1
+      }
+    ],
+    "xyz_noise_rel_0.1": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.04770037904381752,
+        "MSE": 0.007020807592198253,
+        "RMSE": 0.08379025953055792,
+        "PSNR": 21.536129288014713,
+        "SSIM": 0.734605073928833,
+        "LPIPS": 0.11612549424171448,
+        "temporal_delta_MAE": 0.02020264696329832,
+        "dynamic_MAE": 0.11056992099098524,
+        "dynamic_MSE": 0.022291378286187966,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.518630780616988,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "xyz_noise_rel_0.1",
+        "num_clips": 2
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.04571990296244621,
+        "MSE": 0.005503320600837469,
+        "RMSE": 0.07418436897916884,
+        "PSNR": 22.59375186240471,
+        "SSIM": 0.7013312578201294,
+        "LPIPS": 0.06366796791553497,
+        "temporal_delta_MAE": 0.02587873488664627,
+        "dynamic_MAE": 0.08145137551569442,
+        "dynamic_MSE": 0.012280791308351455,
+        "dynamic_pixel_values": 34662.0,
+        "dynamic_PSNR": 19.10773648685205,
+        "source_sequence": "Apartment_release_clean_seq140",
+        "domain": "adt_mini",
+        "condition": "xyz_noise_rel_0.1",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.03974149376153946,
+        "MSE": 0.004230074118822813,
+        "RMSE": 0.06503901997126658,
+        "PSNR": 23.73652022905397,
+        "SSIM": 0.736585259437561,
+        "LPIPS": 0.10316525399684906,
+        "temporal_delta_MAE": 0.020752394571900368,
+        "dynamic_MAE": 0.08393774292059966,
+        "dynamic_MSE": 0.011779968160049972,
+        "dynamic_pixel_values": 27015.0,
+        "dynamic_PSNR": 19.28855883397244,
+        "source_sequence": "Apartment_release_clean_seq141",
+        "domain": "adt_mini",
+        "condition": "xyz_noise_rel_0.1",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.04766511172056198,
+        "MSE": 0.007145006209611893,
+        "RMSE": 0.08452813856705879,
+        "PSNR": 21.459973894343815,
+        "SSIM": 0.6756995320320129,
+        "LPIPS": 0.052843984216451645,
+        "temporal_delta_MAE": 0.018438372761011124,
+        "dynamic_MAE": 0.09789060196786556,
+        "dynamic_MSE": 0.018651626916540626,
+        "dynamic_pixel_values": 29256.0,
+        "dynamic_PSNR": 17.29283280205975,
+        "source_sequence": "Apartment_release_clean_seq142",
+        "domain": "adt_mini",
+        "condition": "xyz_noise_rel_0.1",
+        "num_clips": 1
+      }
+    ],
+    "xyz_noise_rel_0.2": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.04773893766105175,
+        "MSE": 0.007070804946124554,
+        "RMSE": 0.08408807850179806,
+        "PSNR": 21.505311429554446,
+        "SSIM": 0.734655499458313,
+        "LPIPS": 0.11679643392562866,
+        "temporal_delta_MAE": 0.020343095995485783,
+        "dynamic_MAE": 0.11087853406413974,
+        "dynamic_MSE": 0.022505853321845834,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.477045158984318,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "xyz_noise_rel_0.2",
+        "num_clips": 2
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.045808665454387665,
+        "MSE": 0.005507978610694408,
+        "RMSE": 0.07421575715907242,
+        "PSNR": 22.590077549211827,
+        "SSIM": 0.700469970703125,
+        "LPIPS": 0.063688725233078,
+        "temporal_delta_MAE": 0.02593488059937954,
+        "dynamic_MAE": 0.0814475297831559,
+        "dynamic_MSE": 0.01227933859345023,
+        "dynamic_pixel_values": 34662.0,
+        "dynamic_PSNR": 19.108250251289487,
+        "source_sequence": "Apartment_release_clean_seq140",
+        "domain": "adt_mini",
+        "condition": "xyz_noise_rel_0.2",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.039781372994184494,
+        "MSE": 0.004242485389113426,
+        "RMSE": 0.06513436411843924,
+        "PSNR": 23.72379644694044,
+        "SSIM": 0.7361829280853271,
+        "LPIPS": 0.10443621128797531,
+        "temporal_delta_MAE": 0.020792625844478607,
+        "dynamic_MAE": 0.08404181560012956,
+        "dynamic_MSE": 0.011820651486298121,
+        "dynamic_pixel_values": 27015.0,
+        "dynamic_PSNR": 19.273585869820696,
+        "source_sequence": "Apartment_release_clean_seq141",
+        "domain": "adt_mini",
+        "condition": "xyz_noise_rel_0.2",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.04756050556898117,
+        "MSE": 0.007104265503585339,
+        "RMSE": 0.08428680503842424,
+        "PSNR": 21.484808162909186,
+        "SSIM": 0.6765766143798828,
+        "LPIPS": 0.053358294069767,
+        "temporal_delta_MAE": 0.01843884028494358,
+        "dynamic_MAE": 0.09761311481779379,
+        "dynamic_MSE": 0.01852656701630114,
+        "dynamic_pixel_values": 29256.0,
+        "dynamic_PSNR": 17.322050482473767,
+        "source_sequence": "Apartment_release_clean_seq142",
+        "domain": "adt_mini",
+        "condition": "xyz_noise_rel_0.2",
+        "num_clips": 1
+      }
+    ],
+    "dropout_0.25": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.047157617285847664,
+        "MSE": 0.006995449075475335,
+        "RMSE": 0.08363880125560944,
+        "PSNR": 21.551844005801996,
+        "SSIM": 0.735337495803833,
+        "LPIPS": 0.10705313086509705,
+        "temporal_delta_MAE": 0.01984439417719841,
+        "dynamic_MAE": 0.11053186630692742,
+        "dynamic_MSE": 0.022258583441057963,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.52502478065439,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "dropout_0.25",
+        "num_clips": 2
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.050442568957805634,
+        "MSE": 0.006608013063669205,
+        "RMSE": 0.08128968608420876,
+        "PSNR": 21.799291071111245,
+        "SSIM": 0.6468440294265747,
+        "LPIPS": 0.07313229888677597,
+        "temporal_delta_MAE": 0.02661447785794735,
+        "dynamic_MAE": 0.0904228637899573,
+        "dynamic_MSE": 0.014558830523159368,
+        "dynamic_pixel_values": 34662.0,
+        "dynamic_PSNR": 18.36873509482951,
+        "source_sequence": "Apartment_release_clean_seq140",
+        "domain": "adt_mini",
+        "condition": "dropout_0.25",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.03972958028316498,
+        "MSE": 0.004284976050257683,
+        "RMSE": 0.06545972846153338,
+        "PSNR": 23.68051601108344,
+        "SSIM": 0.7368230819702148,
+        "LPIPS": 0.09445568919181824,
+        "temporal_delta_MAE": 0.020581848919391632,
+        "dynamic_MAE": 0.08404848507195077,
+        "dynamic_MSE": 0.011899218858446697,
+        "dynamic_pixel_values": 27015.0,
+        "dynamic_PSNR": 19.244815475655425,
+        "source_sequence": "Apartment_release_clean_seq141",
+        "domain": "adt_mini",
+        "condition": "dropout_0.25",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.048796605318784714,
+        "MSE": 0.007486652582883835,
+        "RMSE": 0.08652544471358604,
+        "PSNR": 21.257123197819688,
+        "SSIM": 0.6655669212341309,
+        "LPIPS": 0.053405776619911194,
+        "temporal_delta_MAE": 0.018667597323656082,
+        "dynamic_MAE": 0.09982780475319165,
+        "dynamic_MSE": 0.01937736863805715,
+        "dynamic_pixel_values": 29256.0,
+        "dynamic_PSNR": 17.12705198573222,
+        "source_sequence": "Apartment_release_clean_seq142",
+        "domain": "adt_mini",
+        "condition": "dropout_0.25",
+        "num_clips": 1
+      }
+    ],
+    "dropout_0.5": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.04637365601956844,
+        "MSE": 0.0070141637697815895,
+        "RMSE": 0.08375060459352869,
+        "PSNR": 21.540240982375046,
+        "SSIM": 0.7389386892318726,
+        "LPIPS": 0.0934583805501461,
+        "temporal_delta_MAE": 0.01964008342474699,
+        "dynamic_MAE": 0.11002627147138859,
+        "dynamic_MSE": 0.02234734307016918,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.507741037873465,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "dropout_0.5",
+        "num_clips": 2
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.04848974943161011,
+        "MSE": 0.005924946628510952,
+        "RMSE": 0.07697367490584656,
+        "PSNR": 22.273155573933998,
+        "SSIM": 0.6742312908172607,
+        "LPIPS": 0.0748366117477417,
+        "temporal_delta_MAE": 0.02636592835187912,
+        "dynamic_MAE": 0.08440639132010559,
+        "dynamic_MSE": 0.012816711922345616,
+        "dynamic_pixel_values": 34662.0,
+        "dynamic_PSNR": 18.922233770901233,
+        "source_sequence": "Apartment_release_clean_seq140",
+        "domain": "adt_mini",
+        "condition": "dropout_0.5",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.03918648511171341,
+        "MSE": 0.004246228840202093,
+        "RMSE": 0.06516309415767557,
+        "PSNR": 23.719966042917985,
+        "SSIM": 0.7404594421386719,
+        "LPIPS": 0.08557207137346268,
+        "temporal_delta_MAE": 0.02032559923827648,
+        "dynamic_MAE": 0.08351149318087174,
+        "dynamic_MSE": 0.011872867440903781,
+        "dynamic_pixel_values": 27015.0,
+        "dynamic_PSNR": 19.254443810142014,
+        "source_sequence": "Apartment_release_clean_seq141",
+        "domain": "adt_mini",
+        "condition": "dropout_0.5",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.049926623702049255,
+        "MSE": 0.007796979509294033,
+        "RMSE": 0.08830050684618992,
+        "PSNR": 21.080736071173046,
+        "SSIM": 0.65687096118927,
+        "LPIPS": 0.05210307985544205,
+        "temporal_delta_MAE": 0.019080009311437607,
+        "dynamic_MAE": 0.10082345221386212,
+        "dynamic_MSE": 0.01976983287082137,
+        "dynamic_pixel_values": 29256.0,
+        "dynamic_PSNR": 17.03997002086775,
+        "source_sequence": "Apartment_release_clean_seq142",
+        "domain": "adt_mini",
+        "condition": "dropout_0.5",
+        "num_clips": 1
+      }
+    ],
+    "dropout_0.75": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.04564530774950981,
+        "MSE": 0.006931802723556757,
+        "RMSE": 0.0832574484569204,
+        "PSNR": 21.59153805636403,
+        "SSIM": 0.7415904700756073,
+        "LPIPS": 0.08621619641780853,
+        "temporal_delta_MAE": 0.019652869552373886,
+        "dynamic_MAE": 0.10735754923571057,
+        "dynamic_MSE": 0.021734398259171537,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.628523792292494,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "dropout_0.75",
+        "num_clips": 2
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.05273707956075668,
+        "MSE": 0.006695450749248266,
+        "RMSE": 0.08182573402816663,
+        "PSNR": 21.74220180217063,
+        "SSIM": 0.6332744359970093,
+        "LPIPS": 0.0770062506198883,
+        "temporal_delta_MAE": 0.02701335959136486,
+        "dynamic_MAE": 0.09135782757865242,
+        "dynamic_MSE": 0.014265496569437533,
+        "dynamic_pixel_values": 34662.0,
+        "dynamic_PSNR": 18.457131063333588,
+        "source_sequence": "Apartment_release_clean_seq140",
+        "domain": "adt_mini",
+        "condition": "dropout_0.75",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.03863541781902313,
+        "MSE": 0.004229193087667227,
+        "RMSE": 0.06503224652176201,
+        "PSNR": 23.737424862898248,
+        "SSIM": 0.7424461245536804,
+        "LPIPS": 0.07554672658443451,
+        "temporal_delta_MAE": 0.020075570791959763,
+        "dynamic_MAE": 0.08281162338920507,
+        "dynamic_MSE": 0.011878803767872016,
+        "dynamic_pixel_values": 27015.0,
+        "dynamic_PSNR": 19.25227291944881,
+        "source_sequence": "Apartment_release_clean_seq141",
+        "domain": "adt_mini",
+        "condition": "dropout_0.75",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.052565883845090866,
+        "MSE": 0.00847406592220068,
+        "RMSE": 0.09205468984359613,
+        "PSNR": 20.719081618199677,
+        "SSIM": 0.634541392326355,
+        "LPIPS": 0.05236641317605972,
+        "temporal_delta_MAE": 0.01995251700282097,
+        "dynamic_MAE": 0.10346401966690594,
+        "dynamic_MSE": 0.02072939874045602,
+        "dynamic_pixel_values": 29256.0,
+        "dynamic_PSNR": 16.834132945047436,
+        "source_sequence": "Apartment_release_clean_seq142",
+        "domain": "adt_mini",
+        "condition": "dropout_0.75",
+        "num_clips": 1
+      }
+    ],
+    "dropout_0.9": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.043994754552841187,
+        "MSE": 0.006712864385917783,
+        "RMSE": 0.08193207177850309,
+        "PSNR": 21.73092126395072,
+        "SSIM": 0.7592383623123169,
+        "LPIPS": 0.07506311684846878,
+        "temporal_delta_MAE": 0.019013826735317707,
+        "dynamic_MAE": 0.11031196274589691,
+        "dynamic_MSE": 0.02250094919129078,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.477991610066415,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "dropout_0.9",
+        "num_clips": 2
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.05993925780057907,
+        "MSE": 0.008489512838423252,
+        "RMSE": 0.09213855240030229,
+        "PSNR": 20.71117230563452,
+        "SSIM": 0.5519073009490967,
+        "LPIPS": 0.08771903812885284,
+        "temporal_delta_MAE": 0.02766098827123642,
+        "dynamic_MAE": 0.10630528134872122,
+        "dynamic_MSE": 0.01851118705282442,
+        "dynamic_pixel_values": 34662.0,
+        "dynamic_PSNR": 17.325657306819146,
+        "source_sequence": "Apartment_release_clean_seq140",
+        "domain": "adt_mini",
+        "condition": "dropout_0.9",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.04014064371585846,
+        "MSE": 0.004347329493612051,
+        "RMSE": 0.06593428162657156,
+        "PSNR": 23.6177744243291,
+        "SSIM": 0.7337782979011536,
+        "LPIPS": 0.07070204615592957,
+        "temporal_delta_MAE": 0.020277239382267,
+        "dynamic_MAE": 0.07936978732879882,
+        "dynamic_MSE": 0.011232093191138026,
+        "dynamic_pixel_values": 27015.0,
+        "dynamic_PSNR": 19.495393019175186,
+        "source_sequence": "Apartment_release_clean_seq141",
+        "domain": "adt_mini",
+        "condition": "dropout_0.9",
+        "num_clips": 1
+      },
+      {
+        "num_sequences": 1,
+        "MAE": 0.07548984885215759,
+        "MSE": 0.014903566800057888,
+        "RMSE": 0.12208016546539363,
+        "PSNR": 18.267097815067856,
+        "SSIM": 0.45401132106781006,
+        "LPIPS": 0.09545877575874329,
+        "temporal_delta_MAE": 0.02813439629971981,
+        "dynamic_MAE": 0.1284225000721006,
+        "dynamic_MSE": 0.029944641263490824,
+        "dynamic_pixel_values": 29256.0,
+        "dynamic_PSNR": 15.23680885392249,
+        "source_sequence": "Apartment_release_clean_seq142",
+        "domain": "adt_mini",
+        "condition": "dropout_0.9",
+        "num_clips": 1
+      }
+    ]
+  },
+  "paired_bootstrap_vs_correct": {
+    "base_only": {
+      "MAE": {
+        "degradation": 0.016389031894505024,
+        "ci95": [
+          0.006320372223854065,
+          0.026635481370612984
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "MSE": {
+        "degradation": 0.0016808609943836927,
+        "ci95": [
+          -0.00028287828899919987,
+          0.003861594051704745
+        ],
+        "probability_degradation_gt_0": 0.91,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "LPIPS": {
+        "degradation": 0.3114356342703104,
+        "ci95": [
+          0.27040821500122547,
+          0.35410313829779627
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "temporal_delta_MAE": {
+        "degradation": 0.007262916304171085,
+        "ci95": [
+          0.005841274745762348,
+          0.00868733540410176
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "dynamic_MSE": {
+        "degradation": -0.0009680882611173645,
+        "ci95": [
+          -0.004643871662212278,
+          0.002535060742014079
+        ],
+        "probability_degradation_gt_0": 0.29,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "PSNR": {
+        "degradation": 1.0750454488114336,
+        "ci95": [
+          -0.22118895463868782,
+          2.196802089067282
+        ],
+        "probability_degradation_gt_0": 0.91,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "SSIM": {
+        "degradation": 0.08967623859643936,
+        "ci95": [
+          0.03358578681945801,
+          0.14080739673227086
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      }
+    },
+    "camera_only": {
+      "MAE": {
+        "degradation": 0.0003241719678044319,
+        "ci95": [
+          4.5505352318286896e-05,
+          0.0005897972732782364
+        ],
+        "probability_degradation_gt_0": 0.995,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "MSE": {
+        "degradation": 4.2921805288642645e-05,
+        "ci95": [
+          3.953638952225447e-06,
+          9.164772927761078e-05
+        ],
+        "probability_degradation_gt_0": 0.98,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "LPIPS": {
+        "degradation": 0.001895005814731121,
+        "ci95": [
+          0.001034298911690712,
+          0.0027575416024774317
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "temporal_delta_MAE": {
+        "degradation": 0.00022100424394011497,
+        "ci95": [
+          0.00012818165123462677,
+          0.0003138268366456032
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "dynamic_MSE": {
+        "degradation": 1.241972542639783e-05,
+        "ci95": [
+          -4.400131292611482e-05,
+          5.90715750862841e-05
+        ],
+        "probability_degradation_gt_0": 0.745,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "PSNR": {
+        "degradation": 0.03103707225688268,
+        "ci95": [
+          0.0024112244081599954,
+          0.07150156308198419
+        ],
+        "probability_degradation_gt_0": 0.98,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "SSIM": {
+        "degradation": 0.002383902668952942,
+        "ci95": [
+          0.0006506443023681641,
+          0.00411716103553772
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      }
+    },
+    "object_only": {
+      "MAE": {
+        "degradation": 0.016296909656375647,
+        "ci95": [
+          0.006317619234323502,
+          0.027653258352074786
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "MSE": {
+        "degradation": 0.0016466560773551464,
+        "ci95": [
+          -0.00030105786281637827,
+          0.00437034885690082
+        ],
+        "probability_degradation_gt_0": 0.885,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "LPIPS": {
+        "degradation": 0.3128188867121935,
+        "ci95": [
+          0.2743353843688965,
+          0.3691230285912752
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "temporal_delta_MAE": {
+        "degradation": 0.007181112188845873,
+        "ci95": [
+          0.0057920381426811215,
+          0.008725439698901029
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "dynamic_MSE": {
+        "degradation": -0.0010361604139530632,
+        "ci95": [
+          -0.0047336133303681445,
+          0.0024559821315017537
+        ],
+        "probability_degradation_gt_0": 0.285,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "PSNR": {
+        "degradation": 1.055622716882901,
+        "ci95": [
+          -0.2333274896812976,
+          2.491718227161929
+        ],
+        "probability_degradation_gt_0": 0.885,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "SSIM": {
+        "degradation": 0.0895676538348198,
+        "ci95": [
+          0.03272607289254666,
+          0.16253485530614853
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      }
+    },
+    "time_reverse": {
+      "MAE": {
+        "degradation": -5.928054451942444e-05,
+        "ci95": [
+          -0.00032626122701913114,
+          0.0002017999067902565
+        ],
+        "probability_degradation_gt_0": 0.315,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "MSE": {
+        "degradation": -1.556903589516878e-05,
+        "ci95": [
+          -4.4201637501828364e-05,
+          2.3046066053211697e-05
+        ],
+        "probability_degradation_gt_0": 0.17,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "LPIPS": {
+        "degradation": -0.00038286857306957245,
+        "ci95": [
+          -0.0024975428357720377,
+          0.0011797435581684113
+        ],
+        "probability_degradation_gt_0": 0.325,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "temporal_delta_MAE": {
+        "degradation": 8.85471235960722e-05,
+        "ci95": [
+          -5.511520430445671e-05,
+          0.00023285718634724617
+        ],
+        "probability_degradation_gt_0": 0.905,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "dynamic_MSE": {
+        "degradation": -3.8254899162016263e-05,
+        "ci95": [
+          -0.00016300131374635005,
+          4.586859606822962e-05
+        ],
+        "probability_degradation_gt_0": 0.315,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "PSNR": {
+        "degradation": -0.011313130547829786,
+        "ci95": [
+          -0.03111602351408562,
+          0.017001194793970262
+        ],
+        "probability_degradation_gt_0": 0.17,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "SSIM": {
+        "degradation": -0.00043901801109313965,
+        "ci95": [
+          -0.0018127556890249253,
+          0.0013719499111175537
+        ],
+        "probability_degradation_gt_0": 0.21,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      }
+    },
+    "cross_video": {
+      "MAE": {
+        "degradation": 0.011012329254299402,
+        "ci95": [
+          0.010492712259292603,
+          0.011657773051410913
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "MSE": {
+        "degradation": 0.00278373813489452,
+        "ci95": [
+          0.002382227685302496,
+          0.0033492794609628618
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "LPIPS": {
+        "degradation": 0.005851178430020809,
+        "ci95": [
+          -0.02648493181914091,
+          0.03219510614871979
+        ],
+        "probability_degradation_gt_0": 0.67,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "temporal_delta_MAE": {
+        "degradation": 0.001673141960054636,
+        "ci95": [
+          0.0006505241617560387,
+          0.002863963134586811
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "dynamic_MSE": {
+        "degradation": 0.007232051784535206,
+        "ci95": [
+          0.0064520331648979645,
+          0.007896940236253001
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "PSNR": {
+        "degradation": 1.6588418077506297,
+        "ci95": [
+          1.3392915349403687,
+          1.9339336069674253
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "SSIM": {
+        "degradation": 0.10959175229072571,
+        "ci95": [
+          0.0876692682504654,
+          0.12676411867141724
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      }
+    },
+    "uv_noise_0.005": {
+      "MAE": {
+        "degradation": -0.00015228241682052612,
+        "ci95": [
+          -0.00038028229027986526,
+          0.00010230299085378647
+        ],
+        "probability_degradation_gt_0": 0.135,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "MSE": {
+        "degradation": 2.902519190683961e-05,
+        "ci95": [
+          3.742985427379608e-06,
+          5.430739838629961e-05
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "LPIPS": {
+        "degradation": -0.0027158791199326515,
+        "ci95": [
+          -0.005389297381043434,
+          0.00025361403822898865
+        ],
+        "probability_degradation_gt_0": 0.035,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "temporal_delta_MAE": {
+        "degradation": 4.118657670915127e-05,
+        "ci95": [
+          -3.87425534427166e-05,
+          0.00015400582924485207
+        ],
+        "probability_degradation_gt_0": 0.825,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "dynamic_MSE": {
+        "degradation": 0.00012033796893878889,
+        "ci95": [
+          2.1989164280994226e-05,
+          0.0002461047321534098
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "PSNR": {
+        "degradation": 0.0210125902501197,
+        "ci95": [
+          0.0033285209266331606,
+          0.03315215084590051
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "SSIM": {
+        "degradation": -0.0010077208280563354,
+        "ci95": [
+          -0.0017813146114349365,
+          0.0003390312194824219
+        ],
+        "probability_degradation_gt_0": 0.05,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      }
+    },
+    "uv_noise_0.01": {
+      "MAE": {
+        "degradation": -0.00038778316229581833,
+        "ci95": [
+          -0.0007250255206599831,
+          3.121185582131167e-05
+        ],
+        "probability_degradation_gt_0": 0.035,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "MSE": {
+        "degradation": 3.70487105101347e-05,
+        "ci95": [
+          9.289942681789398e-06,
+          6.480747833848e-05
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "LPIPS": {
+        "degradation": -0.007445819675922394,
+        "ci95": [
+          -0.013622298114933073,
+          -0.0018685664981603622
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "temporal_delta_MAE": {
+        "degradation": 6.579491309821606e-05,
+        "ci95": [
+          -2.362346276640892e-05,
+          0.00015521328896284103
+        ],
+        "probability_degradation_gt_0": 0.875,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "dynamic_MSE": {
+        "degradation": 0.00018015256101824775,
+        "ci95": [
+          5.445706054560927e-05,
+          0.0003974829836215308
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "PSNR": {
+        "degradation": 0.02680327048704001,
+        "ci95": [
+          0.00825657124275736,
+          0.03953287087738033
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "SSIM": {
+        "degradation": -0.0024030357599258423,
+        "ci95": [
+          -0.003743976354598999,
+          -8.46955925226206e-05
+        ],
+        "probability_degradation_gt_0": 0.025,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      }
+    },
+    "uv_noise_0.02": {
+      "MAE": {
+        "degradation": -0.00047721993178129196,
+        "ci95": [
+          -0.0010611768811941147,
+          0.00013571139425039291
+        ],
+        "probability_degradation_gt_0": 0.045,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "MSE": {
+        "degradation": 8.962542051449418e-05,
+        "ci95": [
+          1.7739017494022846e-05,
+          0.00015880994033068419
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "LPIPS": {
+        "degradation": -0.011781382374465466,
+        "ci95": [
+          -0.02159285161178559,
+          -0.001765257678925991
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "temporal_delta_MAE": {
+        "degradation": 0.00013373070396482944,
+        "ci95": [
+          -3.195274621248245e-05,
+          0.00026035355404019356
+        ],
+        "probability_degradation_gt_0": 0.955,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "dynamic_MSE": {
+        "degradation": 0.0003571334091169464,
+        "ci95": [
+          8.053550622945512e-05,
+          0.0007233497300989179
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "PSNR": {
+        "degradation": 0.0645587060781061,
+        "ci95": [
+          0.016853488907674574,
+          0.0962427517747031
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "SSIM": {
+        "degradation": -0.0026873797178268433,
+        "ci95": [
+          -0.004775986075401306,
+          0.0010985732078552246
+        ],
+        "probability_degradation_gt_0": 0.055,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      }
+    },
+    "uv_noise_0.05": {
+      "MAE": {
+        "degradation": -0.0007737423293292522,
+        "ci95": [
+          -0.001816475298255682,
+          0.0003255559131503105
+        ],
+        "probability_degradation_gt_0": 0.035,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "MSE": {
+        "degradation": 0.00013479299377650023,
+        "ci95": [
+          1.3894637231715025e-05,
+          0.0002556806430220604
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "LPIPS": {
+        "degradation": -0.02127283811569214,
+        "ci95": [
+          -0.03557049948722124,
+          -0.007272101007401943
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "temporal_delta_MAE": {
+        "degradation": 0.00011844397522509098,
+        "ci95": [
+          -0.00022156396880745888,
+          0.00045845191925764084
+        ],
+        "probability_degradation_gt_0": 0.7,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "dynamic_MSE": {
+        "degradation": 0.0005215542926783122,
+        "ci95": [
+          0.00011425864102486293,
+          0.0010068941613407653
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "PSNR": {
+        "degradation": 0.09673356829308233,
+        "ci95": [
+          0.01235274744242787,
+          0.15391841190772837
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "SSIM": {
+        "degradation": -0.00421915203332901,
+        "ci95": [
+          -0.008245900273323059,
+          0.001991459541022778
+        ],
+        "probability_degradation_gt_0": 0.045,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      }
+    },
+    "xyz_noise_rel_0.01": {
+      "MAE": {
+        "degradation": -2.820044755935669e-06,
+        "ci95": [
+          -6.716698408126831e-06,
+          -1.8998980522155423e-07
+        ],
+        "probability_degradation_gt_0": 0.025,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "MSE": {
+        "degradation": -4.0919985622167587e-07,
+        "ci95": [
+          -1.8207356333732605e-06,
+          7.043126970529556e-07
+        ],
+        "probability_degradation_gt_0": 0.265,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "LPIPS": {
+        "degradation": -8.867401629686356e-05,
+        "ci95": [
+          -0.0001421942375600338,
+          -3.443099558353424e-05
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "temporal_delta_MAE": {
+        "degradation": 3.8458965718746185e-06,
+        "ci95": [
+          -2.3050233721733093e-06,
+          1.0028481483459473e-05
+        ],
+        "probability_degradation_gt_0": 0.875,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "dynamic_MSE": {
+        "degradation": 6.266751026605052e-07,
+        "ci95": [
+          -3.5085534819670125e-06,
+          7.237403674675933e-06
+        ],
+        "probability_degradation_gt_0": 0.69,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "PSNR": {
+        "degradation": -0.00029696540947909966,
+        "ci95": [
+          -0.0015204916328102058,
+          0.0004315740392542011
+        ],
+        "probability_degradation_gt_0": 0.265,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "SSIM": {
+        "degradation": -3.3155083656311035e-05,
+        "ci95": [
+          -7.036328315734863e-05,
+          1.0579079389572148e-05
+        ],
+        "probability_degradation_gt_0": 0.08,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      }
+    },
+    "xyz_noise_rel_0.05": {
+      "MAE": {
+        "degradation": -4.068668931722641e-05,
+        "ci95": [
+          -5.437247455120087e-05,
+          -2.1012499928474426e-05
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "MSE": {
+        "degradation": -7.851922418922186e-06,
+        "ci95": [
+          -1.5238998457789421e-05,
+          3.3428077585995197e-06
+        ],
+        "probability_degradation_gt_0": 0.055,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "LPIPS": {
+        "degradation": -0.0005115931853652,
+        "ci95": [
+          -0.0010667815804481506,
+          -7.358144503086775e-05
+        ],
+        "probability_degradation_gt_0": 0.005,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "temporal_delta_MAE": {
+        "degradation": 3.869039937853813e-05,
+        "ci95": [
+          -5.01144677400589e-06,
+          0.00011205440387129784
+        ],
+        "probability_degradation_gt_0": 0.865,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "dynamic_MSE": {
+        "degradation": -8.923582641844584e-06,
+        "ci95": [
+          -4.3665099318178704e-05,
+          3.638541346102399e-05
+        ],
+        "probability_degradation_gt_0": 0.275,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "PSNR": {
+        "degradation": -0.005701860749216081,
+        "ci95": [
+          -0.010870216887727935,
+          0.0022935086646427294
+        ],
+        "probability_degradation_gt_0": 0.055,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "SSIM": {
+        "degradation": -0.0003293156623840332,
+        "ci95": [
+          -0.00039839744567871094,
+          -0.00026023387908935547
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      }
+    },
+    "xyz_noise_rel_0.1": {
+      "MAE": {
+        "degradation": -3.697862848639488e-05,
+        "ci95": [
+          -5.221692845225334e-05,
+          -1.7576850950717926e-05
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "MSE": {
+        "degradation": -9.710201993584633e-06,
+        "ci95": [
+          -1.6426201909780502e-05,
+          -3.417953848838806e-06
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "LPIPS": {
+        "degradation": -0.0006298338994383812,
+        "ci95": [
+          -0.0011933215893805027,
+          -0.00011631462257355389
+        ],
+        "probability_degradation_gt_0": 0.005,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "temporal_delta_MAE": {
+        "degradation": 8.23591835796833e-05,
+        "ci95": [
+          2.7647241950035095e-05,
+          0.0001473797718062997
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "dynamic_MSE": {
+        "degradation": -2.1207301741653015e-05,
+        "ci95": [
+          -4.260920112069289e-05,
+          3.8053700850753866e-06
+        ],
+        "probability_degradation_gt_0": 0.045,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "PSNR": {
+        "degradation": -0.007052390977449363,
+        "ci95": [
+          -0.013736779756335693,
+          -0.002104465284606505
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "SSIM": {
+        "degradation": -0.00013874471187591553,
+        "ci95": [
+          -0.0003291517496109009,
+          2.7835369110107422e-05
+        ],
+        "probability_degradation_gt_0": 0.04,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      }
+    },
+    "xyz_noise_rel_0.2": {
+      "MAE": {
+        "degradation": -2.1330080926418304e-05,
+        "ci95": [
+          -0.00010588206350803375,
+          3.548804670572281e-05
+        ],
+        "probability_degradation_gt_0": 0.295,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "MSE": {
+        "degradation": -3.1287199817597866e-06,
+        "ci95": [
+          -3.828341141343117e-05,
+          3.2309850212186575e-05
+        ],
+        "probability_degradation_gt_0": 0.41,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "LPIPS": {
+        "degradation": -1.0592862963676453e-05,
+        "ci95": [
+          -0.0011244788765907288,
+          0.0007735975086688995
+        ],
+        "probability_degradation_gt_0": 0.475,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "temporal_delta_MAE": {
+        "degradation": 0.00014168256893754005,
+        "ci95": [
+          3.788713365793228e-05,
+          0.0002707964740693569
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "dynamic_MSE": {
+        "degradation": 1.095413494967435e-05,
+        "ci95": [
+          -0.00011861937294025977,
+          0.00016394166294916943
+        ],
+        "probability_degradation_gt_0": 0.575,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "PSNR": {
+        "degradation": -0.0022710975604987027,
+        "ci95": [
+          -0.02472559447582512,
+          0.021056627023956054
+        ],
+        "probability_degradation_gt_0": 0.41,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "SSIM": {
+        "degradation": -5.4717063903808594e-05,
+        "ci95": [
+          -0.0007333755493164062,
+          0.00047843717038631477
+        ],
+        "probability_degradation_gt_0": 0.415,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      }
+    },
+    "dropout_0.25": {
+      "MAE": {
+        "degradation": 0.001287892460823059,
+        "ci95": [
+          -0.0003101527690887451,
+          0.003509022295475006
+        ],
+        "probability_degradation_gt_0": 0.85,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "MSE": {
+        "degradation": 0.00035926036071032286,
+        "ci95": [
+          7.1784015744924545e-06,
+          0.0008258186280727386
+        ],
+        "probability_degradation_gt_0": 0.985,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "LPIPS": {
+        "degradation": -0.0025687851011753082,
+        "ci95": [
+          -0.009462505578994751,
+          0.0043249353766441345
+        ],
+        "probability_degradation_gt_0": 0.26,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "temporal_delta_MAE": {
+        "degradation": 0.00019140145741403103,
+        "ci95": [
+          -0.00012732809409499168,
+          0.000557183288037777
+        ],
+        "probability_degradation_gt_0": 0.795,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "dynamic_MSE": {
+        "degradation": 0.0007513518956561373,
+        "ci95": [
+          2.5631397339396546e-05,
+          0.001707117895666657
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "PSNR": {
+        "degradation": 0.2531884689073074,
+        "ci95": [
+          0.005530865579938649,
+          0.6399628929430428
+        ],
+        "probability_degradation_gt_0": 0.985,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "SSIM": {
+        "degradation": 0.015773653984069824,
+        "ci95": [
+          -0.0006476938724517822,
+          0.04076239466667175
+        ],
+        "probability_degradation_gt_0": 0.925,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      }
+    },
+    "dropout_0.5": {
+      "MAE": {
+        "degradation": 0.0007504280656576157,
+        "ci95": [
+          -0.0009787723189219832,
+          0.002474537119269371
+        ],
+        "probability_degradation_gt_0": 0.765,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "MSE": {
+        "degradation": 0.0002610673545859754,
+        "ci95": [
+          -2.917573146987705e-06,
+          0.000524972565472126
+        ],
+        "probability_degradation_gt_0": 0.955,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "LPIPS": {
+        "degradation": -0.008087973110377789,
+        "ci95": [
+          -0.020736336591653526,
+          0.0045257434248924255
+        ],
+        "probability_degradation_gt_0": 0.125,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "temporal_delta_MAE": {
+        "degradation": 0.0001172269694507122,
+        "ci95": [
+          -0.0003577962866984308,
+          0.0005920622497797012
+        ],
+        "probability_degradation_gt_0": 0.69,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "dynamic_MSE": {
+        "degradation": 0.0004295403565358299,
+        "ci95": [
+          6.295446758932191e-05,
+          0.0008318784854591983
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "PSNR": {
+        "degradation": 0.1854398759213325,
+        "ci95": [
+          -0.0022372108883456743,
+          0.3457056396981386
+        ],
+        "probability_degradation_gt_0": 0.955,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "SSIM": {
+        "degradation": 0.00929144024848938,
+        "ci95": [
+          -0.004272168502211571,
+          0.022849351167678833
+        ],
+        "probability_degradation_gt_0": 0.955,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      }
+    },
+    "dropout_0.75": {
+      "MAE": {
+        "degradation": 0.002152221743017435,
+        "ci95": [
+          -0.0016133887693285942,
+          0.0053995541762560635
+        ],
+        "probability_degradation_gt_0": 0.87,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "MSE": {
+        "degradation": 0.0005981157883070409,
+        "ci95": [
+          -5.2536255680024624e-05,
+          0.0012487678322941065
+        ],
+        "probability_degradation_gt_0": 0.935,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "LPIPS": {
+        "degradation": -0.011796612292528152,
+        "ci95": [
+          -0.02933545410633087,
+          0.0027581828646362
+        ],
+        "probability_degradation_gt_0": 0.055,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "temporal_delta_MAE": {
+        "degradation": 0.00043790112249553204,
+        "ci95": [
+          -0.0005344140809029341,
+          0.0013520317152142525
+        ],
+        "probability_degradation_gt_0": 0.765,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "dynamic_MSE": {
+        "degradation": 0.0008798758647101186,
+        "ci95": [
+          -0.00024666873889115683,
+          0.002006420468311394
+        ],
+        "probability_degradation_gt_0": 0.94,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "PSNR": {
+        "degradation": 0.41370554457959585,
+        "ci95": [
+          -0.040694355259152104,
+          0.7585804109435593
+        ],
+        "probability_degradation_gt_0": 0.935,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "SSIM": {
+        "degradation": 0.023953430354595184,
+        "ci95": [
+          -0.006585702300071716,
+          0.049657797440886525
+        ],
+        "probability_degradation_gt_0": 0.935,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      }
+    },
+    "dropout_0.9": {
+      "MAE": {
+        "degradation": 0.00964742572978139,
+        "ci95": [
+          -0.002722970675677061,
+          0.02098090387880802
+        ],
+        "probability_degradation_gt_0": 0.92,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "MSE": {
+        "degradation": 0.002628806047141552,
+        "ci95": [
+          -0.00020672590471804142,
+          0.005840612226165831
+        ],
+        "probability_degradation_gt_0": 0.95,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "LPIPS": {
+        "degradation": -0.002344764769077301,
+        "ci95": [
+          -0.0396015215665102,
+          0.03264480456709862
+        ],
+        "probability_degradation_gt_0": 0.455,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "temporal_delta_MAE": {
+        "degradation": 0.0025359345600008965,
+        "ci95": [
+          -0.0008469098247587681,
+          0.007188799791038036
+        ],
+        "probability_degradation_gt_0": 0.86,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "dynamic_MSE": {
+        "degradation": 0.004275069205161856,
+        "ci95": [
+          -0.0003914626183861426,
+          0.00873688697152224
+        ],
+        "probability_degradation_gt_0": 0.945,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "PSNR": {
+        "degradation": 1.5814173434052883,
+        "ci95": [
+          -0.14424165177917914,
+          2.808516617892174
+        ],
+        "probability_degradation_gt_0": 0.95,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      },
+      "SSIM": {
+        "degradation": 0.08718271553516388,
+        "ci95": [
+          -0.018048852682113647,
+          0.18544116616249084
+        ],
+        "probability_degradation_gt_0": 0.92,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 4
+      }
+    }
+  },
+  "meta": {
+    "test_sequences": 5,
+    "split": {
+      "legacy_subsets": [
+        "adt_mini",
+        "ds_mini",
+        "po_mini",
+        "pstudio_mini"
+      ],
+      "pointodyssey_usable": {
+        "train": 248,
+        "val": 90,
+        "test": 160
+      },
+      "totals": {
+        "train": 356,
+        "val": 130,
+        "test": 199
+      }
+    },
+    "checkpoint": "/autodl-fs/data/d4rt_training/capsr_v3_object_20260825/visibility000/best.pt",
+    "checkpoint_sha256": "838c737ae3e3ffef84b95139661d4d41c2e34f71ed16b04bfcc93a12ffbc6748",
+    "checkpoint_epoch": 19,
+    "model_source": "/root/autodl-tmp/Open-d4rt/forecasting/capsr_structured_model_v3.py",
+    "model_source_sha256": "62da4fdaf9d1b2a9ac9cdd26785fc77014ff5bcd3880ffaebd4da791621b3cd5",
+    "backbone_checkpoint": "outputs/simvp_dynamic_ablation/no_geometry/best.pt",
+    "trajectory_checkpoint": "/autodl-fs/data/d4rt_training/pointodyssey50_uv_velocity_residual_60/best.pt",
+    "future_frames": 8,
+    "uv_noise_sigma_normalized": [
+      0.005,
+      0.01,
+      0.02,
+      0.05
+    ],
+    "xyz_noise_sigma_relative_to_prediction_std": [
+      0.01,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "trajectory_dropout_fraction": [
+      0.25,
+      0.5,
+      0.75,
+      0.9
+    ],
+    "time_shuffle": "future horizon reversal",
+    "cross_video": "deterministic deranged donor geometry; target RGB/backbone unchanged",
+    "path_variants": "post-hoc single-path contribution from the correct full checkpoint",
+    "bootstrap_samples": 200,
+    "seed": 42,
+    "training": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "audit_sha256": "a689a1127b6b0b4bb5bc33f5be6d4f6e0ba8d43ae9e03b70b15991a57e7b2fe5",
+  "thresholds": {
+    "align": 0.03201590292155743,
+    "velocity": 0.05883395224809643
+  },
+  "alpha": {
+    "align": 0.25,
+    "velocity": 0.5
+  },
+  "starts": [
+    0,
+    24,
+    48
+  ],
+  "context": 16,
+  "forecast": 8,
+  "resolution": 128,
+  "spatial": 9,
+  "temporal": 0.5,
+  "tuning": false,
+  "selection": "all8 audited sequences,3 nonoverlapping windows each; last18frames unused",
+  "limitations": "independence only within audited retained records; shared environment possible;8sequence bootstrap exploratory; native stored frame order, no FPS normalization",
+  "script_sha256": "01b63b6f6b35ef2916c46a361c93846dacce62e89c6e1a17867f018c5c2149c5"
+}

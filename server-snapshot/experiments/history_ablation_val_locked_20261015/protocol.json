@@ -1,0 +1,47 @@
+{
+  "grid": {
+    "A": [
+      0,
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "B": [
+      1.0,
+      0.75,
+      0.5,
+      0.25,
+      0.0
+    ],
+    "C": [
+      1.0,
+      0.75,
+      0.5,
+      0.25,
+      0.0
+    ]
+  },
+  "selection": "original-video equal LPIPS minimum, MSE and temporal <= 1.01 of both fixed and TAU; fixed baseline always available as fallback",
+  "A": "blend aligned and zero-motion texture by clamp(confidence-weighted estimated displacement / threshold,0,1); zero threshold means fixed",
+  "B": "5x5 split of ungated texture residual; constant fine weight",
+  "C": "same split, fine weight linear 1 to endpoint across 8 horizons",
+  "shared": "frozen TAU, history last4, alpha .25, original confidence gate once, pixelcap .03, meanabs cap .001,128x128",
+  "test_policy": "all three selected configs locked before test; no test-driven tuning; existing test has prior historical evaluation exposure",
+  "script_sha256": "8d41af08a32fb84c626197ef6eb2535cae27ec9f13788b039d4f8ca0fcca06ab",
+  "checkpoint_sha256": "67d123d4372bc837a9a815ae698b3ac50dcafeb52c0d7ad94a9872f280fd5a33",
+  "counts": {
+    "train": {
+      "clips": 862,
+      "videos": 124
+    },
+    "val": {
+      "clips": 280,
+      "videos": 40
+    },
+    "test": {
+      "clips": 347,
+      "videos": 46
+    }
+  }
+}

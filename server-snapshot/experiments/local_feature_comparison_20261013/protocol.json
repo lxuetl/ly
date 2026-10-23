@@ -1,0 +1,24 @@
+{
+  "counts": {
+    "train": 862,
+    "tune": 72,
+    "risk": 108,
+    "held": 100
+  },
+  "params": {
+    "baseline": 77257,
+    "local": 77681
+  },
+  "epochs": 60,
+  "batch_size": 8,
+  "seed": 20261013,
+  "lr": 0.001,
+  "labels_source": "/root/autodl-fs/d4rt_training/single_region_risk_expanded_20261013/labels",
+  "test_used": false,
+  "features": "original57 + per-candidate9: signed2x2 quadrants, mean absolute, RMS, x/y gradient magnitudes, 3x3 neighborhood absolute correction; base texture std and x/y edges3",
+  "safety": "derived only from frozen candidates; no future targets passed into feature extraction",
+  "control": "same Huber+uncertainty interval loss, same sampling and rendered labels, fixed reference0, same16-region action bank",
+  "capacity": "baseline width32 vs local width19 to match total parameter count; this trades hidden width for extra inputs",
+  "selection": "mean within-clip Spearman on tune videos every10 epochs; risk/held not used for choice",
+  "inference": "same single-action selector; positive threshold and tune-quantile thresholds; exploratory not risk-certified"
+}

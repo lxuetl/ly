@@ -1,0 +1,181 @@
+{
+  "post_evaluation_only": true,
+  "actions_modified": false,
+  "case_records": [
+    {
+      "index": 0,
+      "calibration_choice": "cv_a0.125",
+      "action": "keep",
+      "reason": "validation_gain_below_prespecified_margin",
+      "future_MSE_delta": 0.0,
+      "future_LPIPS_delta": 0.0,
+      "future_first4_actual_L1": 0.0,
+      "eligible_beneficial_candidates": [
+        "cv_a0.125",
+        "cv_a0.25",
+        "cv_a0.5"
+      ]
+    },
+    {
+      "index": 1,
+      "calibration_choice": "keep",
+      "action": "keep",
+      "reason": "no_calibration_candidate_passes_both_margins",
+      "future_MSE_delta": 0.0,
+      "future_LPIPS_delta": 0.0,
+      "future_first4_actual_L1": 0.0,
+      "eligible_beneficial_candidates": [
+        "cv_a0.125",
+        "cv_a0.25",
+        "cv_a0.5"
+      ]
+    },
+    {
+      "index": 2,
+      "calibration_choice": "hold_a0.125",
+      "action": "hold_a0.125",
+      "reason": "accepted",
+      "future_MSE_delta": -2.4608452804386616e-06,
+      "future_LPIPS_delta": -0.00013428926467895508,
+      "future_first4_actual_L1": 0.00010220080002909526,
+      "eligible_beneficial_candidates": [
+        "hold_a0.125",
+        "hold_a0.25",
+        "hold_a0.5",
+        "cv_a0.125",
+        "cv_a0.25",
+        "cv_a0.5"
+      ]
+    },
+    {
+      "index": 3,
+      "calibration_choice": "hold_a0.125",
+      "action": "hold_a0.125",
+      "reason": "accepted",
+      "future_MSE_delta": -2.05641845241189e-06,
+      "future_LPIPS_delta": -0.0004102066159248352,
+      "future_first4_actual_L1": 6.462719466071576e-05,
+      "eligible_beneficial_candidates": [
+        "hold_a0.125",
+        "hold_a0.25",
+        "hold_a0.5",
+        "cv_a0.125",
+        "cv_a0.25",
+        "cv_a0.5"
+      ]
+    },
+    {
+      "index": 4,
+      "calibration_choice": "keep",
+      "action": "keep",
+      "reason": "no_calibration_candidate_passes_both_margins",
+      "future_MSE_delta": 0.0,
+      "future_LPIPS_delta": 0.0,
+      "future_first4_actual_L1": 0.0,
+      "eligible_beneficial_candidates": [
+        "hold_a0.125",
+        "hold_a0.25",
+        "hold_a0.5",
+        "cv_a0.125",
+        "cv_a0.25",
+        "cv_a0.5"
+      ]
+    },
+    {
+      "index": 5,
+      "calibration_choice": "keep",
+      "action": "keep",
+      "reason": "no_calibration_candidate_passes_both_margins",
+      "future_MSE_delta": 0.0,
+      "future_LPIPS_delta": 0.0,
+      "future_first4_actual_L1": 0.0,
+      "eligible_beneficial_candidates": [
+        "cv_a0.125",
+        "cv_a0.25",
+        "cv_a0.5"
+      ]
+    }
+  ],
+  "control_comparison": {
+    "tau": {
+      "MSE": 0.0057160213667278486,
+      "LPIPS": 0.15196940551201502,
+      "MSE_relative_change_percent": 0.0,
+      "LPIPS_relative_change_percent": 0.0,
+      "harm_cases": [],
+      "both_improved_cases": []
+    },
+    "policy": {
+      "MSE": 0.00571526848943904,
+      "LPIPS": 0.15187865619858107,
+      "MSE_relative_change_percent": -0.01317135189855545,
+      "LPIPS_relative_change_percent": -0.05971551519082796,
+      "harm_cases": [],
+      "both_improved_cases": [
+        2,
+        3
+      ]
+    },
+    "calibration_only": {
+      "MSE": 0.005715133758106579,
+      "LPIPS": 0.1518770195543766,
+      "MSE_relative_change_percent": -0.01552843427836681,
+      "LPIPS_relative_change_percent": -0.06079247156830503,
+      "harm_cases": [],
+      "both_improved_cases": [
+        0,
+        2,
+        3
+      ]
+    },
+    "fixed_gated_cv_a0.25": {
+      "MSE": 0.005712904346485932,
+      "LPIPS": 0.15174249932169914,
+      "MSE_relative_change_percent": -0.054531290944082045,
+      "LPIPS_relative_change_percent": -0.14931044150062744,
+      "harm_cases": [],
+      "both_improved_cases": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "fixed_ungated_cv_a0.25": {
+      "MSE": 0.005709179580056419,
+      "LPIPS": 0.15176923076311746,
+      "MSE_relative_change_percent": -0.11969491071630589,
+      "LPIPS_relative_change_percent": -0.1317204263734051,
+      "harm_cases": [
+        0,
+        4
+      ],
+      "both_improved_cases": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  "eligible_beneficial_candidate_cases": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "retained_beneficial_cases": [
+    2,
+    3
+  ],
+  "case_level_benefit_retention": 0.3333333333333333,
+  "reason_counts": {
+    "accepted": 2,
+    "no_calibration_candidate_passes_both_margins": 3,
+    "validation_gain_below_prespecified_margin": 1
+  }
+}

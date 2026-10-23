@@ -1,0 +1,37 @@
+{
+  "stage": "native PredFormer baseline",
+  "config": {
+    "height": 128,
+    "width": 128,
+    "num_channels": 3,
+    "pre_seq": 16,
+    "after_seq": 8,
+    "patch_size": 8,
+    "dim": 256,
+    "heads": 8,
+    "dim_head": 32,
+    "dropout": 0.1,
+    "attn_dropout": 0.1,
+    "drop_path": 0.1,
+    "scale_dim": 4,
+    "depth": 1,
+    "Ndepth": 3
+  },
+  "counts": {
+    "train": 862,
+    "val": 280,
+    "test": 347
+  },
+  "batch_size": 2,
+  "epochs": 15,
+  "seed": 42,
+  "lr": 0.0003,
+  "loss": "MSE",
+  "best_selection": "validation MSE",
+  "test_used": false,
+  "geometry_used": false,
+  "output": "native16 sliced first8, official method",
+  "parameters": 12731328,
+  "split_sha256": "f9c9646f8ce860f595baf1a6bf2eab302be29413a0929c192b22cd97b2cf9dca",
+  "code_sha256": "45bdf94f67a81cb32c7b2ac047f68af3271195bc9f8f4417528c01d6a3adebdb"
+}

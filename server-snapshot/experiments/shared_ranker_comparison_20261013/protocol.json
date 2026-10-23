@@ -1,0 +1,22 @@
+{
+  "counts": {
+    "train": 862,
+    "tune": 72,
+    "risk": 108,
+    "held": 100
+  },
+  "params": {
+    "regression": 77257,
+    "shared_rank": 75595
+  },
+  "epochs": 60,
+  "seed": 20261013,
+  "batch_size": 8,
+  "labels": "identical cached rendered marginal utility; same 16 cells and single-action renderer",
+  "shared_inputs": "candidate RGB correction3, replay1, magnitude1, shared context17; no candidate ID",
+  "rank_loss": "pairwise logistic for same-tube candidate gains differing >0.1 utility units, plus 0.1 regression anchor; fixed reference0",
+  "checkpoint_selection": "mean within-clip Spearman on tuning videos only, evaluated every10 epochs",
+  "comparison_caveat": "joint architecture+loss change, not an isolated attribution; single seed; previous validation pool reused",
+  "decision": "fixed score>0 plus thresholds at tune top-score quantiles for nominal 25/50/75% coverage; not certified risk control",
+  "test_used": false
+}

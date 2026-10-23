@@ -1,0 +1,30 @@
+{
+  "purpose": "low-cost preference ranking, not diffusion optimization or training",
+  "time_indices_zero_based": {
+    "replay_input": [
+      0,
+      16
+    ],
+    "replay_labels": [
+      16,
+      24
+    ],
+    "heldout_input": [
+      8,
+      24
+    ],
+    "heldout_labels": [
+      24,
+      32
+    ]
+  },
+  "calibration": "leave-original-video-out; fit only other videos replay labels; no heldout label fitting",
+  "features": "MUSIQ, LPIPS to TAU, low-frequency content change, unsupported detail to last observed frame, fixed TAU-flow warp residual and edit residual/flicker",
+  "flow": "Farneback RGB only, same for all candidates, forward-backward mask",
+  "safe_repair": "LPIPS gain>0.0001 and MSE/temporal<=1.01 baseline",
+  "selection": "max calibrated score relative TAU; reject if <=0; no target gating",
+  "stress": "blur/sharpen/independent noise/persistent texture; secondary controls, excluded from fit and natural selection",
+  "limits": "7 validation videos, partial sources, no claim of generalization; inability to measure positive recall if no safe repairs",
+  "models_frozen": true,
+  "geometry_used": false
+}

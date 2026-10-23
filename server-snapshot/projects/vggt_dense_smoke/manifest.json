@@ -1,0 +1,71 @@
+{
+  "complete": true,
+  "config": {
+    "d4rt_root": "/root/autodl-tmp/Open-d4rt",
+    "omega_repo": "/root/autodl-tmp/vggt-omega",
+    "cache_root": "data/d4rt_forecasting_cache",
+    "po_cache": "/autodl-fs/data/d4rt_datasets/d4rt_forecasting_cache_po_full",
+    "po_split_manifest": "/autodl-fs/data/d4rt_datasets/worldtrack_pointodyssey_full_v2/po50/split_manifest.json",
+    "checkpoint": "/autodl-fs/data/models/VGGT-Omega/vggt_omega_1b_512.pt",
+    "output_root": "/root/autodl-tmp/vggt_dense_smoke",
+    "legacy_subsets": "adt_mini,ds_mini,po_mini,pstudio_mini",
+    "resolution": 512,
+    "output_size": 64,
+    "confidence_quantile": 0.3,
+    "depth_log_threshold": 0.1,
+    "photometric_threshold": 0.15,
+    "max_train": 1,
+    "max_val": 1,
+    "max_test": 1,
+    "seed": 42
+  },
+  "split_meta": {
+    "legacy_subsets": [
+      "adt_mini",
+      "ds_mini",
+      "po_mini",
+      "pstudio_mini"
+    ],
+    "pointodyssey_usable": {
+      "train": 754,
+      "val": 240,
+      "test": 308
+    },
+    "totals": {
+      "train": 862,
+      "val": 280,
+      "test": 347
+    }
+  },
+  "selected": {
+    "train": [
+      "data/d4rt_forecasting_cache/adt_mini/Apartment_release_clean_seq147_7.npz"
+    ],
+    "val": [
+      "data/d4rt_forecasting_cache/adt_mini/Apartment_release_decoration_seq133_3.npz"
+    ],
+    "test": [
+      "data/d4rt_forecasting_cache/adt_mini/Apartment_release_decoration_seq131_5.npz"
+    ]
+  },
+  "records": [
+    {
+      "split": "train",
+      "cache_path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_clean_seq147_7.npz",
+      "output": "/root/autodl-tmp/vggt_dense_smoke/adt_mini/Apartment_release_clean_seq147_7.npz",
+      "status": "created"
+    },
+    {
+      "split": "val",
+      "cache_path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_decoration_seq133_3.npz",
+      "output": "/root/autodl-tmp/vggt_dense_smoke/adt_mini/Apartment_release_decoration_seq133_3.npz",
+      "status": "created"
+    },
+    {
+      "split": "test",
+      "cache_path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_decoration_seq131_5.npz",
+      "output": "/root/autodl-tmp/vggt_dense_smoke/adt_mini/Apartment_release_decoration_seq131_5.npz",
+      "status": "created"
+    }
+  ]
+}

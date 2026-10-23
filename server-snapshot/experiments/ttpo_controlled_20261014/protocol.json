@@ -1,0 +1,56 @@
+{
+  "kind": "TTPO-inspired SDXL adaptation, NOT exact FLUX paper reproduction",
+  "candidate_pool": [
+    "tau",
+    "s0.1_seed42",
+    "s0.1_seed43",
+    "s0.2_seed42",
+    "s0.2_seed43"
+  ],
+  "preference": "MUSIQ only, framewise argmax/argmin; fixed before generation; no target access",
+  "input": "same 9 validation videos as prior pilot",
+  "arms": {
+    "plain": [
+      0.0,
+      false,
+      false
+    ],
+    "structure": [
+      1000.0,
+      false,
+      false
+    ],
+    "pref100": [
+      100.0,
+      true,
+      false
+    ],
+    "pref1000": [
+      1000.0,
+      true,
+      false
+    ],
+    "reverse1000": [
+      1000.0,
+      true,
+      true
+    ]
+  },
+  "scheduler": "EulerDiscrete epsilon, use scheduler predicted original sample and stop-gradient denoiser",
+  "steps": 50,
+  "strength": 0.2,
+  "effective_steps": 10,
+  "seed": 42,
+  "guidance_scale": 3,
+  "beta": 1,
+  "alpha": 0.5,
+  "frequency": "Gaussian real-space low/high decomposition via FFT, normalized Nyquist cutoff .9",
+  "stage": "first30% structure only; middle60% both; final10% preference only; normalized active steps (adaptation)",
+  "guidance": "subtract g * gradient of mean losses from scheduler prev_sample; no gradient normalization",
+  "postprocessing": "native plus fixed .25 VAE-roundtrip-subtracted residual for EVERY arm",
+  "primary_comparison": "pref1000 vs plain; pref100 is prespecified sensitivity; report both without test selection",
+  "target_usage": "evaluation only after all outputs saved",
+  "geometry": false,
+  "temporal_guidance": false,
+  "limitations": "single NR-IQA; cached128 candidate re-encoding; framewise editing; exploratory small validation set"
+}

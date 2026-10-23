@@ -1,0 +1,135 @@
+{
+  "experiment": "parameter-free graph heat proxy replacing destination Gaussian soft splat",
+  "checkpoint": "/autodl-fs/data/d4rt_training/capsr_stable_router_20260828/best.pt",
+  "processed": 199,
+  "total": 199,
+  "configurations": [
+    {
+      "name": "gaussian",
+      "steps": 0,
+      "tau": 0.0,
+      "projection_scale": 1.0,
+      "knn": 4
+    },
+    {
+      "name": "heat_s1_t010_k4",
+      "steps": 1,
+      "tau": 0.1,
+      "projection_scale": 1.0,
+      "knn": 4
+    },
+    {
+      "name": "heat_s1_t015_k4",
+      "steps": 1,
+      "tau": 0.15,
+      "projection_scale": 1.0,
+      "knn": 4
+    },
+    {
+      "name": "heat_s1_t020_k4",
+      "steps": 1,
+      "tau": 0.2,
+      "projection_scale": 1.0,
+      "knn": 4
+    },
+    {
+      "name": "heat_s1_t025_k4",
+      "steps": 1,
+      "tau": 0.25,
+      "projection_scale": 1.0,
+      "knn": 4
+    }
+  ],
+  "metrics": {
+    "gaussian": {
+      "MAE": 0.0475576593598329,
+      "MSE": 0.008228442023845211,
+      "PSNR": 20.84682386476515,
+      "dynamic_MAE": 0.1382496055400184,
+      "dynamic_MSE": 0.03347310883775811,
+      "dynamic_PSNR": 14.753039503735215,
+      "temporal_delta_MAE": 0.01920333546328934,
+      "dynamic_object_candidate_MSE": 0.027442150172906608,
+      "object_support_fraction": 0.0786016268384217,
+      "object_route_fraction": 0.027554220758640585,
+      "output_MAE_from_gaussian": 0.0,
+      "object_MAE_from_gaussian": 0.0,
+      "capsr_seconds_per_sample": 0.04856349315304758,
+      "MSE_delta_percent": 0.0,
+      "dynamic_MSE_delta_percent": 0.0,
+      "object_MSE_delta_percent": 0.0
+    },
+    "heat_s1_t010_k4": {
+      "MAE": 0.04755533494092711,
+      "MSE": 0.008228038202103858,
+      "PSNR": 20.84703700579114,
+      "dynamic_MAE": 0.13824591820769835,
+      "dynamic_MSE": 0.033472007749402996,
+      "dynamic_PSNR": 14.753182366014386,
+      "temporal_delta_MAE": 0.01920149399051864,
+      "dynamic_object_candidate_MSE": 0.02727844526197222,
+      "object_support_fraction": 0.07856630584477779,
+      "object_route_fraction": 0.02743809336758963,
+      "output_MAE_from_gaussian": 9.366584577441141e-05,
+      "object_MAE_from_gaussian": 0.002493152767341815,
+      "capsr_seconds_per_sample": 0.05876907147628012,
+      "MSE_delta_percent": -0.004907633063255812,
+      "dynamic_MSE_delta_percent": -0.003289471439438252,
+      "object_MSE_delta_percent": -0.5965454962636674
+    },
+    "heat_s1_t015_k4": {
+      "MAE": 0.04755560415399134,
+      "MSE": 0.00822786195944664,
+      "PSNR": 20.84713003165148,
+      "dynamic_MAE": 0.13824317042719597,
+      "dynamic_MSE": 0.03347106400820316,
+      "dynamic_PSNR": 14.753304816802705,
+      "temporal_delta_MAE": 0.019201059086276357,
+      "dynamic_object_candidate_MSE": 0.02720909141745135,
+      "object_support_fraction": 0.07853098872150459,
+      "object_route_fraction": 0.027384438683002738,
+      "output_MAE_from_gaussian": 0.00013962904439215174,
+      "object_MAE_from_gaussian": 0.0036436769285690123,
+      "capsr_seconds_per_sample": 0.05813873434558057,
+      "MSE_delta_percent": -0.00704950459504694,
+      "dynamic_MSE_delta_percent": -0.006108872542598398,
+      "object_MSE_delta_percent": -0.8492729395721876
+    },
+    "heat_s1_t020_k4": {
+      "MAE": 0.047556901678218313,
+      "MSE": 0.008227722082049952,
+      "PSNR": 20.847203864316878,
+      "dynamic_MAE": 0.13824005452815594,
+      "dynamic_MSE": 0.03346994763147316,
+      "dynamic_PSNR": 14.753449671576107,
+      "temporal_delta_MAE": 0.01920098622003492,
+      "dynamic_object_candidate_MSE": 0.02714860784516752,
+      "object_support_fraction": 0.07848376018842261,
+      "object_route_fraction": 0.027334159396907042,
+      "output_MAE_from_gaussian": 0.00018537294814432152,
+      "object_MAE_from_gaussian": 0.004764824389430134,
+      "capsr_seconds_per_sample": 0.0581008985120307,
+      "MSE_delta_percent": -0.0087494302466129,
+      "dynamic_MSE_delta_percent": -0.009444017585191755,
+      "object_MSE_delta_percent": -1.0696768507188592
+    },
+    "heat_s1_t025_k4": {
+      "MAE": 0.04755921434717162,
+      "MSE": 0.008227612680507515,
+      "PSNR": 20.84726161153002,
+      "dynamic_MAE": 0.1382365767437958,
+      "dynamic_MSE": 0.03346864918872883,
+      "dynamic_PSNR": 14.753618156290692,
+      "temporal_delta_MAE": 0.019201239703575672,
+      "dynamic_object_candidate_MSE": 0.027097090395580933,
+      "object_support_fraction": 0.07842459042448943,
+      "object_route_fraction": 0.02728777539321975,
+      "output_MAE_from_gaussian": 0.00023107295326392382,
+      "object_MAE_from_gaussian": 0.005868043675059312,
+      "capsr_seconds_per_sample": 0.05795296761131232,
+      "MSE_delta_percent": -0.010078983789307827,
+      "dynamic_MSE_delta_percent": -0.013323079881510935,
+      "object_MSE_delta_percent": -1.257407947815803
+    }
+  }
+}

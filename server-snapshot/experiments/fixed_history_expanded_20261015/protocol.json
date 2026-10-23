@@ -1,0 +1,69 @@
+{
+  "lock": {
+    "checkpoint_sha256": "67d123d4372bc837a9a815ae698b3ac50dcafeb52c0d7ad94a9872f280fd5a33",
+    "script_sha256": "b297f95d494e33d55b1c025807d740baa7178f12d8d4e1aeee9f8fdb31ae85a6",
+    "helper_sha256": "5b0e41909fe2e4652564c56b59538426d15dcefd3523bb3a1192abce549f7ec6",
+    "manifest_sha256": "00b38a24f5834874852494d82a74dcc8f3359b91d549a6cb329a6d5cc309b495"
+  },
+  "clips": 347,
+  "videos": 46,
+  "excluded_development_groups": [
+    [
+      "PointOdyssey",
+      "cab-h-bench-3rd-09c3ccd3"
+    ],
+    [
+      "PointOdyssey",
+      "scene1-0129-ego-1202ea25"
+    ],
+    [
+      "adt_mini",
+      "Apartment_release_decoration_skeleton_seq131"
+    ],
+    [
+      "adt_mini",
+      "Apartment_release_meal_seq138"
+    ],
+    [
+      "ds_mini",
+      "6fae75-3_obj_source_left"
+    ],
+    [
+      "ds_mini",
+      "a16a72-3_obj_source_left"
+    ],
+    [
+      "po_mini",
+      "dancingroom1_3rd1"
+    ],
+    [
+      "po_mini",
+      "dancingroom1_3rd2"
+    ],
+    [
+      "pstudio_mini",
+      "boxes"
+    ]
+  ],
+  "train_val_test_group_overlap": 0,
+  "backbone_training_group_overlap": 0,
+  "parameters": "last4 histories, Farneback, FB1.5, appearance .06, disagreement .04, highpass5x5, alpha .25, pixelcap .03, globalbudget .001",
+  "resolution": 128,
+  "context": 16,
+  "forecast": 8,
+  "primary": "video-equal LPIPS difference fixed_history minus TAU",
+  "secondary": [
+    "MSE",
+    "MAE",
+    "PSNR",
+    "temporal",
+    "safe improvement fraction",
+    "per-source and horizon metrics"
+  ],
+  "bootstrap": "10000 paired resamples of original-video means",
+  "controls": "same correct-flow-derived gate and caps; zero/reverse only alter sampling displacement, not equal realized budget",
+  "prior_exposure": "existing test split previously evaluated for other architectures; NOT a never-observed benchmark; this method has not been tuned on these videos",
+  "future_gt": "metrics only, no flow/gates/config selection",
+  "geometry": false,
+  "selection": "fixed config selected before this test; no retraining or tuning"
+}

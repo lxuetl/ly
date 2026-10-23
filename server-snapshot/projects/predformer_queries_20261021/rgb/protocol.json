@@ -1,0 +1,23 @@
+{
+  "arm": "rgb",
+  "base_checkpoint": "/root/autodl-tmp/predformer_native128_20261021/best.pt",
+  "base_epoch": 15,
+  "base_frozen": true,
+  "counts": {
+    "train": 862,
+    "val": 280,
+    "test": 347
+  },
+  "epochs": 15,
+  "lr": 0.0001,
+  "batch": 1,
+  "seed": 42,
+  "loss": "MSE",
+  "test_used": false,
+  "geometry_used": false,
+  "trainable": 1303233,
+  "null_vs_rgb": "identical parameter count and memory shape; null uses zeros; not geometry experiment",
+  "query": "8 explicit future horizons; reads frozen16-frame visual tokens",
+  "checkpoint_selection": "val MSE",
+  "code_sha256": "efed4446dc40ceb3a07c07dccf68867865ac1eda1848b52368afc2fe6bf5f80c"
+}

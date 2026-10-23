@@ -1,0 +1,25 @@
+{
+  "architecture": "shared frozen TAU feature extractor -> geometry/transport candidate bank -> budget-constrained regional routing",
+  "candidates": [
+    "tau",
+    "geometry",
+    "trajectory_half",
+    "trajectory_onehalf",
+    "flow_zero",
+    "feature_transport",
+    "rgb_transport",
+    "rgb_local"
+  ],
+  "same_permission": true,
+  "budget": "all candidates matched to original geometry actual per-clip L1; mixtures capped at same budget",
+  "oracle_uses_future_truth": true,
+  "deployable": "fixed candidates and optional prefix-only replay, chosen by validation",
+  "regions": "fixed grids 8/16/32 pixels; not object instance masks",
+  "weights_updated": false,
+  "scope": "candidate-space diagnostic, not an optimal constrained mathematical bound",
+  "capacity_control": "rgb_local reuses geometry-trained weights: not a separately trained RGB capacity control",
+  "candidate_count_control": "amplitude bank has same number of entries as motion bank",
+  "future_labels": "never passed into build_bank",
+  "history_replay": true,
+  "replay_limitations": "left padded short contexts; fixed spatial cells do not follow moving objects"
+}

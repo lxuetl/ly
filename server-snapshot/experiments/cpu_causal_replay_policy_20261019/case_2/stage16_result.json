@@ -1,0 +1,83 @@
+{
+  "index": 2,
+  "path": "data/d4rt_forecasting_cache/ds_mini/6fae75-3_obj_source_left_0.npz",
+  "prefix_frames": 16,
+  "prefix_sha256": "f9e116370f0ddf765d2c07933c7a12188a8d9ff87200ebc638609d73f8be92e2",
+  "seed_sha256": "b9bb845bc47b0df11301eab08831b557d29e4f3c391cd9b30e5f5a11d35c4f0b",
+  "model_state_sha256": "d378704021301fd37b8db7f08481771b1709cc91767979bbf25df7edbb4b9ee1",
+  "events": [
+    {
+      "event": "read_prefix8",
+      "decoded_frame_range": [
+        0,
+        8
+      ],
+      "time": 1792413751.3100865
+    },
+    {
+      "event": "prefix8_locked",
+      "time": 1792413782.8150902
+    },
+    {
+      "event": "read_observed_calibration_holdout",
+      "decoded_frame_range": [
+        8,
+        12
+      ],
+      "time": 1792413788.024541
+    },
+    {
+      "event": "read_prefix12",
+      "decoded_frame_range": [
+        0,
+        12
+      ],
+      "time": 1792413811.5029368
+    },
+    {
+      "event": "prefix12_locked",
+      "time": 1792413844.828212
+    },
+    {
+      "event": "read_observed_validation_holdout",
+      "decoded_frame_range": [
+        12,
+        16
+      ],
+      "time": 1792413850.229494
+    },
+    {
+      "event": "read_prefix16",
+      "decoded_frame_range": [
+        0,
+        16
+      ],
+      "time": 1792413874.11898
+    },
+    {
+      "event": "prefix16_locked",
+      "time": 1792413913.3180504
+    }
+  ],
+  "TAU_bitwise_verified": true,
+  "signals": {
+    "hold": {
+      "inner_observed_reference_samples": 256,
+      "inner_error_median_px": 0.06714534014463425,
+      "eligible_writes": 254,
+      "ungated_writes": 256
+    },
+    "cv": {
+      "inner_observed_reference_samples": 256,
+      "inner_error_median_px": 0.01719328574836254,
+      "eligible_writes": 249,
+      "ungated_writes": 256
+    }
+  },
+  "support": {
+    "hold": 254,
+    "cv": 249,
+    "ungated_cv": 256
+  },
+  "seconds": 41.57189154624939
+}

@@ -1,0 +1,228 @@
+{
+  "test": {
+    "baseline": {
+      "MAE": 0.0769633903271622,
+      "MSE": 0.01079135729620854,
+      "PSNR": 19.669239279601197,
+      "dynamic_MSE": 0.029257498090801137
+    },
+    "d4rt": {
+      "MAE": 0.03992408876203828,
+      "MSE": 0.005029077764548775,
+      "PSNR": 22.98511648838547,
+      "dynamic_MSE": 0.021536671207165937
+    },
+    "sparse_affine": {
+      "MAE": 0.036079912912100554,
+      "MSE": 0.004793045828895022,
+      "PSNR": 23.193884184646972,
+      "dynamic_MSE": 0.021634694560258926
+    },
+    "raft_small": {
+      "MAE": 0.037429533847090274,
+      "MSE": 0.0048618858046312295,
+      "PSNR": 23.131952460276366,
+      "dynamic_MSE": 0.021573180826102607
+    },
+    "selected": {
+      "MAE": 0.03608019624112381,
+      "MSE": 0.00479309643075491,
+      "PSNR": 23.19383833490277,
+      "dynamic_MSE": 0.02169818802780145
+    },
+    "oracle": {
+      "MAE": 0.03056149836629629,
+      "MSE": 0.0034374683261072883,
+      "PSNR": 24.63761294866466,
+      "dynamic_MSE": 0.016254015828152443
+    },
+    "action_choice_fraction": {
+      "baseline": 0.00010617574298521504,
+      "d4rt": 0.0,
+      "sparse_affine": 0.999893844127655,
+      "raft_small": 0.0
+    },
+    "oracle_action_fraction": {
+      "baseline": 0.10449472814798355,
+      "d4rt": 0.2297922819852829,
+      "sparse_affine": 0.44050726294517517,
+      "raft_small": 0.22520573437213898
+    },
+    "calibration": {
+      "action_accuracy": 0.4405333201090495,
+      "motion_help_brier": 0.2121205540994803,
+      "coverage": 0.9998938242594401,
+      "accepted_help_rate": 0.8813604909273687,
+      "stage1_accuracy": 0.8813158671061198,
+      "motion_stage_accuracy": 0.4682470957438151,
+      "specialist_override_rate": 0.0,
+      "specialist_override_help_rate": 0.0,
+      "mean_predicted_motion_regret": -0.005998311559475648,
+      "help_ece": 0.34579522016279424,
+      "help_auroc": 0.6111870779291033,
+      "harm_aurc": 0.09496901983426853,
+      "risk_coverage_curve": [
+        {
+          "threshold": 0.95,
+          "coverage": 0.0,
+          "harmful_rate": 0.0,
+          "mean_regret": 0.0
+        },
+        {
+          "threshold": 0.9,
+          "coverage": 0.0,
+          "harmful_rate": 0.0,
+          "mean_regret": 0.0
+        },
+        {
+          "threshold": 0.85,
+          "coverage": 0.0,
+          "harmful_rate": 0.0,
+          "mean_regret": 0.0
+        },
+        {
+          "threshold": 0.8,
+          "coverage": 0.0,
+          "harmful_rate": 0.0,
+          "mean_regret": 0.0
+        },
+        {
+          "threshold": 0.75,
+          "coverage": 0.0,
+          "harmful_rate": 0.0,
+          "mean_regret": 0.0
+        },
+        {
+          "threshold": 0.7,
+          "coverage": 0.0,
+          "harmful_rate": 0.0,
+          "mean_regret": 0.0
+        },
+        {
+          "threshold": 0.65,
+          "coverage": 0.0,
+          "harmful_rate": 0.0,
+          "mean_regret": 0.0
+        },
+        {
+          "threshold": 0.6,
+          "coverage": 0.0,
+          "harmful_rate": 0.0,
+          "mean_regret": 0.0
+        },
+        {
+          "threshold": 0.55,
+          "coverage": 0.4755331675211589,
+          "harmful_rate": 0.06918252447693626,
+          "mean_regret": -0.006657045528964234
+        },
+        {
+          "threshold": 0.5,
+          "coverage": 0.9985955556233724,
+          "harmful_rate": 0.11834871438985646,
+          "mean_regret": -0.005975963508369603
+        },
+        {
+          "threshold": 0.45,
+          "coverage": 1.0,
+          "harmful_rate": 0.11867586771647136,
+          "mean_regret": -0.005998311432694082
+        },
+        {
+          "threshold": 0.4,
+          "coverage": 1.0,
+          "harmful_rate": 0.11867586771647136,
+          "mean_regret": -0.005998311432694082
+        },
+        {
+          "threshold": 0.35,
+          "coverage": 1.0,
+          "harmful_rate": 0.11867586771647136,
+          "mean_regret": -0.005998311432694082
+        },
+        {
+          "threshold": 0.3,
+          "coverage": 1.0,
+          "harmful_rate": 0.11867586771647136,
+          "mean_regret": -0.005998311432694082
+        },
+        {
+          "threshold": 0.25,
+          "coverage": 1.0,
+          "harmful_rate": 0.11867586771647136,
+          "mean_regret": -0.005998311432694082
+        },
+        {
+          "threshold": 0.2,
+          "coverage": 1.0,
+          "harmful_rate": 0.11867586771647136,
+          "mean_regret": -0.005998311432694082
+        },
+        {
+          "threshold": 0.15,
+          "coverage": 1.0,
+          "harmful_rate": 0.11867586771647136,
+          "mean_regret": -0.005998311432694082
+        },
+        {
+          "threshold": 0.1,
+          "coverage": 1.0,
+          "harmful_rate": 0.11867586771647136,
+          "mean_regret": -0.005998311432694082
+        },
+        {
+          "threshold": 0.05,
+          "coverage": 1.0,
+          "harmful_rate": 0.11867586771647136,
+          "mean_regret": -0.005998311432694082
+        },
+        {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "harmful_rate": 0.11867586771647136,
+          "mean_regret": -0.005998311432694082
+        }
+      ]
+    }
+  },
+  "meta": {
+    "best_epoch": 2,
+    "trainable_params": 10034,
+    "actions": [
+      "baseline",
+      "d4rt",
+      "sparse_affine",
+      "raft_small"
+    ],
+    "historical_replay_only_at_inference": true,
+    "hard_action_selection": true,
+    "baseline_action_is_abstention": true,
+    "hierarchical_affine_default": true,
+    "mse_aligned_regret": true,
+    "selected_motion_gate_target": true,
+    "used": {
+      "train": 96,
+      "val": 24,
+      "test": 48
+    },
+    "elapsed_seconds": 369.8691370487213,
+    "split": {
+      "legacy_subsets": [
+        "adt_mini",
+        "ds_mini",
+        "po_mini",
+        "pstudio_mini"
+      ],
+      "pointodyssey_usable": {
+        "train": 248,
+        "val": 90,
+        "test": 160
+      },
+      "totals": {
+        "train": 356,
+        "val": 130,
+        "test": 199
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "metrics": {
+    "MAE": 0.06660612759490808,
+    "MSE": 0.009687078561789046,
+    "RMSE": 0.09842295749361044,
+    "PSNR": 20.138071781393894,
+    "SSIM": 0.6521862745285034,
+    "LPIPS": 0.38207633402198554,
+    "temporal_delta_MAE": 0.030670775597294173,
+    "temporal_delta_MSE": 0.004052407967780406,
+    "per_horizon": {
+      "t+1": {
+        "MAE": 0.057065205400188765,
+        "MSE": 0.006747642896759013,
+        "PSNR": 21.708479094958932,
+        "SSIM": 0.7328407224267721,
+        "LPIPS": 0.34230111818760633
+      },
+      "t+2": {
+        "MAE": 0.05887554030244549,
+        "MSE": 0.007877531317838778,
+        "PSNR": 21.03609861573508,
+        "SSIM": 0.7026001811027527,
+        "LPIPS": 0.3505149008706212
+      },
+      "t+3": {
+        "MAE": 0.0653703149408102,
+        "MSE": 0.009260874109653134,
+        "PSNR": 20.333480194646473,
+        "SSIM": 0.6722539046779274,
+        "LPIPS": 0.3741295473650098
+      },
+      "t+4": {
+        "MAE": 0.06549581754952669,
+        "MSE": 0.009599065270352487,
+        "PSNR": 20.177710552617203,
+        "SSIM": 0.6554426053538919,
+        "LPIPS": 0.3738852830603719
+      },
+      "t+5": {
+        "MAE": 0.0696745098568499,
+        "MSE": 0.010419954794148605,
+        "PSNR": 19.82134165172233,
+        "SSIM": 0.6306963073089719,
+        "LPIPS": 0.40079013369977473
+      },
+      "t+6": {
+        "MAE": 0.07241601493830482,
+        "MSE": 0.011051792259483289,
+        "PSNR": 19.565672871112998,
+        "SSIM": 0.6169863451272249,
+        "LPIPS": 0.40726771745830775
+      },
+      "t+7": {
+        "MAE": 0.07018046680216988,
+        "MSE": 0.010947769678508242,
+        "PSNR": 19.606743479448813,
+        "SSIM": 0.6124769365414977,
+        "LPIPS": 0.3952672826126218
+      },
+      "t+8": {
+        "MAE": 0.07377115236595273,
+        "MSE": 0.01159199701117662,
+        "PSNR": 19.35841739513216,
+        "SSIM": 0.5941936763003468,
+        "LPIPS": 0.41245469972491267
+      }
+    },
+    "dynamic_MAE": 0.14144892554695113,
+    "dynamic_MSE": 0.03379978081133374,
+    "dynamic_PSNR": 14.710861160755082,
+    "motion_mask_IoU": 0.20271919422401244,
+    "motion_mask_F1": 0.33710145343578013,
+    "motion_mask_precision": 0.24055270741723053,
+    "motion_mask_recall": 0.5631141429072044,
+    "dynamic_pixel_fraction": 0.18097543716430664,
+    "motion_threshold": 0.05
+  },
+  "meta": {
+    "best_epoch": 12,
+    "train_fraction": 0.25,
+    "image_size": 128,
+    "train_clips": 214,
+    "val_clips": 80,
+    "test_clips": 80,
+    "split": {
+      "legacy_subsets": [
+        "adt_mini",
+        "ds_mini",
+        "po_mini",
+        "pstudio_mini"
+      ],
+      "pointodyssey_usable": {
+        "train": 754,
+        "val": 240,
+        "test": 308
+      },
+      "totals": {
+        "train": 862,
+        "val": 280,
+        "test": 347
+      }
+    },
+    "fraction_selection": {
+      "fraction": 0.25,
+      "domains": {
+        "adt_mini": {
+          "total_groups": 27,
+          "selected_groups": [
+            "Apartment_release_clean_seq145",
+            "Apartment_release_clean_seq146",
+            "Apartment_release_decoration_seq134",
+            "Apartment_release_decoration_seq137",
+            "Apartment_release_decoration_skeleton_seq132",
+            "Apartment_release_decoration_skeleton_seq135",
+            "Apartment_release_meal_seq140"
+          ],
+          "total_clips": 29,
+          "selected_clips": 9
+        },
+        "ds_mini": {
+          "total_groups": 12,
+          "selected_groups": [
+            "5894d0",
+            "87f245",
+            "e09bca"
+          ],
+          "total_clips": 25,
+          "selected_clips": 7
+        },
+        "po50": {
+          "total_groups": 76,
+          "selected_groups": [
+            "ani-new-2-75b7e10f",
+            "ani13-new-02e8f3cc",
+            "ani5-new-f-969d290b",
+            "animal-smoke-4b57ebb1",
+            "animal2-8f48c6c3",
+            "animal3-s-1535384b",
+            "character-f0db3fa4",
+            "character0-f-67820658",
+            "character0-f2-cdd2a608",
+            "character1-2d91e213",
+            "dancingroom0-3rd-456e3dd1",
+            "gso-in-big-53ed3124",
+            "kg-1389845b",
+            "kg-ego2-d940b3aa",
+            "kitchen-gfloor-ego2-93ccb2ee",
+            "r3-new-092cc5b7",
+            "r6-new-8721da58",
+            "scene-j716-ego1-05141104",
+            "seminar-h52-ego2-d50acaa6"
+          ],
+          "total_clips": 754,
+          "selected_clips": 188
+        },
+        "po_mini": {
+          "total_groups": 5,
+          "selected_groups": [
+            "seminar_g110_0315_ego2"
+          ],
+          "total_clips": 23,
+          "selected_clips": 4
+        },
+        "pstudio_mini": {
+          "total_groups": 4,
+          "selected_groups": [
+            "juggle"
+          ],
+          "total_clips": 31,
+          "selected_clips": 6
+        }
+      }
+    },
+    "trainable_params": 1513173
+  }
+}

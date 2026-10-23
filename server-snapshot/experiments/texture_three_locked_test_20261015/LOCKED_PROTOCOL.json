@@ -1,0 +1,19 @@
+{
+  "modes": [
+    "linear4",
+    "linear1",
+    "cubic1"
+  ],
+  "split": "test",
+  "clips": 347,
+  "videos": 46,
+  "tuning": false,
+  "configs": "original linear4; last1 linear; last1 cubic clamped [0,1]. All retain original four-frame confidence gate, alpha .25, pixelcap .03, meanabs cap .001",
+  "checkpoint_sha256": "67d123d4372bc837a9a815ae698b3ac50dcafeb52c0d7ad94a9872f280fd5a33",
+  "script_sha256": "998f9fc603c3063613ff08033692b0412b8dc7e4561cdfcf74f1b40165514211",
+  "mechanism_script_sha256": "e52b4fd22d45a70f5715468b454902f41ba6d81e0f3baef33a2bd4b1da8bc1c5",
+  "manifest_sha256": "00b38a24f5834874852494d82a74dcc8f3359b91d549a6cb329a6d5cc309b495",
+  "bootstrap": "10000 paired resamples of original-video means; seed42; pointwise 95% percentile intervals, no multiple-comparison correction; no per-source CI when only1video",
+  "prior_exposure": "Existing test previously evaluated with other configurations. Not a never-observed dataset. No parameter selection in this run.",
+  "horizons": "1..8 for frame metrics; temporal indices correspond to transitions 1->2 through7->8"
+}

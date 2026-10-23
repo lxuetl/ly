@@ -1,0 +1,21 @@
+{
+  "split": "validation only",
+  "clips": 280,
+  "replay": "observed frames0:8; withheld8:16. TAU context: repeat frame0 eight times then observed8. Neither target nor later frames enters inference. Padding distribution shift: diagnostic only, not standard16->8 benchmark.",
+  "propagation": [
+    "TAU-guided last-frame backward flow",
+    "Eulerian constant velocity: backward flow last->penultimate scaled by horizon, approximate fixed-grid extrapolation"
+  ],
+  "shared": "bicubic clamp[0,1]; raw RGB propagation, no repair training",
+  "harm_label": "regional source MSE minus TAU MSE >1e-6; nonharm <=1e-6",
+  "regions": "nonoverlapping32x32,8horizons; reject risk higher is worse",
+  "signals": [
+    "cycle_or_bounds_risk",
+    "appearance_mismatch",
+    "motion_magnitude",
+    "branch_disagreement"
+  ],
+  "threshold": "leave-one-original-video-out: 90th percentile risk among nonharm regions in OTHER videos; heldout false rejection and harmful recall reported, no test data",
+  "limits": "pooled region AUROC descriptive, correlated observations; threshold calibration not confidence guarantee; no future visibility GT",
+  "script_sha256": "31277b28ebbec944ddc609bc361d8c171fb3d7b80a253c7d93eee4dbfb65fb4e"
+}

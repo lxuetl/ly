@@ -1,0 +1,459 @@
+{
+  "rgb": {
+    "best_epoch": 23,
+    "parameters": 40069,
+    "calibration": {
+      "n": 24,
+      "choices": {
+        "align_rgb": 23,
+        "velocity_texture": 1
+      },
+      "top1_safe": 15,
+      "oracle_safe": 19,
+      "pair_gain_accuracy": 0.875,
+      "gain_pearson": 0.837794792397132,
+      "risk_auc_selected": 0.6666666666666666,
+      "risk_auc_all_edits": 0.44857142857142857,
+      "risk_range_selected": [
+        0.06819375604391098,
+        0.08923152461647987,
+        0.12544722855091095
+      ],
+      "gain_positive": 24,
+      "best_precision_n10": {
+        "threshold": 0.08586695045232773,
+        "n": 10,
+        "safe": 8,
+        "precision": 0.8
+      },
+      "max_count_safe90": 0,
+      "top1_means": {
+        "gain": 0.006309135972211759,
+        "mse_delta": 3.67437896784395e-05,
+        "temporal_delta": -1.4393570988128582e-05
+      },
+      "fixed_means": {
+        "gain": 0.006318553661306699,
+        "mse_delta": 3.5892813078438245e-05,
+        "temporal_delta": -1.5650604230662186e-05
+      },
+      "paired_top1_minus_fixed": {
+        "gain": {
+          "mean": -9.41768909494082e-06,
+          "ci95": [
+            -2.8253067284822464e-05,
+            0.0
+          ]
+        },
+        "mse_delta": {
+          "mean": 8.509766000012556e-07,
+          "ci95": [
+            0.0,
+            2.552929800003767e-06
+          ]
+        },
+        "temporal_delta": {
+          "mean": 1.2570332425336044e-06,
+          "ci95": [
+            0.0,
+            3.771099727600813e-06
+          ]
+        }
+      },
+      "per_step": {
+        "0": {
+          "n": 8,
+          "top1_safe": 7,
+          "fixed_safe": 7
+        },
+        "1": {
+          "n": 8,
+          "top1_safe": 4,
+          "fixed_safe": 4
+        },
+        "2": {
+          "n": 8,
+          "top1_safe": 4,
+          "fixed_safe": 4
+        }
+      },
+      "different_from_fixed": [
+        {
+          "path": "/root/autodl-fs/d4rt_datasets/d4rt_forecasting_cache_po_full/po50/scene-carb-h-tables-906ebd48_clip_000.npz",
+          "step": 2,
+          "choice": "velocity_texture",
+          "safe": true,
+          "fixed_safe": true,
+          "gain_difference": -0.0002260245382785797
+        }
+      ]
+    },
+    "validation": {
+      "n": 48,
+      "choices": {
+        "align_rgb": 43,
+        "velocity_texture": 4,
+        "undo": 1
+      },
+      "top1_safe": 37,
+      "oracle_safe": 39,
+      "pair_gain_accuracy": 0.8392857142857143,
+      "gain_pearson": 0.7292681959457133,
+      "risk_auc_selected": 0.5577395577395577,
+      "risk_auc_all_edits": 0.4634238310708899,
+      "risk_range_selected": [
+        0.06473381817340851,
+        0.09075992554426193,
+        0.12171933054924011
+      ],
+      "gain_positive": 48,
+      "best_precision_n10": {
+        "threshold": 0.07917520403862,
+        "n": 12,
+        "safe": 11,
+        "precision": 0.9166666666666666
+      },
+      "max_count_safe90": 12,
+      "top1_means": {
+        "gain": 0.004143914052595695,
+        "mse_delta": 1.9670721182289224e-05,
+        "temporal_delta": -1.4753682383646568e-05
+      },
+      "fixed_means": {
+        "gain": 0.004308468196541071,
+        "mse_delta": 1.7916664849811543e-05,
+        "temporal_delta": -1.831452633875112e-05
+      },
+      "paired_top1_minus_fixed": {
+        "gain": {
+          "mean": -0.00016455414394537607,
+          "ci95": [
+            -0.0004848758690059185,
+            0.0
+          ]
+        },
+        "mse_delta": {
+          "mean": 1.754056332477679e-06,
+          "ci95": [
+            0.0,
+            4.72763470800904e-06
+          ]
+        },
+        "temporal_delta": {
+          "mean": 3.5608439551045494e-06,
+          "ci95": [
+            0.0,
+            9.132355141143004e-06
+          ]
+        }
+      },
+      "per_step": {
+        "0": {
+          "n": 16,
+          "top1_safe": 14,
+          "fixed_safe": 14
+        },
+        "1": {
+          "n": 16,
+          "top1_safe": 11,
+          "fixed_safe": 12
+        },
+        "2": {
+          "n": 16,
+          "top1_safe": 12,
+          "fixed_safe": 12
+        }
+      },
+      "different_from_fixed": [
+        {
+          "path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_clean_seq134_7.npz",
+          "step": 0,
+          "choice": "velocity_texture",
+          "safe": true,
+          "fixed_safe": true,
+          "gain_difference": -0.0014785081148147583
+        },
+        {
+          "path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_clean_seq134_7.npz",
+          "step": 1,
+          "choice": "undo",
+          "safe": false,
+          "fixed_safe": true,
+          "gain_difference": -0.005533479154109955
+        },
+        {
+          "path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_clean_seq134_7.npz",
+          "step": 2,
+          "choice": "velocity_texture",
+          "safe": true,
+          "fixed_safe": true,
+          "gain_difference": -0.0004648566246032715
+        },
+        {
+          "path": "data/d4rt_forecasting_cache/ds_mini/a16a72-3_obj_source_left_3.npz",
+          "step": 0,
+          "choice": "velocity_texture",
+          "safe": true,
+          "fixed_safe": true,
+          "gain_difference": -0.0002270042896270752
+        },
+        {
+          "path": "data/d4rt_forecasting_cache/ds_mini/a16a72-3_obj_source_left_3.npz",
+          "step": 1,
+          "choice": "velocity_texture",
+          "safe": true,
+          "fixed_safe": true,
+          "gain_difference": -0.00019475072622299194
+        }
+      ]
+    }
+  },
+  "geometry": {
+    "best_epoch": 15,
+    "parameters": 40069,
+    "calibration": {
+      "n": 24,
+      "choices": {
+        "velocity_texture": 2,
+        "align_rgb": 22
+      },
+      "top1_safe": 14,
+      "oracle_safe": 19,
+      "pair_gain_accuracy": 0.875,
+      "gain_pearson": 0.6232322903532601,
+      "risk_auc_selected": 0.7333333333333333,
+      "risk_auc_all_edits": 0.5357142857142857,
+      "risk_range_selected": [
+        0.05996488034725189,
+        0.08819402381777763,
+        0.1462935209274292
+      ],
+      "gain_positive": 23,
+      "best_precision_n10": {
+        "threshold": 0.0909612849354744,
+        "n": 13,
+        "safe": 10,
+        "precision": 0.7692307692307693
+      },
+      "max_count_safe90": 4,
+      "top1_means": {
+        "gain": 0.005836049715677897,
+        "mse_delta": 2.368076820857823e-05,
+        "temporal_delta": -2.2849572512010734e-05
+      },
+      "fixed_means": {
+        "gain": 0.006318553661306699,
+        "mse_delta": 3.5892813078438245e-05,
+        "temporal_delta": -1.5650604230662186e-05
+      },
+      "paired_top1_minus_fixed": {
+        "gain": {
+          "mean": -0.000482503945628802,
+          "ci95": [
+            -0.0013544677446285884,
+            0.0
+          ]
+        },
+        "mse_delta": {
+          "mean": -1.2212044869860014e-05,
+          "ci95": [
+            -3.0496235315998398e-05,
+            0.0
+          ]
+        },
+        "temporal_delta": {
+          "mean": -7.198968281348547e-06,
+          "ci95": [
+            -2.6897061616182327e-05,
+            5.300156772136688e-06
+          ]
+        }
+      },
+      "per_step": {
+        "0": {
+          "n": 8,
+          "top1_safe": 6,
+          "fixed_safe": 7
+        },
+        "1": {
+          "n": 8,
+          "top1_safe": 4,
+          "fixed_safe": 4
+        },
+        "2": {
+          "n": 8,
+          "top1_safe": 4,
+          "fixed_safe": 4
+        }
+      },
+      "different_from_fixed": [
+        {
+          "path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_decoration_seq137_0.npz",
+          "step": 0,
+          "choice": "velocity_texture",
+          "safe": false,
+          "fixed_safe": true,
+          "gain_difference": -0.010463565587997437
+        },
+        {
+          "path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_decoration_seq139_7.npz",
+          "step": 2,
+          "choice": "velocity_texture",
+          "safe": false,
+          "fixed_safe": false,
+          "gain_difference": -0.001116529107093811
+        }
+      ]
+    },
+    "validation": {
+      "n": 48,
+      "choices": {
+        "velocity_texture": 9,
+        "align_rgb": 39
+      },
+      "top1_safe": 37,
+      "oracle_safe": 39,
+      "pair_gain_accuracy": 0.8303571428571429,
+      "gain_pearson": 0.5756279040878153,
+      "risk_auc_selected": 0.359375,
+      "risk_auc_all_edits": 0.4358974358974359,
+      "risk_range_selected": [
+        0.04284028708934784,
+        0.07831535115838051,
+        0.15096798539161682
+      ],
+      "gain_positive": 44,
+      "best_precision_n10": {
+        "threshold": 0.05765676870942116,
+        "n": 12,
+        "safe": 10,
+        "precision": 0.8333333333333334
+      },
+      "max_count_safe90": 3,
+      "top1_means": {
+        "gain": 0.003970601440717776,
+        "mse_delta": 1.1974729810996601e-05,
+        "temporal_delta": -1.864684357618292e-05
+      },
+      "fixed_means": {
+        "gain": 0.004308468196541071,
+        "mse_delta": 1.7916664849811543e-05,
+        "temporal_delta": -1.831452633875112e-05
+      },
+      "paired_top1_minus_fixed": {
+        "gain": {
+          "mean": -0.00033786675582329434,
+          "ci95": [
+            -0.0007772620806160073,
+            -4.5542294780413314e-05
+          ]
+        },
+        "mse_delta": {
+          "mean": -5.9419350388149415e-06,
+          "ci95": [
+            -1.6066290603096906e-05,
+            5.345342894239972e-07
+          ]
+        },
+        "temporal_delta": {
+          "mean": -3.3231723743180504e-07,
+          "ci95": [
+            -1.1535736121004447e-05,
+            9.143831751619777e-06
+          ]
+        }
+      },
+      "per_step": {
+        "0": {
+          "n": 16,
+          "top1_safe": 14,
+          "fixed_safe": 14
+        },
+        "1": {
+          "n": 16,
+          "top1_safe": 12,
+          "fixed_safe": 12
+        },
+        "2": {
+          "n": 16,
+          "top1_safe": 11,
+          "fixed_safe": 12
+        }
+      },
+      "different_from_fixed": [
+        {
+          "path": "data/d4rt_forecasting_cache/pstudio_mini/boxes_11.npz",
+          "step": 0,
+          "choice": "velocity_texture",
+          "safe": false,
+          "fixed_safe": false,
+          "gain_difference": -0.003963448107242584
+        },
+        {
+          "path": "data/d4rt_forecasting_cache/pstudio_mini/boxes_11.npz",
+          "step": 1,
+          "choice": "velocity_texture",
+          "safe": false,
+          "fixed_safe": false,
+          "gain_difference": -0.0033682286739349365
+        },
+        {
+          "path": "data/d4rt_forecasting_cache/pstudio_mini/boxes_11.npz",
+          "step": 2,
+          "choice": "velocity_texture",
+          "safe": false,
+          "fixed_safe": false,
+          "gain_difference": -0.002059824764728546
+        },
+        {
+          "path": "data/d4rt_forecasting_cache/po_mini/dancingroom1_3rd2_11.npz",
+          "step": 0,
+          "choice": "velocity_texture",
+          "safe": true,
+          "fixed_safe": true,
+          "gain_difference": -0.003224000334739685
+        },
+        {
+          "path": "data/d4rt_forecasting_cache/ds_mini/a16a72-3_obj_source_left_3.npz",
+          "step": 0,
+          "choice": "velocity_texture",
+          "safe": true,
+          "fixed_safe": true,
+          "gain_difference": -0.0002270042896270752
+        },
+        {
+          "path": "data/d4rt_forecasting_cache/ds_mini/a16a72-3_obj_source_left_3.npz",
+          "step": 1,
+          "choice": "velocity_texture",
+          "safe": true,
+          "fixed_safe": true,
+          "gain_difference": -0.00019475072622299194
+        },
+        {
+          "path": "data/d4rt_forecasting_cache/ds_mini/3c8664-3_obj_source_left_3.npz",
+          "step": 0,
+          "choice": "velocity_texture",
+          "safe": true,
+          "fixed_safe": true,
+          "gain_difference": -0.0004783347249031067
+        },
+        {
+          "path": "data/d4rt_forecasting_cache/ds_mini/3c8664-3_obj_source_left_3.npz",
+          "step": 1,
+          "choice": "velocity_texture",
+          "safe": true,
+          "fixed_safe": true,
+          "gain_difference": -0.00044243037700653076
+        },
+        {
+          "path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_decoration_seq133_3.npz",
+          "step": 2,
+          "choice": "velocity_texture",
+          "safe": false,
+          "fixed_safe": true,
+          "gain_difference": -0.002259582281112671
+        }
+      ]
+    }
+  }
+}

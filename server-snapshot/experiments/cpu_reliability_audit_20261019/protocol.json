@@ -1,0 +1,26 @@
+{
+  "formal_training": false,
+  "parameter_fitting": false,
+  "CPU_only": true,
+  "history": "last-observed anchor, adjacent LK cycle <=1px, local3x3 NCC improvement>.03; NCC>=.6, displacement to LK<=2px, texture std>.02",
+  "endpoint_gate": "prefix RGB replay median error<=2px and prediction/simple-model disagreement<=2px; heuristic not probability",
+  "threshold_selection": "fixed before outcomes; not tuned on validation or GT; no claimed calibration",
+  "strict_replay": "RGB-only hold/CV; prefix0:8 isolated. Continued LK pseudo-reference on8:16.",
+  "predicted_replay": "cached16 D4RT sliced to8 only NONCAUSAL sensitivity; not used in gate",
+  "blocked": "strict three-arm D4RT model replay needs independent prefix D4RT XYZ/UV/confidence; unavailable",
+  "final_RGB_cases": "first4 evaluation manifest clips, chosen without outcome inspection; reused validation exploratory",
+  "arms": [
+    "raw",
+    "history_filter",
+    "history_resample",
+    "endpoint_gate",
+    "joint_gate"
+  ],
+  "step": 0.002,
+  "image_budget": 0.002,
+  "image_cap": 0.03,
+  "source_sha256": {
+    "run_reliability_cpu.py": "06818480d64cbf91c6e29950b74d8e5a17d0e9cf138f05f91028e4e439528559",
+    "reliability_cpu.py": "d4c4d175685dff8126a65b86a127f4543d5fe211c87029e0aada802e9d7f5c4f"
+  }
+}

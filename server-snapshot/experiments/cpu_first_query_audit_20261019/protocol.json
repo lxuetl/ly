@@ -1,0 +1,59 @@
+{
+  "CPU_only": true,
+  "training": false,
+  "parameter_fitting": false,
+  "threshold_search": false,
+  "history_frames": 16,
+  "image_size": 128,
+  "videos": 40,
+  "final_cases": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "selection": "same manifest40 and first4 as previous audit; reused validation, exploratory",
+  "normal_inputs": [
+    "context_rgb",
+    "query_uv",
+    "past_uv",
+    "past_valid",
+    "past_confidence"
+  ],
+  "query": "provided frame0 query coordinate; no label-based re-anchoring or query reselection",
+  "tracking": "adjacent LK cumulative forward from query; reverse from forward endpoint AND D4RT endpoint",
+  "fixed_thresholds": {
+    "adjacent_cycle_px": 1,
+    "global_return_px": 2,
+    "bidirectional_distance_px": 2,
+    "texture_std": 0.02,
+    "local_max_radius_px": 2
+  },
+  "masks": "history validity + complete query-forward-roundtrip; identity_filter additionally requires D4RT-tail reverse agrees with query and forward track",
+  "limitations": [
+    "LK loop self-consistency is not proof of identity",
+    "complete-track gate abstains on occlusion/loss",
+    "no independent prefix D4RT replay",
+    "no confidence or outcome calibration"
+  ],
+  "arms": [
+    "raw",
+    "last_anchor",
+    "identity_filter",
+    "first_mask_raw",
+    "first_local",
+    "first_forward",
+    "first_reanchor"
+  ],
+  "future_endpoints": "unchanged frozen prediction for all arms except explicit first_reanchor translation by forward_last-D4RT_last",
+  "step": 0.002,
+  "feature_cap": 0.05,
+  "image_budget": 0.002,
+  "image_cap": 0.03,
+  "budget_matching": "per-clip minimum positive actual modification, scale down only; keep stays zero, zero-support not considered matched positive comparison",
+  "hashes": {
+    "run_first_query_cpu.py": "191dd4e2d1589559bac5abc13b1a5e17ab01030f476014f777e9d1a97f10dc90",
+    "first_query_cpu.py": "0e973a7d9906bb28c8f8c2eda315f9978afa66cc2400d85811141d850351fc46",
+    "reliability_cpu.py": "d4c4d175685dff8126a65b86a127f4543d5fe211c87029e0aada802e9d7f5c4f"
+  }
+}

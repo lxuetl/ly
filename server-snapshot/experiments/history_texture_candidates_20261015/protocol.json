@@ -1,0 +1,25 @@
+{
+  "frozen": "TAU; no editor training; no D4RT",
+  "input": "same7 videos, same replay and heldout windows as replay_preference_20261014",
+  "branches": [
+    "TAU-guided dense alignment of last4 historical frames",
+    "constant-velocity extrapolation from last2 historical frames"
+  ],
+  "alignment": "Farneback RGB; no target flow",
+  "confidence": "forward/backward consistency + bounds + lowfrequency appearance consistency + historical texture disagreement",
+  "correction": [
+    "historical high-frequency residual",
+    "historical RGB residual"
+  ],
+  "alphas": [
+    0.03,
+    0.1,
+    0.25
+  ],
+  "cap": 0.03,
+  "mean_abs_budget_max": 0.001,
+  "controls": "zero and reversed displacement, same source, coefficients, gate and caps; realized budget reported, not forced equal",
+  "target_usage": "only terminal metrics; oracle diagnostic labeled; deployment config leave-video-out selected on other videos replay",
+  "safe": "LPIPS gain>0.0001; MSE and temporal at most1% worse",
+  "limits": "7 videos4sources; inferred dense motion not ground truth; no visibility claimed for disoccluded areas; no full benchmark"
+}

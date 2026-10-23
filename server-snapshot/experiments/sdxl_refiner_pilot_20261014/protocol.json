@@ -1,0 +1,53 @@
+{
+  "model": "/root/autodl-fs/models/sdxl-refiner-1.0",
+  "weights_frozen": true,
+  "resolution": 512,
+  "evaluation_resolution": 128,
+  "steps_nominal": 50,
+  "effective_steps": [
+    5,
+    10
+  ],
+  "guidance_scale": 3.0,
+  "configs": [
+    [
+      0.1,
+      42
+    ],
+    [
+      0.1,
+      43
+    ],
+    [
+      0.2,
+      42
+    ],
+    [
+      0.2,
+      43
+    ]
+  ],
+  "candidate_unit": "8-frame sequence, same configuration and same reset seed per frame; no temporal model",
+  "controls": [
+    "tau",
+    "resize_only",
+    "vae_mode",
+    "vae_sample42",
+    "vae_sample43"
+  ],
+  "guardrail": "oracle diagnostic requires each clip MSE and temporal MAE <=1.01 times TAU; no test-time GT selection claimed",
+  "target_usage": "evaluation only",
+  "geometry": false,
+  "prompt": "a clear natural image, realistic colors and details",
+  "negative_prompt": "blur, artifacts, distorted shapes, oversharpening, text, watermark",
+  "selection": "validation, max2 videos per source; not representative full-dataset benchmark",
+  "exploratory_extension": {
+    "reason": "added after validation-only VAE roundtrip audit, before diffusion candidate evaluation",
+    "formula": "tau + alpha * (edited - matched-seed VAE roundtrip)",
+    "alphas": [
+      0.25,
+      0.5
+    ],
+    "no_test_data": true
+  }
+}

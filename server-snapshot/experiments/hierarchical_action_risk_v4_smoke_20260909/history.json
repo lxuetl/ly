@@ -1,0 +1,190 @@
+[
+  {
+    "epoch": 1,
+    "elapsed_seconds": 3.553051471710205,
+    "train_loss": 0.34960365295410156,
+    "train_reconstruction": 0.10329745709896088,
+    "train_risk": 0.1317141428589821,
+    "train_motion_rank": 1.0985991954803467,
+    "train_abstain_rank": 0.69248166680336,
+    "train_temporal": 0.023842948488891125,
+    "train_static_correction": 0.00496183056384325,
+    "train_action_tv": 2.6154414172196994e-06,
+    "val": {
+      "baseline": {
+        "MAE": 0.059024651845296226,
+        "MSE": 0.009653969978292784,
+        "PSNR": 20.152940560748217,
+        "dynamic_MSE": 0.03411133477733311
+      },
+      "d4rt": {
+        "MAE": 0.04919887085755666,
+        "MSE": 0.008455005784829458,
+        "PSNR": 20.72886090926245,
+        "dynamic_MSE": 0.03144804298036134
+      },
+      "sparse_affine": {
+        "MAE": 0.04884413878122965,
+        "MSE": 0.008430217703183493,
+        "PSNR": 20.741612099457832,
+        "dynamic_MSE": 0.031356890897866606
+      },
+      "raft_small": {
+        "MAE": 0.04902955889701843,
+        "MSE": 0.00850190594792366,
+        "PSNR": 20.704837037118384,
+        "dynamic_MSE": 0.031639466385317325
+      },
+      "selected": {
+        "MAE": 0.04884413878122965,
+        "MSE": 0.008430217703183493,
+        "PSNR": 20.741612099457832,
+        "dynamic_MSE": 0.031356890897866606
+      },
+      "oracle": {
+        "MAE": 0.04538977642854055,
+        "MSE": 0.007741164416074753,
+        "PSNR": 21.111937083816215,
+        "dynamic_MSE": 0.02921158402614359
+      },
+      "action_choice_fraction": {
+        "baseline": 0.0,
+        "d4rt": 0.0,
+        "sparse_affine": 1.0,
+        "raft_small": 0.0
+      },
+      "calibration": {
+        "action_accuracy": 0.2468414306640625,
+        "motion_help_brier": 0.24779173731803894,
+        "coverage": 1.0,
+        "accepted_help_rate": 0.79998779296875,
+        "mean_predicted_motion_regret": -0.010180513374507427,
+        "help_ece": 0.31055498123168945,
+        "help_auroc": 0.5,
+        "harm_aurc": 0.20001220703125,
+        "risk_coverage_curve": [
+          {
+            "threshold": 0.95,
+            "coverage": 0.0,
+            "harmful_rate": 0.0,
+            "mean_regret": 0.0
+          },
+          {
+            "threshold": 0.9,
+            "coverage": 0.0,
+            "harmful_rate": 0.0,
+            "mean_regret": 0.0
+          },
+          {
+            "threshold": 0.85,
+            "coverage": 0.0,
+            "harmful_rate": 0.0,
+            "mean_regret": 0.0
+          },
+          {
+            "threshold": 0.8,
+            "coverage": 0.0,
+            "harmful_rate": 0.0,
+            "mean_regret": 0.0
+          },
+          {
+            "threshold": 0.75,
+            "coverage": 0.0,
+            "harmful_rate": 0.0,
+            "mean_regret": 0.0
+          },
+          {
+            "threshold": 0.7,
+            "coverage": 0.0,
+            "harmful_rate": 0.0,
+            "mean_regret": 0.0
+          },
+          {
+            "threshold": 0.65,
+            "coverage": 0.0,
+            "harmful_rate": 0.0,
+            "mean_regret": 0.0
+          },
+          {
+            "threshold": 0.6,
+            "coverage": 0.0,
+            "harmful_rate": 0.0,
+            "mean_regret": 0.0
+          },
+          {
+            "threshold": 0.55,
+            "coverage": 0.0,
+            "harmful_rate": 0.0,
+            "mean_regret": 0.0
+          },
+          {
+            "threshold": 0.5,
+            "coverage": 1.0,
+            "harmful_rate": 0.20001220703125,
+            "mean_regret": -0.010180513344003828
+          },
+          {
+            "threshold": 0.45,
+            "coverage": 1.0,
+            "harmful_rate": 0.20001220703125,
+            "mean_regret": -0.010180513344003828
+          },
+          {
+            "threshold": 0.4,
+            "coverage": 1.0,
+            "harmful_rate": 0.20001220703125,
+            "mean_regret": -0.010180513344003828
+          },
+          {
+            "threshold": 0.35,
+            "coverage": 1.0,
+            "harmful_rate": 0.20001220703125,
+            "mean_regret": -0.010180513344003828
+          },
+          {
+            "threshold": 0.3,
+            "coverage": 1.0,
+            "harmful_rate": 0.20001220703125,
+            "mean_regret": -0.010180513344003828
+          },
+          {
+            "threshold": 0.25,
+            "coverage": 1.0,
+            "harmful_rate": 0.20001220703125,
+            "mean_regret": -0.010180513344003828
+          },
+          {
+            "threshold": 0.2,
+            "coverage": 1.0,
+            "harmful_rate": 0.20001220703125,
+            "mean_regret": -0.010180513344003828
+          },
+          {
+            "threshold": 0.15,
+            "coverage": 1.0,
+            "harmful_rate": 0.20001220703125,
+            "mean_regret": -0.010180513344003828
+          },
+          {
+            "threshold": 0.1,
+            "coverage": 1.0,
+            "harmful_rate": 0.20001220703125,
+            "mean_regret": -0.010180513344003828
+          },
+          {
+            "threshold": 0.05,
+            "coverage": 1.0,
+            "harmful_rate": 0.20001220703125,
+            "mean_regret": -0.010180513344003828
+          },
+          {
+            "threshold": 0.0,
+            "coverage": 1.0,
+            "harmful_rate": 0.20001220703125,
+            "mean_regret": -0.010180513344003828
+          }
+        ]
+      }
+    }
+  }
+]

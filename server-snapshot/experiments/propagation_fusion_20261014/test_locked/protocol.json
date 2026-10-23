@@ -1,0 +1,29 @@
+{
+  "checkpoints": {
+    "gt": {
+      "epoch": 30,
+      "sha256": "d8dbfbce0e141cc90bbdb93ed96389e663df768de10431932ef8a59ed543365c"
+    },
+    "pred": {
+      "epoch": 28,
+      "sha256": "1f9cd2f4b0269ff1ffc205a1590382bc448168d2e0c17313e93cfa96905e6fff"
+    },
+    "zero": {
+      "epoch": 27,
+      "sha256": "32d11988272b44f40a68f195d5d3d929fa3887792e82fe0b12480da1a3e3aa87"
+    },
+    "wrong": {
+      "epoch": 29,
+      "sha256": "73173b652606d20deb7a9313fc45a162e2b9071653cac713c9d32a1578c776c5"
+    }
+  },
+  "clips": 347,
+  "videos": 46,
+  "primary": "video-equal composite cost",
+  "bootstrap": "10000 resamples of original-video means, paired",
+  "mask": "GT visible trajectories with >2px displacement; radius3 projection; includes camera motion, not object segmentation",
+  "selection": "no test tuning; checkpoint selected by previous validation",
+  "gt": "future trajectory+visibility diagnostic only",
+  "shared_gate": "predicted support in all modes, zero not geometry-free",
+  "budget": "common upper bound, not equal actual magnitude"
+}

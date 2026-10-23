@@ -1,0 +1,581 @@
+{
+  "clips": 280,
+  "clusters": 40,
+  "selected_fixed_candidate_on_validation": "rgb_transport",
+  "metrics": {
+    "tau": {
+      "MSE": 0.0073949975847166826,
+      "MAE": 0.04597299834879647,
+      "PSNR": 23.579418541672563,
+      "LPIPS": 0.19319506492465735,
+      "temporal_MAE": 0.022029416024452075,
+      "dynamic_MSE": 0.0162648568997963,
+      "pixel_delta": 0.0
+    },
+    "geometry": {
+      "MSE": 0.007362240576081344,
+      "MAE": 0.045678818087825285,
+      "PSNR": 23.615009982424368,
+      "LPIPS": 0.19327969477245852,
+      "temporal_MAE": 0.02208237796522943,
+      "dynamic_MSE": 0.016131113849768026,
+      "pixel_delta": 0.0014800696247357947
+    },
+    "trajectory_half": {
+      "MSE": 0.00737237182662024,
+      "MAE": 0.04570907652877005,
+      "PSNR": 23.60786227028895,
+      "LPIPS": 0.1932596768784736,
+      "temporal_MAE": 0.022105855904685865,
+      "dynamic_MSE": 0.01615805939382187,
+      "pixel_delta": 0.0014790394616917572
+    },
+    "trajectory_onehalf": {
+      "MSE": 0.007358344191327758,
+      "MAE": 0.04568123262807993,
+      "PSNR": 23.61638143144866,
+      "LPIPS": 0.19322261083871126,
+      "temporal_MAE": 0.022081746670716842,
+      "dynamic_MSE": 0.016126476419741506,
+      "pixel_delta": 0.0014796335969500822
+    },
+    "flow_zero": {
+      "MSE": 0.007372853851692136,
+      "MAE": 0.045667221881116604,
+      "PSNR": 23.611047757334642,
+      "LPIPS": 0.1931583345202463,
+      "temporal_MAE": 0.022078288732362644,
+      "dynamic_MSE": 0.016170373018431845,
+      "pixel_delta": 0.0014795860582919676
+    },
+    "feature_transport": {
+      "MSE": 0.007394704662458805,
+      "MAE": 0.046119414215042655,
+      "PSNR": 23.5610438717729,
+      "LPIPS": 0.1929191529551255,
+      "temporal_MAE": 0.022093253102087016,
+      "dynamic_MSE": 0.016230734646388904,
+      "pixel_delta": 0.001479362068620154
+    },
+    "rgb_transport": {
+      "MSE": 0.0073448417616808525,
+      "MAE": 0.04590434255078435,
+      "PSNR": 23.5986742193662,
+      "LPIPS": 0.1958534340906356,
+      "temporal_MAE": 0.022040345804167114,
+      "dynamic_MSE": 0.016097179775056338,
+      "pixel_delta": 0.001479922288560382
+    },
+    "rgb_local": {
+      "MSE": 0.007373648551895582,
+      "MAE": 0.04566548147371837,
+      "PSNR": 23.61098049168032,
+      "LPIPS": 0.19311525364007268,
+      "temporal_MAE": 0.022078535124559755,
+      "dynamic_MSE": 0.016174398027539894,
+      "pixel_delta": 0.0014795571840007175
+    },
+    "replay_clip": {
+      "MSE": 0.0073505952928306735,
+      "MAE": 0.04577851507679692,
+      "PSNR": 23.616622087961566,
+      "LPIPS": 0.1941535778875862,
+      "temporal_MAE": 0.022056759466483656,
+      "dynamic_MSE": 0.016131415123303086,
+      "pixel_delta": 0.0014295197197303163
+    },
+    "replay_horizon": {
+      "MSE": 0.007349735099809809,
+      "MAE": 0.045757192226925064,
+      "PSNR": 23.619759827947437,
+      "LPIPS": 0.19407867681501167,
+      "temporal_MAE": 0.02212681653161001,
+      "dynamic_MSE": 0.016111755305742423,
+      "pixel_delta": 0.0013980159752727721
+    },
+    "replay_region16": {
+      "MSE": 0.0073546577633221335,
+      "MAE": 0.045742865019877045,
+      "PSNR": 23.615105831228053,
+      "LPIPS": 0.19370267052602555,
+      "temporal_MAE": 0.022065274439020347,
+      "dynamic_MSE": 0.016133329575715023,
+      "pixel_delta": 0.0014054828459501931
+    },
+    "replay_region16_horizon": {
+      "MSE": 0.007353867207296259,
+      "MAE": 0.0457305542692276,
+      "PSNR": 23.616591610805642,
+      "LPIPS": 0.19375068821412111,
+      "temporal_MAE": 0.02214078265824355,
+      "dynamic_MSE": 0.016132708566348214,
+      "pixel_delta": 0.0014053195800442049
+    },
+    "oracle_amplitude_clip": {
+      "MSE": 0.007350725882653413,
+      "MAE": 0.045669657126667776,
+      "PSNR": 23.62297454629407,
+      "LPIPS": 0.19317877108364234,
+      "temporal_MAE": 0.02206232124174546,
+      "dynamic_MSE": 0.01610564629468154,
+      "pixel_delta": 0.0011183089744795285
+    },
+    "oracle_amplitude_horizon": {
+      "MSE": 0.007348507007398959,
+      "MAE": 0.04565927122852632,
+      "PSNR": 23.62447778475259,
+      "LPIPS": 0.19318827905559113,
+      "temporal_MAE": 0.022057957464130595,
+      "dynamic_MSE": 0.01609149921764601,
+      "pixel_delta": 0.001114870372249856
+    },
+    "oracle_amplitude_region32": {
+      "MSE": 0.007340078854706787,
+      "MAE": 0.04562952900139083,
+      "PSNR": 23.629916665917435,
+      "LPIPS": 0.19308337348380258,
+      "temporal_MAE": 0.022056182093053524,
+      "dynamic_MSE": 0.01607264452080128,
+      "pixel_delta": 0.0010497581572149908
+    },
+    "oracle_amplitude_region16": {
+      "MSE": 0.007331463315391115,
+      "MAE": 0.04559234047607918,
+      "PSNR": 23.636552764238576,
+      "LPIPS": 0.1930660412713353,
+      "temporal_MAE": 0.022052010487199628,
+      "dynamic_MSE": 0.01604334919036112,
+      "pixel_delta": 0.0010004470823006325
+    },
+    "oracle_amplitude_region8": {
+      "MSE": 0.0073203806577242046,
+      "MAE": 0.04554147412667849,
+      "PSNR": 23.645284479154896,
+      "LPIPS": 0.19296888262033463,
+      "temporal_MAE": 0.022048030794498377,
+      "dynamic_MSE": 0.01600222432067463,
+      "pixel_delta": 0.0009754015338414897
+    },
+    "oracle_amplitude_region16_horizon": {
+      "MSE": 0.007325670699771893,
+      "MAE": 0.04556366225837597,
+      "PSNR": 23.640286245946292,
+      "LPIPS": 0.19302168593608907,
+      "temporal_MAE": 0.02203201635275036,
+      "dynamic_MSE": 0.016028399560361246,
+      "pixel_delta": 0.000997117950039542
+    },
+    "oracle_amplitude_region8_horizon": {
+      "MSE": 0.007312226405234209,
+      "MAE": 0.045497972468313365,
+      "PSNR": 23.6504656791073,
+      "LPIPS": 0.1929288478235581,
+      "temporal_MAE": 0.02201181642262132,
+      "dynamic_MSE": 0.015978480314731456,
+      "pixel_delta": 0.0009696897168055076
+    },
+    "oracle_motion_clip": {
+      "MSE": 0.0073068846776940125,
+      "MAE": 0.045630370818876796,
+      "PSNR": 23.649227592623397,
+      "LPIPS": 0.1937573631959302,
+      "temporal_MAE": 0.02204733180281307,
+      "dynamic_MSE": 0.015972252846047835,
+      "pixel_delta": 0.001417288073174104
+    },
+    "oracle_motion_horizon": {
+      "MSE": 0.007302941499334078,
+      "MAE": 0.04560887918341905,
+      "PSNR": 23.65202710901025,
+      "LPIPS": 0.19373838578883026,
+      "temporal_MAE": 0.022097977339789004,
+      "dynamic_MSE": 0.015962451263289466,
+      "pixel_delta": 0.0014011838744577532
+    },
+    "oracle_motion_region32": {
+      "MSE": 0.007284918662740633,
+      "MAE": 0.04552907995946173,
+      "PSNR": 23.66599273951695,
+      "LPIPS": 0.1934218497215105,
+      "temporal_MAE": 0.02204030090776671,
+      "dynamic_MSE": 0.015904064821485448,
+      "pixel_delta": 0.0013947274669850985
+    },
+    "oracle_motion_region16": {
+      "MSE": 0.007268130619766972,
+      "MAE": 0.04544188064256949,
+      "PSNR": 23.680537589896428,
+      "LPIPS": 0.1932958783714899,
+      "temporal_MAE": 0.022037563602706152,
+      "dynamic_MSE": 0.015838362694792257,
+      "pixel_delta": 0.0014247189684696642
+    },
+    "oracle_motion_region8": {
+      "MSE": 0.00724768725080399,
+      "MAE": 0.04534094389860651,
+      "PSNR": 23.698619472584344,
+      "LPIPS": 0.19311786675160483,
+      "temporal_MAE": 0.02203031810349785,
+      "dynamic_MSE": 0.01575733672602244,
+      "pixel_delta": 0.0014335889720189447
+    },
+    "oracle_motion_region16_horizon": {
+      "MSE": 0.007254076494427863,
+      "MAE": 0.04537472673359194,
+      "PSNR": 23.690486164749395,
+      "LPIPS": 0.19325411841273307,
+      "temporal_MAE": 0.022030521440319716,
+      "dynamic_MSE": 0.015798514741891628,
+      "pixel_delta": 0.0014349016085248984
+    },
+    "oracle_motion_region8_horizon": {
+      "MSE": 0.007230077711574268,
+      "MAE": 0.04524718538325812,
+      "PSNR": 23.711314551304156,
+      "LPIPS": 0.19308743108995258,
+      "temporal_MAE": 0.02198643518578527,
+      "dynamic_MSE": 0.015700734089104055,
+      "pixel_delta": 0.0014444453767332277
+    },
+    "selected_val": {
+      "MSE": 0.0073448417616808525,
+      "MAE": 0.04590434255078435,
+      "PSNR": 23.5986742193662,
+      "LPIPS": 0.1958534340906356,
+      "temporal_MAE": 0.022040345804167114,
+      "dynamic_MSE": 0.016097179775056338,
+      "pixel_delta": 0.001479922288560382
+    }
+  },
+  "paired_cluster_bootstrap": {
+    "geometry -> replay_clip": {
+      "gain_MSE": 1.1645283250670348e-05,
+      "ci95": [
+        5.029483720852886e-06,
+        1.9654504722815796e-05
+      ]
+    },
+    "geometry -> replay_horizon": {
+      "gain_MSE": 1.2505476271534072e-05,
+      "ci95": [
+        6.030915152934184e-06,
+        2.0584573586936508e-05
+      ]
+    },
+    "geometry -> replay_region16": {
+      "gain_MSE": 7.582812759210355e-06,
+      "ci95": [
+        1.8763816052962172e-06,
+        1.3848851756737327e-05
+      ]
+    },
+    "geometry -> replay_region16_horizon": {
+      "gain_MSE": 8.373368785084624e-06,
+      "ci95": [
+        2.765418079978068e-06,
+        1.5056040764714981e-05
+      ]
+    },
+    "geometry -> oracle_amplitude_clip": {
+      "gain_MSE": 1.1514693427930719e-05,
+      "ci95": [
+        5.872115763457544e-06,
+        1.9919754136149212e-05
+      ]
+    },
+    "geometry -> oracle_amplitude_horizon": {
+      "gain_MSE": 1.373356868238521e-05,
+      "ci95": [
+        7.504343757601292e-06,
+        2.2766251702276773e-05
+      ]
+    },
+    "geometry -> oracle_amplitude_region32": {
+      "gain_MSE": 2.216172137455682e-05,
+      "ci95": [
+        1.472576191108575e-05,
+        3.19512383020062e-05
+      ]
+    },
+    "geometry -> oracle_amplitude_region16": {
+      "gain_MSE": 3.0777260690229014e-05,
+      "ci95": [
+        2.1803019900389612e-05,
+        4.1943119056816856e-05
+      ]
+    },
+    "geometry -> oracle_amplitude_region8": {
+      "gain_MSE": 4.185991835713919e-05,
+      "ci95": [
+        3.068259237286098e-05,
+        5.5014946947125665e-05
+      ]
+    },
+    "geometry -> oracle_amplitude_region16_horizon": {
+      "gain_MSE": 3.656987630945098e-05,
+      "ci95": [
+        2.6199418453192054e-05,
+        4.893964684451394e-05
+      ]
+    },
+    "geometry -> oracle_amplitude_region8_horizon": {
+      "gain_MSE": 5.001417084713466e-05,
+      "ci95": [
+        3.677709764600047e-05,
+        6.570262655206035e-05
+      ]
+    },
+    "geometry -> oracle_motion_clip": {
+      "gain_MSE": 5.5355898387330986e-05,
+      "ci95": [
+        3.7781046212766107e-05,
+        7.786819121562511e-05
+      ]
+    },
+    "geometry -> oracle_motion_horizon": {
+      "gain_MSE": 5.929907674726564e-05,
+      "ci95": [
+        4.134439035626906e-05,
+        8.157420359861974e-05
+      ]
+    },
+    "geometry -> oracle_motion_region32": {
+      "gain_MSE": 7.732191334071103e-05,
+      "ci95": [
+        5.565151767653123e-05,
+        0.00010543650424831424
+      ]
+    },
+    "geometry -> oracle_motion_region16": {
+      "gain_MSE": 9.41099563143715e-05,
+      "ci95": [
+        6.971964671646437e-05,
+        0.00012193178751658704
+      ]
+    },
+    "geometry -> oracle_motion_region8": {
+      "gain_MSE": 0.00011455332527735404,
+      "ci95": [
+        8.748588895041093e-05,
+        0.0001479592235127363
+      ]
+    },
+    "geometry -> oracle_motion_region16_horizon": {
+      "gain_MSE": 0.00010816408165348029,
+      "ci95": [
+        8.142143211081327e-05,
+        0.00014078072358147787
+      ]
+    },
+    "geometry -> oracle_motion_region8_horizon": {
+      "gain_MSE": 0.0001321628645070762,
+      "ci95": [
+        0.0001019377303789487,
+        0.00016864388372119562
+      ]
+    },
+    "geometry -> selected_val": {
+      "gain_MSE": 1.7398814400491704e-05,
+      "ci95": [
+        5.017746911312466e-06,
+        3.160532285616463e-05
+      ]
+    },
+    "oracle_amplitude_clip -> oracle_motion_clip": {
+      "gain_MSE": 4.3841204959400264e-05,
+      "ci95": [
+        3.052912192614321e-05,
+        5.9574275786724975e-05
+      ]
+    },
+    "oracle_amplitude_horizon -> oracle_motion_horizon": {
+      "gain_MSE": 4.556550806488044e-05,
+      "ci95": [
+        3.2141868681705964e-05,
+        6.147825007157966e-05
+      ]
+    },
+    "oracle_amplitude_region32 -> oracle_motion_region32": {
+      "gain_MSE": 5.5160191966154216e-05,
+      "ci95": [
+        4.038687212399492e-05,
+        7.294885493598009e-05
+      ]
+    },
+    "oracle_amplitude_region16 -> oracle_motion_region16": {
+      "gain_MSE": 6.333269562414249e-05,
+      "ci95": [
+        4.7539269577556004e-05,
+        8.188310250029173e-05
+      ]
+    },
+    "oracle_amplitude_region8 -> oracle_motion_region8": {
+      "gain_MSE": 7.269340692021485e-05,
+      "ci95": [
+        5.565004381085783e-05,
+        9.241196859574138e-05
+      ]
+    },
+    "oracle_amplitude_region16_horizon -> oracle_motion_region16_horizon": {
+      "gain_MSE": 7.15942053440293e-05,
+      "ci95": [
+        5.461997136411079e-05,
+        9.152704220825758e-05
+      ]
+    },
+    "oracle_amplitude_region8_horizon -> oracle_motion_region8_horizon": {
+      "gain_MSE": 8.214869365994154e-05,
+      "ci95": [
+        6.397264640961924e-05,
+        0.00010386715040816849
+      ]
+    }
+  },
+  "by_source": {
+    "PointOdyssey": {
+      "tau": 0.007990279877655363,
+      "geometry": 0.007956718147882687,
+      "trajectory_half": 0.007966239141387632,
+      "trajectory_onehalf": 0.007953114899525342,
+      "flow_zero": 0.00796609165524084,
+      "feature_transport": 0.00798862268384255,
+      "rgb_transport": 0.007943445859564236,
+      "rgb_local": 0.007966973279568872,
+      "replay_clip": 0.00794857681018281,
+      "replay_horizon": 0.007948140776594908,
+      "replay_region16": 0.007949015869659586,
+      "replay_region16_horizon": 0.007948964560394718,
+      "oracle_amplitude_clip": 0.00794571037016188,
+      "oracle_amplitude_horizon": 0.007943176145090547,
+      "oracle_amplitude_region32": 0.007934153713419316,
+      "oracle_amplitude_region16": 0.007925122194865252,
+      "oracle_amplitude_region8": 0.007913443848398554,
+      "oracle_amplitude_region16_horizon": 0.007918770107547364,
+      "oracle_amplitude_region8_horizon": 0.007904571895536113,
+      "oracle_motion_clip": 0.00790355542182321,
+      "oracle_motion_horizon": 0.007899029592408624,
+      "oracle_motion_region32": 0.007879592508531156,
+      "oracle_motion_region16": 0.007862090638506439,
+      "oracle_motion_region8": 0.00784037879141882,
+      "oracle_motion_region16_horizon": 0.00784690451255301,
+      "oracle_motion_region8_horizon": 0.007821208938548808,
+      "selected_val": 0.007943445859564236
+    },
+    "adt_mini": {
+      "tau": 0.009996749775018543,
+      "geometry": 0.010005373531021178,
+      "trajectory_half": 0.01002792531508021,
+      "trajectory_onehalf": 0.00999478787998669,
+      "flow_zero": 0.010035747336223722,
+      "feature_transport": 0.009962949779583142,
+      "rgb_transport": 0.009853105922229589,
+      "rgb_local": 0.010036582767497748,
+      "replay_clip": 0.009896924009080977,
+      "replay_horizon": 0.00989148488151841,
+      "replay_region16": 0.009944484400330111,
+      "replay_region16_horizon": 0.009938562149181962,
+      "oracle_amplitude_clip": 0.009960109717212617,
+      "oracle_amplitude_horizon": 0.009959756699390709,
+      "oracle_amplitude_region32": 0.009951342246495187,
+      "oracle_amplitude_region16": 0.00994191478821449,
+      "oracle_amplitude_region8": 0.00992807928705588,
+      "oracle_amplitude_region16_horizon": 0.009938969439826906,
+      "oracle_amplitude_region8_horizon": 0.009922750294208527,
+      "oracle_motion_clip": 0.00982943708077073,
+      "oracle_motion_horizon": 0.009829093742882832,
+      "oracle_motion_region32": 0.009820952266454696,
+      "oracle_motion_region16": 0.00980562851182185,
+      "oracle_motion_region8": 0.009786601550877095,
+      "oracle_motion_region16_horizon": 0.009797404886921868,
+      "oracle_motion_region8_horizon": 0.00977674195310101,
+      "selected_val": 0.009853105922229589
+    },
+    "ds_mini": {
+      "tau": 0.002515400633759176,
+      "geometry": 0.0025027183000929654,
+      "trajectory_half": 0.0025152806095623723,
+      "trajectory_onehalf": 0.0024990155555618307,
+      "flow_zero": 0.0025247363276624433,
+      "feature_transport": 0.002504436435022702,
+      "rgb_transport": 0.002460382015366728,
+      "rgb_local": 0.0025247383261254677,
+      "replay_clip": 0.002455922483932227,
+      "replay_horizon": 0.002456738118780777,
+      "replay_region16": 0.002493266462503622,
+      "replay_region16_horizon": 0.0024909622540387013,
+      "oracle_amplitude_clip": 0.0024996171123348176,
+      "oracle_amplitude_horizon": 0.0024994702447050563,
+      "oracle_amplitude_region32": 0.002498197640913228,
+      "oracle_amplitude_region16": 0.0024939264791707196,
+      "oracle_amplitude_region8": 0.002488464281971877,
+      "oracle_amplitude_region16_horizon": 0.0024924216365131238,
+      "oracle_amplitude_region8_horizon": 0.002486746321665123,
+      "oracle_motion_clip": 0.0024551270568432906,
+      "oracle_motion_horizon": 0.00245469455452015,
+      "oracle_motion_region32": 0.0024591576269206903,
+      "oracle_motion_region16": 0.002452003682265058,
+      "oracle_motion_region8": 0.0024456638590587922,
+      "oracle_motion_region16_horizon": 0.002448335833226641,
+      "oracle_motion_region8_horizon": 0.0024441023415420204,
+      "selected_val": 0.002460382015366728
+    },
+    "po_mini": {
+      "tau": 0.0016420179700407272,
+      "geometry": 0.0016106405259611516,
+      "trajectory_half": 0.0016136294893490581,
+      "trajectory_onehalf": 0.001610262449293469,
+      "flow_zero": 0.0016112039850738186,
+      "feature_transport": 0.0016501143467254364,
+      "rgb_transport": 0.0016156468907586085,
+      "rgb_local": 0.0016100141533220618,
+      "replay_clip": 0.0016119114947147095,
+      "replay_horizon": 0.0016124988279233759,
+      "replay_region16": 0.0016281733584876817,
+      "replay_region16_horizon": 0.0016206863175074642,
+      "oracle_amplitude_clip": 0.0016021018919463342,
+      "oracle_amplitude_horizon": 0.0016017222526268316,
+      "oracle_amplitude_region32": 0.0015971197594458668,
+      "oracle_amplitude_region16": 0.0015939068622314013,
+      "oracle_amplitude_region8": 0.0015904363602972948,
+      "oracle_amplitude_region16_horizon": 0.0015922701120591508,
+      "oracle_amplitude_region8_horizon": 0.0015879639227373095,
+      "oracle_motion_clip": 0.0015825613249594776,
+      "oracle_motion_horizon": 0.0015824001255588462,
+      "oracle_motion_region32": 0.0015694840515677172,
+      "oracle_motion_region16": 0.0015604611566791742,
+      "oracle_motion_region8": 0.001551759577033898,
+      "oracle_motion_region16_horizon": 0.0015551082771987869,
+      "oracle_motion_region8_horizon": 0.0015455489763273643,
+      "selected_val": 0.0016156468907586085
+    },
+    "pstudio_mini": {
+      "tau": 0.0015023652654649181,
+      "geometry": 0.0014369667147878897,
+      "trajectory_half": 0.0014562361228110437,
+      "trajectory_onehalf": 0.0014284921556033871,
+      "flow_zero": 0.0014623216438022528,
+      "feature_transport": 0.0015582053138959136,
+      "rgb_transport": 0.0014392660073512657,
+      "rgb_local": 0.0014639605281197212,
+      "replay_clip": 0.0014407839202745395,
+      "replay_horizon": 0.0014322072066451337,
+      "replay_region16": 0.0014517880521122027,
+      "replay_region16_horizon": 0.001448273309506476,
+      "oracle_amplitude_clip": 0.0014369667147878897,
+      "oracle_amplitude_horizon": 0.0014366281366991725,
+      "oracle_amplitude_region32": 0.0014327293558215554,
+      "oracle_amplitude_region16": 0.0014251732341521843,
+      "oracle_amplitude_region8": 0.0014175281182608821,
+      "oracle_amplitude_region16_horizon": 0.0014217485864223404,
+      "oracle_amplitude_region8_horizon": 0.0014122387881136754,
+      "oracle_motion_clip": 0.0014069071039557457,
+      "oracle_motion_horizon": 0.0014060192042961717,
+      "oracle_motion_region32": 0.0013915693112225695,
+      "oracle_motion_region16": 0.0013745925495062363,
+      "oracle_motion_region8": 0.0013589679200032895,
+      "oracle_motion_region16_horizon": 0.001363987632265145,
+      "oracle_motion_region8_horizon": 0.0013461312469602985,
+      "selected_val": 0.0014392660073512657
+    }
+  }
+}

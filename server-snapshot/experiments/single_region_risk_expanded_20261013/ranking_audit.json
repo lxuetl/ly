@@ -1,0 +1,350 @@
+{
+  "checkpoint_epoch": 60,
+  "threshold_fixed": 0.1,
+  "test_used": false,
+  "regions": "nested, seeded shuffle of cached observed-support cells; no GT selection",
+  "ranking": {
+    "train": {
+      "candidate_count": 95214,
+      "pooled_spearman": 0.49546162162767754,
+      "mean_within_clip_spearman": 0.4613395268191946,
+      "quintiles": [
+        {
+          "count": 19043,
+          "prediction": -2.6048974584319953,
+          "actual": -3.5499742265597227,
+          "harm_fraction": 0.8302263298849971
+        },
+        {
+          "count": 19043,
+          "prediction": -0.21541741150211013,
+          "actual": -0.13265251115497367,
+          "harm_fraction": 0.5386756288399936
+        },
+        {
+          "count": 19043,
+          "prediction": -0.07311740016248498,
+          "actual": -0.04024174273129879,
+          "harm_fraction": 0.41327521924066585
+        },
+        {
+          "count": 19043,
+          "prediction": 0.007746783122018301,
+          "actual": -0.011838422079256075,
+          "harm_fraction": 0.4277687339179751
+        },
+        {
+          "count": 19042,
+          "prediction": 1.2423127161939722,
+          "actual": 1.7929258247393918,
+          "harm_fraction": 0.2834261107026573
+        }
+      ]
+    },
+    "risk": {
+      "candidate_count": 11487,
+      "pooled_spearman": 0.06954905730759305,
+      "mean_within_clip_spearman": 0.07323817187051229,
+      "quintiles": [
+        {
+          "count": 2298,
+          "prediction": -2.3810621795704097,
+          "actual": -0.70567749353779,
+          "harm_fraction": 0.5674499564838991
+        },
+        {
+          "count": 2298,
+          "prediction": -0.24757954924715095,
+          "actual": -0.24768583042088335,
+          "harm_fraction": 0.5182767624020888
+        },
+        {
+          "count": 2297,
+          "prediction": -0.07525090132886604,
+          "actual": -0.050969366722123544,
+          "harm_fraction": 0.39399216369177187
+        },
+        {
+          "count": 2297,
+          "prediction": 0.007448373812473386,
+          "actual": -0.09144992479615799,
+          "harm_fraction": 0.3944275141488899
+        },
+        {
+          "count": 2297,
+          "prediction": 1.0537316279553126,
+          "actual": -0.16506568400507965,
+          "harm_fraction": 0.5102307357422725
+        }
+      ]
+    },
+    "held": {
+      "candidate_count": 11165,
+      "pooled_spearman": 0.10007998095232655,
+      "mean_within_clip_spearman": 0.09789328252623004,
+      "quintiles": [
+        {
+          "count": 2233,
+          "prediction": -2.8488270481018225,
+          "actual": -0.9543750009566639,
+          "harm_fraction": 0.5915808329601433
+        },
+        {
+          "count": 2233,
+          "prediction": -0.2830982408913806,
+          "actual": -0.22860089492968685,
+          "harm_fraction": 0.5266457680250783
+        },
+        {
+          "count": 2233,
+          "prediction": -0.07652543655663822,
+          "actual": -0.04322404451451385,
+          "harm_fraction": 0.41513658755038063
+        },
+        {
+          "count": 2233,
+          "prediction": 0.009233948270812383,
+          "actual": -0.087218572033183,
+          "harm_fraction": 0.42857142857142855
+        },
+        {
+          "count": 2233,
+          "prediction": 1.275267043707753,
+          "actual": 0.04399025926021947,
+          "harm_fraction": 0.47962382445141066
+        }
+      ]
+    },
+    "tune": {
+      "candidate_count": 8043,
+      "pooled_spearman": 0.07692237078297512,
+      "mean_within_clip_spearman": 0.07990537473797492,
+      "quintiles": [
+        {
+          "count": 1609,
+          "prediction": -2.08072645116697,
+          "actual": -0.9283592000075791,
+          "harm_fraction": 0.5835922933499068
+        },
+        {
+          "count": 1609,
+          "prediction": -0.18716287355455574,
+          "actual": -0.18492035424212924,
+          "harm_fraction": 0.5282784338098198
+        },
+        {
+          "count": 1609,
+          "prediction": -0.07153266137656845,
+          "actual": -0.05248653881293487,
+          "harm_fraction": 0.4213797389683033
+        },
+        {
+          "count": 1608,
+          "prediction": 0.0073114982493388565,
+          "actual": -0.049604186371191225,
+          "harm_fraction": 0.44527363184079605
+        },
+        {
+          "count": 1608,
+          "prediction": 0.9604232784532085,
+          "actual": -0.2062257688436935,
+          "harm_fraction": 0.5111940298507462
+        }
+      ]
+    }
+  },
+  "search": {
+    "train_4": {
+      "clips": 861,
+      "videos": 124,
+      "predicted_top_mean": 2.3642718479876663,
+      "raw_top_actual_gain": 1.244536580455151e-06,
+      "accepted_gain_clip": 1.2495002539506082e-06,
+      "accepted_gain_video": 1.567857676198543e-06,
+      "video_ci95": [
+        1.2027966597175782e-06,
+        2.0683944767891914e-06
+      ],
+      "coverage": 0.9047619047619048,
+      "harm_fraction_accepted": 0.2079589216944801,
+      "oracle_gain": 2.2336195436123497e-06,
+      "uniform_candidate_gain": -1.6919701899149507e-07
+    },
+    "train_8": {
+      "clips": 861,
+      "videos": 124,
+      "predicted_top_mean": 3.631258817188416,
+      "raw_top_actual_gain": 2.0730740266325304e-06,
+      "accepted_gain_clip": 2.0733213246855173e-06,
+      "accepted_gain_video": 2.5662656178048448e-06,
+      "video_ci95": [
+        2.1258423577677463e-06,
+        3.100087571829374e-06
+      ],
+      "coverage": 0.9663182346109176,
+      "harm_fraction_accepted": 0.140625,
+      "oracle_gain": 3.571124508128903e-06,
+      "uniform_candidate_gain": -1.5958838459809433e-07
+    },
+    "train_16": {
+      "clips": 861,
+      "videos": 124,
+      "predicted_top_mean": 5.009306010304497,
+      "raw_top_actual_gain": 2.921302020809377e-06,
+      "accepted_gain_clip": 2.9211442314010467e-06,
+      "accepted_gain_video": 3.8233914895243545e-06,
+      "video_ci95": [
+        3.228694542928973e-06,
+        4.507650436489262e-06
+      ],
+      "coverage": 0.9849012775842044,
+      "harm_fraction_accepted": 0.09316037735849056,
+      "oracle_gain": 5.15042964204644e-06,
+      "uniform_candidate_gain": -1.4977125717785577e-07
+    },
+    "risk_4": {
+      "clips": 108,
+      "videos": 16,
+      "predicted_top_mean": 2.0864063078641064,
+      "raw_top_actual_gain": -1.6973569506296405e-07,
+      "accepted_gain_clip": -1.6878281409541765e-07,
+      "accepted_gain_video": 5.258167567219409e-07,
+      "video_ci95": [
+        -5.408760937695791e-07,
+        2.3011707907287573e-06
+      ],
+      "coverage": 0.8425925925925926,
+      "harm_fraction_accepted": 0.5384615384615384,
+      "oracle_gain": 2.5095370667124236e-06,
+      "uniform_candidate_gain": -1.232822607575244e-07
+    },
+    "risk_8": {
+      "clips": 108,
+      "videos": 16,
+      "predicted_top_mean": 3.277570690476784,
+      "raw_top_actual_gain": -2.931445595566873e-07,
+      "accepted_gain_clip": -2.890894258463824e-07,
+      "accepted_gain_video": 3.187493088522121e-08,
+      "video_ci95": [
+        -7.832635882160893e-07,
+        1.2043482066863877e-06
+      ],
+      "coverage": 0.8981481481481481,
+      "harm_fraction_accepted": 0.5670103092783505,
+      "oracle_gain": 4.157689168911289e-06,
+      "uniform_candidate_gain": -1.0431534540587246e-07
+    },
+    "risk_16": {
+      "clips": 108,
+      "videos": 16,
+      "predicted_top_mean": 4.651353609127303,
+      "raw_top_actual_gain": 1.1273530415362782e-07,
+      "accepted_gain_clip": 1.1754282577722161e-07,
+      "accepted_gain_video": 5.00132903523211e-07,
+      "video_ci95": [
+        -3.015611582668497e-07,
+        1.6192372900799708e-06
+      ],
+      "coverage": 0.9166666666666666,
+      "harm_fraction_accepted": 0.47474747474747475,
+      "oracle_gain": 6.097504741477746e-06,
+      "uniform_candidate_gain": -9.450603650629496e-08
+    },
+    "held_4": {
+      "clips": 100,
+      "videos": 16,
+      "predicted_top_mean": 2.780372526422143,
+      "raw_top_actual_gain": -2.3765722289681435e-07,
+      "accepted_gain_clip": -2.3460248485207558e-07,
+      "accepted_gain_video": -6.364968033846127e-08,
+      "video_ci95": [
+        -5.332849303323945e-07,
+        5.301006703203617e-07
+      ],
+      "coverage": 0.94,
+      "harm_fraction_accepted": 0.5425531914893617,
+      "oracle_gain": 2.525171738117934e-06,
+      "uniform_candidate_gain": -1.0951933617304479e-07
+    },
+    "held_8": {
+      "clips": 100,
+      "videos": 16,
+      "predicted_top_mean": 3.9543180139362812,
+      "raw_top_actual_gain": 2.4877489358186726e-07,
+      "accepted_gain_clip": 2.4932437390089037e-07,
+      "accepted_gain_video": 3.704252244311978e-07,
+      "video_ci95": [
+        -4.351961913264611e-07,
+        1.2478816525492055e-06
+      ],
+      "coverage": 0.98,
+      "harm_fraction_accepted": 0.47959183673469385,
+      "oracle_gain": 4.458443749696017e-06,
+      "uniform_candidate_gain": -7.756767438591592e-08
+    },
+    "held_16": {
+      "clips": 100,
+      "videos": 16,
+      "predicted_top_mean": 5.327821060419082,
+      "raw_top_actual_gain": 5.33340498805046e-07,
+      "accepted_gain_clip": 5.33340498805046e-07,
+      "accepted_gain_video": 1.175428968219256e-06,
+      "video_ci95": [
+        1.0056288870559495e-07,
+        2.5039717828886667e-06
+      ],
+      "coverage": 1.0,
+      "harm_fraction_accepted": 0.45,
+      "oracle_gain": 6.217513032257557e-06,
+      "uniform_candidate_gain": -9.898674860596656e-08
+    },
+    "tune_4": {
+      "clips": 72,
+      "videos": 8,
+      "predicted_top_mean": 1.907136589133491,
+      "raw_top_actual_gain": 3.2555221373008357e-07,
+      "accepted_gain_clip": 3.001672060539325e-07,
+      "accepted_gain_video": 3.896275302395225e-07,
+      "video_ci95": [
+        -3.896508133038878e-07,
+        1.1338386684656144e-06
+      ],
+      "coverage": 0.9027777777777778,
+      "harm_fraction_accepted": 0.49230769230769234,
+      "oracle_gain": 2.0406765138937367e-06,
+      "uniform_candidate_gain": -1.5583426621372974e-07
+    },
+    "tune_8": {
+      "clips": 72,
+      "videos": 8,
+      "predicted_top_mean": 2.6911898708591857,
+      "raw_top_actual_gain": 3.691659205489688e-08,
+      "accepted_gain_clip": 1.6844650316569542e-08,
+      "accepted_gain_video": 1.1578958947211503e-07,
+      "video_ci95": [
+        -5.643512849928812e-07,
+        7.506276597268879e-07
+      ],
+      "coverage": 0.9583333333333334,
+      "harm_fraction_accepted": 0.42028985507246375,
+      "oracle_gain": 3.1780897794912257e-06,
+      "uniform_candidate_gain": -1.2349477130180551e-07
+    },
+    "tune_16": {
+      "clips": 72,
+      "videos": 8,
+      "predicted_top_mean": 3.9975146966882877,
+      "raw_top_actual_gain": -1.596571463677618e-07,
+      "accepted_gain_clip": -1.596571463677618e-07,
+      "accepted_gain_video": -1.137144863605499e-07,
+      "video_ci95": [
+        -6.347799353534356e-07,
+        3.334168286528432e-07
+      ],
+      "coverage": 1.0,
+      "harm_fraction_accepted": 0.5416666666666666,
+      "oracle_gain": 4.541982591359152e-06,
+      "uniform_candidate_gain": -1.1085562194186982e-07
+    }
+  }
+}

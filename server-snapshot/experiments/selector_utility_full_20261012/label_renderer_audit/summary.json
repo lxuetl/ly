@@ -1,0 +1,67 @@
+{
+  "clips": 32,
+  "interventions": 244,
+  "validation_only": true,
+  "sample": "source round-robin; up to 8 randomly sampled beneficial active cells per clip; one cell/time changed at a time",
+  "threshold": 1e-05,
+  "stages": {
+    "nearest": {
+      "spatial_gain": {
+        "mean_gain": 3.6721972779172365e-07,
+        "harm_fraction": 0.3729508196721312,
+        "label_correlation": 0.6557059755266151
+      },
+      "evaluation_gain": {
+        "mean_gain": 3.492685805883192e-07,
+        "harm_fraction": 0.38934426229508196,
+        "label_correlation": 0.6503776652247671
+      }
+    },
+    "bilinear": {
+      "spatial_gain": {
+        "mean_gain": 4.42632046512893e-07,
+        "harm_fraction": 0.3442622950819672,
+        "label_correlation": 0.6978292878716661
+      },
+      "evaluation_gain": {
+        "mean_gain": 4.3925700411506124e-07,
+        "harm_fraction": 0.3524590163934426,
+        "label_correlation": 0.6982551352123049
+      }
+    },
+    "budgeted": {
+      "spatial_gain": {
+        "mean_gain": 4.2690929849861097e-07,
+        "harm_fraction": 0.3524590163934426,
+        "label_correlation": 0.6963699052432204
+      },
+      "evaluation_gain": {
+        "mean_gain": 4.238982639107099e-07,
+        "harm_fraction": 0.36065573770491804,
+        "label_correlation": 0.6968660070543342
+      }
+    }
+  },
+  "full_maps": {
+    "oracle": {
+      "label_gain": 0.0001444476879406409,
+      "spatial_gain": 0.00010376832506153733,
+      "evaluation_gain": 0.00010431514943775275,
+      "harm_fraction": 0.09375
+    },
+    "learned_soft": {
+      "label_gain": -1.8696975789822545e-06,
+      "spatial_gain": 3.772584022954106e-08,
+      "evaluation_gain": 2.642041363288899e-07,
+      "harm_fraction": 0.5
+    },
+    "learned_hard": {
+      "label_gain": 2.9830073913217348e-06,
+      "spatial_gain": -2.5406188797205687e-07,
+      "evaluation_gain": -4.06373583246094e-07,
+      "harm_fraction": 0.5
+    }
+  },
+  "budget_active_fraction": 0.4057377049180328,
+  "note": "Spatial teacher temporal term averages T including initial zero; evaluation temporal averages T-1. Global intervention effects include neighboring space/time and LPIPS receptive fields."
+}

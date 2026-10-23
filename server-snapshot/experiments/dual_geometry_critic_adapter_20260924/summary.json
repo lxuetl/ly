@@ -1,0 +1,48 @@
+{
+  "status": "critic_rejected",
+  "reason": "held-out mean Spearman below threshold",
+  "critic_validation": {
+    "standardized_MSE": 0.8728691895802816,
+    "spearman_camera_translation_acceleration": 0.16343238215216946,
+    "spearman_camera_rotation_acceleration": 0.17847977031025694,
+    "spearman_depth_reprojection_worst3": 0.10522298993020289,
+    "mean_spearman": 0.14904504746420977
+  },
+  "threshold": 0.35,
+  "meta": {
+    "used": {
+      "train": 216,
+      "val": 80,
+      "test": 80
+    },
+    "config": {
+      "d4rt_root": "/root/autodl-tmp/Open-d4rt",
+      "cache_root": "data/d4rt_forecasting_cache",
+      "po_cache": "/autodl-fs/data/d4rt_datasets/d4rt_forecasting_cache_po_full",
+      "po_split_manifest": "/autodl-fs/data/d4rt_datasets/worldtrack_pointodyssey_full_v2/po50/split_manifest.json",
+      "geometry_cache": "/autodl-fs/data/d4rt_datasets/vggt_omega_geometry_cache_512_20260924",
+      "backbone_checkpoint": "/autodl-fs/data/d4rt_training/simvp_fair_po_full_20260922/best.pt",
+      "old_geometry_checkpoint": "/autodl-fs/data/d4rt_training/vggt_omega_injection_20260924/vggt_omega_geometry_best.pt",
+      "old_control_checkpoint": "/autodl-fs/data/d4rt_training/vggt_omega_injection_20260924/rgb_capacity_control_best.pt",
+      "teacher_train_jsonl": "/autodl-fs/data/d4rt_training/vggt_critic_teacher_train216_20260924/per_sequence.jsonl",
+      "teacher_val_jsonl": "/autodl-fs/data/d4rt_training/vggt_critic_teacher_val80_20260924/per_sequence.jsonl",
+      "teacher_test_jsonl": "/autodl-fs/data/d4rt_training/vggt_geometry_critic_validation_20260924/per_sequence.jsonl",
+      "output_dir": "/autodl-fs/data/d4rt_training/dual_geometry_critic_adapter_20260924",
+      "legacy_subsets": "adt_mini,ds_mini,po_mini,pstudio_mini",
+      "critic_epochs": 12,
+      "adapter_epochs": 12,
+      "batch_size": 2,
+      "critic_lr": 0.0003,
+      "adapter_lr": 0.0003,
+      "lpips_weight": 0.03,
+      "temporal_weight": 0.1,
+      "correction_weight": 0.01,
+      "vggt_weight": 0.02,
+      "d4rt_weight": 0.25,
+      "max_correction": 0.05,
+      "min_critic_spearman": 0.35,
+      "seed": 42,
+      "device": "cuda"
+    }
+  }
+}

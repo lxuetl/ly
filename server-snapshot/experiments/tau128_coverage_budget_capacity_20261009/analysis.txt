@@ -1,0 +1,80 @@
+METRICS frozen_tau {'MSE': 0.0065099875367533745, 'MAE': 0.040497407202647356, 'PSNR': 21.864198428794914, 'SSIM': 0.7897266149520874, 'LPIPS': 0.16724398130985776, 'temporal_delta_MAE': 0.019975436858539395, 'dynamic_MSE': 0.01679061734032146, 'dynamic_MAE': 0.07890231334060044} support None pixel_delta None
+METRICS original_exact {'MSE': 0.006513400489328416, 'MAE': 0.04044420080300596, 'PSNR': 21.86192217548617, 'SSIM': 0.7885886430740356, 'LPIPS': 0.16747188797859364, 'temporal_delta_MAE': 0.020157448782815484, 'dynamic_MSE': 0.01678483892257126, 'dynamic_MAE': 0.0794788741857394} support 0.02902674744887165 pixel_delta 0.0019982315876906544
+METRICS scaled_exact {'MSE': 0.006477980359835867, 'MAE': 0.04015682949026998, 'PSNR': 21.88560373032825, 'SSIM': 0.7896685600280762, 'LPIPS': 0.16704638658751672, 'temporal_delta_MAE': 0.02000854539038125, 'dynamic_MSE': 0.01659765553310311, 'dynamic_MAE': 0.07842724083305953} support 0.08896478474134815 pixel_delta 0.0019998122234132954
+METRICS correct {'MSE': 0.006504063492043232, 'MAE': 0.040431244486690596, 'PSNR': 21.868152278522675, 'SSIM': 0.7897801399230957, 'LPIPS': 0.1671917551876145, 'temporal_delta_MAE': 0.01997302960529279, 'dynamic_MSE': 0.016757294199808936, 'dynamic_MAE': 0.07875923554159024} support 0.08896478474134815 pixel_delta 0.00032259810424206415
+METRICS rgb_control {'MSE': 0.006506507849458544, 'MAE': 0.04041767563388167, 'PSNR': 21.86652041944148, 'SSIM': 0.7898035645484924, 'LPIPS': 0.16703827818721448, 'temporal_delta_MAE': 0.019959132594130683, 'dynamic_MSE': 0.01679142382806288, 'dynamic_MAE': 0.07884972717298509} support 0.10009765625 pixel_delta 0.00030256759464986966
+COMPARISON frozen_tau to original_exact clips 347
+PAIRED MSE gain -3.413e-06 cluster_ci [-1.7739e-05, 1.1297e-05] win 0.47 clusters 46
+PAIRED MAE gain 5.3206e-05 cluster_ci [-5.8482e-05, 0.000148845] win 0.597 clusters 46
+PAIRED dynamic_MSE gain 5.778e-06 cluster_ci [-9.0023e-05, 9.8024e-05] win 0.588 clusters 46
+PAIRED dynamic_MAE gain -0.000576561 cluster_ci [-0.001036267, -0.000213247] win 0.532 clusters 46
+SOURCE PointOdyssey N 308 MSE_gain -8.65e-07
+SOURCE adt_mini N 10 MSE_gain -8.312e-06
+SOURCE ds_mini N 7 MSE_gain -0.000106015
+SOURCE po_mini N 14 MSE_gain -6.838e-06
+SOURCE pstudio_mini N 8 MSE_gain 4e-07
+COMPARISON original_exact to scaled_exact clips 347
+PAIRED MSE gain 3.542e-05 cluster_ci [2.7703e-05, 4.3922e-05] win 0.807 clusters 46
+PAIRED MAE gain 0.000287371 cluster_ci [0.000253466, 0.000321349] win 0.919 clusters 46
+PAIRED dynamic_MSE gain 0.000187183 cluster_ci [0.000102597, 0.000278949] win 0.617 clusters 46
+PAIRED dynamic_MAE gain 0.001051633 cluster_ci [0.000724017, 0.001443369] win 0.74 clusters 46
+SOURCE PointOdyssey N 308 MSE_gain 3.4053e-05
+SOURCE adt_mini N 10 MSE_gain 5.9417e-05
+SOURCE ds_mini N 7 MSE_gain 7.481e-05
+SOURCE po_mini N 14 MSE_gain 2.9795e-05
+SOURCE pstudio_mini N 8 MSE_gain 3.3429e-05
+COMPARISON scaled_exact to correct clips 347
+PAIRED MSE gain -2.6083e-05 cluster_ci [-3.4807e-05, -1.7479e-05] win 0.28 clusters 46
+PAIRED MAE gain -0.000274415 cluster_ci [-0.000359985, -0.000183277] win 0.176 clusters 46
+PAIRED dynamic_MSE gain -0.000159639 cluster_ci [-0.000221143, -9.7184e-05] win 0.26 clusters 46
+PAIRED dynamic_MAE gain -0.000331995 cluster_ci [-0.00049457, -0.00016966] win 0.276 clusters 46
+SOURCE PointOdyssey N 308 MSE_gain -2.7109e-05
+SOURCE adt_mini N 10 MSE_gain -4.626e-05
+SOURCE ds_mini N 7 MSE_gain 3.6331e-05
+SOURCE po_mini N 14 MSE_gain -1.9056e-05
+SOURCE pstudio_mini N 8 MSE_gain -2.826e-05
+COMPARISON rgb_control to correct clips 347
+PAIRED MSE gain 2.444e-06 cluster_ci [3.83e-07, 4.741e-06] win 0.542 clusters 46
+PAIRED MAE gain -1.3569e-05 cluster_ci [-2.5009e-05, -2.033e-06] win 0.455 clusters 46
+PAIRED dynamic_MSE gain 3.413e-05 cluster_ci [2.303e-05, 4.5177e-05] win 0.747 clusters 46
+PAIRED dynamic_MAE gain 9.0492e-05 cluster_ci [4.6155e-05, 0.000130012] win 0.695 clusters 46
+SOURCE PointOdyssey N 308 MSE_gain 2.365e-06
+SOURCE adt_mini N 10 MSE_gain 4.361e-06
+SOURCE ds_mini N 7 MSE_gain -3.01e-07
+SOURCE po_mini N 14 MSE_gain 3.86e-06
+SOURCE pstudio_mini N 8 MSE_gain 3.044e-06
+COMPARISON frozen_tau to scaled_exact clips 347
+PAIRED MSE gain 3.2007e-05 cluster_ci [2.192e-05, 4.1774e-05] win 0.732 clusters 46
+PAIRED MAE gain 0.000340578 cluster_ci [0.00022816, 0.000440118] win 0.833 clusters 46
+PAIRED dynamic_MSE gain 0.000192962 cluster_ci [0.000121303, 0.000264494] win 0.75 clusters 46
+PAIRED dynamic_MAE gain 0.000475073 cluster_ci [0.000271194, 0.000671316] win 0.744 clusters 46
+SOURCE PointOdyssey N 308 MSE_gain 3.3188e-05
+SOURCE adt_mini N 10 MSE_gain 5.1105e-05
+SOURCE ds_mini N 7 MSE_gain -3.1205e-05
+SOURCE po_mini N 14 MSE_gain 2.2957e-05
+SOURCE pstudio_mini N 8 MSE_gain 3.383e-05
+COMPARISON frozen_tau to correct clips 347
+PAIRED MSE gain 5.924e-06 cluster_ci [3.969e-06, 7.729e-06] win 0.844 clusters 46
+PAIRED MAE gain 6.6163e-05 cluster_ci [4.9313e-05, 8.1761e-05] win 0.867 clusters 46
+PAIRED dynamic_MSE gain 3.3323e-05 cluster_ci [2.0372e-05, 4.623e-05] win 0.769 clusters 46
+PAIRED dynamic_MAE gain 0.000143078 cluster_ci [9.6136e-05, 0.000186038] win 0.805 clusters 46
+SOURCE PointOdyssey N 308 MSE_gain 6.078e-06
+SOURCE adt_mini N 10 MSE_gain 4.846e-06
+SOURCE ds_mini N 7 MSE_gain 5.126e-06
+SOURCE po_mini N 14 MSE_gain 3.901e-06
+SOURCE pstudio_mini N 8 MSE_gain 5.57e-06
+COMPARISON frozen_tau to rgb_control clips 347
+PAIRED MSE gain 3.48e-06 cluster_ci [1.564e-06, 5.326e-06] win 0.83 clusters 46
+PAIRED MAE gain 7.9731e-05 cluster_ci [6.6529e-05, 9.3358e-05] win 0.916 clusters 46
+PAIRED dynamic_MSE gain -8.06e-07 cluster_ci [-1.4756e-05, 8.919e-06] win 0.601 clusters 46
+PAIRED dynamic_MAE gain 5.2586e-05 cluster_ci [3.0467e-05, 7.388e-05] win 0.75 clusters 46
+SOURCE PointOdyssey N 308 MSE_gain 3.714e-06
+SOURCE adt_mini N 10 MSE_gain 4.85e-07
+SOURCE ds_mini N 7 MSE_gain 5.427e-06
+SOURCE po_mini N 14 MSE_gain 4.1e-08
+SOURCE pstudio_mini N 8 MSE_gain 2.526e-06
+HORIZONS frozen_tau [0.0031328, 0.0044561, 0.0058735, 0.0062966, 0.0071099, 0.0078292, 0.0083996, 0.0089822]
+HORIZONS original_exact [0.0031249, 0.0044468, 0.0058672, 0.0062873, 0.0071165, 0.0078485, 0.0084063, 0.0090097]
+HORIZONS scaled_exact [0.0031137, 0.004439, 0.0058404, 0.0062606, 0.0070629, 0.007789, 0.0083665, 0.0089518]
+HORIZONS correct [0.0031292, 0.004454, 0.0058676, 0.0062913, 0.0071013, 0.0078214, 0.0083938, 0.0089739]
+HORIZONS rgb_control [0.0031269, 0.0044511, 0.005869, 0.0062927, 0.0071055, 0.0078281, 0.0083989, 0.00898]

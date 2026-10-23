@@ -1,0 +1,51 @@
+{
+  "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:31:56) [GCC 14.3.0]",
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 3080 Ti",
+  "package": "/root/autodl-tmp/PredFormer/openstl/__init__.py",
+  "config": {
+    "height": 128,
+    "width": 128,
+    "num_channels": 3,
+    "pre_seq": 16,
+    "after_seq": 8,
+    "patch_size": 8,
+    "dim": 256,
+    "heads": 8,
+    "dim_head": 32,
+    "dropout": 0.1,
+    "attn_dropout": 0.1,
+    "drop_path": 0.1,
+    "scale_dim": 4,
+    "depth": 1,
+    "Ndepth": 3
+  },
+  "parameters": 12731328,
+  "input": [
+    1,
+    16,
+    3,
+    128,
+    128
+  ],
+  "raw_output": [
+    1,
+    16,
+    3,
+    128,
+    128
+  ],
+  "prediction": [
+    1,
+    8,
+    3,
+    128,
+    128
+  ],
+  "synthetic_loss": 0.7254573702812195,
+  "peak_allocated_GiB": 1.1630783081054688,
+  "seconds": 1.5618400573730469,
+  "forward_backward_optimizer": "passed",
+  "pretrained_weights": false
+}

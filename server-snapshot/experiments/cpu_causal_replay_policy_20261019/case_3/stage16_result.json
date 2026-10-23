@@ -1,0 +1,83 @@
+{
+  "index": 3,
+  "path": "data/d4rt_forecasting_cache/po_mini/dancingroom1_3rd1_0.npz",
+  "prefix_frames": 16,
+  "prefix_sha256": "bbd3c77f2d6c13622557602bc05814583c6a3718234ffebdbffc4d3e393d1320",
+  "seed_sha256": "a1947ebd3f0bbf4518b5c21a35deb8dbbe5355b566dbe40b89f4677cdbcfde2e",
+  "model_state_sha256": "d378704021301fd37b8db7f08481771b1709cc91767979bbf25df7edbb4b9ee1",
+  "events": [
+    {
+      "event": "read_prefix8",
+      "decoded_frame_range": [
+        0,
+        8
+      ],
+      "time": 1792413936.6128745
+    },
+    {
+      "event": "prefix8_locked",
+      "time": 1792413970.8204794
+    },
+    {
+      "event": "read_observed_calibration_holdout",
+      "decoded_frame_range": [
+        8,
+        12
+      ],
+      "time": 1792413975.530032
+    },
+    {
+      "event": "read_prefix12",
+      "decoded_frame_range": [
+        0,
+        12
+      ],
+      "time": 1792413998.229259
+    },
+    {
+      "event": "prefix12_locked",
+      "time": 1792414032.2054303
+    },
+    {
+      "event": "read_observed_validation_holdout",
+      "decoded_frame_range": [
+        12,
+        16
+      ],
+      "time": 1792414037.1288443
+    },
+    {
+      "event": "read_prefix16",
+      "decoded_frame_range": [
+        0,
+        16
+      ],
+      "time": 1792414060.1102066
+    },
+    {
+      "event": "prefix16_locked",
+      "time": 1792414101.7880895
+    }
+  ],
+  "TAU_bitwise_verified": true,
+  "signals": {
+    "hold": {
+      "inner_observed_reference_samples": 256,
+      "inner_error_median_px": 0.17560675740242004,
+      "eligible_writes": 234,
+      "ungated_writes": 236
+    },
+    "cv": {
+      "inner_observed_reference_samples": 256,
+      "inner_error_median_px": 0.06381266564130783,
+      "eligible_writes": 236,
+      "ungated_writes": 236
+    }
+  },
+  "support": {
+    "hold": 234,
+    "cv": 236,
+    "ungated_cv": 236
+  },
+  "seconds": 43.568063497543335
+}

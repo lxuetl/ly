@@ -1,0 +1,9 @@
+{
+  "scope": "all347 clips46 videos, same locked parameters; no tuning",
+  "comparison": "fixed minus zero, negative is better for error metrics",
+  "regions": "dense real-RGB Farneback motion .5/2px, partitioned with FB/bounds-uncertain proxy; sparse GT-track radius3 neighborhoods for visibility labels",
+  "occlusion_limit": "newly visible GT points define only sparse neighborhoods; dense cycle failure is NOT true occlusion segmentation; image motion includes camera motion",
+  "regional_lpips": "spatial Alex LPIPS map averaged within masks, NOT cropped-image LPIPS; receptive fields cross region boundaries; map mean may differ from scalar LPIPS",
+  "aggregation": "frame means within clip then clip means per original video; missing regions omitted; retain counts; dense contribution weighted area sums to spatialLPIPS gap",
+  "failure": "same LPIPS gain>1e-4 and MSE/temporal<=1.01TAU rule; posthoc failure comparisons descriptive only"
+}

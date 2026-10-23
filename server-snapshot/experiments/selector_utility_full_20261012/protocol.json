@@ -1,0 +1,20 @@
+{
+  "counts": {
+    "train": 862,
+    "val": 280,
+    "test": 347
+  },
+  "epochs": 80,
+  "batch_size": 2,
+  "lr": 0.001,
+  "weight_decay": 0,
+  "seed": 20261012,
+  "from_scratch": true,
+  "loss": "active-region Huber relative composite utility, units 1e-4, clip +-10",
+  "selection": "minimum full validation MSE+.03 LPIPS+.1 temporal over epochs and soft/hard; baseline fallback",
+  "soft_temperature": 1,
+  "margin": 0.1,
+  "test_used": false,
+  "cache_source": "/root/autodl-fs/d4rt_training/tau128_temporal_selector_20261011",
+  "frozen_candidates": true
+}

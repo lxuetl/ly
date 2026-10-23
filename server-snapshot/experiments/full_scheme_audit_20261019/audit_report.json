@@ -1,0 +1,28 @@
+{
+  "post_evaluation_only": true,
+  "actions_modified": false,
+  "training": false,
+  "time": 1792418796.7642987,
+  "main128": {},
+  "omega64": {},
+  "pending": [
+    "main128/test",
+    "main128/val",
+    "main128/train",
+    "omega64/test",
+    "omega64/val",
+    "omega64/train"
+  ],
+  "warnings": [
+    "train scores are descriptive, never holdout evidence",
+    "validation/test were previously reused; no pristine benchmark claim",
+    "normal per-clip outputs lock before future GT; immutable rules across clips, no all-corpus disk prediction barrier",
+    "full16 context geometry cannot be sliced into independent8/12 prefix replay",
+    "Omega64 and TAU128 absolute scores are not comparable",
+    "registered PO corpus inherited future-teacher-valid eligibility filtering",
+    "D4RT uses provided privileged frame0 queries",
+    "fixed-budget caps do not match realized budget except explicitly matched arms",
+    "Oracle and uncalibrated diagnostics are not deployed strategies"
+  ],
+  "complete": false
+}

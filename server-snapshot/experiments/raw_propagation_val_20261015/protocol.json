@@ -1,0 +1,14 @@
+{
+  "split": "validation only",
+  "clips": 280,
+  "source": "last observed frame warped toward TAU forecast via unchanged Farneback and bicubic clamp; no GT flow",
+  "comparators": [
+    "TAU",
+    "raw source",
+    "last observed zero-motion"
+  ],
+  "regions": "whole image, gate-weighted, gate>0.1 intersect in-bounds/cycle confidence>=exp(-0.5); threshold fixed diagnostic, not tuned",
+  "metrics": "MSE/MAE/lowfrequency MSE, full-image LPIPS, per-horizon; regional LPIPS not computed to avoid receptive-field ambiguity",
+  "caveats": "gate uses original four-frame confidence; image motion includes camera motion; no GT visibility labels; no deployment tuning; best/worst figures selected posthoc",
+  "script_sha256": "ae52374001958b1e336762cde321a2b7dfd52495b280fb0f8ad46a39a2a81ecb"
+}

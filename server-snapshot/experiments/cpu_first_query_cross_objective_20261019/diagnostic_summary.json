@@ -1,0 +1,208 @@
+{
+  "label_only_posthoc": true,
+  "used_for_action_or_parameter_selection": false,
+  "statistics": {
+    "D_P": {
+      "own_objective_decreases": 4,
+      "latent_cosine_mean": 0.03495234483406173,
+      "latent_cosine_negative": 0,
+      "MSE_worse_than_TAU": 1,
+      "finite_step_harm_cases": [
+        2
+      ],
+      "wrong_pixel_direction_cases": []
+    },
+    "L_P": {
+      "own_objective_decreases": 4,
+      "latent_cosine_mean": 0.029474929792007283,
+      "latent_cosine_negative": 0,
+      "MSE_worse_than_TAU": 1,
+      "finite_step_harm_cases": [
+        2
+      ],
+      "wrong_pixel_direction_cases": []
+    },
+    "F_P": {
+      "own_objective_decreases": 4,
+      "latent_cosine_mean": 0.022130068609472975,
+      "latent_cosine_negative": 0,
+      "MSE_worse_than_TAU": 1,
+      "finite_step_harm_cases": [
+        2
+      ],
+      "wrong_pixel_direction_cases": []
+    },
+    "D_G": {
+      "own_objective_decreases": 4,
+      "latent_cosine_mean": 0.04714313294863377,
+      "latent_cosine_negative": 0,
+      "MSE_worse_than_TAU": 0,
+      "finite_step_harm_cases": [],
+      "wrong_pixel_direction_cases": []
+    },
+    "L_G": {
+      "own_objective_decreases": 4,
+      "latent_cosine_mean": 0.06810363097904362,
+      "latent_cosine_negative": 0,
+      "MSE_worse_than_TAU": 1,
+      "finite_step_harm_cases": [
+        0
+      ],
+      "wrong_pixel_direction_cases": []
+    },
+    "F_G": {
+      "own_objective_decreases": 4,
+      "latent_cosine_mean": 0.07173094682754591,
+      "latent_cosine_negative": 0,
+      "MSE_worse_than_TAU": 0,
+      "finite_step_harm_cases": [],
+      "wrong_pixel_direction_cases": []
+    },
+    "H_G": {
+      "own_objective_decreases": 4,
+      "latent_cosine_mean": 0.08952770558689821,
+      "latent_cosine_negative": 0,
+      "MSE_worse_than_TAU": 0,
+      "finite_step_harm_cases": [],
+      "wrong_pixel_direction_cases": []
+    },
+    "T_G": {
+      "own_objective_decreases": 4,
+      "latent_cosine_mean": 0.13390974228095895,
+      "latent_cosine_negative": 0,
+      "MSE_worse_than_TAU": 0,
+      "finite_step_harm_cases": [],
+      "wrong_pixel_direction_cases": []
+    },
+    "RGB_GT": {
+      "own_objective_decreases": 4,
+      "latent_cosine_mean": 0.960886571647026,
+      "latent_cosine_negative": 0,
+      "MSE_worse_than_TAU": 0,
+      "finite_step_harm_cases": [],
+      "wrong_pixel_direction_cases": []
+    }
+  },
+  "sensitivities": [
+    {
+      "index": 0,
+      "same_L2_delta_MSE": {
+        "D_P": -3.647596155028072e-06,
+        "L_P": -2.71296493342793e-06,
+        "F_P": -7.675118762010654e-07,
+        "D_G": -3.4572810899549693e-06,
+        "L_G": 2.013874798910038e-06,
+        "F_G": -1.115143419794075e-06
+      },
+      "quarter_residual_delta_MSE": {
+        "D_P": -1.4629704404486754e-06,
+        "L_P": -1.2949264935195473e-06,
+        "F_P": -7.792685918645335e-07,
+        "D_G": -1.5556858080490624e-06,
+        "L_G": -1.7153737575447207e-08,
+        "F_G": -9.673876236131233e-07,
+        "H_G": -4.353494149863562e-06,
+        "T_G": -7.60282249261428e-06,
+        "RGB_GT": -2.154309717723898e-05
+      },
+      "same_L2_history_effect": {
+        "L_P": 9.346312216001423e-07,
+        "L_G": 5.471155888865007e-06,
+        "F_P": 2.8800842788270067e-06,
+        "F_G": 2.3421376701608944e-06
+      }
+    },
+    {
+      "index": 1,
+      "same_L2_delta_MSE": {
+        "D_P": -1.3884003943691197e-05,
+        "L_P": -1.3104660765689152e-05,
+        "F_P": -6.462385090442668e-06,
+        "D_G": -2.525776150560693e-05,
+        "L_G": -2.808423908215765e-05,
+        "F_G": -3.2157069191003374e-05
+      },
+      "quarter_residual_delta_MSE": {
+        "D_P": -4.28863215990265e-06,
+        "L_P": -4.120738965379858e-06,
+        "F_P": -2.352490687724393e-06,
+        "D_G": -6.904323481232998e-06,
+        "L_G": -7.702163946648868e-06,
+        "F_G": -8.874258286431593e-06,
+        "H_G": -1.0421703671976792e-05,
+        "T_G": -1.1125662611209651e-05,
+        "RGB_GT": -2.887780918889241e-05
+      },
+      "same_L2_history_effect": {
+        "L_P": 7.793431780020448e-07,
+        "L_G": -2.8264775765507204e-06,
+        "F_P": 7.421618853248529e-06,
+        "F_G": -6.8993076853964444e-06
+      }
+    },
+    {
+      "index": 2,
+      "same_L2_delta_MSE": {
+        "D_P": 1.451811046792012e-06,
+        "L_P": 3.309136002707585e-06,
+        "F_P": 5.190995037011424e-06,
+        "D_G": -5.3036722270712896e-06,
+        "L_G": -1.7068293394522283e-05,
+        "F_G": -1.679510538160452e-05
+      },
+      "quarter_residual_delta_MSE": {
+        "D_P": -9.562253584552403e-07,
+        "L_P": -4.891463167632817e-07,
+        "F_P": 2.217962924530051e-09,
+        "D_G": -2.641250801928648e-06,
+        "L_G": -5.845488604343286e-06,
+        "F_G": -5.647230584515412e-06,
+        "H_G": -6.291981790065758e-06,
+        "T_G": -1.0750411297521205e-05,
+        "RGB_GT": -1.7162681584465695e-05
+      },
+      "same_L2_history_effect": {
+        "L_P": 1.8573249559155727e-06,
+        "L_G": -1.1764621167450994e-05,
+        "F_P": 3.7391839902194123e-06,
+        "F_G": -1.149143315453323e-05
+      }
+    },
+    {
+      "index": 3,
+      "same_L2_delta_MSE": {
+        "D_P": -3.6269723145457826e-06,
+        "L_P": -2.7420356965449218e-06,
+        "F_P": -2.7365482282531367e-06,
+        "D_G": -2.5103803396714367e-06,
+        "L_G": -5.555075540578287e-06,
+        "F_G": -5.545651991267479e-06
+      },
+      "quarter_residual_delta_MSE": {
+        "D_P": -1.344388294640904e-06,
+        "L_P": -1.2013069848408693e-06,
+        "F_P": -1.2005078065233922e-06,
+        "D_G": -1.0848767160328105e-06,
+        "L_G": -1.8681251422834715e-06,
+        "F_G": -1.8682577982432145e-06,
+        "H_G": -1.916283652320956e-06,
+        "T_G": -2.77941810765345e-06,
+        "RGB_GT": -7.091830278312767e-06
+      },
+      "same_L2_history_effect": {
+        "L_P": 8.849366180008608e-07,
+        "L_G": -3.0446952009068506e-06,
+        "F_P": 8.90424086292646e-07,
+        "F_G": -3.035271651596042e-06
+      }
+    }
+  ],
+  "quarter_residual_definition": "Y(alpha)=TAU+alpha*(matched_output-TAU), fixed alpha=.25; MSE exact by pixel identity; no latent reoptimization, no LPIPS claim",
+  "equal_L2_definition": "scale down the six primary matched outputs to common squared L2 magnitude; alternative to L1 matching, not simultaneous L1 and L2 matching",
+  "history_target_vs_true_future_MSE_mean": {
+    "D": 0.3120442181825638,
+    "L": 0.2952572852373123,
+    "F": 0.3295577969402075,
+    "H": 0.11001884285360575
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "split": "validation only",
+  "branches": [
+    "align",
+    "velocity"
+  ],
+  "thresholds": "unchanged prior leave-original-video-out",
+  "fixed_propagation_weights": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "constant_selection": "leave-one-original-video-out minimum video-equal MSE; separate descriptive minimum LPIPS, no test evaluation",
+  "controls": [
+    "correct risk gate",
+    "spatial horizontal/vertical/both reflection of SAME smoothed gate",
+    "per-horizon spatial mean of SAME gate",
+    "fixed blend grid"
+  ],
+  "invariants": "reflections preserve exact per-frame distribution and spatial/temporal total variation, no wrap seams; matched_mean preserves per-frame propagation amount but discards location",
+  "limitations": "reflection can accidentally preserve meaningful structure; reused validation exploratory; constants selected outside heldout video; not a test result",
+  "script_sha256": "41743ee8c67bd1159122aa0cafeeb9f3bb94754b8d6f00b6edcbaaab4da06cb8"
+}

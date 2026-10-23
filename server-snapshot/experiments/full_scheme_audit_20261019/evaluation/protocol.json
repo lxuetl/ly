@@ -1,0 +1,70 @@
+{
+  "training": false,
+  "weights_updated": false,
+  "context": 16,
+  "forecast": 8,
+  "resolution": 128,
+  "dtype": "FP32, TF32 disabled; old history/scorer/fusion explicitly retains native fp16 quantization boundary",
+  "full_splits": {
+    "train": {
+      "clips": 862,
+      "videos": 124
+    },
+    "val": {
+      "clips": 280,
+      "videos": 40
+    },
+    "test": {
+      "clips": 347,
+      "videos": 46
+    }
+  },
+  "path_count": 1489,
+  "original_video_overlap": 0,
+  "scope": "all1489 registered clips; train is descriptive only, val reused, test previously exposed for other architectures; no pristine benchmark claim",
+  "prefix_policy": "independent RGB8/12/16 encoding; no sliced D4RT caches; hold/CV endpoints only; alpha .125,.25,.5; original fixed margins",
+  "future_barrier": "all normal outputs for EACH clip and normal decision JSON locked before decoding that clip frames16:24; immutable protocol over whole run; no cross-clip model/state updates",
+  "contrast_to_CPU": "per-clip immutable generation/evaluation barrier, not all-corpus predictions on disk; no future input to generation functions; metric results never read by policy",
+  "geometry": "allowlist query_uv,past_xyz,past_uv,past_valid,past_confidence; cached context16 is allowed ONLY for final16; NOT used for prefix8/12 replay",
+  "oracle": "six D/L/F x P/G shared-future-GT-visibility, same past mask and realized budget; labeled diagnostics, never deployment candidates",
+  "historical_fairness": "both shared FP32 tau and native fp16 tau reported; comparisons against native reference where required; target is shared FP32 rather than historical fp16 target; ceilings not equal actual budgets except explicitly matched arms",
+  "metrics": "clip/video equal separately, original-video paired bootstrap4000, per-source, per-horizon, acceptance and both-MSE/LPIPS harm counts",
+  "hashes": {
+    "/root/autodl-tmp/Open-d4rt/experiments_20261018/full_gpu_eval.py": "ebbb5d05d9bb2febc279bb936b91d41457b0a0138f0478da019e4f95e003f318",
+    "/root/autodl-tmp/Open-d4rt/experiments_20261018/replay_policy_cpu.py": "ea4edcf5d44f66c96b9277275a086c4faab3a8a6134fde97766dc6b65ceb6ffc",
+    "/root/autodl-tmp/Open-d4rt/experiments_20261018/first_query_cpu.py": "0e973a7d9906bb28c8f8c2eda315f9978afa66cc2400d85811141d850351fc46",
+    "/root/autodl-tmp/Open-d4rt/experiments_20261018/reliability_cpu.py": "d4c4d175685dff8126a65b86a127f4543d5fe211c87029e0aada802e9d7f5c4f",
+    "/root/autodl-tmp/Open-d4rt/experiments_20261018/run_alignment_v2.py": "3fa02134ffec20d0f1d0bc97b938d80becb841ffd24ff317f562b901d338c5ed",
+    "/root/autodl-tmp/Open-d4rt/train_simvp_feature_warp.py": "03ead0b3faa2037eb185a2a84f0c9eece0ce61e1c55fa7cff22d8d314d0eefa5",
+    "/root/autodl-tmp/Open-d4rt/evaluate_fixed_history_expanded.py": "b297f95d494e33d55b1c025807d740baa7178f12d8d4e1aeee9f8fdb31ae85a6",
+    "/root/autodl-tmp/Open-d4rt/run_history_ablations.py": "8d41af08a32fb84c626197ef6eb2535cae27ec9f13788b039d4f8ca0fcca06ab",
+    "/root/autodl-tmp/Open-d4rt/history_texture_candidates.py": "5b0e41909fe2e4652564c56b59538426d15dcefd3523bb3a1192abce549f7ec6",
+    "/root/autodl-tmp/Open-d4rt/experiments_20261018/run_local_risk.py": "49115aea89564a88e7589e0d4078394be3542700b1689979e63663f7cd6e491b",
+    "/root/autodl-tmp/Open-d4rt/experiments_20261018/local_risk.py": "0dcafcdcbea2ec5c349d3613e3d698b6000fef6974a749c28388ace2619ffb48",
+    "/root/autodl-tmp/Open-d4rt/iterative_video_repair.py": "05890a8003190cdb42a22144fe1e0692bc1ba7aed479ae42fb5809ebbce5ed9a",
+    "/root/autodl-tmp/Open-d4rt/experiments_20261018/trajectory_attention.py": "3cb17cbd239a155a421cc1b79c0cefa031537f4a8317e4192d689d0cbe536b65",
+    "/root/autodl-tmp/Open-d4rt/train_propagation_fusion.py": "2fcd352316abed6f5a55f297554a593ddb17ca3c15f398c75b342db47bd14f22",
+    "/root/autodl-fs/d4rt_training/tau128_full_fair_fast_20261009/best.pt": "67d123d4372bc837a9a815ae698b3ac50dcafeb52c0d7ad94a9872f280fd5a33",
+    "/root/autodl-fs/d4rt_training/pointodyssey_full_uv_velocity_residual_60/best.pt": "add669687b8f66231e1c0504ca78b953eac88fa8ce7cc7968379fd312e39c9c1",
+    "/root/autodl-fs/d4rt_training/propagation_fusion_20261014/split_paths.json": "f9c9646f8ce860f595baf1a6bf2eab302be29413a0929c192b22cd97b2cf9dca",
+    "/root/autodl-fs/d4rt_training/trajectory_lhcr_pilot_20261018/trajectory/oracle_attention_best.pt": "032c20eac61aaeb9f42c16f41aa03d1932090ce81e7415a95171f484c265daa8",
+    "/root/autodl-fs/d4rt_training/trajectory_lhcr_pilot_20261018/trajectory/predicted_attention_best.pt": "f6e88d2a91bacc0e82a40afd7af362b741939fdd5610feb89fbdc8ad6579f12d",
+    "/root/autodl-fs/d4rt_training/trajectory_lhcr_pilot_20261018/trajectory/predicted_uniform_best.pt": "8ccaa4998c6b9e86e023f4b0e497903bd0b671dff64e535133d5407842641464",
+    "/root/autodl-fs/d4rt_training/trajectory_lhcr_pilot_20261018/trajectory/fixed_attention_best.pt": "0e1a6c24b1d792d475bb6cb6d01d5707408b2047ace626aa081aa9640d1685d1",
+    "/root/autodl-fs/d4rt_training/trajectory_lhcr_pilot_20261018/local_risk/global_best.pt": "a7a2dd45fc617a3d03f54794029c2625b016e5f6dc849867f3ff2bb9b8f049c6",
+    "/root/autodl-fs/d4rt_training/trajectory_lhcr_pilot_20261018/local_risk/local_best.pt": "15eeb7e5f6f18bd87a4d8d890c8f052963ec9c85a55b7e4c9ffd733c451f0318",
+    "/root/autodl-fs/d4rt_training/trajectory_lhcr_pilot_20261018/local_risk/calibration.json": "da9b158e1881d11c646b562d96795264d998a01f3ddde464d7715b6e58a6beea",
+    "/root/autodl-fs/d4rt_training/trajectory_lhcr_pilot_20261018/local_risk/fixed_selection.json": "11cee3e0079639806deb0564b7a66abe81717ec101bca190d0c55566ed0e16ad",
+    "/root/autodl-fs/d4rt_training/trajectory_lhcr_pilot_20261018/local_risk_normalized/global_best.pt": "a465602ca94a89095ada08d0cabd9258d6acf9e46abaafb5900946e8915c7839",
+    "/root/autodl-fs/d4rt_training/trajectory_lhcr_pilot_20261018/local_risk_normalized/local_best.pt": "7531f27a9b99c662163e7582bc2b0909dee190fa73610b86eb0b36bee4bcf937",
+    "/root/autodl-fs/d4rt_training/trajectory_lhcr_pilot_20261018/local_risk_normalized/calibration.json": "f27053532e66b0ff5d5c2e6c0c1a2da0fab24f133fb583a113906bb8d2060983",
+    "/root/autodl-fs/d4rt_training/trajectory_lhcr_pilot_20261018/local_risk_normalized/fixed_selection.json": "11cee3e0079639806deb0564b7a66abe81717ec101bca190d0c55566ed0e16ad",
+    "/root/autodl-fs/d4rt_training/trajectory_lhcr_pilot_20261018/trajectory_sensitivity/dev_selection.json": "78bcf51b7770401c9347549d1149fa49af4dd966f2774e8d54dc6f8ee4dbe353",
+    "/root/autodl-fs/d4rt_training/history_ablation_val_locked_20261015/LOCKED_CONFIGS.json": "70c73c0de41a83a278dd6b0867cf56cbae75651ff877d026f844c02a95522a92",
+    "/root/autodl-fs/d4rt_training/propagation_fusion_20261014/pred/best.pt": "1f9cd2f4b0269ff1ffc205a1590382bc448168d2e0c17313e93cfa96905e6fff",
+    "/root/autodl-fs/d4rt_training/propagation_fusion_20261014/zero/best.pt": "32d11988272b44f40a68f195d5d3d929fa3887792e82fe0b12480da1a3e3aa87",
+    "/root/autodl-fs/d4rt_training/propagation_fusion_20261014/wrong/best.pt": "73173b652606d20deb7a9313fc45a162e2b9071653cac713c9d32a1578c776c5",
+    "/root/autodl-fs/d4rt_training/propagation_fusion_20261014/gt/best.pt": "d8dbfbce0e141cc90bbdb93ed96389e663df768de10431932ef8a59ed543365c"
+  },
+  "oracle_enabled": true
+}

@@ -1,0 +1,79 @@
+{
+  "variant": "oldtraj_oldrouter",
+  "model_variant": "stable_v2",
+  "checkpoint": "/autodl-fs/data/d4rt_training/capsr_stable_router_20260828/best.pt",
+  "checkpoint_epoch": 8,
+  "future_frames": 8,
+  "split": {
+    "legacy_subsets": [
+      "adt_mini",
+      "ds_mini",
+      "po_mini",
+      "pstudio_mini"
+    ],
+    "pointodyssey_usable": {
+      "train": 754,
+      "val": 240,
+      "test": 308
+    },
+    "totals": {
+      "train": 862,
+      "val": 280,
+      "test": 347
+    }
+  },
+  "sequences": [
+    {
+      "name": "Apartment_release_clean_seq133_0",
+      "domain": "adt_mini",
+      "original_sequence": "Apartment_release_clean_seq133",
+      "cache_path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_clean_seq133_0.npz",
+      "MAE": 0.04798179492354393,
+      "MSE": 0.0076713766902685165,
+      "PSNR": 21.151266914179416,
+      "SSIM": 0.7220382690429688,
+      "LPIPS": 0.1136283427476883,
+      "temporal_delta_MAE": 0.018522139638662338,
+      "dynamic_abs_sum": 2513.7939453125,
+      "dynamic_sq_sum": 568.8640747070312,
+      "dynamic_count": 20529,
+      "dynamic_MAE": 0.12245087170892396,
+      "dynamic_MSE": 0.02771026716873843,
+      "dynamic_PSNR": 15.573592869442393,
+      "tp": 3517,
+      "fp": 3842,
+      "fn": 3326,
+      "Motion_IoU": 0.329153018249883,
+      "Motion_F1": 0.49528235459794395,
+      "camera_fraction": 0.7048075199127197,
+      "object_fraction": 0.04653061181306839,
+      "synthesis_fraction": 0.0554468035697937
+    },
+    {
+      "name": "Apartment_release_clean_seq133_8",
+      "domain": "adt_mini",
+      "original_sequence": "Apartment_release_clean_seq133",
+      "cache_path": "data/d4rt_forecasting_cache/adt_mini/Apartment_release_clean_seq133_8.npz",
+      "MAE": 0.04560176655650139,
+      "MSE": 0.006094522308558226,
+      "PSNR": 22.1506032891145,
+      "SSIM": 0.7561217546463013,
+      "LPIPS": 0.10682983696460724,
+      "temporal_delta_MAE": 0.02031717449426651,
+      "dynamic_abs_sum": 2969.401611328125,
+      "dynamic_sq_sum": 531.0564575195312,
+      "dynamic_count": 29403,
+      "dynamic_MAE": 0.10098974973057596,
+      "dynamic_MSE": 0.018061301823607497,
+      "dynamic_PSNR": 17.43250949790337,
+      "tp": 4297,
+      "fp": 1339,
+      "fn": 5504,
+      "Motion_IoU": 0.38572710951526035,
+      "Motion_F1": 0.5567143875105267,
+      "camera_fraction": 0.7789907455444336,
+      "object_fraction": 0.03648284077644348,
+      "synthesis_fraction": 0.037305139005184174
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "trajectory": {
+    "loss": 0.007059219973878219,
+    "XYZ_ADE": 0.06752365563683255,
+    "XYZ_FDE": 0.07166055083731915,
+    "UV_ADE_norm": 0.023941200459245235,
+    "UV_FDE_norm": 0.031042905451934964,
+    "dynamic_UV_ADE_norm": 0.06298214674948376,
+    "dynamic_UV_FDE_norm": 0.08523480449808285,
+    "dynamic_points": 911,
+    "static_UV_ADE_norm": 0.01601929827235821,
+    "static_UV_FDE_norm": 0.020230636615803824,
+    "static_points": 4566,
+    "warp_UV_ADE_norm": 0.023449582784444218,
+    "warp_UV_FDE_norm": 0.03049672415850267,
+    "warp_effective_points": 2733.293260574341,
+    "motion_bins": {
+      "0.00-0.02": {
+        "UV_ADE_norm": 0.012380143656608347,
+        "UV_FDE_norm": 0.015921462414070376,
+        "points": 3073
+      },
+      "0.02-0.05": {
+        "UV_ADE_norm": 0.023513285926322854,
+        "UV_FDE_norm": 0.029100088912891366,
+        "points": 1493
+      },
+      "0.05-0.1": {
+        "UV_ADE_norm": 0.04775238152774871,
+        "UV_FDE_norm": 0.06355964636879924,
+        "points": 733
+      },
+      "0.10-inf": {
+        "UV_ADE_norm": 0.12636100071197523,
+        "UV_FDE_norm": 0.17449261612269315,
+        "points": 178
+      }
+    }
+  },
+  "motion": {
+    "MAE": 0.05797518127494388,
+    "MSE": 0.007343601101101973,
+    "PSNR": 21.34090921716303,
+    "SSIM": 0.7082085013389587,
+    "dynamic_MAE": 0.1334021914006878,
+    "dynamic_PSNR": 15.133095332158684,
+    "motion_mask_IoU": 0.1632997048981263,
+    "motion_mask_F1": 0.28075259404011793,
+    "motion_mask_precision": 0.18976196433772105,
+    "motion_mask_recall": 0.5393889222481971,
+    "geometry_mask_fraction": 0.006132391842607505
+  },
+  "per_domain": {
+    "adt_mini": {
+      "trajectory": {
+        "loss": 0.01457639371510595,
+        "XYZ_ADE": 0.03487197012058445,
+        "XYZ_FDE": 0.031095021101365607,
+        "UV_ADE_norm": 0.0504622287075014,
+        "UV_FDE_norm": 0.06865950401528294,
+        "dynamic_UV_ADE_norm": 0.066340935350184,
+        "dynamic_UV_FDE_norm": 0.09030107627607414,
+        "dynamic_points": 606,
+        "static_UV_ADE_norm": 0.025305333337397724,
+        "static_UV_FDE_norm": 0.03503183242984307,
+        "static_points": 390,
+        "warp_UV_ADE_norm": 0.05005654754047438,
+        "warp_UV_FDE_norm": 0.0681987336837536,
+        "warp_effective_points": 470.8109874725342,
+        "motion_bins": {
+          "0.00-0.02": {
+            "UV_ADE_norm": 0.017535305584728777,
+            "UV_FDE_norm": 0.02364376504120864,
+            "points": 127
+          },
+          "0.02-0.05": {
+            "UV_ADE_norm": 0.0290436049865258,
+            "UV_FDE_norm": 0.040531013883338685,
+            "points": 263
+          },
+          "0.05-0.1": {
+            "UV_ADE_norm": 0.04576543343451715,
+            "UV_FDE_norm": 0.06269559687905281,
+            "points": 473
+          },
+          "0.10-inf": {
+            "UV_ADE_norm": 0.13915378818773244,
+            "UV_FDE_norm": 0.18847695037834628,
+            "points": 133
+          }
+        }
+      },
+      "motion": {
+        "MAE": 0.08094670424858728,
+        "MSE": 0.01603764990965525,
+        "PSNR": 17.948592710920405,
+        "SSIM": 0.538251519203186,
+        "dynamic_MAE": 0.1523195235553568,
+        "dynamic_PSNR": 14.100206062303037,
+        "motion_mask_IoU": 0.3278602679099309,
+        "motion_mask_F1": 0.49381742316303684,
+        "motion_mask_precision": 0.48676235777998844,
+        "motion_mask_recall": 0.5010800065402786,
+        "geometry_mask_fraction": 0.005530318431556225
+      }
+    },
+    "ds_mini": {
+      "trajectory": {
+        "loss": 0.0021680255886167288,
+        "XYZ_ADE": 0.051747835078947826,
+        "XYZ_FDE": 0.052514583614797355,
+        "UV_ADE_norm": 0.015767417902075972,
+        "UV_FDE_norm": 0.019454292838118115,
+        "dynamic_UV_ADE_norm": 0.048885359354545736,
+        "dynamic_UV_FDE_norm": 0.06378319896757603,
+        "dynamic_points": 40,
+        "static_UV_ADE_norm": 0.014090690281028646,
+        "static_UV_FDE_norm": 0.01724612757396579,
+        "static_points": 803,
+        "warp_UV_ADE_norm": 0.015687661838528107,
+        "warp_UV_FDE_norm": 0.01959087410567217,
+        "warp_effective_points": 416.7159423828125,
+        "motion_bins": {
+          "0.00-0.02": {
+            "UV_ADE_norm": 0.01266831852823214,
+            "UV_FDE_norm": 0.015902143565801857,
+            "points": 671
+          },
+          "0.02-0.05": {
+            "UV_ADE_norm": 0.021407493994436193,
+            "UV_FDE_norm": 0.024078051136298614,
+            "points": 132
+          },
+          "0.05-0.1": {
+            "UV_ADE_norm": 0.04778877144339699,
+            "UV_FDE_norm": 0.06275582351745704,
+            "points": 39
+          },
+          "0.10-inf": {
+            "UV_ADE_norm": 0.09247472882270813,
+            "UV_FDE_norm": 0.10385088622570038,
+            "points": 1
+          }
+        }
+      },
+      "motion": {
+        "MAE": 0.054818558551016305,
+        "MSE": 0.005162949319041911,
+        "PSNR": 22.87102138088254,
+        "SSIM": 0.80384361743927,
+        "dynamic_MAE": 0.09965926731617025,
+        "dynamic_PSNR": 17.92229764156865,
+        "motion_mask_IoU": 0.07581241835930878,
+        "motion_mask_F1": 0.14093984613958663,
+        "motion_mask_precision": 0.08058720652922784,
+        "motion_mask_recall": 0.5613141380583241,
+        "geometry_mask_fraction": 0.00653079039018069
+      }
+    },
+    "po_mini": {
+      "trajectory": {
+        "loss": 0.005802701094320842,
+        "XYZ_ADE": 0.07760186506567145,
+        "XYZ_FDE": 0.07931383182160943,
+        "UV_ADE_norm": 0.014520179458031026,
+        "UV_FDE_norm": 0.01836087061508661,
+        "dynamic_UV_ADE_norm": 0.052931300966363205,
+        "dynamic_UV_FDE_norm": 0.06447262088196319,
+        "dynamic_points": 57,
+        "static_UV_ADE_norm": 0.0136880871154337,
+        "static_UV_FDE_norm": 0.017385232377778007,
+        "static_points": 2694,
+        "warp_UV_ADE_norm": 0.014359900488267527,
+        "warp_UV_FDE_norm": 0.018211081148254177,
+        "warp_effective_points": 1380.8491439819336,
+        "motion_bins": {
+          "0.00-0.02": {
+            "UV_ADE_norm": 0.01191386631189595,
+            "UV_FDE_norm": 0.015435474846884779,
+            "points": 2189
+          },
+          "0.02-0.05": {
+            "UV_ADE_norm": 0.021347265325623966,
+            "UV_FDE_norm": 0.02583675416979459,
+            "points": 505
+          },
+          "0.05-0.1": {
+            "UV_ADE_norm": 0.04906238292154316,
+            "UV_FDE_norm": 0.060392206640176055,
+            "points": 53
+          },
+          "0.10-inf": {
+            "UV_ADE_norm": 0.11469579647694315,
+            "UV_FDE_norm": 0.11853809840977192,
+            "points": 4
+          }
+        }
+      },
+      "motion": {
+        "MAE": 0.05978947984320777,
+        "MSE": 0.005145507620736247,
+        "PSNR": 22.885717742523926,
+        "SSIM": 0.696465015411377,
+        "dynamic_MAE": 0.08777075731274109,
+        "dynamic_PSNR": 19.595550739908493,
+        "motion_mask_IoU": 0.08779468167205066,
+        "motion_mask_F1": 0.16141774390200425,
+        "motion_mask_precision": 0.09117159057959341,
+        "motion_mask_recall": 0.7032929481205343,
+        "geometry_mask_fraction": 0.008907509768115622
+      }
+    },
+    "pstudio_mini": {
+      "trajectory": {
+        "loss": 0.0041414559236727655,
+        "XYZ_ADE": 0.08762281293357112,
+        "XYZ_FDE": 0.11167085748648832,
+        "UV_ADE_norm": 0.031025425029389854,
+        "UV_FDE_norm": 0.03915039823719184,
+        "dynamic_UV_ADE_norm": 0.058770832828984584,
+        "dynamic_UV_FDE_norm": 0.08028936214171924,
+        "dynamic_points": 208,
+        "static_UV_ADE_norm": 0.02226557312621184,
+        "static_UV_FDE_norm": 0.02654818213916492,
+        "static_points": 679,
+        "warp_UV_ADE_norm": 0.030504072457802414,
+        "warp_UV_FDE_norm": 0.03858147772142845,
+        "warp_effective_points": 464.91718673706055,
+        "motion_bins": {
+          "0.00-0.02": {
+            "UV_ADE_norm": 0.014515107699802944,
+            "UV_FDE_norm": 0.017038407740941227,
+            "points": 86
+          },
+          "0.02-0.05": {
+            "UV_ADE_norm": 0.023393968774157635,
+            "UV_FDE_norm": 0.027927339780591993,
+            "points": 593
+          },
+          "0.05-0.1": {
+            "UV_ADE_norm": 0.052771661559600294,
+            "UV_FDE_norm": 0.06717821068706967,
+            "points": 168
+          },
+          "0.10-inf": {
+            "UV_ADE_norm": 0.0849709192543854,
+            "UV_FDE_norm": 0.13535619974136354,
+            "points": 40
+          }
+        }
+      },
+      "motion": {
+        "MAE": 0.028847799946864445,
+        "MSE": 0.0022307739903529487,
+        "PSNR": 26.51544427795342,
+        "SSIM": 0.8575255870819092,
+        "dynamic_MAE": 0.1050200154389154,
+        "dynamic_PSNR": 17.56320653572611,
+        "motion_mask_IoU": 0.13146544735220678,
+        "motion_mask_F1": 0.2323808431973861,
+        "motion_mask_precision": 0.16026249209361162,
+        "motion_mask_recall": 0.4225117248566962,
+        "geometry_mask_fraction": 0.001679928507655859
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "arm": "omega",
+  "architecture": "pre TSST3, unchanged locality/history cap/sqrt(h)",
+  "base": "/root/autodl-tmp/predformer_native128_20261021/best.pt",
+  "init": "fresh identical zero-output adapter seed42; NOT previous fitted adapters",
+  "base_fully_frozen": true,
+  "base_eval_mode": true,
+  "trainable_parameters": 861697,
+  "epochs": 100,
+  "steps": 3200,
+  "clips": 32,
+  "lr": 0.0001,
+  "loss": "MSE",
+  "selection": "fixed steps; no validation selection",
+  "report_epochs": [
+    0,
+    10,
+    30,
+    50,
+    100
+  ],
+  "test_used": false,
+  "base_hash": "956451c435354c43e16726272746c11c6a4275fc1d658ad8b01b8578f940c5e9",
+  "source_sha256": "48e5a1877323a75d4eb543484356ecfd8c900f6decdad4d0905903b327a72cb2"
+}

@@ -1,0 +1,131 @@
+{
+  "metrics": {
+    "MAE": 0.05306698869292935,
+    "MSE": 0.007485497646848671,
+    "RMSE": 0.08651877048854006,
+    "PSNR": 21.257793218278103,
+    "SSIM": 0.7221812009811401,
+    "LPIPS": 0.1785199947655201,
+    "temporal_delta_MAE": 0.023035783103356758,
+    "temporal_delta_MSE": 0.002899530724971555,
+    "per_horizon": {
+      "t+1": {
+        "MAE": 0.043099105420211954,
+        "MSE": 0.004615562526547971,
+        "PSNR": 23.357753613146,
+        "SSIM": 0.8150764614343643,
+        "LPIPS": 0.14716572933830321
+      },
+      "t+2": {
+        "MAE": 0.046785602392628786,
+        "MSE": 0.005907421293280398,
+        "PSNR": 22.286020559201756,
+        "SSIM": 0.7796427572146059,
+        "LPIPS": 0.15867420276626945
+      },
+      "t+3": {
+        "MAE": 0.05064671218084792,
+        "MSE": 0.006939318541359777,
+        "PSNR": 21.58683176268246,
+        "SSIM": 0.7464008848182857,
+        "LPIPS": 0.16828136146068573
+      },
+      "t+4": {
+        "MAE": 0.053297655734544,
+        "MSE": 0.00757114495888042,
+        "PSNR": 21.208384386342466,
+        "SSIM": 0.7204937061294914,
+        "LPIPS": 0.17480888068675995
+      },
+      "t+5": {
+        "MAE": 0.05484468606300652,
+        "MSE": 0.007970715864212252,
+        "PSNR": 20.98502672089998,
+        "SSIM": 0.7019268759526313,
+        "LPIPS": 0.19742338405922055
+      },
+      "t+6": {
+        "MAE": 0.057314926851540805,
+        "MSE": 0.00855123025830835,
+        "PSNR": 20.67971399194804,
+        "SSIM": 0.686674728943035,
+        "LPIPS": 0.19075859198346734
+      },
+      "t+7": {
+        "MAE": 0.05799334431067109,
+        "MSE": 0.008908095738540093,
+        "PSNR": 20.50215124092396,
+        "SSIM": 0.6764400829561055,
+        "LPIPS": 0.18934946465305985
+      },
+      "t+8": {
+        "MAE": 0.0605538808585455,
+        "MSE": 0.009420492408874754,
+        "PSNR": 20.259263960533996,
+        "SSIM": 0.6507910074433312,
+        "LPIPS": 0.2016983453184366
+      }
+    },
+    "dynamic_MAE": 0.13989597447611238,
+    "dynamic_MSE": 0.03309385824219038,
+    "dynamic_PSNR": 14.802525977354694,
+    "motion_mask_IoU": 0.23070138208856844,
+    "motion_mask_F1": 0.3749104136001788,
+    "motion_mask_precision": 0.3207599418472402,
+    "motion_mask_recall": 0.4510576553105283,
+    "dynamic_pixel_fraction": 0.16457595825195312,
+    "motion_threshold": 0.05
+  },
+  "meta": {
+    "backbone": "simvp",
+    "best_epoch": 15,
+    "best_val_MSE": 0.007105239511777957,
+    "image_size": 64,
+    "context_frames": 16,
+    "future_frames": 8,
+    "train_clips": 214,
+    "val_clips": 80,
+    "test_clips": 80,
+    "trainable_params": 1513173,
+    "total_seconds": 758.3410240896046,
+    "split": {
+      "legacy_subsets": [
+        "adt_mini",
+        "ds_mini",
+        "po_mini",
+        "pstudio_mini"
+      ],
+      "pointodyssey_usable": {
+        "train": 754,
+        "val": 240,
+        "test": 308
+      },
+      "totals": {
+        "train": 862,
+        "val": 280,
+        "test": 347
+      }
+    },
+    "args": {
+      "backbone": "simvp",
+      "cache_root": "data/d4rt_forecasting_cache",
+      "po_cache": "/autodl-fs/data/d4rt_datasets/d4rt_forecasting_cache_po_full",
+      "po_split_manifest": "/autodl-fs/data/d4rt_datasets/worldtrack_pointodyssey_full_v2/po50/split_manifest.json",
+      "sample_manifest": "/autodl-fs/data/d4rt_training/simvp_64_strict_fraction025_20260926/split_paths.json",
+      "output_dir": "/autodl-fs/data/d4rt_training/four_backbone_fair64_bs2_20260927/simvp",
+      "image_size": 64,
+      "epochs": 15,
+      "patience": 5,
+      "batch_size": 2,
+      "lr": 0.0003,
+      "seed": 42,
+      "device": "cuda",
+      "max_train": 0,
+      "max_val": 0,
+      "max_test": 0,
+      "predrnn_hidden": "64,64,64,64",
+      "predrnn_patch_size": 4,
+      "legacy_subsets": "adt_mini,ds_mini,po_mini,pstudio_mini"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "arm": "null",
+  "trainable": 5122241,
+  "base": "/root/autodl-tmp/predformer_native128_20261021/best.pt",
+  "epochs": 15,
+  "batch": 1,
+  "lr": 0.0001,
+  "seed": 42,
+  "train": 862,
+  "val": 280,
+  "test_used": false,
+  "loss": "MSE only",
+  "selection": "val MSE incl epoch0",
+  "location": "after trainable TSST3, before native head; first8 native forecast slots",
+  "tokens": "16 historical frames x16 spatial tokens; camera removed; learned 2048->256 projection",
+  "locality": "4 nearest 4x4 memory locations per query over all16 observed frames",
+  "history_cap": "max of last7 observed adjacent RGB differences; 8x8 average pool then3x3 dilation; clamp((change-.01)/.04,0,1)",
+  "horizon": "learned h1..h8 embedding in Q/gate; sigmoid gate capped by history_cap/sqrt(h)",
+  "caveat": "restriction applies to geometry delta only, not updates caused by trainable backbone/head; RGB change is not object motion truth",
+  "shuffle_control": "fixed seed123 content-only spatial permutation held across time during train+val",
+  "lpips": "Alex v0.1 clamp[0,1], normalize[-1,1]",
+  "code_hash": "e6c84ba30061145c3bb8a237264ce189beb79b8f65e78c3f546dcc04a1fc677f"
+}

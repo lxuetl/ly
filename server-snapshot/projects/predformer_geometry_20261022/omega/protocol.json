@@ -1,0 +1,16 @@
+{
+  "trainable": 1370048,
+  "arm": "omega",
+  "train": 862,
+  "val": 280,
+  "test_used": false,
+  "seed": 42,
+  "epochs": 15,
+  "lr": 0.0001,
+  "loss": "MSE only",
+  "checkpoint_selection": "val MSE, includes epoch0",
+  "geometry": "history only",
+  "fusion": "cross-attention inside each future query, before FFN; fixed 0.1 residual strength; zero output projection",
+  "lpips": "Alex v0.1, clamp[0,1], normalize[-1,1]",
+  "source_hash": "a69addb488acd2d1b9bd623a80ef9341d042dab6e4cfd78fac1802b8d3de8fd8"
+}

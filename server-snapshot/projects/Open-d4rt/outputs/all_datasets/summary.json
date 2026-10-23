@@ -1,0 +1,158 @@
+{
+  "joint": {
+    "loss": 0.0065593128167212205,
+    "XYZ_ADE": 0.06382595178870558,
+    "XYZ_FDE": 0.07268897292603971,
+    "UV_ADE_norm": 0.02468885469007159,
+    "UV_FDE_norm": 0.03184616602705586
+  },
+  "baseline": {
+    "MAE": 0.058173586224388875,
+    "MSE": 0.007378734934788484,
+    "PSNR": 21.320180904717358,
+    "SSIM": 0.7074717879295349,
+    "dynamic_MAE": 0.1335878619284578,
+    "dynamic_PSNR": 15.124630433561581,
+    "motion_mask_IoU": 0.16286879557226794,
+    "motion_mask_F1": 0.2801155146520505,
+    "motion_mask_precision": 0.1887235042458028,
+    "motion_mask_recall": 0.5431374720899186,
+    "dynamic_pixel_fraction": 0.13422491611578527,
+    "motion_threshold": 0.05,
+    "injection": "film",
+    "dynamic_loss_weight": 0.0,
+    "latent_gate": 0.11920291930437088,
+    "skip_gate": 0.11920291930437088
+  },
+  "motion": {
+    "MAE": 0.057942280529910684,
+    "MSE": 0.0073383698542403356,
+    "PSNR": 21.344004035629208,
+    "SSIM": 0.708304226398468,
+    "dynamic_MAE": 0.13335691434024016,
+    "dynamic_PSNR": 15.134434846357905,
+    "motion_mask_IoU": 0.16328450144444798,
+    "motion_mask_F1": 0.28073012447376017,
+    "motion_mask_precision": 0.1898622020940019,
+    "motion_mask_recall": 0.538415348650114,
+    "geometry_mask_fraction": 0.006931254620819042
+  },
+  "per_domain": {
+    "adt_mini": {
+      "baseline": {
+        "MAE": 0.08106813728809356,
+        "MSE": 0.016068078763782977,
+        "PSNR": 17.940360480760095,
+        "SSIM": 0.5374444127082825,
+        "dynamic_MAE": 0.15242514561554815,
+        "dynamic_PSNR": 14.095057532156039,
+        "motion_mask_IoU": 0.32810040034186494,
+        "motion_mask_F1": 0.4940897544453853,
+        "motion_mask_precision": 0.4862788236372576,
+        "motion_mask_recall": 0.5021557102656558,
+        "dynamic_pixel_fraction": 0.3546234130859375,
+        "motion_threshold": 0.05
+      },
+      "motion": {
+        "MAE": 0.08092887451251347,
+        "MSE": 0.0160323154181242,
+        "PSNR": 17.95003751463839,
+        "SSIM": 0.5383448600769043,
+        "dynamic_MAE": 0.15227707702870102,
+        "dynamic_PSNR": 14.101705547554841,
+        "motion_mask_IoU": 0.32798792779197966,
+        "motion_mask_F1": 0.49396221295071396,
+        "motion_mask_precision": 0.48685695181578836,
+        "motion_mask_recall": 0.501277936025748,
+        "geometry_mask_fraction": 0.006345062516629696
+      }
+    },
+    "ds_mini": {
+      "baseline": {
+        "MAE": 0.054981435338656105,
+        "MSE": 0.005189963128595125,
+        "PSNR": 22.84835727528143,
+        "SSIM": 0.8035017848014832,
+        "dynamic_MAE": 0.09981235162907015,
+        "dynamic_PSNR": 17.910510885774396,
+        "motion_mask_IoU": 0.07563025210084033,
+        "motion_mask_F1": 0.140625,
+        "motion_mask_precision": 0.08035121375341253,
+        "motion_mask_recall": 0.5627906976744186,
+        "dynamic_pixel_fraction": 0.059051513671875,
+        "motion_threshold": 0.05
+      },
+      "motion": {
+        "MAE": 0.05481085748899551,
+        "MSE": 0.005161999281318415,
+        "PSNR": 22.87182060256983,
+        "SSIM": 0.8041784167289734,
+        "dynamic_MAE": 0.09968372418664252,
+        "dynamic_PSNR": 17.917283717543427,
+        "motion_mask_IoU": 0.0754668075646253,
+        "motion_mask_F1": 0.1403424206750155,
+        "motion_mask_precision": 0.0802467827082494,
+        "motion_mask_recall": 0.5588778146917682,
+        "geometry_mask_fraction": 0.00544335599988699
+      }
+    },
+    "po_mini": {
+      "baseline": {
+        "MAE": 0.06015491414637793,
+        "MSE": 0.00520366405890811,
+        "PSNR": 22.836907486346277,
+        "SSIM": 0.6952689290046692,
+        "dynamic_MAE": 0.0881821209616304,
+        "dynamic_PSNR": 19.561082855335624,
+        "motion_mask_IoU": 0.08810993841102736,
+        "motion_mask_F1": 0.16195043405208628,
+        "motion_mask_precision": 0.09125803779241785,
+        "motion_mask_recall": 0.7186393289841566,
+        "dynamic_pixel_fraction": 0.07016863141741071,
+        "motion_threshold": 0.05
+      },
+      "motion": {
+        "MAE": 0.059708912102949055,
+        "MSE": 0.005133476086138259,
+        "PSNR": 22.895884567611013,
+        "SSIM": 0.6965228319168091,
+        "dynamic_MAE": 0.08761104802185672,
+        "dynamic_PSNR": 19.608116238783747,
+        "motion_mask_IoU": 0.08755620437956205,
+        "motion_mask_F1": 0.16101458302012417,
+        "motion_mask_precision": 0.09099184386833674,
+        "motion_mask_recall": 0.6986952469711091,
+        "geometry_mask_fraction": 0.011014819544340883
+      }
+    },
+    "pstudio_mini": {
+      "baseline": {
+        "MAE": 0.028881205556293327,
+        "MSE": 0.002238604511755208,
+        "PSNR": 26.500226252836413,
+        "SSIM": 0.8573360443115234,
+        "dynamic_MAE": 0.10546396536112287,
+        "dynamic_PSNR": 17.524842982359633,
+        "motion_mask_IoU": 0.13156956197516453,
+        "motion_mask_F1": 0.2325434801295092,
+        "motion_mask_precision": 0.16035722753497195,
+        "motion_mask_recall": 0.4229286086503387,
+        "dynamic_pixel_fraction": 0.036602020263671875,
+        "motion_threshold": 0.05
+      },
+      "motion": {
+        "MAE": 0.02885742795964082,
+        "MSE": 0.0022338262448708215,
+        "PSNR": 26.509506109108933,
+        "SSIM": 0.8574804067611694,
+        "dynamic_MAE": 0.10522592242070115,
+        "dynamic_PSNR": 17.54499682687875,
+        "motion_mask_IoU": 0.1311948624805397,
+        "motion_mask_F1": 0.23195802391260717,
+        "motion_mask_precision": 0.15999525354006802,
+        "motion_mask_recall": 0.42157373632100054,
+        "geometry_mask_fraction": 0.0018196674282080494
+      }
+    }
+  }
+}

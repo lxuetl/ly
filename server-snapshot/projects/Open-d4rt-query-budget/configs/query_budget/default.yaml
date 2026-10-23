@@ -1,0 +1,25 @@
+experiment:
+  name: query_budget_baseline
+  seed: 0
+
+query_budget:
+  task: pose
+  selector: uniform
+  budget: 32
+  exploration_ratio: 0.25
+  min_distance: 0.03
+
+candidate_grid:
+  rows: 32
+  cols: 32
+  margin_ratio: 0.03
+
+inference:
+  query_chunk_size: 4096
+  cache_encoder_memory: true
+
+evaluation:
+  budgets: [8, 16, 32, 64, 128, 256]
+  selectors: [random, uniform, task_aware]
+  report_query_count: true
+  report_decoder_latency: true

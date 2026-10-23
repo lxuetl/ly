@@ -1,0 +1,17 @@
+{
+  "variant": "pre",
+  "arm": "omega",
+  "epochs": 15,
+  "train_clips": 128,
+  "val_clips": 64,
+  "parameters": 5122241,
+  "initial_checkpoint": "/root/autodl-tmp/predformer_native128_20261021/best.pt",
+  "train_loss": "MSE",
+  "selection": "val MSE including epoch0",
+  "lpips": "Alex clamp[0,1] then [-1,1]",
+  "subset_hash": "a2a99e565398dcc6260619b5e1df34562432e5aadf98d47c4eb660ea7260e185",
+  "code_hash": "e2bb770d417024700c8206060c574e3d2c1c1d4574f1471c8deb34469e90f5d4",
+  "test_used": false,
+  "pre_caveat": "only location changes; h embeddings remain on first8 latent slots before TSST, not guaranteed pure future slots; support bounds injection not final output",
+  "checkpoint": "trainable parameters only; reconstruct from initial_checkpoint and Model"
+}

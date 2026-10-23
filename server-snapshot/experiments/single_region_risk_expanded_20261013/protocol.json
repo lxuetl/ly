@@ -1,0 +1,196 @@
+{
+  "counts": {
+    "train": 862,
+    "val": 280,
+    "test": 347
+  },
+  "videos": {
+    "train": 124,
+    "val": 40,
+    "test": 46
+  },
+  "validation_groups": {
+    "tune": [
+      [
+        "PointOdyssey",
+        "ani-s-819d66d2"
+      ],
+      [
+        "PointOdyssey",
+        "animal2-s-8c1c1167"
+      ],
+      [
+        "PointOdyssey",
+        "animal6-8c2a8601"
+      ],
+      [
+        "PointOdyssey",
+        "cab-h-bench-3rd-09c3ccd3"
+      ],
+      [
+        "PointOdyssey",
+        "character4-8f935c41"
+      ],
+      [
+        "PointOdyssey",
+        "cnb-dlab-0225-3rd-39164985"
+      ],
+      [
+        "PointOdyssey",
+        "cnb-dlab-0225-ego1-d3e843c1"
+      ],
+      [
+        "ds_mini",
+        "a16a72-3_obj_source_left"
+      ]
+    ],
+    "risk": [
+      [
+        "PointOdyssey",
+        "ani-3f79ccd1"
+      ],
+      [
+        "PointOdyssey",
+        "ani4-new-f-b93a97af"
+      ],
+      [
+        "PointOdyssey",
+        "character0-1b001011"
+      ],
+      [
+        "PointOdyssey",
+        "character2-f-607670e1"
+      ],
+      [
+        "PointOdyssey",
+        "character5-f-d47ba5fb"
+      ],
+      [
+        "PointOdyssey",
+        "footlab-3rd-af863ab1"
+      ],
+      [
+        "PointOdyssey",
+        "human-in-scene1-a4d85c1b"
+      ],
+      [
+        "PointOdyssey",
+        "scene-carb-h-tables-ego2-c96c3adf"
+      ],
+      [
+        "PointOdyssey",
+        "scene1-0129-ego-1202ea25"
+      ],
+      [
+        "adt_mini",
+        "Apartment_release_clean_seq134"
+      ],
+      [
+        "adt_mini",
+        "Apartment_release_clean_seq138"
+      ],
+      [
+        "adt_mini",
+        "Apartment_release_decoration_seq133"
+      ],
+      [
+        "adt_mini",
+        "Apartment_release_meal_seq138"
+      ],
+      [
+        "ds_mini",
+        "3c8664-3_obj_source_left"
+      ],
+      [
+        "po_mini",
+        "dancingroom1_3rd1"
+      ],
+      [
+        "po_mini",
+        "dancingroom1_3rd2"
+      ]
+    ],
+    "held": [
+      [
+        "PointOdyssey",
+        "ani18-new-223839f1"
+      ],
+      [
+        "PointOdyssey",
+        "ani3-new-f-c91d44ab"
+      ],
+      [
+        "PointOdyssey",
+        "animal3-989a0a71"
+      ],
+      [
+        "PointOdyssey",
+        "animal4-ea7f9e47"
+      ],
+      [
+        "PointOdyssey",
+        "character3-1702dd9e"
+      ],
+      [
+        "PointOdyssey",
+        "footlab-ego2-d4c96183"
+      ],
+      [
+        "PointOdyssey",
+        "kitchen-gfloor-ego1-641be0ca"
+      ],
+      [
+        "PointOdyssey",
+        "seminar-h52-3rd-4e5bad5a"
+      ],
+      [
+        "adt_mini",
+        "Apartment_release_clean_seq150"
+      ],
+      [
+        "adt_mini",
+        "Apartment_release_decoration_skeleton_seq131"
+      ],
+      [
+        "adt_mini",
+        "Apartment_release_decoration_skeleton_seq139"
+      ],
+      [
+        "adt_mini",
+        "Apartment_release_golden_skeleton_seq100"
+      ],
+      [
+        "adt_mini",
+        "Apartment_release_meal_seq139"
+      ],
+      [
+        "ds_mini",
+        "6fae75-3_obj_source_left"
+      ],
+      [
+        "ds_mini",
+        "fec654-3_obj_source_left"
+      ],
+      [
+        "pstudio_mini",
+        "boxes"
+      ]
+    ]
+  },
+  "train": "all train clips, inverse-original-video-frequency sampling",
+  "regions_per_clip": 16,
+  "epochs": 60,
+  "batch_size": 8,
+  "risk": "fixed selected checkpoint/threshold; one-sided exact binomial 95% upper bound on any-harm video probability <=20%; at least14 active videos; video bootstrap gain lower95>0",
+  "harm_epsilon": 1e-08,
+  "risk_limit": 0.2,
+  "risk_caveat": "exploratory IID-video assumption; video pool used in prior experiments; not a safety guarantee",
+  "threshold_selection": "only tuning videos, mean video gain maximized with empirical any-harm risk<=10% and >=5 active videos; otherwise abstain",
+  "risk_failure": "abstain everywhere, never retune on risk or heldout",
+  "test_used": false,
+  "reference": 0,
+  "units": "local-equivalent utility = full composite marginal gain *256/1e-4; unclipped evaluation, clipped+-10 training",
+  "architecture": "one two-frame hard replacement among 16 observed-support sampled locations and 7 alternatives; or abstain",
+  "init": "from scratch",
+  "lr": 0.001
+}

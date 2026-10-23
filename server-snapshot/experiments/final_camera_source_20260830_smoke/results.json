@@ -1,0 +1,701 @@
+{
+  "aggregate": {
+    "base_only": {
+      "num_sequences": 2,
+      "MAE": 0.06231967359781265,
+      "MSE": 0.008635913021862507,
+      "RMSE": 0.09292961326650674,
+      "PSNR": 20.636917403900746,
+      "SSIM": 0.6822349727153778,
+      "LPIPS": NaN,
+      "temporal_delta_MAE": 0.023343777284026146,
+      "dynamic_MAE": 0.12005124332373278,
+      "dynamic_MSE": 0.023647597744651475,
+      "dynamic_pixel_values": 49932.0,
+      "dynamic_PSNR": 16.26212970749917
+    },
+    "d4rt_uv_xyz": {
+      "num_sequences": 2,
+      "MAE": 0.049226175993680954,
+      "MSE": 0.006934407167136669,
+      "RMSE": 0.08327308789240777,
+      "PSNR": 21.58990661489963,
+      "SSIM": 0.7379376590251923,
+      "LPIPS": NaN,
+      "temporal_delta_MAE": 0.020170106552541256,
+      "dynamic_MAE": 0.11387875205592106,
+      "dynamic_MSE": 0.022109841112428526,
+      "dynamic_pixel_values": 49932.0,
+      "dynamic_PSNR": 16.55414378373049
+    },
+    "d4rt_uv_only": {
+      "num_sequences": 2,
+      "MAE": 0.04922559857368469,
+      "MSE": 0.006933861179277301,
+      "RMSE": 0.08326980953068945,
+      "PSNR": 21.590248574701256,
+      "SSIM": 0.7379664182662964,
+      "LPIPS": NaN,
+      "temporal_delta_MAE": 0.020169408060610294,
+      "dynamic_MAE": 0.1138833774871325,
+      "dynamic_MSE": 0.022111095259474762,
+      "dynamic_pixel_values": 49932.0,
+      "dynamic_PSNR": 16.55389744378995
+    },
+    "affine_2d": {
+      "num_sequences": 2,
+      "MAE": 0.048776088282465935,
+      "MSE": 0.006918786093592644,
+      "RMSE": 0.08317924076109762,
+      "PSNR": 21.59970096164594,
+      "SSIM": 0.7389057874679565,
+      "LPIPS": NaN,
+      "temporal_delta_MAE": 0.01995938178151846,
+      "dynamic_MAE": 0.11405574569696036,
+      "dynamic_MSE": 0.022140517598074005,
+      "dynamic_pixel_values": 49932.0,
+      "dynamic_PSNR": 16.548122304600145
+    },
+    "homography_2d": {
+      "num_sequences": 2,
+      "MAE": 0.04881036840379238,
+      "MSE": 0.006903994595631957,
+      "RMSE": 0.08309027979030975,
+      "PSNR": 21.608995572534692,
+      "SSIM": 0.7393664121627808,
+      "LPIPS": NaN,
+      "temporal_delta_MAE": 0.019962326623499393,
+      "dynamic_MAE": 0.11395942329223994,
+      "dynamic_MSE": 0.02208808667287511,
+      "dynamic_pixel_values": 49932.0,
+      "dynamic_PSNR": 16.558419022091798
+    },
+    "raft_small_2d": {
+      "num_sequences": 2,
+      "MAE": 0.04916730150580406,
+      "MSE": 0.006917892722412944,
+      "RMSE": 0.08317387043064031,
+      "PSNR": 21.600261769885165,
+      "SSIM": 0.7381666898727417,
+      "LPIPS": NaN,
+      "temporal_delta_MAE": 0.020050834864377975,
+      "dynamic_MAE": 0.1139247472265406,
+      "dynamic_MSE": 0.02207656832237155,
+      "dynamic_pixel_values": 49932.0,
+      "dynamic_PSNR": 16.560684343162816
+    }
+  },
+  "per_domain": {
+    "adt_mini": {
+      "base_only": {
+        "num_sequences": 2,
+        "MAE": 0.06231967359781265,
+        "MSE": 0.008635913021862507,
+        "RMSE": 0.09292961326650674,
+        "PSNR": 20.636917403900746,
+        "SSIM": 0.6822349727153778,
+        "LPIPS": NaN,
+        "temporal_delta_MAE": 0.023343777284026146,
+        "dynamic_MAE": 0.12005124332373278,
+        "dynamic_MSE": 0.023647597744651475,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.26212970749917
+      },
+      "d4rt_uv_xyz": {
+        "num_sequences": 2,
+        "MAE": 0.049226175993680954,
+        "MSE": 0.006934407167136669,
+        "RMSE": 0.08327308789240777,
+        "PSNR": 21.58990661489963,
+        "SSIM": 0.7379376590251923,
+        "LPIPS": NaN,
+        "temporal_delta_MAE": 0.020170106552541256,
+        "dynamic_MAE": 0.11387875205592106,
+        "dynamic_MSE": 0.022109841112428526,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.55414378373049
+      },
+      "d4rt_uv_only": {
+        "num_sequences": 2,
+        "MAE": 0.04922559857368469,
+        "MSE": 0.006933861179277301,
+        "RMSE": 0.08326980953068945,
+        "PSNR": 21.590248574701256,
+        "SSIM": 0.7379664182662964,
+        "LPIPS": NaN,
+        "temporal_delta_MAE": 0.020169408060610294,
+        "dynamic_MAE": 0.1138833774871325,
+        "dynamic_MSE": 0.022111095259474762,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.55389744378995
+      },
+      "affine_2d": {
+        "num_sequences": 2,
+        "MAE": 0.048776088282465935,
+        "MSE": 0.006918786093592644,
+        "RMSE": 0.08317924076109762,
+        "PSNR": 21.59970096164594,
+        "SSIM": 0.7389057874679565,
+        "LPIPS": NaN,
+        "temporal_delta_MAE": 0.01995938178151846,
+        "dynamic_MAE": 0.11405574569696036,
+        "dynamic_MSE": 0.022140517598074005,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.548122304600145
+      },
+      "homography_2d": {
+        "num_sequences": 2,
+        "MAE": 0.04881036840379238,
+        "MSE": 0.006903994595631957,
+        "RMSE": 0.08309027979030975,
+        "PSNR": 21.608995572534692,
+        "SSIM": 0.7393664121627808,
+        "LPIPS": NaN,
+        "temporal_delta_MAE": 0.019962326623499393,
+        "dynamic_MAE": 0.11395942329223994,
+        "dynamic_MSE": 0.02208808667287511,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.558419022091798
+      },
+      "raft_small_2d": {
+        "num_sequences": 2,
+        "MAE": 0.04916730150580406,
+        "MSE": 0.006917892722412944,
+        "RMSE": 0.08317387043064031,
+        "PSNR": 21.600261769885165,
+        "SSIM": 0.7381666898727417,
+        "LPIPS": NaN,
+        "temporal_delta_MAE": 0.020050834864377975,
+        "dynamic_MAE": 0.1139247472265406,
+        "dynamic_MSE": 0.02207656832237155,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.560684343162816
+      }
+    }
+  },
+  "per_source_sequence": {
+    "base_only": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.06231967359781265,
+        "MSE": 0.008635913021862507,
+        "RMSE": 0.09292961326650674,
+        "PSNR": 20.636917403900746,
+        "SSIM": 0.6822349727153778,
+        "LPIPS": NaN,
+        "temporal_delta_MAE": 0.023343777284026146,
+        "dynamic_MAE": 0.12005124332373278,
+        "dynamic_MSE": 0.023647597744651475,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.26212970749917,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "base_only",
+        "num_clips": 2
+      }
+    ],
+    "d4rt_uv_xyz": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.049226175993680954,
+        "MSE": 0.006934407167136669,
+        "RMSE": 0.08327308789240777,
+        "PSNR": 21.58990661489963,
+        "SSIM": 0.7379376590251923,
+        "LPIPS": NaN,
+        "temporal_delta_MAE": 0.020170106552541256,
+        "dynamic_MAE": 0.11387875205592106,
+        "dynamic_MSE": 0.022109841112428526,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.55414378373049,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "d4rt_uv_xyz",
+        "num_clips": 2
+      }
+    ],
+    "d4rt_uv_only": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.04922559857368469,
+        "MSE": 0.006933861179277301,
+        "RMSE": 0.08326980953068945,
+        "PSNR": 21.590248574701256,
+        "SSIM": 0.7379664182662964,
+        "LPIPS": NaN,
+        "temporal_delta_MAE": 0.020169408060610294,
+        "dynamic_MAE": 0.1138833774871325,
+        "dynamic_MSE": 0.022111095259474762,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.55389744378995,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "d4rt_uv_only",
+        "num_clips": 2
+      }
+    ],
+    "affine_2d": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.048776088282465935,
+        "MSE": 0.006918786093592644,
+        "RMSE": 0.08317924076109762,
+        "PSNR": 21.59970096164594,
+        "SSIM": 0.7389057874679565,
+        "LPIPS": NaN,
+        "temporal_delta_MAE": 0.01995938178151846,
+        "dynamic_MAE": 0.11405574569696036,
+        "dynamic_MSE": 0.022140517598074005,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.548122304600145,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "affine_2d",
+        "num_clips": 2
+      }
+    ],
+    "homography_2d": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.04881036840379238,
+        "MSE": 0.006903994595631957,
+        "RMSE": 0.08309027979030975,
+        "PSNR": 21.608995572534692,
+        "SSIM": 0.7393664121627808,
+        "LPIPS": NaN,
+        "temporal_delta_MAE": 0.019962326623499393,
+        "dynamic_MAE": 0.11395942329223994,
+        "dynamic_MSE": 0.02208808667287511,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.558419022091798,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "homography_2d",
+        "num_clips": 2
+      }
+    ],
+    "raft_small_2d": [
+      {
+        "num_sequences": 2,
+        "MAE": 0.04916730150580406,
+        "MSE": 0.006917892722412944,
+        "RMSE": 0.08317387043064031,
+        "PSNR": 21.600261769885165,
+        "SSIM": 0.7381666898727417,
+        "LPIPS": NaN,
+        "temporal_delta_MAE": 0.020050834864377975,
+        "dynamic_MAE": 0.1139247472265406,
+        "dynamic_MSE": 0.02207656832237155,
+        "dynamic_pixel_values": 49932.0,
+        "dynamic_PSNR": 16.560684343162816,
+        "source_sequence": "Apartment_release_clean_seq133",
+        "domain": "adt_mini",
+        "condition": "raft_small_2d",
+        "num_clips": 2
+      }
+    ]
+  },
+  "paired_bootstrap_vs_correct": {
+    "base_only": {
+      "MAE": {
+        "degradation": 0.013093497604131699,
+        "ci95": [
+          0.013093497604131699,
+          0.013093497604131699
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "MSE": {
+        "degradation": 0.0017015058547258377,
+        "ci95": [
+          0.0017015058547258377,
+          0.0017015058547258377
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "LPIPS": {
+        "degradation": NaN,
+        "ci95": [
+          NaN,
+          NaN
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "temporal_delta_MAE": {
+        "degradation": 0.00317367073148489,
+        "ci95": [
+          0.00317367073148489,
+          0.00317367073148489
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "dynamic_MSE": {
+        "degradation": 0.0015377566322229488,
+        "ci95": [
+          0.0015377566322229488,
+          0.0015377566322229488
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "PSNR": {
+        "degradation": 0.9529892109988829,
+        "ci95": [
+          0.9529892109988829,
+          0.9529892109988829
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "SSIM": {
+        "degradation": 0.05570268630981445,
+        "ci95": [
+          0.05570268630981445,
+          0.05570268630981445
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      }
+    },
+    "d4rt_uv_only": {
+      "MAE": {
+        "degradation": -5.774199962615967e-07,
+        "ci95": [
+          -5.774199962615967e-07,
+          -5.774199962615967e-07
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "MSE": {
+        "degradation": -5.459878593683243e-07,
+        "ci95": [
+          -5.459878593683243e-07,
+          -5.459878593683243e-07
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "LPIPS": {
+        "degradation": NaN,
+        "ci95": [
+          NaN,
+          NaN
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "temporal_delta_MAE": {
+        "degradation": -6.984919309616089e-07,
+        "ci95": [
+          -6.984919309616089e-07,
+          -6.984919309616089e-07
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "dynamic_MSE": {
+        "degradation": 1.2541470462354432e-06,
+        "ci95": [
+          1.2541470462354432e-06,
+          1.2541470462354432e-06
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "PSNR": {
+        "degradation": -0.00034195980162721185,
+        "ci95": [
+          -0.00034195980162721185,
+          -0.00034195980162721185
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "SSIM": {
+        "degradation": -2.8759241104125977e-05,
+        "ci95": [
+          -2.8759241104125977e-05,
+          -2.8759241104125977e-05
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      }
+    },
+    "affine_2d": {
+      "MAE": {
+        "degradation": -0.0004500877112150192,
+        "ci95": [
+          -0.0004500877112150192,
+          -0.0004500877112150192
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "MSE": {
+        "degradation": -1.562107354402542e-05,
+        "ci95": [
+          -1.562107354402542e-05,
+          -1.562107354402542e-05
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "LPIPS": {
+        "degradation": NaN,
+        "ci95": [
+          NaN,
+          NaN
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "temporal_delta_MAE": {
+        "degradation": -0.00021072477102279663,
+        "ci95": [
+          -0.00021072477102279663,
+          -0.00021072477102279663
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "dynamic_MSE": {
+        "degradation": 3.067648564547901e-05,
+        "ci95": [
+          3.067648564547901e-05,
+          3.067648564547901e-05
+        ],
+        "probability_degradation_gt_0": 1.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "PSNR": {
+        "degradation": -0.009794346746311078,
+        "ci95": [
+          -0.009794346746311078,
+          -0.009794346746311078
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "SSIM": {
+        "degradation": -0.0009681284427642822,
+        "ci95": [
+          -0.0009681284427642822,
+          -0.0009681284427642822
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      }
+    },
+    "homography_2d": {
+      "MAE": {
+        "degradation": -0.0004158075898885727,
+        "ci95": [
+          -0.0004158075898885727,
+          -0.0004158075898885727
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "MSE": {
+        "degradation": -3.0412571504712105e-05,
+        "ci95": [
+          -3.0412571504712105e-05,
+          -3.0412571504712105e-05
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "LPIPS": {
+        "degradation": NaN,
+        "ci95": [
+          NaN,
+          NaN
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "temporal_delta_MAE": {
+        "degradation": -0.0002077799290418625,
+        "ci95": [
+          -0.0002077799290418625,
+          -0.0002077799290418625
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "dynamic_MSE": {
+        "degradation": -2.17544395534168e-05,
+        "ci95": [
+          -2.17544395534168e-05,
+          -2.17544395534168e-05
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "PSNR": {
+        "degradation": -0.019088957635062798,
+        "ci95": [
+          -0.019088957635062798,
+          -0.019088957635062798
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "SSIM": {
+        "degradation": -0.001428753137588501,
+        "ci95": [
+          -0.001428753137588501,
+          -0.001428753137588501
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      }
+    },
+    "raft_small_2d": {
+      "MAE": {
+        "degradation": -5.887448787689209e-05,
+        "ci95": [
+          -5.887448787689209e-05,
+          -5.887448787689209e-05
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "MSE": {
+        "degradation": -1.651444472372532e-05,
+        "ci95": [
+          -1.651444472372532e-05,
+          -1.651444472372532e-05
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "LPIPS": {
+        "degradation": NaN,
+        "ci95": [
+          NaN,
+          NaN
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "temporal_delta_MAE": {
+        "degradation": -0.00011927168816328049,
+        "ci95": [
+          -0.00011927168816328049,
+          -0.00011927168816328049
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "dynamic_MSE": {
+        "degradation": -3.327279005697556e-05,
+        "ci95": [
+          -3.327279005697556e-05,
+          -3.327279005697556e-05
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "PSNR": {
+        "degradation": -0.010355154985536075,
+        "ci95": [
+          -0.010355154985536075,
+          -0.010355154985536075
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      },
+      "SSIM": {
+        "degradation": -0.00022903084754943848,
+        "ci95": [
+          -0.00022903084754943848,
+          -0.00022903084754943848
+        ],
+        "probability_degradation_gt_0": 0.0,
+        "bootstrap_unit": "source_sequence_equal_weight",
+        "num_source_sequences": 1
+      }
+    }
+  },
+  "meta": {
+    "test_sequences": 2,
+    "split": {
+      "legacy_subsets": [
+        "adt_mini",
+        "ds_mini",
+        "po_mini",
+        "pstudio_mini"
+      ],
+      "pointodyssey_usable": {
+        "train": 248,
+        "val": 90,
+        "test": 160
+      },
+      "totals": {
+        "train": 356,
+        "val": 130,
+        "test": 199
+      }
+    },
+    "checkpoint": "/autodl-fs/data/d4rt_training/decisive_abc_20260828/C_d4rt_on_B/best.pt",
+    "checkpoint_sha256": "9ea25dc982f1d9a7e464428b269fed1877aa9bac95599f141406df879f74155e",
+    "checkpoint_epoch": 6,
+    "model_source": "/root/autodl-tmp/Open-d4rt/forecasting/capsr_calibrated_model.py",
+    "model_source_sha256": "ea9b5d1d345fa83fbdbdb7cd6b2ce5cefdb488003ad577d9367250b327b42bf8",
+    "backbone_checkpoint": "/autodl-fs/data/d4rt_training/decisive_abc_20260828/B_composite_simvp/best.pt",
+    "trajectory_checkpoint": "/autodl-fs/data/d4rt_training/pointodyssey50_uv_velocity_residual_60/best.pt",
+    "future_frames": 8,
+    "conditions": {
+      "d4rt_uv_xyz": "D4RT-predicted future UV and XYZ; camera path only",
+      "d4rt_uv_only": "D4RT-predicted future UV with last valid XYZ repeated",
+      "affine_2d": "robust 2-D partial affine fitted from the last two observed sparse UV frames",
+      "homography_2d": "robust 2-D homography fitted from the last two observed sparse UV frames",
+      "raft_small_2d": "pretrained torchvision RAFT-Small flow from the last two RGB frames, linearly extrapolated",
+      "base_only": "strong loss-matched SimVP checkpoint"
+    },
+    "path_variants": "all motion-source conditions use the frozen camera-only renderer",
+    "bootstrap_samples": 100,
+    "seed": 42,
+    "training": false
+  }
+}

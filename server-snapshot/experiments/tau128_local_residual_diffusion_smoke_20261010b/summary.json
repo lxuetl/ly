@@ -1,0 +1,144 @@
+{
+  "test": {
+    "metrics": {
+      "tau": {
+        "mse": 0.007403247058391571,
+        "mae": 0.05124097689986229,
+        "hole_mse": 0.01527183223515749,
+        "temporal_mae": 0.02504519186913967,
+        "pixel_delta_from_tau": 0.0
+      },
+      "base": {
+        "mse": 0.007330256514251232,
+        "mae": 0.051014870405197144,
+        "hole_mse": 0.014901583082973957,
+        "temporal_mae": 0.025067443028092384,
+        "pixel_delta_from_tau": 0.0007485550595447421
+      },
+      "geometry": {
+        "mse": 0.007330921944230795,
+        "mae": 0.05102076753973961,
+        "hole_mse": 0.014907441101968288,
+        "temporal_mae": 0.025081871077418327,
+        "pixel_delta_from_tau": 0.0009487022180110216
+      },
+      "rgb": {
+        "mse": 0.007330921944230795,
+        "mae": 0.05102076753973961,
+        "hole_mse": 0.014907441101968288,
+        "temporal_mae": 0.025081871077418327,
+        "pixel_delta_from_tau": 0.0009487022180110216
+      }
+    },
+    "hole_mean": 0.004648223984986544,
+    "batches": 1
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "seconds": 1.9996929168701172,
+      "train_batches": 2,
+      "train_loss": {
+        "geometry": 1.0008965730667114,
+        "rgb": 1.0008965730667114
+      },
+      "train_hole_mean": 0.044105466455221176,
+      "val": {
+        "metrics": {
+          "tau": {
+            "mse": 0.008618386462330818,
+            "mae": 0.05070500820875168,
+            "hole_mse": 0.017006441950798035,
+            "temporal_mae": 0.03743072226643562,
+            "pixel_delta_from_tau": 0.0
+          },
+          "base": {
+            "mse": 0.008743729442358017,
+            "mae": 0.050923846662044525,
+            "hole_mse": 0.0181393101811409,
+            "temporal_mae": 0.037485573440790176,
+            "pixel_delta_from_tau": 0.0006415718817152083
+          },
+          "geometry": {
+            "mse": 0.008745787665247917,
+            "mae": 0.05093973129987717,
+            "hole_mse": 0.018233859911561012,
+            "temporal_mae": 0.03749958798289299,
+            "pixel_delta_from_tau": 0.0007333612884394825
+          },
+          "rgb": {
+            "mse": 0.008745787665247917,
+            "mae": 0.05093973129987717,
+            "hole_mse": 0.018233858048915863,
+            "temporal_mae": 0.03749958798289299,
+            "pixel_delta_from_tau": 0.0007333612884394825
+          }
+        },
+        "hole_mean": 0.0030417756643146276,
+        "batches": 1
+      }
+    }
+  ],
+  "config": {
+    "config": {
+      "d4rt_root": "/root/autodl-tmp/Open-d4rt",
+      "cache_root": "data/d4rt_forecasting_cache",
+      "po_cache": "/root/autodl-fs/d4rt_datasets/d4rt_forecasting_cache_po_full",
+      "po_split_manifest": "/root/autodl-fs/d4rt_datasets/worldtrack_pointodyssey_full_v2/po50/split_manifest.json",
+      "sample_manifest": "/root/autodl-fs/d4rt_training/tau_v2_direction_rank_pb002_20261009/split_paths.json",
+      "backbone_checkpoint": "/root/autodl-fs/d4rt_training/tau128_full_fair_fast_20261009/best.pt",
+      "trajectory_checkpoint": "/root/autodl-fs/d4rt_training/pointodyssey_full_uv_velocity_residual_60/best.pt",
+      "geometry_checkpoint": "/root/autodl-fs/d4rt_training/tau128_budget_sweep_matched_20261009/geometry_b2000_best.pt",
+      "output_dir": "/root/autodl-fs/d4rt_training/tau128_local_residual_diffusion_smoke_20261010b",
+      "legacy_subsets": "adt_mini,ds_mini,po_mini,pstudio_mini",
+      "image_size": 128,
+      "epochs": 1,
+      "batch_size": 2,
+      "lr": 0.0001,
+      "num_workers": 0,
+      "max_train": 4,
+      "max_val": 2,
+      "max_test": 2,
+      "val_samples": 2,
+      "steps": 100,
+      "sample_steps": 2,
+      "residual_scale": 0.2,
+      "local_cap": 0.08,
+      "visible_gate": 0.8,
+      "mask_min_mean": 5e-05,
+      "seed": 42,
+      "split_seed": 42,
+      "device": "cuda"
+    },
+    "split": {
+      "legacy_subsets": [
+        "adt_mini",
+        "ds_mini",
+        "po_mini",
+        "pstudio_mini"
+      ],
+      "pointodyssey_usable": {
+        "train": 754,
+        "val": 240,
+        "test": 308
+      },
+      "totals": {
+        "train": 862,
+        "val": 280,
+        "test": 347
+      },
+      "used": {
+        "train": 4,
+        "val": 2,
+        "test": 2
+      },
+      "split_seed": 42
+    },
+    "counts": {
+      "train": 4,
+      "val": 2,
+      "test": 2
+    },
+    "trainable_params_each": 403203
+  }
+}

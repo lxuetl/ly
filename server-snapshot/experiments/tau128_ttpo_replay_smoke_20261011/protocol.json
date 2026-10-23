@@ -1,0 +1,27 @@
+{
+  "config": {
+    "backbone_checkpoint": "/root/autodl-fs/d4rt_training/tau128_full_fair_fast_20261009/best.pt",
+    "trajectory_checkpoint": "/root/autodl-fs/d4rt_training/pointodyssey_full_uv_velocity_residual_60/best.pt",
+    "geometry_checkpoint": "/root/autodl-fs/d4rt_training/tau128_budget_sweep_matched_20261009/geometry_b2000_best.pt",
+    "image_size": 128
+  },
+  "cutoffs": [
+    8,
+    12
+  ],
+  "scales": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "prefix_geometry": "D4RT rerun on prefix-only raw RGB",
+  "TAU_padding": "left repeat first frame to 16",
+  "future_label_access": "metrics only, after replay choices",
+  "training": false,
+  "selection_rule": "choose replay rule or fixed scale by validation MSE only",
+  "dynamic_replay": "observed RGB change proxy, not object GT",
+  "bootstrap": "original-video cluster resampling, clip-weighted mean",
+  "budget": "shared maximum 0.002, candidates vary actual correction amplitude"
+}

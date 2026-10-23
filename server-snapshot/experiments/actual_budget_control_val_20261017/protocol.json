@@ -1,0 +1,15 @@
+{
+  "split": "original validation only; no TUM/test",
+  "context": 16,
+  "forecast": 8,
+  "resolution": 128,
+  "training": false,
+  "thresholds": "unchanged leave-original-video-out thresholds from parent",
+  "parent_sha256": "1676877a54a4aac5ddaa31d5e7e9bf7208a8957544e4f946f3a14c548f1efa7f",
+  "script_sha256": "a37671366bc554a7a25cd47e9ce75e1f6748375f25853bbebf26c0684bc7b3ea",
+  "gate_smoothing": "causal temporal 0.5 then spatial 9x9 replicate unchanged",
+  "control": "one uniform propagation coefficient per clip, constant across all 8 horizons; constant mask invariant under same smoothing operators",
+  "budget": "mean absolute final half-rounded output minus TAU over T,C,H,W",
+  "matching": "24-step bisection in [0,1], select nearest endpoint; target is gate budget, NEVER future ground truth",
+  "caveat": "budget-matched diagnostic control, not a globally fixed deployment coefficient; no quality-based parameter selection"
+}

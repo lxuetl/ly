@@ -1,0 +1,42 @@
+{
+  "training": false,
+  "weights_updated": false,
+  "resolution": 64,
+  "seeds": [
+    42,
+    123,
+    3407
+  ],
+  "paths": {
+    "train": 862,
+    "val": 280,
+    "test": 347
+  },
+  "all_cache_files_exist": true,
+  "scope": "native64 separate results, never compare absolute scores directly with TAU128",
+  "shuffled_control": "reverse context token time within video, matching original batch1 evaluator; not cross-video shuffle",
+  "future_barrier": "RGB0:16 and observed-context Omega cache only; all16 normal variants locked and hashed before future RGB16:24 decode",
+  "hashes": {
+    "/root/autodl-fs/d4rt_training/vggt_omega_spatial_v41_20261004/seed_42/best.pt": "d219b30716700fbb74e7bac7738d89fbc261a0ebdaad415e68028be991ae13b1",
+    "/root/autodl-fs/d4rt_training/four_backbone_fair64_bs2_20260927/tau/best.pt": "0ba26d4e6f050c7b3097893a0b67e32438de8a3d614158a145d22b10f12884ed",
+    "/root/autodl-fs/d4rt_training/vggt_omega_spatial_v41_20261004/seed_123/best.pt": "7d843071d69ba02535339bcc70fe394da716319154447407fb4e0834fa8800e4",
+    "/root/autodl-fs/d4rt_training/vggt_omega_spatial_v41_20261004/seed_3407/best.pt": "fb2f52527b55f67586cda0785dba712db815dad55f6e3bedf0f9f68767c14c7f",
+    "/root/autodl-tmp/Open-d4rt/experiments_20261018/full_gpu_omega.py": "b3903d9cc54e76cc846fdf77b15a45e981f8a80edec046ac15ecc19b46b371c2",
+    "/root/autodl-tmp/Open-d4rt/experiments_20261018/full_gpu_eval.py": "ebbb5d05d9bb2febc279bb936b91d41457b0a0138f0478da019e4f95e003f318",
+    "/root/autodl-fs/d4rt_training/propagation_fusion_20261014/split_paths.json": "f9c9646f8ce860f595baf1a6bf2eab302be29413a0929c192b22cd97b2cf9dca",
+    "/root/autodl-fs/d4rt_datasets/vggt_omega_spatial_v4_20261002/manifest.json": "370313d354b2225c45b26f266b9501319ae723b432371713bcedb508266b97bc",
+    "/root/autodl-tmp/Open-d4rt/precompute_vggt_omega_spatial_v4.py": "d201f3a632ae7e2960f258180b4abe72c16f015ca4595f7696bada2e26d28d3b",
+    "/root/autodl-tmp/Open-d4rt/train_vggt_omega_spatial_v41.py": "2b4145436398e562b9b62c4236d133291a30c457d7d151a0956b0e930e1aef76",
+    "/root/autodl-tmp/Open-d4rt/train_vggt_omega_spatial_v4.py": "bb0f3b180406acad9aa222ec0f8c2c574c1b176a81d75a29e0941f9dad260d77"
+  },
+  "cache_provenance": "manifest claim+generator source+shape/finite/hash checks; not regeneration of the 1B foundation model",
+  "variants": [
+    "tau64",
+    "full",
+    "time_reversed",
+    "no_patch",
+    "patch_only",
+    "zero_geometry"
+  ],
+  "cache_context_frames": 16
+}

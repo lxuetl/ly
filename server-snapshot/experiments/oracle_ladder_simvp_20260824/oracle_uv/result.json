@@ -1,0 +1,106 @@
+{
+  "mode": "oracle_uv",
+  "num_test_clips": 199,
+  "metrics": {
+    "MAE": 0.17599857410094646,
+    "MSE": 0.04381061987124596,
+    "RMSE": 0.20930986568063617,
+    "PSNR": 13.584206019974213,
+    "SSIM": 0.5462719798088074,
+    "LPIPS": 0.3862378763493581,
+    "temporal_delta_MAE": 0.04691642618908155,
+    "temporal_delta_MSE": 0.008081354065509623,
+    "per_horizon": {
+      "t+1": {
+        "MAE": 0.1780109685819153,
+        "MSE": 0.04428141738071264,
+        "PSNR": 13.537784864660662,
+        "SSIM": 0.6410225978748283,
+        "LPIPS": 0.33633119324643407
+      },
+      "t+2": {
+        "MAE": 0.17769686609406768,
+        "MSE": 0.044301023678713705,
+        "PSNR": 13.535862382717372,
+        "SSIM": 0.6126201003789902,
+        "LPIPS": 0.34580442264451455
+      },
+      "t+3": {
+        "MAE": 0.1735098509857403,
+        "MSE": 0.04223567705564014,
+        "PSNR": 13.743205395026068,
+        "SSIM": 0.5747446638705144,
+        "LPIPS": 0.3715592630993781
+      },
+      "t+4": {
+        "MAE": 0.17994206346309366,
+        "MSE": 0.0454264119738585,
+        "PSNR": 13.426915647810706,
+        "SSIM": 0.5527285958953838,
+        "LPIPS": 0.3647644444925701
+      },
+      "t+5": {
+        "MAE": 0.16214170155912588,
+        "MSE": 0.037618384412622434,
+        "PSNR": 14.2459985992199,
+        "SSIM": 0.5366115040665296,
+        "LPIPS": 0.40541022079973366
+      },
+      "t+6": {
+        "MAE": 0.1718852140346364,
+        "MSE": 0.04191246861045934,
+        "PSNR": 13.776567588195366,
+        "SSIM": 0.5098793326161015,
+        "LPIPS": 0.416567801979918
+      },
+      "t+7": {
+        "MAE": 0.18565798794204866,
+        "MSE": 0.048906876432586156,
+        "PSNR": 13.106300736622698,
+        "SSIM": 0.47715633209027236,
+        "LPIPS": 0.4114369660915442
+      },
+      "t+8": {
+        "MAE": 0.17914393990982316,
+        "MSE": 0.04580270057041791,
+        "PSNR": 13.39108914829016,
+        "SSIM": 0.4654102823018429,
+        "LPIPS": 0.4380286955953243
+      }
+    },
+    "dynamic_MAE": 0.17327204963834805,
+    "dynamic_MSE": 0.0480585705984841,
+    "dynamic_PSNR": 13.182291505196886,
+    "motion_mask_IoU": 0.13784604666490582,
+    "motion_mask_F1": 0.24229296585235016,
+    "motion_mask_precision": 0.14246911897384124,
+    "motion_mask_recall": 0.8094511696719033,
+    "geometry_mask_fraction": 0.01779760399702368
+  },
+  "protocol": {
+    "training": false,
+    "backbone": "simvp",
+    "backbone_checkpoint": "outputs/simvp_dynamic_ablation/no_geometry/best.pt",
+    "corrector_checkpoint": "/autodl-fs/data/d4rt_training/backbone_v7_parallel_20260821/simvp/reliable_geometry_motion_comp/best.pt",
+    "trajectory_checkpoint": "/autodl-fs/data/d4rt_training/pointodyssey50_uv_velocity_residual_60/best.pt",
+    "split": {
+      "legacy_subsets": [
+        "adt_mini",
+        "ds_mini",
+        "po_mini",
+        "pstudio_mini"
+      ],
+      "pointodyssey_usable": {
+        "train": 248,
+        "val": 90,
+        "test": 160
+      },
+      "totals": {
+        "train": 356,
+        "val": 130,
+        "test": 199
+      }
+    },
+    "oracle_uv_without_visibility": "teacher UV with history-derived availability/confidence"
+  }
+}

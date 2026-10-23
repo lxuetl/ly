@@ -1,0 +1,152 @@
+{
+  "videos": 7,
+  "protocol": "leave-original-video-out, fit on other videos replay only; heldout temporal windows never used to fit; no test split use",
+  "modes": {
+    "quality": {
+      "accepted": 7,
+      "safe_selected": 0,
+      "harmful_selected": 7,
+      "mean_spearman": -0.045238095238095265,
+      "mean_pair_accuracy": 0.47619047619047616,
+      "deltas": {
+        "mse": {
+          "mean": 0.00041825868122811826,
+          "ci95": [
+            0.0001065156954739775,
+            0.0007462753980819668
+          ]
+        },
+        "lpips": {
+          "mean": 0.08949896267482213,
+          "ci95": [
+            0.04479953965970448,
+            0.14169489100043262
+          ]
+        },
+        "temporal": {
+          "mean": 0.0014493299781211785,
+          "ci95": [
+            0.0007454619875976018,
+            0.0020595876100872245
+          ]
+        }
+      },
+      "stress_rejected": {
+        "stress_blur": 6,
+        "stress_sharpen": 0,
+        "stress_flicker": 6,
+        "stress_texture": 6
+      }
+    },
+    "content": {
+      "accepted": 0,
+      "safe_selected": 0,
+      "harmful_selected": 0,
+      "mean_spearman": 0.9690476190476192,
+      "mean_pair_accuracy": 0.9563492063492064,
+      "deltas": {
+        "mse": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "lpips": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "temporal": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "stress_rejected": {
+        "stress_blur": 7,
+        "stress_sharpen": 7,
+        "stress_flicker": 7,
+        "stress_texture": 7
+      }
+    },
+    "temporal": {
+      "accepted": 1,
+      "safe_selected": 0,
+      "harmful_selected": 1,
+      "mean_spearman": 0.9428571428571428,
+      "mean_pair_accuracy": 0.9246031746031748,
+      "deltas": {
+        "mse": {
+          "mean": -1.4562558914933885e-05,
+          "ci95": [
+            -4.368767674480166e-05,
+            0.0
+          ]
+        },
+        "lpips": {
+          "mean": 0.00221841675894601,
+          "ci95": [
+            0.0,
+            0.0066552502768380305
+          ]
+        },
+        "temporal": {
+          "mean": -2.2222420998982022e-05,
+          "ci95": [
+            -6.666726299694606e-05,
+            0.0
+          ]
+        }
+      },
+      "stress_rejected": {
+        "stress_blur": 6,
+        "stress_sharpen": 7,
+        "stress_flicker": 7,
+        "stress_texture": 7
+      }
+    },
+    "combined": {
+      "accepted": 0,
+      "safe_selected": 0,
+      "harmful_selected": 0,
+      "mean_spearman": 0.9690476190476192,
+      "mean_pair_accuracy": 0.9563492063492064,
+      "deltas": {
+        "mse": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "lpips": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "temporal": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "stress_rejected": {
+        "stress_blur": 7,
+        "stress_sharpen": 7,
+        "stress_flicker": 7,
+        "stress_texture": 7
+      }
+    }
+  },
+  "replay_safe_repairs": 0,
+  "heldout_safe_repairs": 0
+}

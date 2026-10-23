@@ -1,0 +1,638 @@
+{
+  "no_geometry": {
+    "mode": "no_geometry",
+    "num_test_clips": 199,
+    "metrics": {
+      "MAE": 0.17819967469078812,
+      "MSE": 0.04479088342687742,
+      "RMSE": 0.2116385679097206,
+      "PSNR": 13.488103717228855,
+      "SSIM": 0.552725076675415,
+      "LPIPS": 0.4329183267888112,
+      "temporal_delta_MAE": 0.04638934746958702,
+      "temporal_delta_MSE": 0.007978463048580254,
+      "per_horizon": {
+        "t+1": {
+          "MAE": 0.1794669283569558,
+          "MSE": 0.04489208298300079,
+          "PSNR": 13.478302429602195,
+          "SSIM": 0.6455992984412303,
+          "LPIPS": 0.3511099107750696
+        },
+        "t+2": {
+          "MAE": 0.17953019720226077,
+          "MSE": 0.04509015508944565,
+          "PSNR": 13.459182709171017,
+          "SSIM": 0.6192230862289217,
+          "LPIPS": 0.37112556719899775
+        },
+        "t+3": {
+          "MAE": 0.1756066574747838,
+          "MSE": 0.04315876605073411,
+          "PSNR": 13.649309806948256,
+          "SSIM": 0.582174788767369,
+          "LPIPS": 0.4080902551436544
+        },
+        "t+4": {
+          "MAE": 0.18232534341576512,
+          "MSE": 0.04649975154645604,
+          "PSNR": 13.325493675894313,
+          "SSIM": 0.5620840006887015,
+          "LPIPS": 0.41041413578555813
+        },
+        "t+5": {
+          "MAE": 0.16440761498670084,
+          "MSE": 0.038614115078732296,
+          "PSNR": 14.132539134561197,
+          "SSIM": 0.5432536061385169,
+          "LPIPS": 0.45619035336240454
+        },
+        "t+6": {
+          "MAE": 0.1742660438320545,
+          "MSE": 0.04297384401312226,
+          "PSNR": 13.667957969090768,
+          "SSIM": 0.5162300753533541,
+          "LPIPS": 0.47857326987999765
+        },
+        "t+7": {
+          "MAE": 0.1882490668963747,
+          "MSE": 0.050098644961077264,
+          "PSNR": 13.001740205176912,
+          "SSIM": 0.48322794028562516,
+          "LPIPS": 0.47658051662708645
+        },
+        "t+8": {
+          "MAE": 0.18174554427564643,
+          "MSE": 0.04699970722990968,
+          "PSNR": 13.27904847358553,
+          "SSIM": 0.470006681791502,
+          "LPIPS": 0.511262619165919
+        }
+      },
+      "dynamic_MAE": 0.1799863568633994,
+      "dynamic_MSE": 0.05157316429609535,
+      "dynamic_PSNR": 12.875762214307102,
+      "motion_mask_IoU": 0.13965453673203998,
+      "motion_mask_F1": 0.24508222839615845,
+      "motion_mask_precision": 0.14399747251078182,
+      "motion_mask_recall": 0.8223954161285576,
+      "geometry_mask_fraction": 0.0
+    },
+    "protocol": {
+      "training": false,
+      "backbone": "simvp",
+      "backbone_checkpoint": "outputs/simvp_dynamic_ablation/no_geometry/best.pt",
+      "corrector_checkpoint": "/autodl-fs/data/d4rt_training/backbone_v7_parallel_20260821/simvp/reliable_geometry_motion_comp/best.pt",
+      "trajectory_checkpoint": "/autodl-fs/data/d4rt_training/pointodyssey50_uv_velocity_residual_60/best.pt",
+      "split": {
+        "legacy_subsets": [
+          "adt_mini",
+          "ds_mini",
+          "po_mini",
+          "pstudio_mini"
+        ],
+        "pointodyssey_usable": {
+          "train": 248,
+          "val": 90,
+          "test": 160
+        },
+        "totals": {
+          "train": 356,
+          "val": 130,
+          "test": 199
+        }
+      },
+      "oracle_uv_without_visibility": "not applicable"
+    }
+  },
+  "history_uv": {
+    "mode": "history_uv",
+    "num_test_clips": 199,
+    "metrics": {
+      "MAE": 0.17566327892955225,
+      "MSE": 0.04380053703141223,
+      "RMSE": 0.20928577837830317,
+      "PSNR": 13.585205646477467,
+      "SSIM": 0.5453030467033386,
+      "LPIPS": 0.38935050211060585,
+      "temporal_delta_MAE": 0.048063244757989745,
+      "temporal_delta_MSE": 0.008427041324972483,
+      "per_horizon": {
+        "t+1": {
+          "MAE": 0.17901997791113367,
+          "MSE": 0.044701216247874986,
+          "PSNR": 13.496806602560994,
+          "SSIM": 0.6457365655419814,
+          "LPIPS": 0.348239038981984
+        },
+        "t+2": {
+          "MAE": 0.17807824759926627,
+          "MSE": 0.04449275836591894,
+          "PSNR": 13.517106689662024,
+          "SSIM": 0.6169563295254156,
+          "LPIPS": 0.3562867216878201
+        },
+        "t+3": {
+          "MAE": 0.17336223773670756,
+          "MSE": 0.0422570197055213,
+          "PSNR": 13.741011360363897,
+          "SSIM": 0.5774978812615476,
+          "LPIPS": 0.3804746914149529
+        },
+        "t+4": {
+          "MAE": 0.17951182204874316,
+          "MSE": 0.0454063178671889,
+          "PSNR": 13.428837148970699,
+          "SSIM": 0.5538688227908695,
+          "LPIPS": 0.3709411964045098
+        },
+        "t+5": {
+          "MAE": 0.16159118837996744,
+          "MSE": 0.03756013843488304,
+          "PSNR": 14.252728157298083,
+          "SSIM": 0.5345945877945004,
+          "LPIPS": 0.4051027518121441
+        },
+        "t+6": {
+          "MAE": 0.17113332006100634,
+          "MSE": 0.0417816374447802,
+          "PSNR": 13.790145437885146,
+          "SSIM": 0.5056752842574862,
+          "LPIPS": 0.413460998229645
+        },
+        "t+7": {
+          "MAE": 0.1846091344927623,
+          "MSE": 0.04866701091516457,
+          "PSNR": 13.127653269209594,
+          "SSIM": 0.47086501031664746,
+          "LPIPS": 0.4090476191822608
+        },
+        "t+8": {
+          "MAE": 0.17800030127242583,
+          "MSE": 0.0455381957302416,
+          "PSNR": 13.416241805703038,
+          "SSIM": 0.457231098982557,
+          "LPIPS": 0.4312510111523633
+        }
+      },
+      "dynamic_MAE": 0.17302144676723033,
+      "dynamic_MSE": 0.0482254575889221,
+      "dynamic_PSNR": 13.16723642846317,
+      "motion_mask_IoU": 0.13862438015988277,
+      "motion_mask_F1": 0.24349448786687233,
+      "motion_mask_precision": 0.1432240810536119,
+      "motion_mask_recall": 0.8119043337529221,
+      "geometry_mask_fraction": 0.02519083451899412
+    },
+    "protocol": {
+      "training": false,
+      "backbone": "simvp",
+      "backbone_checkpoint": "outputs/simvp_dynamic_ablation/no_geometry/best.pt",
+      "corrector_checkpoint": "/autodl-fs/data/d4rt_training/backbone_v7_parallel_20260821/simvp/reliable_geometry_motion_comp/best.pt",
+      "trajectory_checkpoint": "/autodl-fs/data/d4rt_training/pointodyssey50_uv_velocity_residual_60/best.pt",
+      "split": {
+        "legacy_subsets": [
+          "adt_mini",
+          "ds_mini",
+          "po_mini",
+          "pstudio_mini"
+        ],
+        "pointodyssey_usable": {
+          "train": 248,
+          "val": 90,
+          "test": 160
+        },
+        "totals": {
+          "train": 356,
+          "val": 130,
+          "test": 199
+        }
+      },
+      "oracle_uv_without_visibility": "not applicable"
+    }
+  },
+  "predicted_uv": {
+    "mode": "predicted_uv",
+    "num_test_clips": 199,
+    "metrics": {
+      "MAE": 0.17613828596557604,
+      "MSE": 0.04387229856983501,
+      "RMSE": 0.20945715210953053,
+      "PSNR": 13.578096113200447,
+      "SSIM": 0.5470913052558899,
+      "LPIPS": 0.3942083376436377,
+      "temporal_delta_MAE": 0.04702237672741889,
+      "temporal_delta_MSE": 0.00806450595614349,
+      "per_horizon": {
+        "t+1": {
+          "MAE": 0.17806175301222746,
+          "MSE": 0.04429730706983925,
+          "PSNR": 13.536226746856714,
+          "SSIM": 0.6425704521749487,
+          "LPIPS": 0.3378025705191358
+        },
+        "t+2": {
+          "MAE": 0.1792176216840744,
+          "MSE": 0.04494776085512073,
+          "PSNR": 13.472919384688367,
+          "SSIM": 0.6195144036307407,
+          "LPIPS": 0.3691018881959532
+        },
+        "t+3": {
+          "MAE": 0.17354517139282258,
+          "MSE": 0.04225909159092897,
+          "PSNR": 13.740798428560465,
+          "SSIM": 0.5775004369978929,
+          "LPIPS": 0.3794852000984115
+        },
+        "t+4": {
+          "MAE": 0.1799311028353533,
+          "MSE": 0.04544048423378087,
+          "PSNR": 13.42557049239413,
+          "SSIM": 0.5540651774885667,
+          "LPIPS": 0.37206191363646157
+        },
+        "t+5": {
+          "MAE": 0.16211107541718076,
+          "MSE": 0.03760740062193805,
+          "PSNR": 14.247266834497553,
+          "SSIM": 0.5363292491166436,
+          "LPIPS": 0.41132836493115926
+        },
+        "t+6": {
+          "MAE": 0.17179315990239533,
+          "MSE": 0.041870638314740645,
+          "PSNR": 13.780904182714995,
+          "SSIM": 0.5087335114952308,
+          "LPIPS": 0.4223623106527568
+        },
+        "t+7": {
+          "MAE": 0.1854829115034947,
+          "MSE": 0.04882281575932275,
+          "PSNR": 13.11377177121364,
+          "SSIM": 0.47525877456868715,
+          "LPIPS": 0.41621333877345423
+        },
+        "t+8": {
+          "MAE": 0.17896349406122564,
+          "MSE": 0.04573289185787365,
+          "PSNR": 13.397713357238885,
+          "SSIM": 0.4627590985903189,
+          "LPIPS": 0.4453111254989202
+        }
+      },
+      "dynamic_MAE": 0.17442349990020764,
+      "dynamic_MSE": 0.04854485060498856,
+      "dynamic_PSNR": 13.138568310998494,
+      "motion_mask_IoU": 0.13812554801641988,
+      "motion_mask_F1": 0.24272462428622524,
+      "motion_mask_precision": 0.14272355028227982,
+      "motion_mask_recall": 0.8108734122378252,
+      "geometry_mask_fraction": 0.015301882947471996
+    },
+    "protocol": {
+      "training": false,
+      "backbone": "simvp",
+      "backbone_checkpoint": "outputs/simvp_dynamic_ablation/no_geometry/best.pt",
+      "corrector_checkpoint": "/autodl-fs/data/d4rt_training/backbone_v7_parallel_20260821/simvp/reliable_geometry_motion_comp/best.pt",
+      "trajectory_checkpoint": "/autodl-fs/data/d4rt_training/pointodyssey50_uv_velocity_residual_60/best.pt",
+      "split": {
+        "legacy_subsets": [
+          "adt_mini",
+          "ds_mini",
+          "po_mini",
+          "pstudio_mini"
+        ],
+        "pointodyssey_usable": {
+          "train": 248,
+          "val": 90,
+          "test": 160
+        },
+        "totals": {
+          "train": 356,
+          "val": 130,
+          "test": 199
+        }
+      },
+      "oracle_uv_without_visibility": "not applicable"
+    }
+  },
+  "oracle_uv": {
+    "mode": "oracle_uv",
+    "num_test_clips": 199,
+    "metrics": {
+      "MAE": 0.17599857410094646,
+      "MSE": 0.04381061987124596,
+      "RMSE": 0.20930986568063617,
+      "PSNR": 13.584206019974213,
+      "SSIM": 0.5462719798088074,
+      "LPIPS": 0.3862378763493581,
+      "temporal_delta_MAE": 0.04691642618908155,
+      "temporal_delta_MSE": 0.008081354065509623,
+      "per_horizon": {
+        "t+1": {
+          "MAE": 0.1780109685819153,
+          "MSE": 0.04428141738071264,
+          "PSNR": 13.537784864660662,
+          "SSIM": 0.6410225978748283,
+          "LPIPS": 0.33633119324643407
+        },
+        "t+2": {
+          "MAE": 0.17769686609406768,
+          "MSE": 0.044301023678713705,
+          "PSNR": 13.535862382717372,
+          "SSIM": 0.6126201003789902,
+          "LPIPS": 0.34580442264451455
+        },
+        "t+3": {
+          "MAE": 0.1735098509857403,
+          "MSE": 0.04223567705564014,
+          "PSNR": 13.743205395026068,
+          "SSIM": 0.5747446638705144,
+          "LPIPS": 0.3715592630993781
+        },
+        "t+4": {
+          "MAE": 0.17994206346309366,
+          "MSE": 0.0454264119738585,
+          "PSNR": 13.426915647810706,
+          "SSIM": 0.5527285958953838,
+          "LPIPS": 0.3647644444925701
+        },
+        "t+5": {
+          "MAE": 0.16214170155912588,
+          "MSE": 0.037618384412622434,
+          "PSNR": 14.2459985992199,
+          "SSIM": 0.5366115040665296,
+          "LPIPS": 0.40541022079973366
+        },
+        "t+6": {
+          "MAE": 0.1718852140346364,
+          "MSE": 0.04191246861045934,
+          "PSNR": 13.776567588195366,
+          "SSIM": 0.5098793326161015,
+          "LPIPS": 0.416567801979918
+        },
+        "t+7": {
+          "MAE": 0.18565798794204866,
+          "MSE": 0.048906876432586156,
+          "PSNR": 13.106300736622698,
+          "SSIM": 0.47715633209027236,
+          "LPIPS": 0.4114369660915442
+        },
+        "t+8": {
+          "MAE": 0.17914393990982316,
+          "MSE": 0.04580270057041791,
+          "PSNR": 13.39108914829016,
+          "SSIM": 0.4654102823018429,
+          "LPIPS": 0.4380286955953243
+        }
+      },
+      "dynamic_MAE": 0.17327204963834805,
+      "dynamic_MSE": 0.0480585705984841,
+      "dynamic_PSNR": 13.182291505196886,
+      "motion_mask_IoU": 0.13784604666490582,
+      "motion_mask_F1": 0.24229296585235016,
+      "motion_mask_precision": 0.14246911897384124,
+      "motion_mask_recall": 0.8094511696719033,
+      "geometry_mask_fraction": 0.01779760399702368
+    },
+    "protocol": {
+      "training": false,
+      "backbone": "simvp",
+      "backbone_checkpoint": "outputs/simvp_dynamic_ablation/no_geometry/best.pt",
+      "corrector_checkpoint": "/autodl-fs/data/d4rt_training/backbone_v7_parallel_20260821/simvp/reliable_geometry_motion_comp/best.pt",
+      "trajectory_checkpoint": "/autodl-fs/data/d4rt_training/pointodyssey50_uv_velocity_residual_60/best.pt",
+      "split": {
+        "legacy_subsets": [
+          "adt_mini",
+          "ds_mini",
+          "po_mini",
+          "pstudio_mini"
+        ],
+        "pointodyssey_usable": {
+          "train": 248,
+          "val": 90,
+          "test": 160
+        },
+        "totals": {
+          "train": 356,
+          "val": 130,
+          "test": 199
+        }
+      },
+      "oracle_uv_without_visibility": "teacher UV with history-derived availability/confidence"
+    }
+  },
+  "oracle_uv_visibility": {
+    "mode": "oracle_uv_visibility",
+    "num_test_clips": 199,
+    "metrics": {
+      "MAE": 0.1764678921382032,
+      "MSE": 0.04400399090625483,
+      "RMSE": 0.20977128236785614,
+      "PSNR": 13.565079337418807,
+      "SSIM": 0.5485057234764099,
+      "LPIPS": 0.3922736697161018,
+      "temporal_delta_MAE": 0.04683552430303053,
+      "temporal_delta_MSE": 0.008070884800517628,
+      "per_horizon": {
+        "t+1": {
+          "MAE": 0.1783801464853774,
+          "MSE": 0.04442322835906516,
+          "PSNR": 13.523898832575892,
+          "SSIM": 0.6422812312691655,
+          "LPIPS": 0.3382255118995456
+        },
+        "t+2": {
+          "MAE": 0.1781452525051395,
+          "MSE": 0.04448322855541405,
+          "PSNR": 13.518036995528783,
+          "SSIM": 0.6142649628858471,
+          "LPIPS": 0.3492610155038498
+        },
+        "t+3": {
+          "MAE": 0.17400915671133715,
+          "MSE": 0.04245050773149359,
+          "PSNR": 13.721171109873485,
+          "SSIM": 0.5767136676676908,
+          "LPIPS": 0.3765626158846084
+        },
+        "t+4": {
+          "MAE": 0.18047042893654539,
+          "MSE": 0.0456491955392175,
+          "PSNR": 13.405668714912851,
+          "SSIM": 0.5558552072575343,
+          "LPIPS": 0.3708931877085911
+        },
+        "t+5": {
+          "MAE": 0.1626418634525296,
+          "MSE": 0.03781929509043444,
+          "PSNR": 14.222865701812907,
+          "SSIM": 0.5390009021189943,
+          "LPIPS": 0.4132461600267707
+        },
+        "t+6": {
+          "MAE": 0.17235596897314542,
+          "MSE": 0.042102483286829646,
+          "PSNR": 13.756922878707186,
+          "SSIM": 0.5125519192997535,
+          "LPIPS": 0.42464876654160083
+        },
+        "t+7": {
+          "MAE": 0.18615409826713192,
+          "MSE": 0.049112399161748053,
+          "PSNR": 13.088088498786124,
+          "SSIM": 0.4797680772578896,
+          "LPIPS": 0.41901615838609146
+        },
+        "t+8": {
+          "MAE": 0.17958621525984114,
+          "MSE": 0.045991590079637726,
+          "PSNR": 13.373215751862407,
+          "SSIM": 0.4676114869252521,
+          "LPIPS": 0.44633594993969905
+        }
+      },
+      "dynamic_MAE": 0.17458746798513033,
+      "dynamic_MSE": 0.048762961795900964,
+      "dynamic_PSNR": 13.119099237970577,
+      "motion_mask_IoU": 0.1382969217010825,
+      "motion_mask_F1": 0.2429891868536553,
+      "motion_mask_precision": 0.14284785635286296,
+      "motion_mask_recall": 0.8127676922070916,
+      "geometry_mask_fraction": 0.013235706191344251
+    },
+    "protocol": {
+      "training": false,
+      "backbone": "simvp",
+      "backbone_checkpoint": "outputs/simvp_dynamic_ablation/no_geometry/best.pt",
+      "corrector_checkpoint": "/autodl-fs/data/d4rt_training/backbone_v7_parallel_20260821/simvp/reliable_geometry_motion_comp/best.pt",
+      "trajectory_checkpoint": "/autodl-fs/data/d4rt_training/pointodyssey50_uv_velocity_residual_60/best.pt",
+      "split": {
+        "legacy_subsets": [
+          "adt_mini",
+          "ds_mini",
+          "po_mini",
+          "pstudio_mini"
+        ],
+        "pointodyssey_usable": {
+          "train": 248,
+          "val": 90,
+          "test": 160
+        },
+        "totals": {
+          "train": 356,
+          "val": 130,
+          "test": 199
+        }
+      },
+      "oracle_uv_without_visibility": "teacher UV with teacher future_valid/future_confidence"
+    }
+  },
+  "oracle_xyz_uv_visibility": {
+    "mode": "oracle_xyz_uv_visibility",
+    "num_test_clips": 199,
+    "metrics": {
+      "MAE": 0.17646864699308995,
+      "MSE": 0.04400460183202372,
+      "RMSE": 0.209772738533928,
+      "PSNR": 13.56501904292209,
+      "SSIM": 0.5485090017318726,
+      "LPIPS": 0.39223324353970473,
+      "temporal_delta_MAE": 0.04683556634202674,
+      "temporal_delta_MSE": 0.008070746040864031,
+      "per_horizon": {
+        "t+1": {
+          "MAE": 0.17838014909370462,
+          "MSE": 0.044423160333517106,
+          "PSNR": 13.523905482957655,
+          "SSIM": 0.6422929567607802,
+          "LPIPS": 0.3382685624774377
+        },
+        "t+2": {
+          "MAE": 0.17814563111194615,
+          "MSE": 0.04448333558964994,
+          "PSNR": 13.5180265456753,
+          "SSIM": 0.6142801358621923,
+          "LPIPS": 0.349322527122857
+        },
+        "t+3": {
+          "MAE": 0.17400849148805816,
+          "MSE": 0.04245016720283221,
+          "PSNR": 13.721205948163917,
+          "SSIM": 0.5767008743843242,
+          "LPIPS": 0.3765486081940445
+        },
+        "t+4": {
+          "MAE": 0.18047336601282485,
+          "MSE": 0.04565052089704141,
+          "PSNR": 13.40554262567359,
+          "SSIM": 0.5558465510307244,
+          "LPIPS": 0.370769602794144
+        },
+        "t+5": {
+          "MAE": 0.162644666667959,
+          "MSE": 0.03782089411981491,
+          "PSNR": 14.222682082590456,
+          "SSIM": 0.539000496118512,
+          "LPIPS": 0.4131791993002197
+        },
+        "t+6": {
+          "MAE": 0.17235608997955992,
+          "MSE": 0.042103239534800274,
+          "PSNR": 13.756844871106374,
+          "SSIM": 0.5125439873143057,
+          "LPIPS": 0.424535817387116
+        },
+        "t+7": {
+          "MAE": 0.18615360458192715,
+          "MSE": 0.04911248500254536,
+          "PSNR": 13.088080908004029,
+          "SSIM": 0.47979303644080856,
+          "LPIPS": 0.4190059799944336
+        },
+        "t+8": {
+          "MAE": 0.17958717504937446,
+          "MSE": 0.045993010591484695,
+          "PSNR": 13.373081616267498,
+          "SSIM": 0.46761507316300616,
+          "LPIPS": 0.44623564520672937
+        }
+      },
+      "dynamic_MAE": 0.17458891556538642,
+      "dynamic_MSE": 0.04876602419487357,
+      "dynamic_PSNR": 13.118826502032206,
+      "motion_mask_IoU": 0.1382998346493065,
+      "motion_mask_F1": 0.2429936831044426,
+      "motion_mask_precision": 0.1428503960649219,
+      "motion_mask_recall": 0.8127860832747543,
+      "geometry_mask_fraction": 0.013232733730851966
+    },
+    "protocol": {
+      "training": false,
+      "backbone": "simvp",
+      "backbone_checkpoint": "outputs/simvp_dynamic_ablation/no_geometry/best.pt",
+      "corrector_checkpoint": "/autodl-fs/data/d4rt_training/backbone_v7_parallel_20260821/simvp/reliable_geometry_motion_comp/best.pt",
+      "trajectory_checkpoint": "/autodl-fs/data/d4rt_training/pointodyssey50_uv_velocity_residual_60/best.pt",
+      "split": {
+        "legacy_subsets": [
+          "adt_mini",
+          "ds_mini",
+          "po_mini",
+          "pstudio_mini"
+        ],
+        "pointodyssey_usable": {
+          "train": 248,
+          "val": 90,
+          "test": 160
+        },
+        "totals": {
+          "train": 356,
+          "val": 130,
+          "test": 199
+        }
+      },
+      "oracle_uv_without_visibility": "teacher XYZ+UV with teacher future_valid/future_confidence"
+    }
+  }
+}

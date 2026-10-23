@@ -1,0 +1,4 @@
+{
+  "error": "indices should be either on cpu or on the same device as the indexed tensor (cpu)",
+  "traceback": "Traceback (most recent call last):\n  File \"/root/autodl-tmp/Open-d4rt/experiments_20261018/run_alignment_v2.py\", line 180, in <module>\n    try:main()\n  File \"/root/autodl-tmp/Open-d4rt/experiments_20261018/run_alignment_v2.py\", line 167, in main\n    selected,dev=run_split(net,model,m['dev'],'dev',lp)\n  File \"/root/autodl-tmp/Open-d4rt/experiments_20261018/run_alignment_v2.py\", line 83, in run_split\n    fu,fv=inputs(path,x,d);enc,_=encode(net,x['context_rgb'][None].cuda());baseenc,_=encode(net,base)\n  File \"/root/autodl-tmp/Open-d4rt/experiments_20261018/run_alignment_v2.py\", line 40, in inputs\n    fu=x['future_uv_raw'][ids][None].cuda().float();fv=x['future_visibility_gt'][ids][None].cuda().bool()\nRuntimeError: indices should be either on cpu or on the same device as the indexed tensor (cpu)\n"
+}

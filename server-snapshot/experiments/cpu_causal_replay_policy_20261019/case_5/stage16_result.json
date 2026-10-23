@@ -1,0 +1,83 @@
+{
+  "index": 5,
+  "path": "/root/autodl-fs/d4rt_datasets/d4rt_forecasting_cache_po_full/po50/character0-1b001011_clip_000.npz",
+  "prefix_frames": 16,
+  "prefix_sha256": "8da895f8401692b39a4da9888d4df55d9edfa4856174a183995d4d68b294d3c6",
+  "seed_sha256": "994c4b7ba57e498668e0e66ad172fb5f0b36753bbbb9d47117bdee96173ca3d0",
+  "model_state_sha256": "d378704021301fd37b8db7f08481771b1709cc91767979bbf25df7edbb4b9ee1",
+  "events": [
+    {
+      "event": "read_prefix8",
+      "decoded_frame_range": [
+        0,
+        8
+      ],
+      "time": 1792414317.4297452
+    },
+    {
+      "event": "prefix8_locked",
+      "time": 1792414356.5878828
+    },
+    {
+      "event": "read_observed_calibration_holdout",
+      "decoded_frame_range": [
+        8,
+        12
+      ],
+      "time": 1792414363.7087595
+    },
+    {
+      "event": "read_prefix12",
+      "decoded_frame_range": [
+        0,
+        12
+      ],
+      "time": 1792414388.2184887
+    },
+    {
+      "event": "prefix12_locked",
+      "time": 1792414415.022781
+    },
+    {
+      "event": "read_observed_validation_holdout",
+      "decoded_frame_range": [
+        12,
+        16
+      ],
+      "time": 1792414419.9092762
+    },
+    {
+      "event": "read_prefix16",
+      "decoded_frame_range": [
+        0,
+        16
+      ],
+      "time": 1792414444.9112344
+    },
+    {
+      "event": "prefix16_locked",
+      "time": 1792414478.8150578
+    }
+  ],
+  "TAU_bitwise_verified": true,
+  "signals": {
+    "hold": {
+      "inner_observed_reference_samples": 45,
+      "inner_error_median_px": 0.6531771421432495,
+      "eligible_writes": 0,
+      "ungated_writes": 32
+    },
+    "cv": {
+      "inner_observed_reference_samples": 45,
+      "inner_error_median_px": 0.3080752193927765,
+      "eligible_writes": 9,
+      "ungated_writes": 29
+    }
+  },
+  "support": {
+    "hold": 0,
+    "cv": 9,
+    "ungated_cv": 29
+  },
+  "seconds": 36.060428857803345
+}

@@ -1,0 +1,46 @@
+{
+  "no_geometry": {
+    "MAE": 0.032563630443735,
+    "MSE": 0.005263916105350368,
+    "PSNR": 22.786910409886563,
+    "SSIM": 0.8078928589820862,
+    "dynamic_MAE": 0.13954924073792813,
+    "dynamic_PSNR": 14.776218301092474,
+    "motion_mask_IoU": 0.15297493610725016,
+    "motion_mask_F1": 0.2653569150839205,
+    "motion_mask_precision": 0.39850493488290606,
+    "motion_mask_recall": 0.1989005031101887,
+    "dynamic_pixel_fraction": 0.13422491611578527,
+    "motion_threshold": 0.05
+  },
+  "reliable_geometry_motion_comp": {
+    "MAE": 0.03253234730253362,
+    "MSE": 0.005241105996637454,
+    "PSNR": 22.805770569947455,
+    "SSIM": 0.8075105547904968,
+    "dynamic_MAE": 0.13904786557712898,
+    "dynamic_PSNR": 14.800207951469195,
+    "motion_mask_IoU": 0.1543086710270841,
+    "motion_mask_F1": 0.26736119185483187,
+    "motion_mask_precision": 0.39882060472914377,
+    "motion_mask_recall": 0.20108084158733305,
+    "geometry_mask_fraction": 0.005949441708090046
+  },
+  "meta": {
+    "backbone": "dmvfn",
+    "params": 3559930,
+    "best_epoch": 25,
+    "train_clips": 108,
+    "val_clips": 40,
+    "test_clips": 39,
+    "motion_loss_weight": 2.0,
+    "motion_scale": 0.05,
+    "dynamic_oversample": 0.5,
+    "sampler_stats": {
+      "min": 0.5122870232325942,
+      "max": 2.628314151132423,
+      "mean": 1.0,
+      "dynamic_fraction_mean": 0.16640952781394677
+    }
+  }
+}

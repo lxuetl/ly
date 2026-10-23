@@ -1,0 +1,69 @@
+{
+  "videos": 12,
+  "weights_updated": false,
+  "warning": "GT-gradient input-feature steps are diagnostic upper-direction probes, not deployable or training; no claim of global ceiling",
+  "tau_mse": 0.011241582067062458,
+  "attention": {
+    "effective_history_frames": 15.349747021993002,
+    "attention_abs_difference_from_confidence_prior": 0.004931440441093097,
+    "content_logits_std": 0.5103630820910136,
+    "projected_content_abs": 0.17653256033857664,
+    "output_bias_abs": 0.01113827619701624,
+    "output_abs": 0.18508025258779526,
+    "output_std_across_tracks": 0.09464315759638946
+  },
+  "sensitivity": {
+    "mse_gradient_abs_hidden": 3.6035291695046823e-09,
+    "mse_gradient_abs_skip": 5.167256631836518e-09,
+    "original_residual_mse_first_order": -1.5491352260236606e-06,
+    "original_residual_gradient_cosine": -0.028663995860066887,
+    "hidden_abs": 1.2272802889347076,
+    "skip_abs": 0.48959798862536746
+  },
+  "probes": {
+    "original": {
+      "mse": 0.011240067891776562,
+      "rgb_abs": 8.392687292750149e-05,
+      "hidden_abs": 0.0015298512880690396,
+      "hidden_abs_diff_vs_original": 2.5893245880759252e-12
+    },
+    "zero_values": {
+      "mse": 0.011241612296241025,
+      "rgb_abs": 3.2069746945732426e-05,
+      "hidden_abs": 0.0004074014298870073,
+      "hidden_abs_diff_vs_original": 0.001231917131614561
+    },
+    "shuffle_track_values": {
+      "mse": 0.011241264990530908,
+      "rgb_abs": 8.192000162428788e-05,
+      "hidden_abs": 0.0015172510854123782,
+      "hidden_abs_diff_vs_original": 0.0005870221611985471
+    },
+    "oracle_gradient_hidden_0.002": {
+      "mse": 0.011177676225391528,
+      "rgb_abs": 0.0002031828322894095
+    },
+    "oracle_gradient_skip_0.002": {
+      "mse": 0.010891640364813307,
+      "rgb_abs": 0.0010308313164083909
+    },
+    "oracle_gradient_both_0.002": {
+      "mse": 0.010828879681260636,
+      "rgb_abs": 0.0012246205248326685
+    },
+    "oracle_gradient_hidden_0.02": {
+      "mse": 0.010689431064141294,
+      "rgb_abs": 0.0018759239076947172
+    },
+    "oracle_gradient_skip_0.02": {
+      "mse": 0.010733075866786143,
+      "rgb_abs": 0.0020000001726051173
+    },
+    "oracle_gradient_both_0.02": {
+      "mse": 0.010761662657993535,
+      "rgb_abs": 0.00200000077408428
+    }
+  },
+  "frozen_backbone_bitwise_verified": true,
+  "source_sha256": "88fb4d4b55f5163318269c74629a1bb2d13eb2f945fb4216d6095e10a0360c26"
+}
